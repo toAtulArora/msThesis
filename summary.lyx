@@ -900,7 +900,16 @@ Monday | Aug 24
 \end_layout
 
 \begin_layout Itemize
-[misc] Found something called 
+[misc] 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+KVPY document received; had to attend a PhD defence; worked on 
+\end_layout
+
+\begin_layout Itemize
+Found something called 
 \emph on
 SparkleShare
 \emph default
@@ -911,6 +920,7 @@ SparkleShare
  For the usual things, I can use it like a dropbox folder :)
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 
 \end_layout
