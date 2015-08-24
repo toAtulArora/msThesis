@@ -902,6 +902,9 @@ SparkleShare
 \emph default
  which is dropbox like with git under the hood.
  Works great.
+ I can switch off the automated git uploading whenever I like and switch
+ to manual git.
+ For the usual things, I can use it like a dropbox folder :)
 \end_layout
 
 \begin_layout Standard
