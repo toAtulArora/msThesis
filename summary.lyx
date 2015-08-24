@@ -891,8 +891,17 @@ Aug 24-29
 Monday | Aug 24
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+[research/ms] Worked on making notes about Bohmian Mechanics
+\end_layout
 
+\begin_layout Itemize
+[misc] Found something called 
+\emph on
+SparkleShare
+\emph default
+ which is dropbox like with git under the hood.
+ Works great.
 \end_layout
 
 \begin_layout Standard
