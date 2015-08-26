@@ -73,7 +73,7 @@
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
-\papercolumns 2
+\papercolumns 1
 \papersides 2
 \paperpagestyle headings
 \tracking_changes false
@@ -932,17 +932,15 @@ Tuesday | Aug 25
 \end_layout
 
 \begin_layout Itemize
-[misc]
+[misc] Gave the NET document for resubmission.
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Working on 
+[GRE] vocab (questions), quant
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-[GRE]
+\begin_layout Subsection
+Wednesday | Aug 26
 \end_layout
 
 \end_body
