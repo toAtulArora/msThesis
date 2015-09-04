@@ -1065,8 +1065,21 @@ Friday | Sep 4
 \end_layout
 
 \begin_layout Itemize
-[research/ms] 
+[research/ms] Presenation; mine: Talked about how to get to the Hamilton
+ Jacobi equations and took some time.
+ Working out the differential equations is hard.
+ Completed till about page 4 of my notes
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Bohmian mechanics: figured the relation with the curl theorem of 
+\begin_inset Formula $\oint dS$
+\end_inset
+
+ and new that 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
