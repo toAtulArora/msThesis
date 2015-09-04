@@ -1038,9 +1038,19 @@ Thursday | Sep 3
 [research/ms] Presentation: Kishor talked about LOCCs, majorization, the
  iff condition between them, entanglement distillation and entanglement
  of creation and finally how they're related to key distribution (he barely
- started)
+ started);
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Bohmian mechanics working on figuring that 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ and tried constructing the cases when this could happen
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 [misc] Tug of war practice + Abhishek sir nomination + re arranging the
  room in CAF
