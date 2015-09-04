@@ -1068,7 +1068,8 @@ Friday | Sep 4
 [research/ms] Presenation; mine: Talked about how to get to the Hamilton
  Jacobi equations and took some time.
  Working out the differential equations is hard.
- Completed till about page 4 of my notes
+ Completed till about page 4 of my notes.
+ It went well
 \end_layout
 
 \begin_deeper
@@ -1077,9 +1078,14 @@ Bohmian mechanics: figured the relation with the curl theorem of
 \begin_inset Formula $\oint dS$
 \end_inset
 
- and new that 
+ and atleast it now makes a little more sense.
+ Need to work out the details still though
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\end_layout
+
 \end_body
 \end_document
