@@ -1036,8 +1036,50 @@ Thursday | Sep 3
 
 \begin_layout Itemize
 [research/ms] Presentation: Kishor talked about LOCCs, majorization, the
- iff condition between them, entanglement distillation and 
+ iff condition between them, entanglement distillation and entanglement
+ of creation and finally how they're related to key distribution (he barely
+ started);
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Bohmian mechanics working on figuring that 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ and tried constructing the cases when this could happen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[misc] Tug of war practice + Abhishek sir nomination + re arranging the
+ room in CAF
+\end_layout
+
+\begin_layout Itemize
+[gre] verbal GRE work done
+\end_layout
+
+\begin_layout Subsection
+Friday | Sep 4
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Presenation; mine: Talked about how to get to the Hamilton
+ Jacobi equations and took some time.
+ Working out the differential equations is hard.
+ Completed till about page 4 of my notes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bohmian mechanics: figured the relation with the curl theorem of 
+\begin_inset Formula $\oint dS$
+\end_inset
+
+ and new that 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
