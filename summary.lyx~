@@ -1102,6 +1102,7 @@ Saturday | Sep 5
  What I'm doing doesn't seem to help;
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 So we start with 
 \begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\int\nabla\times p.da$
@@ -1213,5 +1214,6 @@ will be
 ' along the curve.
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
