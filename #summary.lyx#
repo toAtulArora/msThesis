@@ -1122,7 +1122,84 @@ So we start with
 \begin_inset Formula $\oint dS=nh$
 \end_inset
 
- holds, then can we construct some example of the same?
+ holds, then can we construct some example of the same? Let's first see
+ how 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ can be derived.
+ If the only condition is that 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is single valued, then we know that at any point, 
+\begin_inset Formula $S'$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ both yield the same 
+\begin_inset Formula $\psi$
+\end_inset
+
+, where 
+\begin_inset Formula $S'=S+nh$
+\end_inset
+
+.
+ If one considers a loop, then say we start from a point 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+.
+ Then after completing some distance, the change is 
+\begin_inset Formula $S$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\Delta S$
+\end_inset
+
+.
+ So the value of 
+\begin_inset Formula $S$
+\end_inset
+
+ starting from 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+will be 
+\begin_inset Formula $S_{a}+\Delta S$
+\end_inset
+
+.
+ Now if we come back to the point 
+\begin_inset Formula $a$
+\end_inset
+
+, then from uniqueness of 
+\begin_inset Formula $\psi$
+\end_inset
+
+, we only demand 
+\begin_inset Formula $S_{a}+\Delta S=S_{a}+nh$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $S$
+\end_inset
+
+ itself was unique, then we'd say 
+\begin_inset Formula $S_{a}+\Delta S=S_{a}$
+\end_inset
+
+.
+ Now at this point itself I seem to have trouble.
+ 
 \end_layout
 
 \end_body
