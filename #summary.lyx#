@@ -1053,7 +1053,7 @@ Bohmian mechanics working on figuring that
 \end_deeper
 \begin_layout Itemize
 [misc] Tug of war practice + Abhishek sir nomination + re arranging the
- room in CAF
+ room in CAF + landscape thing
 \end_layout
 
 \begin_layout Itemize
@@ -1068,7 +1068,8 @@ Friday | Sep 4
 [research/ms] Presenation; mine: Talked about how to get to the Hamilton
  Jacobi equations and took some time.
  Working out the differential equations is hard.
- Completed till about page 4 of my notes
+ Completed till about page 4 of my notes.
+ It went well
 \end_layout
 
 \begin_deeper
@@ -1077,9 +1078,52 @@ Bohmian mechanics: figured the relation with the curl theorem of
 \begin_inset Formula $\oint dS$
 \end_inset
 
- and new that 
+ and atleast it now makes a little more sense.
+ Need to work out the details still though
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+[misc] Table chair thing + landscape thing + multiple protocols
+\end_layout
+
+\begin_layout Itemize
+[gre] quant GRE
+\end_layout
+
+\begin_layout Subsection
+Saturday | Sep 5
+\end_layout
+
+\begin_layout Itemize
+[research/ms] 
+\end_layout
+
+\begin_layout Standard
+So we start with 
+\begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\int\nabla\times p.da$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $\nabla\times p=\sum_{a}\Gamma_{a}\int_{\gamma_{a}}\delta(x-x_{a})dx_{a}$
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma_{a}$
+\end_inset
+
+ is the nodal line.
+ If we assume 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ holds, then can we construct some example of the same?
+\end_layout
+
 \end_body
 \end_document
