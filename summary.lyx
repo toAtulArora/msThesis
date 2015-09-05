@@ -1200,6 +1200,15 @@ will be
 .
  Now at this point itself I seem to have trouble.
  I have tacitly assumed that 
+\begin_inset Formula $S$
+\end_inset
+
+ is single valued when I'm evaluating the `change is 
+\begin_inset Formula $S$
+\end_inset
+
+' along the curve.
+ 
 \end_layout
 
 \end_body
