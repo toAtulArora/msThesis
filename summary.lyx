@@ -1101,10 +1101,23 @@ Saturday | Sep 5
 
 \begin_layout Standard
 So we start with 
-\begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\oint\nabla\times p.da$
+\begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\int\nabla\times p.da$
 \end_inset
 
+.
+ If 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
 
+, then we must have 
+\begin_inset Formula $\nabla\times p=\sum_{a}\Gamma_{a}\int_{\gamma_{a}}\delta(x-x_{a})dx_{a}$
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma_{a}$
+\end_inset
+
+ is the nodal line.
 \end_layout
 
 \end_body

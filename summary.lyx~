@@ -1100,6 +1100,10 @@ Saturday | Sep 5
 \end_layout
 
 \begin_layout Standard
+So we start with 
+\begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\oint\nabla\times p.da$
+\end_inset
+
 
 \end_layout
 
