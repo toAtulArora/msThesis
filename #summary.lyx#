@@ -884,7 +884,7 @@ Summarizing the work I did on saturday.
 \end_layout
 
 \begin_layout Section
-Aug 24-29
+Reached the chapter on Bohmian Mechanics | Aug 24-29
 \end_layout
 
 \begin_layout Subsection
@@ -974,7 +974,7 @@ Thursday | Aug 27
 \end_layout
 
 \begin_layout Subsection
-Friday | Aug 28 [off]
+Friday | Aug 28 [off, travel]
 \end_layout
 
 \begin_layout Itemize
@@ -986,11 +986,11 @@ Saturday | Aug 29 [off]
 \end_layout
 
 \begin_layout Section
-Aug 31 - Sep 6
+Midsem, Presentation, Bohmian Mechanics | Aug 31 - Sep 6
 \end_layout
 
 \begin_layout Subsection
-Monday | Aug 31
+Monday | Aug 31 [off, travel]
 \end_layout
 
 \begin_layout Itemize
@@ -1079,7 +1079,9 @@ Bohmian mechanics: figured the relation with the curl theorem of
 \end_inset
 
  and atleast it now makes a little more sense.
- Need to work out the details still though
+ Need to work out the details still though; the point is that I now know
+ which curl related theorem could be used, about which I wasn't certain
+ until now.
 \end_layout
 
 \end_deeper
@@ -1096,9 +1098,11 @@ Saturday | Sep 5
 \end_layout
 
 \begin_layout Itemize
-[research/ms] 
+[research/ms] Concluded that I'll just ask sir now for some advice.
+ What I'm doing doesn't seem to help;
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 So we start with 
 \begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\int\nabla\times p.da$
@@ -1154,7 +1158,7 @@ So we start with
 \end_inset
 
 .
- Then after completing some distance, the change is 
+ Then after completing some distance, the change in 
 \begin_inset Formula $S$
 \end_inset
 
@@ -1199,8 +1203,17 @@ will be
 
 .
  Now at this point itself I seem to have trouble.
- 
+ I have tacitly assumed that 
+\begin_inset Formula $S$
+\end_inset
+
+ is single valued when I'm evaluating the `change is 
+\begin_inset Formula $S$
+\end_inset
+
+' along the curve.
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
