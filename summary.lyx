@@ -1118,6 +1118,38 @@ So we start with
 \end_inset
 
  is the nodal line.
+ If we assume 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ holds, then can we construct some example of the same? Let's first see
+ how 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ can be derived.
+ If the only condition is that 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is single valued, then we know that at any point, 
+\begin_inset Formula $S'$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ both yield the same 
+\begin_inset Formula $\psi$
+\end_inset
+
+, where 
+\begin_inset Formula $S'=S+nh$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
