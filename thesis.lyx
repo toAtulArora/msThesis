@@ -1,0 +1,693 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass memoir
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Contextuality in a Deterministic Quantum Theory
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+August-November [semester 9], 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Einstein started with showing that QM must be incomplete if one assumes
+ (a) realism and (b) locality.
+ He wanted us to believe that there must be some theory which satisifed
+ both (a) & (b) and can produce the intended results.
+ Bell later showed that certain correlations between measurable properties
+ must be bounded, given (a) and (b) hold.
+ QM he showed violates this and therefore it doesn't satisfy atleast one
+ among (a) and (b).
+ This was confirmed experimentally.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Our story begins with a theory which satisfies (a) but not (b), while being
+ completely identical with QM in terms of experimental predictions.
+ Such a theory should exist is by itself rather discomforting.
+ Infact, the said theory, known as Bohmian Mechanics, is deterministic.
+ Which entails that while it maybe expected that the correlations can arise
+ from the explicit non locality in the theory, what happens to questions
+ related to contextuality? It is this that will be explored in the remainder
+ of the text.
+\end_layout
+
+\begin_layout Part
+Prior Art
+\end_layout
+
+\begin_layout Chapter
+Classical Mechanics
+\end_layout
+
+\begin_layout Section
+Densities
+\end_layout
+
+\begin_layout Enumerate
+To understand the continuity equation 
+\begin_inset Formula $\rho+\nabla.(\rho v)=0$
+\end_inset
+
+, examples of 
+\begin_inset Formula $v$
+\end_inset
+
+ are taken
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v=v(x)$
+\end_inset
+
+, a solution is obtained as 
+\begin_inset Formula 
+\[
+\rho(x,t)=\frac{1}{v(x)}v\left[x\left(t-\int\frac{dx}{v}\right)\right]\rho_{0}\left[x\left(t-\int\frac{dx}{v}\right)\right]
+\]
+
+\end_inset
+
+in which further assuming that 
+\begin_inset Formula $\rho(x)$
+\end_inset
+
+ results in 
+\begin_inset Formula $\rho=A/\left|v(x)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v=v(t)$
+\end_inset
+
+ then we get
+\begin_inset Formula 
+\[
+\rho(x,t)=\rho_{0}\left(x-\int vdt\right)
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is constant along particle trajectories
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+connection with Liuoville's equation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(x,p,t)$
+\end_inset
+
+ is defined instead of 
+\begin_inset Formula $\rho(x,t)$
+\end_inset
+
+.
+ Pure and mixed states are defined accordingly as 
+\begin_inset Formula $f(x,p,t)=\rho(x,t)\delta(p-\nabla S(x,t))$
+\end_inset
+
+ being pure and the remaining as mixed.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{df}{dt}=\partial_{t}f+\frac{1}{m}\sum p_{i}\partial_{x_{i}}f-\sum\partial_{x_{i}}V\partial_{p_{i}}f=0$
+\end_inset
+
+ is the Liuoville's equation (which holds since we can show that the volume
+ doesn't change under Hamiltonian evolution and particles inside the volume
+ stay inside; 
+\begin_inset Formula $f(p',q',t+\delta t)=f(p,q,t)$
+\end_inset
+
+ is essentially the statement 
+\begin_inset Formula $\frac{df}{dt}=0$
+\end_inset
+
+) which is linear in 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+One may project out the moment space.
+ They define equivalent of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as 
+\begin_inset Formula $P(x)=\int fd^{3}p$
+\end_inset
+
+, mean momentum as 
+\begin_inset Formula $\overline{p_{i}(x)}=\frac{\int p_{i}fd^{3}p}{P(x)}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{p_{i}p_{j}(x)}=\frac{\int p_{i}p_{j}fd^{3}p}{P(x)}$
+\end_inset
+
+.
+ The louvielle equation can then be expressed in terms of these spatial
+ variables.
+ Integrating it we get 
+\begin_inset Formula 
+\[
+\partial_{t}P+\frac{1}{m}\sum\partial_{x_{i}}(P\overline{p_{i}})=0.
+\]
+
+\end_inset
+
+To get the momentum transport equation, after multiplying the louvielle
+ equation with 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ and integrating, we get 
+\begin_inset Formula 
+\[
+\partial_{t}(P\overline{p_{i}})+\frac{1}{m}\sum\partial_{x_{j}}(P\overline{p_{i}p_{j}})+P\partial_{x_{i}}V=0
+\]
+
+\end_inset
+
+ (apparently integrated by parts and assumed 
+\begin_inset Formula $f\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $p_{i}\to\infty$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+While 
+\begin_inset Formula $f$
+\end_inset
+
+ is constant along a phase space trajectory, the spatial density 
+\begin_inset Formula $P$
+\end_inset
+
+ (equivalent of 
+\begin_inset Formula $\rho$
+\end_inset
+
+) is not.
+ It's apparent from the derivation of the continuity equation; either we
+ start with a fixed volume or a fixed number of particles, not both.
+\begin_inset Newline newline
+\end_inset
+
+If you substitute 
+\begin_inset Formula $f=\rho\delta(p-\nabla S)$
+\end_inset
+
+ as stated earlier, you'd get 
+\begin_inset Formula $P=\rho$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{p_{i}}=\partial_{x_{i}}S$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{p_{i}p_{j}}=\partial_{x_{i}}S\partial_{x_{i}}S$
+\end_inset
+
+ as expected.
+ The substitution also yields what's called a field theoretic version of
+ Newton's Laws given by 
+\begin_inset Formula 
+\[
+\partial_{t}\rho+\frac{1}{m}\nabla.(\rho\nabla S)=0
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\left[\partial_{t}+\frac{1}{m}\sum\partial_{x_{i}}S\partial_{x_{j}}\right]\partial_{x_{i}}S=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Remarks: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It's not obvious that if we start with a state that has well defined momentum
+ (delta distribution) but the positions are given by 
+\begin_inset Formula $\rho(x)$
+\end_inset
+
+, then they will continue to be well defined in momentum.
+ This happens only exceptionally.
+ In general, a pure state maybe sent to a mixed state.
+ We'll see examples of these.
+ [todo: ensure examples make sense]
+\end_layout
+
+\begin_layout Enumerate
+Can we decompose any mixed ensamble into a linear combination of pure ones?
+ The answer's no.
+ [proof?] Say there are many solutions of the Hamilton-Jacobi equation,
+ given by 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ Thus, we can construct a linear combination as 
+\begin_inset Formula $f(x,p,t)=\sum P_{i}\rho_{i}(x,t)\delta\left(p-\nabla S_{i}(x,t)\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ (degenerate notation) refers to the distribution of momenta at a given
+ point.
+ 
+\begin_inset Formula $\sum P_{i}=1$
+\end_inset
+
+ is assumed for normalization.
+ Claim is that this is not in general possible to decompose a state into
+ this form.
+ An explicit example is that of reflecting through a potential barrier (in
+ CM) [todo: ensure the example works]
+\end_layout
+
+\begin_layout Enumerate
+While this is not particularly useful in CM (the pure and mixed states),
+ the formalism helps in comparison with QM.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Pure and Mixed States
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Illustration: We see that 
+\begin_inset Formula $f_{0}(x,p)=\delta(x-x_{0})\delta(p-p_{0})$
+\end_inset
+
+ remains sharp
+\begin_inset Newline newline
+\end_inset
+
+(it can be checked by inserting it in the louviel equation) to yield 
+\begin_inset Formula $f(x,p)=\delta(x-x(t,x_{0},p_{0}))\delta(p-p(t,x_{0},p_{0}))$
+\end_inset
+
+ [this is expected, since you're in essence saying there's only one particle]
+\end_layout
+
+\begin_layout Enumerate
+Illustration 2: We want to see what happens to a Gaussian like state, does
+ it spread?
+\begin_inset Newline newline
+\end_inset
+
+We start with 
+\begin_inset Formula $\rho_{0}=\frac{e^{-x^{2}/2\sigma^{2}}}{\sqrt{2\pi\sigma^{2}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{0}=px$
+\end_inset
+
+ with 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+ constant.
+ This form of 
+\begin_inset Formula $S_{0}$
+\end_inset
+
+ has already been solved for and tells us 
+\begin_inset Formula $\rho=\frac{e^{-(x-vt)^{2}/2\sigma^{2}}}{\sqrt{2\pi\sigma^{2}}}$
+\end_inset
+
+.
+ There's no spreading classically! We'll see for the same initial conditions,
+ what happens quantum mechanically.
+\end_layout
+
+\begin_layout Enumerate
+Illustration 3: What initial conditions yield a spreading Guassian? We start
+ with the same 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ but use 
+\begin_inset Formula $S_{0}=\frac{m(x-x_{0})^{2}}{2t}$
+\end_inset
+
+, in which case the solution we saw the result is 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Chapter
+Deterministic Quantum Theory
+\end_layout
+
+\begin_layout Section
+Aside
+\end_layout
+
+\begin_layout Standard
+So we start with 
+\begin_inset Formula $\oint dS=\oint\nabla S.dx=\oint p.dx=\int\nabla\times p.da$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $\nabla\times p=\sum_{a}\Gamma_{a}\int_{\gamma_{a}}\delta(x-x_{a})dx_{a}$
+\end_inset
+
+ where 
+\begin_inset Formula $\gamma_{a}$
+\end_inset
+
+ is the nodal line.
+ If we assume 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ holds, then can we construct some example of the same? Let's first see
+ how 
+\begin_inset Formula $\oint dS=nh$
+\end_inset
+
+ can be derived.
+ If the only condition is that 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is single valued, then we know that at any point, 
+\begin_inset Formula $S'$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ both yield the same 
+\begin_inset Formula $\psi$
+\end_inset
+
+, where 
+\begin_inset Formula $S'=S+nh$
+\end_inset
+
+.
+ If one considers a loop, then say we start from a point 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+.
+ Then after completing some distance, the change in 
+\begin_inset Formula $S$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\Delta S$
+\end_inset
+
+.
+ So the value of 
+\begin_inset Formula $S$
+\end_inset
+
+ starting from 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+will be 
+\begin_inset Formula $S_{a}+\Delta S$
+\end_inset
+
+.
+ Now if we come back to the point 
+\begin_inset Formula $a$
+\end_inset
+
+, then from uniqueness of 
+\begin_inset Formula $\psi$
+\end_inset
+
+, we only demand 
+\begin_inset Formula $S_{a}+\Delta S=S_{a}+nh$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $S$
+\end_inset
+
+ itself was unique, then we'd say 
+\begin_inset Formula $S_{a}+\Delta S=S_{a}$
+\end_inset
+
+.
+ Now at this point itself I seem to have trouble.
+ I have tacitly assumed that 
+\begin_inset Formula $S$
+\end_inset
+
+ is single valued when I'm evaluating the `change is 
+\begin_inset Formula $S$
+\end_inset
+
+' along the curve.
+\end_layout
+
+\begin_layout Standard
+Talked to manu for a while and made some progress, then figured it was non-sense
+ and made some more progress.
+ Finally, Manu found a document that helped clarify a few things.
+ The issue was still that they had used a vector field and not a potential.
+ And it wasn't clear to me what potential must I use in that case.
+\end_layout
+
+\begin_layout Standard
+The potential is 
+\begin_inset Formula $V=k\theta$
+\end_inset
+
+.
+ Note how this is itself, as a function of position is multi valued and
+ yet we never have any issues integrating this (as we'll see shortly).
+ While 
+\begin_inset Formula $V$
+\end_inset
+
+ is multivalued, 
+\begin_inset Formula $\nabla V=\frac{k}{r}\hat{\theta}$
+\end_inset
+
+ is happily single valued :) And not just that, check this; 
+\begin_inset Formula $\oint_{\gamma}\nabla V.dx=2\pi$
+\end_inset
+
+ (simply because 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is chosen to be a circle and then 
+\begin_inset Formula $dx=rd\theta\hat{\theta}$
+\end_inset
+
+).
+ Since in the domain of interest, everything is well defined, I can write
+ 
+\begin_inset Formula $\oint_{\gamma}\nabla V.dx=\oint_{\gamma}dV=2\pi$
+\end_inset
+
+.
+ And one can show independently (I know only a simple minded proof with
+ discritizing the function) that 
+\begin_inset Formula $\oint dV=0$
+\end_inset
+
+ whenever 
+\begin_inset Formula $V$
+\end_inset
+
+ is single valued (or a function).
+ So what does this example show? Various rather peculiar things.
+ (I) that 
+\begin_inset Formula $\oint dV$
+\end_inset
+
+ maybe non zero for a reasonable physical situation by virtue of multivaluedness
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Yes, 
+\begin_inset Formula $V$
+\end_inset
+
+ is multivalued and yet we can integrate the said expression without ambiguity.
+ (II) that there happens to be a singularity within the loop, over which
+ the integral is non-zero.
+ (III) The curl, 
+\begin_inset Formula $\nabla\times\nabla V\neq0$
+\end_inset
+
+ at the center and 
+\begin_inset Formula $=0$
+\end_inset
+
+ else.
+\begin_inset Newline newline
+\end_inset
+
+Now we've made plausible various things which would've seemed arbitrary
+ otherwise.
+ 
+\end_layout
+
+\end_body
+\end_document

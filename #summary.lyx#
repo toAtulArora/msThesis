@@ -1214,10 +1214,52 @@ will be
 ' along the curve.
 \end_layout
 
+\begin_layout Standard
+Talked to manu for a while and made some progress, then figured it was non-sense
+ and made some more progress.
+ Finally, Manu found a document that helped clarify a few things.
+ The issue was still that they had used 
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
+[misc] words GRE (prashansa came to CAF) + teacher's day (abhishek sir was
+ awarded) + dinner
+\end_layout
+
+\begin_layout Subsection
+Sunday | Sep 6
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finally found a potential that works (looked at acheson, griffiths
+ and an extra document that manu had found.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The potential is 
+\begin_inset Formula $V=k\theta$
+\end_inset
+
+.
+ Note how this is itself, as a function of position is multi valued and
+ yet we never have any issues integrating this (as we'll see shortly).
+ While 
+\begin_inset Formula $V$
+\end_inset
+
+ is multivalued, 
+\begin_inset Formula $\nabla V=\frac{k}{r}\hat{\theta}$
+\end_inset
+
+ is happily single valued :) And not just that, check this; 
+\begin_inset Formula $\oint_{}$
+\end_inset
+
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document

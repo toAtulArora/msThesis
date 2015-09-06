@@ -1214,9 +1214,112 @@ will be
 ' along the curve.
 \end_layout
 
+\begin_layout Standard
+Talked to manu for a while and made some progress, then figured it was non-sense
+ and made some more progress.
+ Finally, Manu found a document that helped clarify a few things.
+ The issue was still that they had used 
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
+[misc] words GRE (prashansa came to CAF) + teacher's day (abhishek sir was
+ awarded) + dinner
+\end_layout
 
+\begin_layout Subsection
+Sunday | Sep 6
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finally found a potential that works (looked at acheson, griffiths
+ and an extra document that manu had found.)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The potential is 
+\begin_inset Formula $V=k\theta$
+\end_inset
+
+.
+ Note how this is itself, as a function of position is multi valued and
+ yet we never have any issues integrating this (as we'll see shortly).
+ While 
+\begin_inset Formula $V$
+\end_inset
+
+ is multivalued, 
+\begin_inset Formula $\nabla V=\frac{k}{r}\hat{\theta}$
+\end_inset
+
+ is happily single valued :) And not just that, check this; 
+\begin_inset Formula $\oint_{\gamma}\nabla V.dx=2\pi$
+\end_inset
+
+ (simply because 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is chosen to be a circle and then 
+\begin_inset Formula $dx=rd\theta\hat{\theta}$
+\end_inset
+
+).
+ Since in the domain of interest, everything is well defined, I can write
+ 
+\begin_inset Formula $\oint_{\gamma}\nabla V.dx=\oint_{\gamma}dV=2\pi$
+\end_inset
+
+.
+ And one can show independently (I know only a simple minded proof with
+ discritizing the function) that 
+\begin_inset Formula $\oint dV=0$
+\end_inset
+
+ whenever 
+\begin_inset Formula $V$
+\end_inset
+
+ is single valued (or a function).
+ So what does this example show? Various rather peculiar things.
+ (I) that 
+\begin_inset Formula $\oint dV$
+\end_inset
+
+ maybe non zero for a reasonable physical situation by virtue of multivaluedness
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Yes, 
+\begin_inset Formula $V$
+\end_inset
+
+ is multivalued and yet we can integrate the said expression without ambiguity.
+ (II) that there happens to be a singularity within the loop, over which
+ the integral is non-zero.
+ (III) The curl, 
+\begin_inset Formula $\nabla\times\nabla V\neq0$
+\end_inset
+
+ at the center and 
+\begin_inset Formula $=0$
+\end_inset
+
+ else.
+\begin_inset Newline newline
+\end_inset
+
+Now we've made plausible various things which would've seemed arbitrary
+ otherwise.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[misc] trying to get a template in which to write the thesis
 \end_layout
 
 \end_body
