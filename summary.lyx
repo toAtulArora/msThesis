@@ -1334,7 +1334,15 @@ Monday | Sep 7
 \end_layout
 
 \begin_layout Itemize
-[research/ms] Worked out 
+[research/ms] Worked out an explicit example of 
+\begin_inset Formula $\nabla\times p=\sum_{a}\Gamma_{a}\int_{L^{(a)}}\delta(\mathbf{x}-\mathbf{x}^{(a)})d\mathbf{x}^{(a)}$
+\end_inset
+
+ by assuming that the 
+\begin_inset Formula $d\mathbf{x}^{(a)}$
+\end_inset
+
+ term is 
 \end_layout
 
 \end_body
