@@ -1342,7 +1342,15 @@ Monday | Sep 7
 \begin_inset Formula $d\mathbf{x}^{(a)}$
 \end_inset
 
- term is 
+ term is infact a vector and 
+\begin_inset Formula $d\mathbf{a}$
+\end_inset
+
+ is essentially 
+\begin_inset Formula $\mathbf{n}dxdy$
+\end_inset
+
+ to see that everything fits well eventually.
 \end_layout
 
 \end_body
