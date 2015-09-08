@@ -1218,7 +1218,8 @@ will be
 Talked to manu for a while and made some progress, then figured it was non-sense
  and made some more progress.
  Finally, Manu found a document that helped clarify a few things.
- The issue was still that they had used 
+ The issue was still that they had used a vector field and not a potential.
+ And it wasn't clear to me what potential must I use in that case.
 \end_layout
 
 \end_deeper
