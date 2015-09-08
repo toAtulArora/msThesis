@@ -986,8 +986,8 @@ Saturday | Aug 29 [off]
 \end_layout
 
 \begin_layout Section
-Midsem, Presentation, Bohmian Mechanics (made sense of multi-valued integration..)
- | Aug 31 - Sep 6
+Midsem, Presentation, Bohmian Mechanics (made sense of insolent multi-valued
+ integration..) | Aug 31 - Sep 6
 \end_layout
 
 \begin_layout Subsection
@@ -1351,6 +1351,90 @@ Monday | Sep 7
 \end_inset
 
  to see that everything fits well eventually.
+ Then I moved to the next section and everything seemed alright.
+ Basically the discussion of the 'quantum potential term', viz.
+ the term which if removed would reduce the expression to a classical hamilton
+ jacobi equation, was slightly confusing.
+ This term is given by 
+\begin_inset Formula $Q:=-(\hbar^{2}/2m)\nabla^{2}R/R$
+\end_inset
+
+, and yet the claim is that this essentially depends on 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ The same can be said of 
+\begin_inset Formula $V$
+\end_inset
+
+ which depends on 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ which in turn can be determined only once 
+\begin_inset Formula $S$
+\end_inset
+
+ is specified (NB: 
+\begin_inset Formula $S$
+\end_inset
+
+ contains information about both the Hamiltonian and the momenta of the
+ system).
+ So in this sense, both 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $Q$
+\end_inset
+
+ depend on 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ However, the distinction seems to be made on the following ground: if 
+\begin_inset Formula $V=V(x)$
+\end_inset
+
+ then, 
+\begin_inset Formula $\nabla S$
+\end_inset
+
+ is sufficient.
+ However, for 
+\begin_inset Formula $Q$
+\end_inset
+
+ it seems higher derivatives will also be necessary.
+ Why this makes any difference, I am yet to learn.
+\end_layout
+
+\begin_layout Itemize
+[GRE] did 2 tests in the morning (both verbal, am still miserable at them
+ :( )
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Sep 8
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Revised work I did yesterday.
+\end_layout
+
+\begin_layout Itemize
+[research/summer] started the process of submission to PRA.
+ Figured how to change the name from Dr.
+ to without Dr.
+ and then am waiting for Ali; he has to tell me if I should use the arXiv
+ link or not.
+\end_layout
+
+\begin_layout Itemize
+[GRE] did 2 tests, 1 math, 1 verbal (need to find more tests now)
 \end_layout
 
 \end_body
