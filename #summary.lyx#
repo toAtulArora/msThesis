@@ -1447,8 +1447,7 @@ nocite{*}' that had to be inserted to fix things.
 \end_layout
 
 \begin_layout Itemize
-[GRE] did 2 tests, 1 math, 1 verbal (need to find more tests now) | did
- vocab also :)
+[GRE] did 2 tests, 1 math, 1 verbal (need to find more tests now)
 \end_layout
 
 \begin_layout Subsection
@@ -1461,49 +1460,10 @@ Wednesday | Sep 9
  and so on.
  Some summarizing etc.
  will be typed out here later.
- Also, prepared for the presentation with Arvind sir;
 \end_layout
 
 \begin_layout Itemize
-[research/summer] glanced through the changes suggested by Otfried.
-\end_layout
-
-\begin_layout Itemize
-[GRE] morning slot: didn't wake up | vocab only
-\end_layout
-
-\begin_layout Subsection
-Thursday | Sep 10
-\end_layout
-
-\begin_layout Itemize
-[research/ms] :( Didn't do much but thought of the following.
- Why can't I think of a bohmian like picture, after a particle has been
- created for instance, according to QFT.
- Perhaps I should start playing with the scalar field theory and try to
- see how I can get bohmian trajectories into them somehow.
- I suppose the eventual goal would be to think of an alternate interpretation
- to the field interpretition.
- I feel that there's some better way of handling these things.
- What does Hamilton Jacobi translate to? What happens to the Dirac equation?
- In QFT we treat the dirac equation as a field and create particles off
- of it.
- What will we do here?
-\end_layout
-
-\begin_layout Itemize
-[research/summer] working on fixing the paper based on Otfried's comments.
- Minor fixes were quick.
- Fixing some references took time.
- The issue was that one has to use {} for evaluating commands within bibtex's
- .bib file.
- Didn't know that.
- Also fixed some other minor things.
-\end_layout
-
-\begin_layout Itemize
-[GRE] morning slot: read a little about the writing comprehension etc.
- but was too tired, slept after breakfast | did vocab words :)
+[research/summer] 
 \end_layout
 
 \end_body

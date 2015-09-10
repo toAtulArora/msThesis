@@ -1431,10 +1431,24 @@ Tuesday | Sep 8
  to without Dr.
  and then am waiting for Ali; he has to tell me if I should use the arXiv
  link or not.
+ Made reasonable progress at putting things up online.
+ The main trouble was that I wasn't able to add references.
+ Figured there was a command '
+\backslash
+nocite{*}' that had to be inserted to fix things.
+ Did that.
+ In addition, I had to change the split images into a single image; else
+ the system kept yielding errors.
+ After that, I had to follow some minor steps but then I got a response
+ from Otfried.
+ He had completed proof reading the pre-print and had made several comments
+ which had to be accommodated.
+ 
 \end_layout
 
 \begin_layout Itemize
-[GRE] did 2 tests, 1 math, 1 verbal (need to find more tests now)
+[GRE] did 2 tests, 1 math, 1 verbal (need to find more tests now) | did
+ vocab also :)
 \end_layout
 
 \begin_layout Subsection
@@ -1442,7 +1456,51 @@ Wednesday | Sep 9
 \end_layout
 
 \begin_layout Itemize
-[research/ms] Continued to work on the section related to 
+[research/ms] Bohmian Mechanics; finished reading the section on uniqueness
+ of the wavefunction and started reading further, about commutation relations
+ and so on.
+ Some summarizing etc.
+ will be typed out here later.
+ Also, prepared for the presentation with Arvind sir;
+\end_layout
+
+\begin_layout Itemize
+[research/summer] glanced through the changes suggested by Otfried.
+\end_layout
+
+\begin_layout Itemize
+[GRE] morning slot: didn't wake up | vocab only
+\end_layout
+
+\begin_layout Subsection
+Thursday | Sep 10
+\end_layout
+
+\begin_layout Itemize
+[research/ms] :( Didn't do much but thought of the following.
+ Why can't I think of a bohmian like picture, after a particle has been
+ created for instance, according to QFT.
+ Perhaps I should start playing with the scalar field theory and try to
+ see how I can get bohmian trajectories into them somehow.
+ I suppose the eventual goal would be to think of an alternate interpretation
+ to the field interpretition.
+ I feel that there's some better way of handling these things.
+ What does Hamilton Jacobi translate to? What happens to the Dirac equation?
+\end_layout
+
+\begin_layout Itemize
+[research/summer] working on fixing the paper based on Otfried's comments.
+ Minor fixes were quick.
+ Fixing some references took time.
+ The issue was that one has to use {} for evaluating commands within bibtex's
+ .bib file.
+ Didn't know that.
+ Also fixed some other minor things.
+\end_layout
+
+\begin_layout Itemize
+[GRE] morning slot: read a little about the writing comprehension etc.
+ but was too tired, slept after breakfast | did vocab words :)
 \end_layout
 
 \end_body
