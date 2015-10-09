@@ -1698,7 +1698,7 @@ Infact, one can show that the bell's inequality can be violated by 2 if
  We don't know which.
  From (II) it seems therefore that atleast determinism is false.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 I had been told that in contextuality, certain other assumptions have to
@@ -1707,7 +1707,8 @@ I had been told that in contextuality, certain other assumptions have to
 
 \end_inset
 
-
+ Comment C: If (I) and (II) are true even in continuous variables, then
+ we can easily say that 
 \end_layout
 
 \begin_layout Subsection
