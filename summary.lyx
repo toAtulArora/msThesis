@@ -1690,7 +1690,13 @@ Infact, one can show that the bell's inequality can be violated by 2 if
 
 \end_inset
 
- Comment B: 
+ Comment B: Disregard (I) for the moment.
+ Usually in starting a proof for Bell's theorem, we assume that both locality
+ and determinism hold (whether one can be derived from another is another
+ matter).
+ Thus a violation entails atleast one of the assumptions is wrong.
+ We don't know which.
+ 
 \end_layout
 
 \begin_layout Subsection
