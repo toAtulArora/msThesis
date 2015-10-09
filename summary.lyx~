@@ -1654,12 +1654,30 @@ Tuesday | Oct 2
 Wednesday | Oct 3
 \end_layout
 
+\begin_layout Itemize
+[GRE S]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Was trying to translate bohmian mechanics to the discrete
+ case.
+ Realized there'll be an issue with the grad operator but then in the case
+ of spins, we never write the kinetic energy term! Then some discussion
+ with Jaskaran got me re
+\end_layout
+
 \begin_layout Subsection
 Thursday | Oct 4
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+[GRE S]
+\end_layout
 
+\begin_layout Itemize
+[research/ms] got sick of trying to figure the spin thing and decided to
+ linearly read the papers by Bohm first and then thinking about what to
+ do next.
 \end_layout
 
 \begin_layout Subsection
