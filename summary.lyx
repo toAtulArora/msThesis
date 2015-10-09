@@ -1672,7 +1672,25 @@ sm must exist, using EPR type states.
  and coloring theorems.; Regarding the conclusion of (I), it is weakened
  by the fact that one can show you in QM, you can't communicate faster than
  speed of light.
- So in this sense the non locality is, well is it there at all? 
+ So in this sense the non locality is, well is it there at all?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Infact, one can show that the bell's inequality can be violated by 2 if
+ the only assumption is no communication.
+ QM does 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+.
+ So whatever this non-locality, it is certainly more restrictive than simply
+ enforcing 'relativity'.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
