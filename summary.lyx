@@ -1669,12 +1669,12 @@ Wednesday | Oct 3
 sm must exist, using EPR type states.
  Now one can use Bell's inequality to show QM is non local.
  (II) QM is non-deterministic can be shown using contextuality arguments
- and coloring theorems.; Regarding the conclusion of (I), it is weakened
- by the fact that one can show you in QM, you can't communicate faster than
- speed of light.
+ and coloring theorems.; Comment A: Regarding the conclusion of (I), it is
+ weakened by the fact that one can show you in QM, you can't communicate
+ faster than speed of light.
  So in this sense the non locality is, well is it there at all?
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Infact, one can show that the bell's inequality can be violated by 2 if
@@ -1690,7 +1690,7 @@ Infact, one can show that the bell's inequality can be violated by 2 if
 
 \end_inset
 
-
+ Comment B: 
 \end_layout
 
 \begin_layout Subsection
