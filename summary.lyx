@@ -1658,6 +1658,10 @@ Wednesday | Oct 3
 Thursday | Oct 4
 \end_layout
 
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Subsection
 Friday | Oct 5
 \end_layout
@@ -1669,7 +1673,12 @@ Friday | Oct 5
 \begin_layout Itemize
 [research/ms] Bohm's paper; thinking about why it is that we can't talk
  about gravity essentially like electric fields.
- And then the obvious question that arises is that what causes 
+ And then the obvious question that arises is that can there be a magnetic
+ analogue of electric fields?
+\end_layout
+
+\begin_layout Itemize
+[Misc.] 
 \end_layout
 
 \end_body
