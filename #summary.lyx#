@@ -1664,10 +1664,35 @@ Wednesday | Oct 3
  Realized there'll be an issue with the grad operator but then in the case
  of spins, we never write the kinetic energy term! Then some discussion
  with Jaskaran got me realize the following rather interesting conflicting
- statements.
+ statements, at least for spins.
  (I) QM is non local; Essentially if you assume locality, you can show determini
 sm must exist, using EPR type states.
- (II) QM is non-deterministic 
+ Now one can use Bell's inequality to show QM is non local.
+ (II) QM is non-deterministic can be shown using contextuality arguments
+ and coloring theorems.; Comment A: Regarding the conclusion of (I), it is
+ weakened by the fact that one can show you in QM, you can't communicate
+ faster than speed of light.
+ So in this sense the non locality is, well is it there at all?
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Infact, one can show that the bell's inequality can be violated by 2 if
+ the only assumption is no communication.
+ QM does 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+.
+ So whatever this non-locality, it is certainly more restrictive than simply
+ enforcing 'relativity'.
+\end_layout
+
+\end_inset
+
+ Comment B: Usually in starting Bell's theorem, we assume that both locality
+ and determinism hold (whether one can be derived from another is not clear).
+ Thus if (I) and (II) 
 \end_layout
 
 \begin_layout Subsection
