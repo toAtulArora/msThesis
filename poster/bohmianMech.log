@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  29 OCT 2015 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  29 OCT 2015 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,11 +933,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--157
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 167--167
 
  []
@@ -970,11 +965,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
 Here is how much of TeX's memory you used:
  19752 strings out of 494968
  398643 string characters out of 6178965
- 562983 words of memory out of 5000000
+ 563115 words of memory out of 5000000
  22599 multiletter control sequences out of 15000+600000
  78926 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,14n,84p,865b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,84p,878b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/sha
 re/texlive/texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc}{/usr/share/texlive/
 texmf-dist/fonts/enc/dvips/kurier/rm-kurier.enc} </home/atul/.texmf-var/fonts/p
@@ -982,7 +977,7 @@ k/ljfour/public/cmbright/ebtl10.1792pk></usr/share/texlive/texmf-dist/fonts/typ
 e1/nowacki/kurier/kurierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowack
 i/kurier/kurierr.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/
 kurierri.pfb>
-Output written on bohmianMech.pdf (1 page, 76178 bytes).
+Output written on bohmianMech.pdf (1 page, 76193 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
