@@ -152,62 +152,62 @@
   %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
   \blocknode%
   {Bohmian Mechanics}%
-  {Start with the following document:
+  {Orthodox view: No precise description of nature is possible.
 
-    \coloredbox{colorthree!50!}{
-      \textbackslash documentclass\{a0poster\}\\
-      \textbackslash usepackage\{fancytikzposter\} \% here most of the things are
-      defined \\
+    % \coloredbox{colorthree!50!}{
+    %   \textbackslash documentclass\{a0poster\}\\
+    %   \textbackslash usepackage\{fancytikzposter\} \% here most of the things are
+    %   defined \\
 
-      \% change parameters only after this line\\
+    %   \% change parameters only after this line\\
 
-      \textbackslash usepackage{\small[margin=\textbackslash margin \ cm,
-        paperwidth=84.1cm, paperheight=118.9cm]\{ geometry\}} \\
+    %   \textbackslash usepackage{\small[margin=\textbackslash margin \ cm,
+    %     paperwidth=84.1cm, paperheight=118.9cm]\{ geometry\}} \\
 
-      \textbackslash title\{Title\}\\
-      \textbackslash author\{Author\textbackslash\textbackslash
-      Institution\textbackslash\textbackslash
-      \textbackslash texttt\{email\}\}\\
-      \textbackslash begin\{document\}\\
-      \textbackslash AddToShipoutPicture\{\textbackslash BackgroundPicture\}\\
+    %   \textbackslash title\{Title\}\\
+    %   \textbackslash author\{Author\textbackslash\textbackslash
+    %   Institution\textbackslash\textbackslash
+    %   \textbackslash texttt\{email\}\}\\
+    %   \textbackslash begin\{document\}\\
+    %   \textbackslash AddToShipoutPicture\{\textbackslash BackgroundPicture\}\\
 
 
-      \textbackslash noindent \\
-      \textbackslash begin\{tikzpicture\} \\
-      \textbackslash initializesizeandshifts \\
+    %   \textbackslash noindent \\
+    %   \textbackslash begin\{tikzpicture\} \\
+    %   \textbackslash initializesizeandshifts \\
 
-      \textbackslash titleblock\{50\}\{1\}\\
-      \textbackslash blocknode\{Block Title\}\{Block Content\}\\
-      \textbackslash startsecondcolumn\\
-      \textbackslash blocknode\{Block Title 2\}\{Block Content 2\}\\
-      \textbackslash end\{tikzpicture\}\\
-      \textbackslash end\{document\}
-    }
+    %   \textbackslash titleblock\{50\}\{1\}\\
+    %   \textbackslash blocknode\{Block Title\}\{Block Content\}\\
+    %   \textbackslash startsecondcolumn\\
+    %   \textbackslash blocknode\{Block Title 2\}\{Block Content 2\}\\
+    %   \textbackslash end\{tikzpicture\}\\
+    %   \textbackslash end\{document\}
+    % }
   }
 
 
-  %% a callout block
-  %% #1 - rotate angle (optional), #2 - from, #3 - where, #4 - width, #5 - text
-  %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
-  \calloutblock{($(box.center)+(-2,-8)$)}
-  {($(box.center)+(10,-1)$)}
-  {19cm}
-  {\small
-    Macro for creating a block node:
-    \begin{itemize}
-    \item[] \textbackslash blocknode\{Block Title\}\{Block Content\}
-    \end{itemize}
-    Macro \textbackslash blocknode has three parameters. The first one is
-    optional and it is the position of the block. The first block will be
-    automatically placed to (\$(firstrow)-(xshift)-(yshift)\$), which is the
-    left corner below the title block. In most of the templates, (firstrow) is
-    set to (title.south), where \emph{title} is the alias for the title
-    block. Each subsequent block is automatically placed to
-    [(\$(box.south)-(yshift)\$)], i.e., below the previous block aliased
-    \emph{box}.  You can also use an explicit parameter, e.g., $(-10,30)$ (note
-    that (0,0) is the center of the poster). The second parameter is the title
-    of the block. Finally, the last parameter is the  actual content. 
-  }
+  % %% a callout block
+  % %% #1 - rotate angle (optional), #2 - from, #3 - where, #4 - width, #5 - text
+  % %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  % \calloutblock{($(box.center)+(-2,-8)$)}
+  % {($(box.center)+(10,-1)$)}
+  % {19cm}
+  % {\small
+  %   Macro for creating a block node:
+  %   \begin{itemize}
+  %   \item[] \textbackslash blocknode\{Block Title\}\{Block Content\}
+  %   \end{itemize}
+  %   Macro \textbackslash blocknode has three parameters. The first one is
+  %   optional and it is the position of the block. The first block will be
+  %   automatically placed to (\$(firstrow)-(xshift)-(yshift)\$), which is the
+  %   left corner below the title block. In most of the templates, (firstrow) is
+  %   set to (title.south), where \emph{title} is the alias for the title
+  %   block. Each subsequent block is automatically placed to
+  %   [(\$(box.south)-(yshift)\$)], i.e., below the previous block aliased
+  %   \emph{box}.  You can also use an explicit parameter, e.g., $(-10,30)$ (note
+  %   that (0,0) is the center of the poster). The second parameter is the title
+  %   of the block. Finally, the last parameter is the  actual content. 
+  % }
 
 
 
