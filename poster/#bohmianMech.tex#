@@ -150,6 +150,10 @@
   %% a block node, with the specified position (optional), title and the content
   %% #1 - where (optional), #2 - title, #3 - text
   %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknode
+  {Prerequisites}
+  {I am not assuming you have any special knowledge about the subject; only r with quantum mechanics
+
   \blocknode%
   {Bohmian Mechanics}%
   {
