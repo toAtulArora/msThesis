@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  29 OCT 2015 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  29 OCT 2015 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,12 +928,22 @@ LaTeX Font Info:    Try loading font information for T1+cmtl on input line 139.
 (/usr/share/texlive/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 
  []
 
@@ -947,32 +957,32 @@ Overfull \hbox (65.29169pt too wide) has occurred while \output is active
 
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 538.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
 
 (./bohmianMech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 538.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 538.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
 Package rerunfilecheck Info: File `bohmianMech.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 538.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
  ) 
 Here is how much of TeX's memory you used:
  19752 strings out of 494968
  398643 string characters out of 6178965
- 578560 words of memory out of 5000000
+ 562983 words of memory out of 5000000
  22599 multiletter control sequences out of 15000+600000
  78926 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,14n,84p,865b,1090s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/rm-kurier.enc}{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc} </home/atul/.texmf-var/fonts/p
+ 62i,14n,84p,865b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc}{/usr/share/texlive/
+texmf-dist/fonts/enc/dvips/kurier/rm-kurier.enc} </home/atul/.texmf-var/fonts/p
 k/ljfour/public/cmbright/ebtl10.1792pk></usr/share/texlive/texmf-dist/fonts/typ
 e1/nowacki/kurier/kurierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowack
 i/kurier/kurierr.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/
 kurierri.pfb>
-Output written on bohmianMech.pdf (1 page, 76456 bytes).
+Output written on bohmianMech.pdf (1 page, 76178 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
