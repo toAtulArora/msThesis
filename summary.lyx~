@@ -1934,12 +1934,19 @@ Tuesday | Oct 27
 \begin_layout Itemize
 [research/ms] Meeting with Arvind sir | described the basic idea of the
  poster (emailed it to him).
- 
+ In the next meeting with sir, we concluded that we write down all versions
+ of the algorithm.
+ Apparently my small modification itself can become the main protocol, once
+ security can be assessed well.
+ That part still has to be explored.
 \end_layout
 
 \begin_layout Itemize
 [research/summer] Tried to look at the issues pointed out by the referee
- and 
+ and tried addressing those I could.
+ Wrote to Ali.
+ He said he'd be able to handle most.
+ I updated the technical issues (about figures etc.)
 \end_layout
 
 \begin_layout Itemize
