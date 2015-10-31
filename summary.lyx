@@ -93,6 +93,15 @@ MS Thesis | Summary
 Atul Singh Arora
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Introduction
 \end_layout
@@ -104,15 +113,6 @@ The purpose of this document is to be evidence of and support the steps
 
 \begin_layout Part
 Perfunctory Systematics of Research
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
