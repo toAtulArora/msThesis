@@ -2232,7 +2232,12 @@ Analytic Work
 
 \begin_deeper
 \begin_layout Enumerate
-Bohmian Mechanics and how measurements are done 
+Bohmian Mechanics 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Bohm's original paperand how measurements are done 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "detlefBook"
@@ -2242,6 +2247,7 @@ key "detlefBook"
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 Bell, GHZ test etc.
  from the Bohmian perspective 
@@ -2262,7 +2268,7 @@ key "MassarGHZ01"
 
 \end_inset
 
-
+ (read once earlier)
 \end_layout
 
 \begin_layout Enumerate
