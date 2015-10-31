@@ -2234,6 +2234,17 @@ key "detlefBook"
 \begin_layout Enumerate
 Bell, GHZ test etc.
  from the Bohmian perspective 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevA.66.052109"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
 \end_layout
 
 \end_deeper
