@@ -2088,7 +2088,13 @@ Simulate a free particle.
 
 \begin_layout Enumerate
 Simulate a harmonic oscillator.
- 
+ Use the previous step, except now with a harmonic oscillator potential.
+ The gaussian should oscillate nicely.
+ Once that's confirmed, then check the trajectories.
+\end_layout
+
+\begin_layout Enumerate
+
 \end_layout
 
 \end_deeper
