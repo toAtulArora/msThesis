@@ -2070,8 +2070,66 @@ Appended Topics
 The Thesis Problem
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
+Title: Non locality and Contextuality
+\end_layout
 
+\begin_layout Subsubsection*
+[background] 
+\end_layout
+
+\begin_layout Standard
+As you know, in the GHZ test, one is able to show that determinism can't
+ hold.
+ However, this is done using spins.
+ How this is handled in Bohmian Mechanics (BM) has been discussed in [http://jou
+rnals.aps.org/pra/pdf/10.1103/PhysRevA.66.052109].
+ It is not in direct contradiction with BM because spins are not treated
+ like (q,p).
+ In BM, (q,p) are well defined, just that we can't observe them.
+ However, spins in BM are only a property of the wavefunction and not postulated
+ to have well defined 'values' like (q,p).
+ Thus, while it is interesting to see how BM handles being deterministic
+ and consistent with GHZ, it's not too surprising to see it work, since
+ spins aren't assumed deterministic like (q,p).
+\end_layout
+
+\begin_layout Subsubsection*
+[thesis problem] 
+\end_layout
+
+\begin_layout Standard
+Do you recall the GHZ paper that had been extended to continuous variables?
+ The point was that this particular approach showed that there can't be
+ determinism for (q,p).
+ However, BM seems to be an example that does precisely this.
+ How can this be? It is precisely this that I intend to explore in my thesis.
+ If BM's predictions differ from QM, then we at once have a wonderful test
+ to find which theory is correct.
+ If the predictions match, as is more likely, we'll be closer to answering
+ to atleast two important questions.
+ (1) Which extra assumption goes into the GHZ like tests which is unaccounted
+ and (2) How contextuality emerges from non-locality, especially in continuous
+ variables.
+\end_layout
+
+\begin_layout Subsubsection*
+[future scope] 
+\end_layout
+
+\begin_layout Standard
+Ofcourse, a more ambitious goal would be to look at your results on contextualit
+y in continuous variables and use BM to understand the relation of non locality
+ with it more directly.
+ Perhaps if I have enough time, I'll pursue that as well.
+ The one question which I still haven't an answer to is the following: How
+ is it that, while formally in QM, spins and (q,p) are handled very similarly,
+ why can't we extend BM in a manner to include spins as 'deterministic'
+ as are (q,p)? I would like to either find such a formulation or show that
+ it doesn't exist.
+ This is of great interest for this answer must depend on the fundamental
+ difference between spins and (q,p) as properties.
+ The thesis problem is a step in this direction.
 \end_layout
 
 \begin_layout Section*
