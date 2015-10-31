@@ -2198,6 +2198,10 @@ Simulate a squeezed state.
 Tunnelling perhaps?
 \end_layout
 
+\begin_layout Enumerate
+S,P orbitals, trajectories (interesting by themselves!)
+\end_layout
+
 \end_deeper
 \begin_layout Enumerate
 Bohmian Advanced
@@ -2237,18 +2241,33 @@ Bohmian Mechanics
 
 \begin_deeper
 \begin_layout Enumerate
-Bohm's original paper (read paper 1)
+Quantum Theory of trajectories [
 \end_layout
 
 \begin_layout Enumerate
-how measurements are done 
+Bohm's original paper [todo: add reference] (70% depth-read paper 1)
+\end_layout
+
+\begin_layout Enumerate
+Measurements 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "detlefBook"
 
 \end_inset
 
+ (float-read)
+\end_layout
 
+\begin_layout Enumerate
+Spins, Stern Gerlach 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "detlefBook"
+
+\end_inset
+
+ (float-read)
 \end_layout
 
 \end_deeper
@@ -2272,7 +2291,7 @@ key "MassarGHZ01"
 
 \end_inset
 
- (read once earlier)
+ (careful-read, during summers)
 \end_layout
 
 \begin_layout Enumerate
