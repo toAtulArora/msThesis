@@ -2219,6 +2219,12 @@ key "PhysRevA.66.052109"
 Analytic Work
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
