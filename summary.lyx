@@ -2071,8 +2071,14 @@ The thesis problem broken
 \end_layout
 
 \begin_layout Enumerate
+Numerical Analysis
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
