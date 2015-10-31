@@ -2202,7 +2202,15 @@ Simulate stern gerlach
 \end_layout
 
 \begin_layout Enumerate
-Simulate the GHZ experiment; run this test again 
+Simulate the GHZ experiment using Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevA.66.052109"
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
