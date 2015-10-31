@@ -2089,14 +2089,14 @@ The following has been taken from an email written to Ali Assadian.
 As you know, in the GHZ test, one is able to show that determinism can't
  hold.
  However, this is done using spins.
- How this is handled in Bohmian Mechanics (BM) has been discussed in [
+ How this is handled in Bohmian Mechanics (BM) has been discussed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevA.66.052109"
 
 \end_inset
 
-].
+.
  It is not in direct contradiction with BM because spins are not treated
  like (q,p).
  In BM, (q,p) are well defined, just that we can't observe them.
