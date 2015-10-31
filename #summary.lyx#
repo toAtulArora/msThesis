@@ -5,7 +5,8 @@
 \textclass article
 \begin_preamble
 \@addtoreset{section}{part}
-\bibliographystyle{apsrev4-1}
+%\bibliographystyle{apsrev4-1}
+%\bibliographystyle{apsrev}
 \usepackage{xcolor}
 
 \usepackage{hyperref}
@@ -2255,6 +2256,17 @@ key "PhysRevA.66.052109"
 
 \begin_layout Enumerate
 GHZ test in continuous variables 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MassarGHZ01"
+
+\end_inset
+
+ (read once earlier)
+\end_layout
+
+\begin_layout Enumerate
+Construct an experiment in BM to perform the GHZ test; check predictions
 \end_layout
 
 \end_deeper
