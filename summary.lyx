@@ -2086,7 +2086,15 @@ Saturday | Oct 31 (unwell)
  Also, to restart numbering after a section, add 
 \backslash
 @addtoreset{section}{part} to the preamble.
- And finally, to add 
+ And finally, to add a book, use this website 
+\begin_inset CommandInset href
+LatexCommand href
+name "isbt-to-bibtex"
+target "http://manas.tungare.name/software/isbn-to-bibtex/"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Part
