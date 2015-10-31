@@ -2221,7 +2221,18 @@ Analytic Work
 
 \begin_deeper
 \begin_layout Enumerate
-Bohmian Mechanics and how measurements are done
+Bohmian Mechanics and how measurements are done 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "detlefBook"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
 \end_layout
 
 \end_deeper
