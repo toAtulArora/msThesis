@@ -2090,10 +2090,9 @@ As you know, in the GHZ test, one is able to show that determinism can't
  hold.
  However, this is done using spins.
  How this is handled in Bohmian Mechanics (BM) has been discussed in [
-\begin_inset CommandInset href
-LatexCommand href
-name "PhysRevA.66.052109"
-target "http://journals.aps.org/pra/pdf/10.1103/PhysRevA.66.052109"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevA.66.052109"
 
 \end_inset
 

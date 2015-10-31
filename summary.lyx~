@@ -2198,5 +2198,16 @@ Simulate stern gerlach
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "summary"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
