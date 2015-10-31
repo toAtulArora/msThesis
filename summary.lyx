@@ -2062,7 +2062,7 @@ Friday | Oct 30
 \end_layout
 
 \begin_layout Subsection
-Saturday | Oct 31
+Saturday | Oct 31 (unwell)
 \end_layout
 
 \begin_layout Itemize
@@ -2073,7 +2073,19 @@ Saturday | Oct 31
 \begin_layout Itemize
 [research/ms] Formulated the thesis problem more clearly (in an email I
  wrote to Ali).
- Writing the small goals for the project to work on.
+ Writing the small goals for the project to work on (constructed the appended
+ topics part).
+ 
+\end_layout
+
+\begin_layout Itemize
+[FYI] for lyx, to cite things, first Insert -> List ..
+ -> BiBTeX ..
+ and add your bibtex file.
+ Thereafter, just use Insert -> Citation and you're done.
+ Also, to restart numbering after a section, add 
+\backslash
+@addtoreset{section}{part}
 \end_layout
 
 \begin_layout Part
