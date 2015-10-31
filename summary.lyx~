@@ -2081,11 +2081,13 @@ Bohmian Basics
 
 \begin_deeper
 \begin_layout Enumerate
-Simulate a free particle
+Simulate a free particle.
+ Start with say a guassian wavefunction and take the initial positions to
+ be accordingly distributed.
 \end_layout
 
 \begin_layout Enumerate
-
+Simulate a 
 \end_layout
 
 \end_deeper
