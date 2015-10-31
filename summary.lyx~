@@ -5,6 +5,17 @@
 \textclass article
 \begin_preamble
 \@addtoreset{section}{part}
+%\bibliographystyle{apsrev4-1}
+%\bibliographystyle{apsrev}
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -2252,7 +2263,7 @@ GHZ test in continuous variables
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "summary"
-options "plain"
+options "amsplain"
 
 \end_inset
 
