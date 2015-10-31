@@ -2066,6 +2066,10 @@ Saturday | Oct 31
 Appended Topics
 \end_layout
 
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Section*
 The thesis problem broken
 \end_layout
@@ -2118,9 +2122,5 @@ Simulate stern gerlach
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-
-\end_layout
-
 \end_body
 \end_document
