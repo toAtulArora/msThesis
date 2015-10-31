@@ -2131,9 +2131,15 @@ Do you recall the GHZ paper that had been extended to continuous variables?
 \end_layout
 
 \begin_layout Standard
-Ofcourse, a more ambitious goal would be to look at your results  on contextuali
-ty in continuous variables and use BM to understand the relation of non
- locality with it more directly.
+Ofcourse, a more ambitious goal would be to look at your results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.114.250403"
+
+\end_inset
+
+ on contextuality in continuous variables and use BM to understand the relation
+ of non locality with it more directly.
  Perhaps if I have enough time, I'll pursue that as well.
  The one question which I still haven't an answer to is the following: How
  is it that, while formally in QM, spins and (q,p) are handled very similarly,
