@@ -2098,7 +2098,7 @@ target "http://journals.aps.org/pra/pdf/10.1103/PhysRevA.66.052109"
  like (q,p).
  In BM, (q,p) are well defined, just that we can't observe them.
  However, spins in BM are only a property of the wavefunction and not postulated
- to have well defined 'values' like (q,p).
+ to have well defined `values' like (q,p).
  Thus, while it is interesting to see how BM handles being deterministic
  and consistent with GHZ, it's not too surprising to see it work, since
  spins aren't assumed deterministic like (q,p).
