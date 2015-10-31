@@ -2237,7 +2237,11 @@ Bohmian Mechanics
 
 \begin_deeper
 \begin_layout Enumerate
-Bohm's original paperand how measurements are done 
+Bohm's original paper
+\end_layout
+
+\begin_layout Enumerate
+how measurements are done 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "detlefBook"
