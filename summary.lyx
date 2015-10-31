@@ -2086,6 +2086,7 @@ Saturday | Oct 31 (unwell)
  Also, to restart numbering after a section, add 
 \backslash
 @addtoreset{section}{part} to the preamble.
+ And finally, to add 
 \end_layout
 
 \begin_layout Part
