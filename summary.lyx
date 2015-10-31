@@ -2089,7 +2089,7 @@ The following has been taken from an email written to Ali Assadian.
 As you know, in the GHZ test, one is able to show that determinism can't
  hold.
  However, this is done using spins.
- How this is handled in Bohmian Mechanics (BM) has been discussed in 
+ How this is handled in Bohmian Mechanics (BM) has been discussed 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevA.66.052109"
@@ -2219,12 +2219,6 @@ key "PhysRevA.66.052109"
 Analytic Work
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
