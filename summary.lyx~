@@ -2087,7 +2087,8 @@ Simulate a free particle.
 \end_layout
 
 \begin_layout Enumerate
-Simulate a 
+Simulate a harmonic oscillator.
+ 
 \end_layout
 
 \end_deeper
