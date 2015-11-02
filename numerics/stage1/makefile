@@ -11,7 +11,7 @@ FC = gfortran -fbackslash -g -ffree-line-length-0 -ffpe-trap=invalid,zero,overfl
 #source files, use the most dependent in the end
 SRCS = $(addsuffix .o, gnuplot_fortran lorenz2)
 
-PROGRAM = lorenz
+PROGRAM = onParticle
 
 all: $(PROGRAM)
 
