@@ -16,8 +16,8 @@ program oneParticle
   psic = 
   
 contains
-  subroutine initGaussian(psic)
-    
+  subroutine initGaussian(psiPar)
+    complex, dimension(:) :: psiPar
   end subroutine initGaussian
   
 end program oneParticle
