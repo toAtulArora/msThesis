@@ -18,6 +18,7 @@ program oneParticle
 contains
   subroutine initGaussian(psiPar)
     complex, dimension(:) :: psiPar
+    
   end subroutine initGaussian
   
 end program oneParticle
