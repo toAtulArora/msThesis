@@ -16,6 +16,8 @@ program oneParticle
   psic = 
   
 contains
-  
+  subroutine initGaussian(psic)
+    
+  end subroutine initGaussian
   
 end program oneParticle
