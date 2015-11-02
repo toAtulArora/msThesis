@@ -2,5 +2,5 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  
+  real, dimesnion(maxI,3)
 end program oneParticle
