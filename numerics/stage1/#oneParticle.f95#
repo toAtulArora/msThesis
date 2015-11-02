@@ -2,5 +2,7 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  real, dimesnion(maxI,3)
+  real, dimension(maxI,3) :: x,k1,k2,k3,k4
+  real, dimension(maxI,3) :: psi,k1,k2,k3,k4
+  
 end program oneParticle
