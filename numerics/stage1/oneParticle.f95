@@ -48,7 +48,8 @@ contains
        x(l)=xr
     end do
   end subroutine initGaussian
-  subroutine 
+  !subroutine del2(psiPar,
+  
   function xFi(index)
     integer:: index
     real::xFi
