@@ -54,6 +54,7 @@ contains
     complex, dimension(:) :: psiPar
     integer :: m
     real :: q
+    ! obtain q from index
     q=xFi(m)
     
   end function psiDot
@@ -64,11 +65,11 @@ contains
     V=-q*q
   end function V
   
-  function xFi(index)
+  function qFi(index)
     integer:: index
-    real::xFi
-    xFi=dx*index + xMin
-  end function xFi
+    real::qFi
+    qFi=dx*index + xMin
+  end function qFi
   function tFi(index)
     integer:: index
     real:: tFi
