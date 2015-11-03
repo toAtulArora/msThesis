@@ -2166,7 +2166,14 @@ Tuesday | Nov 3
 \end_inset
 
 Since I couldn't find anyone (surprisingly) to help me with this, I simply
- interpolate, using the following
+ interpolate, using Ref 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "spline"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
