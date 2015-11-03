@@ -2146,7 +2146,22 @@ Tuesday | Nov 3
  simulations.
  It's going good.
  About to simulate the schrodinger equation in a very simple case.
- Then we'll see the bohmian trajectory for a single particle!
+ Then we'll see the bohmian trajectory for a single particle!; In practice
+ however, I am running into issues with attempting to simulate the schrodinger
+ equation.
+ The point is that 
+\begin_inset Formula $\dot{\psi}$
+\end_inset
+
+ is needed at arbitrary 
+\begin_inset Formula $q$
+\end_inset
+
+ and that's not possible without interpolating 
+\begin_inset Formula $\nabla^{2}\psi(q)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
