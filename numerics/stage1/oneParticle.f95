@@ -16,9 +16,16 @@ program oneParticle
   
   psi=0
   x=0
-  ! write(*,*) x
+  ! initialize the state to guassian
   call initGaussian(psic,x)
-  ! write(*,*) x
+
+  !start with that state
+  psi(:,1)=psic
+  call nextPlot2d(x,abs(psic))
+  !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
+
+  
+  
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='testinggla.pdf',picFormat=1)
 
