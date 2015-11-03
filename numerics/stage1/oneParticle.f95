@@ -61,9 +61,9 @@ contains
   end subroutine initGaussian
 
   !this will generate the array b,c,d which will be used to interpolate del2psi
-  subroutine initInterpolateDel2psi(psiPar,xPar,b,c,d)
-    do m=1,maxS
-       
+  subroutine initInterpolateDel2psi(psiPar,del2psiPar,xPar,b,c,d)
+    do m=2,maxS-1
+       del2psiPar[m]=
     end do
   end subroutine initInterpolateDel2psi
   
