@@ -52,6 +52,7 @@ contains
   ! The subroutine basically inputs (1) the psi at the said time, (2) the discreteized position at which to evaluate
   function psiDot(psiPar,m)
     complex, dimension(:) :: psiPar
+    complex :: psiDot
     integer :: m
     real :: q,qPlus,qMinus,qDelta
     ! obtain q from index
