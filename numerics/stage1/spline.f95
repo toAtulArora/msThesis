@@ -1,59 +1,61 @@
- program main
-!====================================================================
-! Spline interpolation
-! Comments: values of function f(x) are calculated in n base points
-! then: spline coefficients are computed
-!       spline interpolation is computed in 2n-1 points, 
-!       a difference sum|f(u)-ispline(u)| 
-!====================================================================
-implicit none
-integer, parameter :: n=11      ! base points for interpolation
-integer, parameter :: nint=21   ! compute interpolation in nint points
-double precision xmin, xmax     ! given interval of x()
-double precision, dimension (n) :: xi(n), yi(n), b(n), c(n), d(n)
-double precision x, y, step, ys, error, errav
-integer i
-double precision f, ispline
+!  program main
+! !====================================================================
+! ! Spline interpolation
+! ! Comments: values of function f(x) are calculated in n base points
+! ! then: spline coefficients are computed
+! !       spline interpolation is computed in 2n-1 points, 
+! !       a difference sum|f(u)-ispline(u)| 
+! !====================================================================
+! implicit none
+! integer, parameter :: n=11      ! base points for interpolation
+! integer, parameter :: nint=21   ! compute interpolation in nint points
+! double precision xmin, xmax     ! given interval of x()
+! double precision, dimension (n) :: xi(n), yi(n), b(n), c(n), d(n)
+! double precision x, y, step, ys, error, errav
+! integer i
+! double precision f, ispline
 
-! open files
-!open (unit=1, file='tablex1.dat')
-!open (unit=2, file='tablex2.dat')
+! ! open files
+! !open (unit=1, file='tablex1.dat')
+! !open (unit=2, file='tablex2.dat')
 
-xmin = 0.0
-xmax = 2.0
+! xmin = 0.0
+! xmax = 2.0
 
-! step 1: generate xi and yi from f(x), xmin, xmax, n
-step = (xmax-xmin)/(n-1)
-do i=1,n
-  xi(i) = xmin + step*float(i-1) 
-  yi(i) = f(xi(i)) 
-!  write (*,200) xi(i), yi(i)
-end do
+! ! step 1: generate xi and yi from f(x), xmin, xmax, n
+! step = (xmax-xmin)/(n-1)
+! do i=1,n
+!   xi(i) = xmin + step*float(i-1) 
+!   yi(i) = f(xi(i)) 
+! !  write (*,200) xi(i), yi(i)
+! end do
 
-!  step 2: call spline to calculate spline coeficients
-call spline (xi, yi, b, c, d,n) 
+! !  step 2: call spline to calculate spline coeficients
+! call spline (xi, yi, b, c, d,n) 
 
-!  step 3: interpolation at nint points
-errav = 0.0
-step = (xmax-xmin)/(nint-1)
-write(*,201) 
-do i=1, nint
-  x = xmin + step*float(i-1) 
-  y = f(x) 
-  ys = ispline(x, xi, yi, b, c, d, n)
-  error = ys-y
-  write (*,200) x, ys, error
-! step 4: calculate quality of interpolation               
-  errav = errav + abs(y-ys)/nint 
-end do
-write (*,202) errav
-200 format (3f12.5)
-201 format ('        x        spline      error')    
-202 format ('           Average error',f12.5)
+! !  step 3: interpolation at nint points
+! errav = 0.0
+! step = (xmax-xmin)/(nint-1)
+! write(*,201) 
+! do i=1, nint
+!   x = xmin + step*float(i-1) 
+!   y = f(x) 
+!   ys = ispline(x, xi, yi, b, c, d, n)
+!   error = ys-y
+!   write (*,200) x, ys, error
+! ! step 4: calculate quality of interpolation               
+!   errav = errav + abs(y-ys)/nint 
+! end do
+! write (*,202) errav
+! 200 format (3f12.5)
+! 201 format ('        x        spline      error')    
+! 202 format ('           Average error',f12.5)
 
-end program main
+! end program main
 
-
+module splines_fortran
+  implicit none
+  
 !
 !  Function f(x)
 !
