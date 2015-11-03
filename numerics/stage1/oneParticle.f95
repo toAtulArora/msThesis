@@ -12,6 +12,8 @@ program oneParticle
   complex, dimension(maxS) :: psic,m1,m2,m3,m4
   real, dimension(maxS) :: x
 
+  integer :: timeStep
+  
   call startPlot()
   
   psi=0
