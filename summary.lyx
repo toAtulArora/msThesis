@@ -2123,7 +2123,16 @@ Monday | Nov 2
 \end_layout
 
 \begin_layout Itemize
-[research/ms] Working on the numerics aspect.
+[research/ms] Working on the numerics aspect: Found various documents on
+ simulating the schrodinger equation.
+ Setup the whole thing in fortran from my old chaosTerm project.
+ Got the basics up and running.
+ I can initialize to a Guassian now.
+\end_layout
+
+\begin_layout Itemize
+[misc.] extreme shopping, project nutrition seems to have been erected successful
+ly, 
 \end_layout
 
 \begin_layout Part
