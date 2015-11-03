@@ -59,7 +59,7 @@ contains
   function V(q)
     real :: q
     real :: V
-    V=
+    V=-q*q
   end function V
   
   function xFi(index)
