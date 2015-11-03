@@ -55,7 +55,7 @@ contains
     integer :: m
     real :: q
     ! obtain q from index
-    q=xFi(m)
+    q=qFi(m)
     
   end function psiDot
 
