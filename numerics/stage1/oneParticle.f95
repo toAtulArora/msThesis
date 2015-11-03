@@ -28,6 +28,8 @@ program oneParticle
   do timeStep=2,maxT
      psic=psi(:,timeStep)
 
+     !evaluate splines coffecients for delt2
+     
      !without enforcing the boundary condition
      do qStep=1,maxS
         m1=qDot(psic,q)
