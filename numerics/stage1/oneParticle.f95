@@ -53,9 +53,11 @@ contains
   function psiDot(psiPar,m)
     complex, dimension(:) :: psiPar
     integer :: m
-    real :: q
+    real :: q,qPlus,qMinus
     ! obtain q from index
     q=qFi(m)
+    qPlus=qFi(m+1)
+    qMinus=qFi(m-1)
     
   end function psiDot
 
