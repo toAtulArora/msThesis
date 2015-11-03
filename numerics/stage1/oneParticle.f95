@@ -48,6 +48,7 @@ contains
        x(l)=xr
     end do
   end subroutine initGaussian
+  subroutine 
   function xFi(index)
     integer:: index
     real::xFi
