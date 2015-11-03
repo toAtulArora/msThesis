@@ -49,7 +49,7 @@ contains
     end do
   end subroutine initGaussian
 
-  ! 
+  ! The subroutine basically uses 
   subroutine psiDot(psiPar,m)
   end subroutine psiDot
   function xFi(index)
