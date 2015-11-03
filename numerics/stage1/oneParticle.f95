@@ -38,12 +38,12 @@ contains
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar
-    real :: qr
+    real :: q
     integer :: l
     psiPar=0
     xPar=0
     do l=1,maxS
-       qr=qFi(l) !dx*l + xMin
+       q=qFi(l) !dx*l + xMin
        psiPar(l)=exp(-(xr*xr)/(2*sigma*sigma))/(sigma*rootTwoPi)
        x(l)=xr
     end do
