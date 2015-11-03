@@ -25,7 +25,9 @@ program oneParticle
   psi(:,1)=psic
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
-  for 
+  do timeStep=1,maxT
+     
+  end do
   
   
   call nextPlot2d(x,abs(psic))
