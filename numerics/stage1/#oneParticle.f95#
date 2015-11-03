@@ -24,6 +24,7 @@ program oneParticle
 
   call endPlot()
 contains
+  function psiDot(
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar

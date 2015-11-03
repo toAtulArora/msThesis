@@ -1,0 +1,3 @@
+ set terminal pdf
+ set output 'temp2d/testinggla.pdf'
+ plot 'tempData.dat' w lp
