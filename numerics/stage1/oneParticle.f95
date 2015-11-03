@@ -60,7 +60,10 @@ contains
     end do
   end subroutine initGaussian
 
-  
+  !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
+  function del2psiAtQ(psiPar,xPar,q)
+    
+  end function del2psiAtQ
   
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
   function psiDot(psiAtQ,del2psiAtQ,q)
