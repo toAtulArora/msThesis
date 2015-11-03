@@ -60,8 +60,12 @@ contains
     end do
   end subroutine initGaussian
 
+  subroutine initInterpolateDel2psi(psiPar,xPar,b,c,d)
+    
+  end subroutine initInterpolateDel2psi
+  
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
-  !but make sure you call the interpolateDel2psi function before this
+  !but make sure you call the initInterpolateDel2psi function before this
   function del2psiAtQ(del2psiPar,xPar,q,b,c,d)
     real, dimension(:)::del2psiPar,xPar,b,c,d
     real :: q,del2psiAtQ
