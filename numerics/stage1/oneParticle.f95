@@ -62,7 +62,9 @@ contains
 
   !this will generate the array b,c,d which will be used to interpolate del2psi
   subroutine initInterpolateDel2psi(psiPar,xPar,b,c,d)
-    
+    do m=1,maxS
+       
+    end do
   end subroutine initInterpolateDel2psi
   
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
