@@ -60,6 +60,7 @@ contains
     end do
   end subroutine initGaussian
 
+  !this will generate the array b,c,d which will be used to interpolate del2psi
   subroutine initInterpolateDel2psi(psiPar,xPar,b,c,d)
     
   end subroutine initInterpolateDel2psi
