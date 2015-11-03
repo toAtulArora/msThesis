@@ -59,10 +59,10 @@ module splines_fortran
   !
   !  Function f(x)
   !
-  function f(x)
-    double precision f, x
-    f = sin(x) 
-  end function f
+  ! function f(x)
+  !   double precision f, x
+  !   f = sin(x) 
+  ! end function f
 
   subroutine spline (x, y, b, c, d, n)
     !======================================================================
