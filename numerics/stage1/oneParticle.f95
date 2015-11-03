@@ -60,9 +60,9 @@ contains
     qPlus=qFi(m+1)
     qMinus=qFi(m-1)
     qDelta=qPlus-q
-    psiDot=(1/(0,1)hbar)*
     kineticPart=-hbar*hbar(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiPar(q)
+    psiDot=(1/(0,1)hbar)*kineticPart*potentialPart
     
   end function psiDot
 
