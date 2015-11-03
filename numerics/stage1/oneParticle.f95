@@ -49,8 +49,9 @@ contains
     end do
   end subroutine initGaussian
 
-  ! The subroutine basically uses 
+  ! The subroutine basically inputs (1) the psi at the said time, (2) the discreteized position at which to evaluate
   subroutine psiDot(psiPar,m)
+    
   end subroutine psiDot
   function xFi(index)
     integer:: index
