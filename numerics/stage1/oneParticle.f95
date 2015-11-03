@@ -53,4 +53,9 @@ contains
     real::xFi
     xFi=dx*index + xMin
   end function xFi
+  function tFi(index)
+    integer:: index
+    real:: tFi
+    tFi=dt*index
+  end function tFi
 end program oneParticle
