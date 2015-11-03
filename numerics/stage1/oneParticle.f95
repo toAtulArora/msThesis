@@ -50,9 +50,11 @@ contains
   end subroutine initGaussian
 
   ! The subroutine basically inputs (1) the psi at the said time, (2) the discreteized position at which to evaluate
-  subroutine psiDot(psiPar,m)
+  function psiDot(psiPar,m)
+    complex, dimension(:) :: psiPar
+    integer :: m
     
-  end subroutine psiDot
+  end function psiDot
   function xFi(index)
     integer:: index
     real::xFi
