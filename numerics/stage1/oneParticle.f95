@@ -60,7 +60,7 @@ contains
     qPlus=qFi(m+1)
     qMinus=qFi(m-1)
     qDelta=qPlus-q
-    
+    psiDot=(
   end function psiDot
 
   function V(q)
