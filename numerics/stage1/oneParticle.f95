@@ -75,7 +75,7 @@ contains
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
   !but make sure you call the initInterpolateDel2psi function before this
   function del2psiAtQ(del2psiPar,xPar,q,b,c,d)
-    real, dimension(:)::del2psiPar,xPar,b,c,d
+    complex, dimension(:)::del2psiPar,xPar,b,c,d
     real :: q,del2psiAtQ
     del2psiAtQ=ispline(q,xPar,del2psiPar,b,c,d,size(psiPar))
   end function del2psiAtQ
