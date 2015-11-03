@@ -43,7 +43,7 @@ contains
     psiPar=0
     xPar=0
     do l=1,maxS
-       xr=XFi(l) !dx*l + xMin
+       xr=qFi(l) !dx*l + xMin
        psiPar(l)=exp(-(xr*xr)/(2*sigma*sigma))/(sigma*rootTwoPi)
        x(l)=xr
     end do
