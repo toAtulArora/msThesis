@@ -27,7 +27,9 @@ program oneParticle
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=2,maxT
      psic=psi(:,timeStep)
-     do qStep=1,maxS-1
+
+     !without enforcing the boundary condition
+     do qStep=1,maxS
         
      end do
   end do
