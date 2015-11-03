@@ -62,8 +62,9 @@ contains
 
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
   !but make sure you call the interpolateDel2psi function before this
-  function del2psiAtQ(psiPar,xPar,q)
+  function del2psiAtQ(del2psiPar,xPar,q,b,c,d)
     
+    del2psiAtQ=ispline(q,xPar,del2psiPar,b,c,d,size(psiPar))
   end function del2psiAtQ
   
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
