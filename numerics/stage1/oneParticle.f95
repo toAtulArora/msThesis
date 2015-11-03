@@ -53,6 +53,8 @@ contains
   function psiDot(psiPar,m)
     complex, dimension(:) :: psiPar
     integer :: m
+    real :: q
+    q=xFi(m)
     
   end function psiDot
 
