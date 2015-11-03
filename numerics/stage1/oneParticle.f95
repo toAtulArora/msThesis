@@ -64,8 +64,11 @@ contains
   subroutine initInterpolateDel2psi(psiPar,del2psiPar,xPar,b,c,d)
     do m=2,maxS-1
        del2psiPar(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
-       
     end do
+    !bad boundary conditions, but what to do :(
+    del2psiPar(1)=del2psiPar(2)
+    del2psiPar(maxS)=del2psiPar(maxS-1)
+    
   end subroutine initInterpolateDel2psi
   
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
