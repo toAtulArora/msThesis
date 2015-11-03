@@ -58,7 +58,8 @@ contains
 
   function V(q)
     real :: q
-    
+    real :: V
+    V=
   end function V
   
   function xFi(index)
