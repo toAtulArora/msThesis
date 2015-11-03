@@ -61,7 +61,7 @@ contains
   end subroutine initGaussian
 
   ! The subroutine basically inputs (1) the psi at the said time, (2) the discreteized position at which to evaluate
-  function psiDot(psiPar,m)
+  function psiDot(psiAtQ,del2psiAtQ,m)
     complex, dimension(:) :: psiPar
     complex :: psiDot,kineticPart,potentialPart
     integer :: m
@@ -71,8 +71,8 @@ contains
     qPlus=qFi(m+1)
     qMinus=qFi(m-1)
     qDelta=qPlus-q
-    kineticPart=-hbar*hbar(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
-    potentialPart=V(q)*psiPar(q)
+    kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
+    potentialPart=V(q)*psiAtQ !psiPar(q)
     psiDot=(1/(0,1)hbar)*(kineticPart + potentialPart)
     
   end function psiDot
