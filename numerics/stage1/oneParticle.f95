@@ -3,7 +3,7 @@ program oneParticle
   implicit none
 
   real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.001, tMax=10, sigma=0.5
-  real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi)
+  real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
   
   real, dimension(maxS,maxT) :: qc,k1,k2,k3,k4
