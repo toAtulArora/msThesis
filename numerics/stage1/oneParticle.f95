@@ -56,6 +56,7 @@ contains
     
   end function psiDot
   function V(q)
+    real :: q
     
   end function V
   function xFi(index)
