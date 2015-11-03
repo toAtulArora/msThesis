@@ -55,6 +55,9 @@ contains
     integer :: m
     
   end function psiDot
+  function V(q)
+    
+  end function V
   function xFi(index)
     integer:: index
     real::xFi
