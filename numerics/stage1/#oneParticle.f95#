@@ -12,19 +12,27 @@ program oneParticle
   complex, dimension(maxS) :: psic,m1,m2,m3,m4
   real, dimension(maxS) :: x
 
+  integer :: timeStep
+  
   call startPlot()
   
   psi=0
   x=0
-  ! write(*,*) x
+  ! initialize the state to guassian
   call initGaussian(psic,x)
-  ! write(*,*) x
+
+  !start with that state
+  psi(:,1)=psic
+  call nextPlot2d(x,abs(psic))
+  !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
+  do timeStep=1,maxT
+  
+  
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='testinggla.pdf',picFormat=1)
 
   call endPlot()
 contains
-  function psiDot(
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar
