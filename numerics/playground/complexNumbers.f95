@@ -10,5 +10,6 @@ program testing
   alpha=(/(j,j=1,10)/)
   beta=(/(l*0.5,l=1,10)/)
   b= alpha + (0,1)*beta !(/((alpha(l),beta(l)),l=1,10)/)
-  
+
+  write (*,*) b
 end program testing
