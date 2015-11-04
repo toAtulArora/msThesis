@@ -2177,7 +2177,7 @@ Since I couldn't find anyone (surprisingly) to help me with this, I simply
  interpolate, using Ref 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "spline"
+key "splineReal"
 
 \end_inset
 
