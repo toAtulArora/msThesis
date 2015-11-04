@@ -12,7 +12,7 @@ program testing
   b= alpha + (0,1)*beta !(/((alpha(l),beta(l)),l=1,10)/)
   call sendReal(real(b))
   
-  write (*,*) b
+  !write (*,*) b
 
   subroutine sendReal(alphaPar)
     real, dimension(:) :: alphaPar
