@@ -12,4 +12,9 @@ program testing
   b= alpha + (0,1)*beta !(/((alpha(l),beta(l)),l=1,10)/)
 
   write (*,*) b
+
+  subroutine sendReal(alphaPar)
+    real, dimension(:) :: alphaPar
+    write(*,*) alphaPar
+  end subroutine sendReal
 end program testing
