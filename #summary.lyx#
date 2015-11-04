@@ -8,7 +8,7 @@
 %\bibliographystyle{apsrev4-1}
 %\bibliographystyle{apsrev}
 \usepackage{xcolor}
-\userpackage{url}
+\usepackage{url}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -2204,7 +2204,13 @@ Wednesday | Nov 4
 
 \begin_layout Itemize
 [research/summer] Got a response from the referees.
- Sent it
+ Wrote a response (this time Ali asked me to do it straight!) and sent it
+ to him.
+ He suggested another change.
+ Added that and sent it.
+ He then wanted me to confirm what I had written.
+ I did and reverted to him.
+ 
 \end_layout
 
 \begin_layout Part
