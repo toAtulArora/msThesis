@@ -9,6 +9,6 @@ program testing
 
   alpha=(/(j,j=1,10)/)
   beta=(/(l*0.5,l=1,10)/)
-  b=(alpha,beta)
+  b=(/((alpha(l),beta(l)),l=1,10)/)
   
 end program testing
