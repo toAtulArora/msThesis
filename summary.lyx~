@@ -2124,7 +2124,15 @@ Monday | Nov 2 (20 hours up time!)
 
 \begin_layout Itemize
 [research/ms] Working on the numerics aspect: Found various documents on
- simulating the schrodinger equation.
+ simulating the schrodinger equation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "solvSchrFFT,solvSchrMaster"
+
+\end_inset
+
+.
+ They range from using RK4 to using more interesting hybrid QFT approaches.
  Setup the whole thing in fortran from my old chaosTerm project.
  Got the basics up and running.
  I can initialize to a Guassian now.
@@ -2166,7 +2174,18 @@ Tuesday | Nov 3
 \end_inset
 
 Since I couldn't find anyone (surprisingly) to help me with this, I simply
- interpolate, using the following
+ interpolate, using Ref 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "spline"
+
+\end_inset
+
+.
+ However, I just realized (after having almost written the whole code) that
+ the spline interpolation is for reals, not for complex.
+ I think it can be readily extended, but then I'd have to mess around with
+ spline function! :(
 \end_layout
 
 \begin_layout Itemize

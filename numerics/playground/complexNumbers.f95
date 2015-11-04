@@ -1,5 +1,14 @@
 program testing
   complex :: a
+  real, dimension(10):: alpha, beta
+  complex, dimension(10) :: b
+
+  
   a=1/(0,1)
   write(*,*) a
+
+  alpha=(/(j,j=1,10)/)
+  beta=(/(l*0.5,l=1,10)/)
+  b=(alpha,beta)
+  
 end program testing
