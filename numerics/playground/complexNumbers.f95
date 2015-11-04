@@ -13,7 +13,7 @@ program testing
   call sendReal(real(b))
   
   !write (*,*) b
-
+include
   subroutine sendReal(alphaPar)
     real, dimension(:) :: alphaPar
     write(*,*) alphaPar
