@@ -77,7 +77,7 @@ contains
 
     !now find the coefficients to interpolate
     call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
-    call spline(xPar,real((0,-i)*del2psiPar),ib,ic,id,size(xPar))
+    call spline(xPar,real((0,-i)*del2psiPar),ib,ic,id,size(xPar)) !this funky thing is just to send the imaginary part. for some reason couldn't figure how to do this any more simply in fortran
     !combine the cofficients to a complex # array
     b=rb + (0,1)*ib
     c=rc + (0,1)*ic
