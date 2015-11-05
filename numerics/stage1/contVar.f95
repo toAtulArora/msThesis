@@ -1,5 +1,6 @@
 module classContVar
   implicit none
+  use 
   private
   public :: contVar, contVarInit, contVarInterp
 
