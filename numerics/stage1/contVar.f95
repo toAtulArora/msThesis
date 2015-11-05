@@ -15,7 +15,7 @@ module classContVar
      !the corresponding (x)
      real, allocable :: x(:)
      !the computed spline parameters
-     complex, dimension(N) :: b,c,d
+     complex, allocable :: b(:),c(:),d(:)
   end type contVar
 
   subroutine contVarAllocate(Ndefined)
@@ -23,6 +23,9 @@ module classContVar
     N=Ndefined
     allocate(f(N))
     allocate(x(N))
+    allocate(b(N))
+    allocate(c(N))
+    allocate(d(N))    
   end subroutine contVarN
   
   subroutine contVarInit(this)
