@@ -14,7 +14,7 @@ module classContVar
 
   subroutine contVarInit(this)
     type(contVar) :: this
-    real, dimension(size(this%
+    real, dimension(size(this%f))
     call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
     !combine the cofficients to a complex # array
     b=rb + (0,1)*ib
