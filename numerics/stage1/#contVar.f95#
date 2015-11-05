@@ -30,12 +30,8 @@ module classContVar
   function contVarInterp(this,q)
     type(contVar) :: this
     real :: q
-
     real :: contVarInterp
-
-    isnt' it very misleading? shouldn't they talk about the existence of bohmian mechanics?
-    
-    del2psiAtQ=ispline(q,xPar,real(del2psiPar),real(b),real(c),real(d),size(psiPar)) + (0,1)*ispline(q,xPar,real((0,-1)*del2psiPar),real((0,-1)*b),real((0,-1)*c),real((0,-1)*d),size(psiPar))
+    contVarInterp=ispline(q,this%,real(del2psiPar),real(b),real(c),real(d),size(psiPar)) + (0,1)*ispline(q,xPar,real((0,-1)*del2psiPar),real((0,-1)*b),real((0,-1)*c),real((0,-1)*d),size(psiPar))
   end subroutine contVarInterp
 
 end module classContVar
