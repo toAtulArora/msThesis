@@ -4,16 +4,19 @@ module classContVar
   public :: contVar, contVarInit, contVarInterp
 
   type contVar
+     !the number of data points
+     real :: N
      !the data points f(x)
-     complex, dimension(:) :: f
+     complex, dimension(N) :: f
      !the corresponding (x)
-     real, dimension(:) :: x
+     real, dimension(N) :: x
      !the computed spline parameters
-     complex, dimension(:) :: b,c,d
+     complex, dimension(N) :: b,c,d
   end type contVar
 
   subroutine contVarInit(this)
     type(contVar) :: this
+    !These are for holding 
     real, dimension(size(this%f)) :: rb,rc,rd,ib,ic,id
     call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
     !combine the cofficients to a complex # array
