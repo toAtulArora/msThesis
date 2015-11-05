@@ -12,5 +12,8 @@ module classContVar
      complex, dimension(:) :: b,c,d
   end type contVar
 
-  
+  subroutine contVarInit(this)
+    type(contVar) :: this
+    
+  end subroutine contVarInit
 end module classContVar
