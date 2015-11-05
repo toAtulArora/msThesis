@@ -18,8 +18,9 @@ module classContVar
      complex, dimension(N) :: b,c,d
   end type contVar
 
-  subroutine contVarN(Ndefined)
+  subroutine contVarAllocate(Ndefined)
     real :: Ndefined
+    
     N=Ndefined
   end subroutine contVarN
   
