@@ -97,8 +97,10 @@ contains
   function psiDot(psiAtQ,del2psiAtQ,q)
     complex, dimension(:) :: psiPar
     complex :: del2psiAtQ
-    complex :: psiDot,kineticPart,potentialPart
     real :: q
+    
+    complex :: psiDot,kineticPart,potentialPart
+
     !integer :: m
     !real :: q,qPlus,qMinus,qDelta
     ! obtain q from index
