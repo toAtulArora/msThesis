@@ -23,6 +23,6 @@ module classContVar
     b=rb + (0,1)*ib
     c=rc + (0,1)*ic
     d=rd + (0,1)*id
-    call spline(xPar,real((0,-i)*del2psiPar),ib,ic,id,size(xPar)) !this funky thing is just to send the    
+    call spline(this%x,real((0,-i)*this%f),ib,ic,id,size(xPar)) !this funky thing is just to send the    
   end subroutine contVarInit
 end module classContVar
