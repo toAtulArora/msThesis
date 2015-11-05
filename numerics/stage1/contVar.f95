@@ -19,7 +19,8 @@ module classContVar
   end type contVar
 
   subroutine contVarN(Ndefined)
-    
+    real :: Ndefined
+    N=Ndefined
   end subroutine contVarN
   
   subroutine contVarInit(this)
