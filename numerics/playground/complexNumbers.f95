@@ -16,6 +16,7 @@ program testing
 contains
   subroutine sendReal(alphaPar)
     real, dimension(:) :: alphaPar
+    real, dimension(size(alphaPar)) :: ba
     write(*,*) alphaPar
   end subroutine sendReal
 end program testing
