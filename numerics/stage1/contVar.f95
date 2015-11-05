@@ -17,12 +17,12 @@ module classContVar
   subroutine contVarInit(this)
     type(contVar) :: this
     !These are for holding the spline parameters temporarily
-    real, dimension(size(this%f)) :: rb,rc,rd,ib,ic,id
+    real, dimension(size(this%x)) :: rb,rc,rd,ib,ic,id
     call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
     !combine the cofficients to a complex # array
     b=rb + (0,1)*ib
     c=rc + (0,1)*ic
     d=rd + (0,1)*id
-    call spline(this%x,real((0,-i)*this%f),ib,ic,id,size(xPar)) !this funky thing is just to send the    
+    call spline(this%x,real((0,-i)*this%f),ib,ic,id,size(this%x)) !this funky thing is just to send the    
   end subroutine contVarInit
 end module classContVar
