@@ -96,7 +96,7 @@ contains
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
   function psiDot(psiAtQ,del2psiAtQ,q)
     complex, dimension(:) :: psiPar
-    complex :: psiDot,kineticPart,potentialPart
+    complex :: psiDot,kineticPart,potentialPart,del2psiAtQ
     real :: q
     !integer :: m
     !real :: q,qPlus,qMinus,qDelta
