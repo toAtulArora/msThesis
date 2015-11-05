@@ -66,7 +66,8 @@ contains
     real, dimension(:) :: xPar
     real, dimension(size(xPar)) :: rb,rc,rd,ib,ic,id
     integer :: m
-    
+
+    !evaluate del2psi at tabulated points
     do m=2,maxS-1
        del2psiPar(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
     end do
