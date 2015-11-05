@@ -31,9 +31,9 @@ module classContVar
     call spline(this%x,real((0,-i)*this%f),ib,ic,id,size(this%x)) !this funky thing is just to send the
 
     !combine the cofficients to a complex # array
-    b=rb + (0,1)*ib
-    c=rc + (0,1)*ic
-    d=rd + (0,1)*id
+    this%b=rb + (0,1)*ib
+    this%c=rc + (0,1)*ic
+    this%d=rd + (0,1)*id
   end subroutine contVarInit
 
   function contVarInterp(this,q)
