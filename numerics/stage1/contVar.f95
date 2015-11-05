@@ -4,16 +4,16 @@ module classContVar
   use spline
   
   private
-  !the number of data points
-  real :: N
 
   public :: contVar, contVarInit, contVarInterp
 
   type contVar
+     !the number of data points
+     real :: N     
      !the data points f(x)
-     complex, dimension(N) :: f
+     complex, allocable :: f(:)
      !the corresponding (x)
-     real, dimension(N) :: x
+     real, allocable :: x(:)
      !the computed spline parameters
      complex, dimension(N) :: b,c,d
   end type contVar
