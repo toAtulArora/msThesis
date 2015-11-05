@@ -77,7 +77,7 @@ contains
   function del2psiAtQ(del2psiPar,xPar,q,b,c,d)
     complex, dimension(:)::del2psiPar,xPar,b,c,d
     real :: q,del2psiAtQ
-    del2psiAtQ=ispline(q,xPar,Real(del2psiPar),Real(b),Real(c),Real(d),size(psiPar))
+    del2psiAtQ=ispline(q,xPar,Real(del2psiPar),Real(b),Real(c),Real(d),size(psiPar)) + (0,1)*ispline(q,xPar,Real(del2psiPar),Real(b),Real(c),Real(d),size(psiPar))
   end function del2psiAtQ
   
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
