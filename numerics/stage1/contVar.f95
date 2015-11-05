@@ -18,6 +18,8 @@ module classContVar
      complex, dimension(N) :: b,c,d
   end type contVar
 
+subroutine cont
+  
   subroutine contVarInit(this)
     type(contVar) :: this
     !These are for holding the spline parameters temporarily
