@@ -20,8 +20,9 @@ module classContVar
 
   subroutine contVarAllocate(Ndefined)
     real :: Ndefined
-    
     N=Ndefined
+    allocate(f(N))
+    allocate(x(N))
   end subroutine contVarN
   
   subroutine contVarInit(this)
