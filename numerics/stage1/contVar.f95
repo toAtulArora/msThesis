@@ -3,5 +3,7 @@ module classContVar
   private
   public :: contVar, contVarInit, contVarInterp
 
-  
+  type contVar
+     
+  end type contVar
 end module classContVar
