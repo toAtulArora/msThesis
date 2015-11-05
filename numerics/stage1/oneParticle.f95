@@ -73,8 +73,11 @@ contains
     !bad boundary conditions, but what to do :(
     del2psiPar(1)=del2psiPar(2)
     del2psiPar(maxS)=del2psiPar(maxS-1)
+
+    !now find the coefficients to interpolate
     call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
     call spline(xPar,real((0,-i)*del2psiPar),ib,ic,id,size(xPar))
+    
     b=rb + (0,1)*ib
     c=rc + (0,1)*ic
     d=rd + (0,1)*id
