@@ -11,4 +11,6 @@ module classContVar
      !the computed spline parameters
      complex, dimension(:) :: b,c,d
   end type contVar
+
+  
 end module classContVar
