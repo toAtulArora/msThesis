@@ -9,7 +9,7 @@ program oneParticle
   real, dimension(maxS,maxT) :: qc,k1,k2,k3,k4
   complex, dimension(maxS,maxT) :: q
   complex, dimension(maxS,maxT) :: psi
-  complex, dimension(maxS) :: psic,m1,m2,m3,m4,del2psic
+  complex, dimension(maxS) :: psic,m1,m2,m3,m4,del2psic,b,c,d
   real, dimension(maxS) :: x
 
   integer :: timeStep
@@ -29,7 +29,7 @@ program oneParticle
      psic=psi(:,timeStep)
 
      !evaluate splines coffecients for delt2
-     call initInterpolateDel2psi(psic,del2psic
+     call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !without enforcing the boundary condition
      do qStep=1,maxS
         m1=qDot(psic,q)
