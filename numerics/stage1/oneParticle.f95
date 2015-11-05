@@ -28,7 +28,7 @@ program oneParticle
   do timeStep=2,maxT
      psic=psi(:,timeStep)
 
-     !evaluate splines coffecients for delt2
+     !evaluate del2 and splines coffecients for delt2
      call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !without enforcing the boundary condition
      do qStep=1,maxS
