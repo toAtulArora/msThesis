@@ -18,7 +18,7 @@ module classContVar
     type(contVar) :: this
     !These are for holding the spline parameters temporarily
     real, dimension(size(this%x)) :: rb,rc,rd,ib,ic,id
-    call spline(this%x,real(this%f),rb,rc,rd,size(xPar))
+    call spline(this%x,real(this%f),rb,rc,rd,size(this%x))
     call spline(this%x,real((0,-i)*this%f),ib,ic,id,size(this%x)) !this funky thing is just to send the
 
     !combine the cofficients to a complex # array
