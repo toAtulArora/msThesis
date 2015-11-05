@@ -73,7 +73,8 @@ contains
     !bad boundary conditions, but what to do :(
     del2psiPar(1)=del2psiPar(2)
     del2psiPar(maxS)=del2psiPar(maxS-1)
-    spline(xPar,del2psiPar,b,c,d,size(xPar))
+    call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
+    call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
   end subroutine initInterpolateDel2psi
   
   !give it psi at all x, x (like -10,-9.8 ... 9.8,10), and q (the point at which to evalute) and it'll yield del2psi
