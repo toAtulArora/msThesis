@@ -28,6 +28,7 @@ module classContVar
   end subroutine contVarInit
 
   subroutine contVarInterp
+    type(contVar) :: this
     
   end subroutine contVarInterp
 
