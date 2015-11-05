@@ -1,6 +1,7 @@
 module classContVar
   implicit none
   use spline
+  
   private
   public :: contVar, contVarInit, contVarInterp
 
