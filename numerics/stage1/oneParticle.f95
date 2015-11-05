@@ -6,7 +6,8 @@ program oneParticle
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
   
-  real, dimension(maxS,maxT) :: qc,k1,k2,k3,k4
+  real, dimension(maxS,maxT) :: qc
+  complex :: k1,k2,k3,k4
   !complex, dimension(maxS,maxT) :: q
   type(contVar), dimension(maxT) :: psi
   !complex, dimension(maxS,maxT) :: psi
