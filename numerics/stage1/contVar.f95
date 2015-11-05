@@ -26,4 +26,7 @@ module classContVar
     c=rc + (0,1)*ic
     d=rd + (0,1)*id
   end subroutine contVarInit
+
+  subroutine contVar
+  end subroutine contVar
 end module classContVar
