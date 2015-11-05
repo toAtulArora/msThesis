@@ -64,7 +64,7 @@ contains
   subroutine initInterpolateDel2psi(psiPar,del2psiPar,xPar,b,c,d)
     complex, dimension(:) :: psiPar,del2psiPar,b,c,d
     real, dimension(:) :: xPar
-    
+    real, dimension(size(xPar)) :: 
     integer :: m
     
     do m=2,maxS-1
