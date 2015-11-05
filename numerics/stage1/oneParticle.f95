@@ -10,7 +10,8 @@ program oneParticle
   !complex, dimension(maxS,maxT) :: q
   type(contVar), dimension(maxT) :: psi
   !complex, dimension(maxS,maxT) :: psi
-  complex, dimension(maxS) :: psic,m1,m2,m3,m4,e,f,g,del2psic,b,c,d
+  type(contVar) :: psic,m1,m2,m3,m4,del2psic
+  !complex, dimension(maxS) :: psic,m1,m2,m3,m4,e,f,g,del2psic,b,c,d
   real, dimension(maxS) :: x
 
   integer :: timeStep
