@@ -1,5 +1,6 @@
 module classContVar
   implicit none
+  !for interpolating
   use spline
   
   private
