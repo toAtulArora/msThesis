@@ -30,6 +30,8 @@ module classContVar
   function contVarInterp(this,q)
     type(contVar) :: this
     real :: q
+
+    real :: contVarInterp
     
     del2psiAtQ=ispline(q,xPar,real(del2psiPar),real(b),real(c),real(d),size(psiPar)) + (0,1)*ispline(q,xPar,real((0,-1)*del2psiPar),real((0,-1)*b),real((0,-1)*c),real((0,-1)*d),size(psiPar))
   end subroutine contVarInterp
