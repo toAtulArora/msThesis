@@ -1,5 +1,0 @@
-module classContVar
-  implicit none
-  private
-  public :: contVar, 
-end module classContVar
