@@ -28,5 +28,5 @@ module classContVar
   end subroutine contVarInit
 
   subroutine contVar
-  end subroutine contVar
+
 end module classContVar
