@@ -16,7 +16,7 @@ module classContVar
      complex, allocable :: b(:),c(:),d(:)
   end type contVar
 
-  subroutine contVarAllocate(Ndefined)
+  function contVarAllocate(Ndefined)
     real :: Ndefined
     N=Ndefined
     allocate(f(N))
@@ -24,7 +24,7 @@ module classContVar
     allocate(b(N))
     allocate(c(N))
     allocate(d(N))    
-  end subroutine contVarN
+  end function contVarN
   
   subroutine contVarInit(this)
     type(contVar) :: this
