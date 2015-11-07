@@ -22,6 +22,7 @@ contains
   end subroutine sendReal
 
   function initTest(gla)
-    
+    real :: gla
+    gla=gla+1
   end function initTest
 end program testing
