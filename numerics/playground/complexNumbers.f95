@@ -11,7 +11,7 @@ program testing
   beta=(/(l*0.5,l=1,10)/)
   b= alpha + (0,1)*beta !(/((alpha(l),beta(l)),l=1,10)/)
   call sendReal(real((0,-1)*b)) 
-  initTest(alpha)
+  alpha=initTest(alpha)
   
   !write (*,*) b
 contains
