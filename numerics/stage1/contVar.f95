@@ -8,8 +8,6 @@ module classContVar
   public :: contVar, contVarInit, contVarInterp
 
   type contVar
-     !the number of data points
-     real :: N     
      !the data points f(x)
      complex, allocable :: f(:)
      !the corresponding (x)
