@@ -20,4 +20,8 @@ contains
     ba=alphaPar
     write(*,*) alphaPar,ba
   end subroutine sendReal
+
+  function initTest(gla)
+    
+  end function initTest
 end program testing
