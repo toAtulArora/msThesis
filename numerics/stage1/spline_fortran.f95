@@ -53,7 +53,7 @@
 
 ! end program main
 
-module splines_fortran
+module spline_fortran
   implicit none
   
   !
