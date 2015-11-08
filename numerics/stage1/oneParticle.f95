@@ -60,7 +60,7 @@ program oneParticle
         m1=psiDot(psic,del2psic,q)
         m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
         m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
-        m4=psiDot(psic,del2psic,q + dt*m3)
+        m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
         psi(q,timeStep+1)=psic + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
      end do
      call nextPlot2d(x,abs(psic%f))     
