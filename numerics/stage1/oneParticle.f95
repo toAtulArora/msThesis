@@ -36,7 +36,7 @@ program oneParticle
   call initGaussian(psic%f,x)
 
   !start with that state
-  psi(:,1)=psic%f(1:maxS)
+  psi(:,1)=psic%f
   call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=2,maxT-1
