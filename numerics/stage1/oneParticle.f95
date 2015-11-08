@@ -64,10 +64,11 @@ program oneParticle
         m4=psiDot(psic,del2psic,q + dt*m3)
         psi(q,timeStep+1)=psic + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
      end do
+     call nextPlot2d(x,abs(psic%f))     
   end do
   
   
-  call nextPlot2d(x,abs(psic))
+  !call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='testinggla.pdf',picFormat=1)
 
   call endPlot()
