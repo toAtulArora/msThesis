@@ -9,11 +9,11 @@ module classContVar
 
   type contVar
      !the data points f(x)
-     complex, allocable :: f(:)
+     complex, allocatable :: f(:)
      !the corresponding (x)
-     real, allocable :: x(:)
+     real, allocatable :: x(:)
      !the computed spline parameters
-     complex, allocable :: b(:),c(:),d(:)
+     complex, allocatable :: b(:),c(:),d(:)
   end type contVar
 
 contains
