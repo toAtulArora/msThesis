@@ -23,6 +23,7 @@ program oneParticle
   !allocates appropriate space in the contVar datatype
   call contVarAllocate(psic,maxS)
   call contVarAllocate(del2psic,maxS)
+  !we're assuming that x wouldn't change over iterations
   psic%x=x
   del2psic%x=x
 
