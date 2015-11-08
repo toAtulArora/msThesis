@@ -100,7 +100,6 @@ contains
     !bad boundary conditions, but what to do :(
     evalDel2psi(1)=evalDel2psi(2)
     evalDel2psi(maxS)=evalDel2psi(maxS-1)
-
   end function evalDel2psi !initInterpolateDel2psi
 
   
