@@ -5,7 +5,7 @@ module classContVar
   
   private
 
-  public :: contVar, contVarInit, contVarInterp
+  public :: contVar, contVarInit, contVarInterp, contVarAllocate
 
   type contVar
      !the data points f(x)
