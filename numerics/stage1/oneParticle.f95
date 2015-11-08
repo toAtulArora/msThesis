@@ -59,7 +59,7 @@ program oneParticle
         m2=psiDot(psic,del2psic,q + 0.5*dt*m1)
         m3=psiDot(psic,del2psic,q + 0.5*dt*m2)
         m4=psiDot(psic,del2psic,q + dt*m3)
-        psi(q,timeStep+1)=
+        psi(q,timeStep+1)=psic + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
      end do
   end do
   
