@@ -40,6 +40,7 @@ program oneParticle
      psic%x=x
      !evaluate del2psi at specific points
      del2psic%f=evalDel2psi(psic%f,x)
+     del2psic%x=x
      
      !evaluate del2 and splines coffecients for delt2
      !call initInterpolateDel2psi(psic,del2psic,b,c,d)
