@@ -52,8 +52,8 @@ program oneParticle
      !call initInterpolatePsi(psic,e,f,g)
 
      !with the tabulated points defined, evalute the spline coefficients
-     contVarInit(psic)
-     contVarInit(del2psic)
+     call contVarInit(psic)
+     call contVarInit(del2psic)
      
      !without enforcing the boundary condition
      do qStep=1,maxS
