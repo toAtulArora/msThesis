@@ -204,4 +204,4 @@ contains
     ispline = y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
   end function ispline
 
-end module splines_fortran
+end module spline_fortran
