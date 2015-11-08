@@ -83,8 +83,8 @@ contains
     xPar=0
     do l=1,maxS
        q=qFi(l) !dx*l + xMin
-       psiPar(l)=exp(-(xr*xr)/(2*sigma*sigma))/(sigma*rootTwoPi)
-       x(l)=xr
+       psiPar(l)=exp(-(q*q)/(2*sigma*sigma))/(sigma*rootTwoPi)
+       xPar(l)=q
     end do
   end subroutine initGaussian
 
