@@ -84,9 +84,11 @@ contains
     !======================================================================
     implicit none
     integer n
-    double precision x(n), y(n), b(n), c(n), d(n)
+    !double precision x(n), y(n), b(n), c(n), d(n)
+    real x(n), y(n), b(n), c(n), d(n)
     integer i, j, gap
-    double precision h
+    !double precision h
+    real h
 
     gap = n-1
     ! check input
