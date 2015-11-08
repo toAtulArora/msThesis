@@ -40,7 +40,7 @@ module classContVar
     this%d=rd + (0,1)*id
   end subroutine contVarInit
 
-  function contVarInterp(this,q)
+  subroutine contVarInterp(this,q)
     type(contVar) :: this
     !the value at which you want the value of f
     real :: q
