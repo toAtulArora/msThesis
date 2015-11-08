@@ -63,7 +63,7 @@ module splines_fortran
   !   double precision f, x
   !   f = sin(x) 
   ! end function f
-
+contains
   subroutine spline (x, y, b, c, d, n)
     !======================================================================
     !  Calculate the coefficients b(i), c(i), and d(i), i=1,2,...,n
