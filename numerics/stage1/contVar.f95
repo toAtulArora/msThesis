@@ -16,6 +16,7 @@ module classContVar
      complex, allocable :: b(:),c(:),d(:)
   end type contVar
 
+contains
   subroutine contVarAllocate(this,Ndefined)
     typ(contVar):: this
     real :: Ndefined
