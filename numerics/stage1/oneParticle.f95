@@ -72,7 +72,7 @@ contains
     end do
   end subroutine initGaussian
 
-  subroutine initInterpolateDel2psi(psiPar,del2psiPar,xPar)
+  subroutine evalDel2psi(psiPar,del2psiPar,xPar)
     complex, dimension(:) :: psiPar,del2psiPar
     real, dimension(:) :: xPar
     integer :: m
