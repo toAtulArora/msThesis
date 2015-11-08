@@ -22,10 +22,15 @@ contains
     integer :: Ndefined,N
     N=Ndefined
     allocate(this%f(N))
+    this%f = 0
     allocate(this%x(N))
+    this%x = 0
     allocate(this%b(N))
+    this%b =0
     allocate(this%c(N))
-    allocate(this%d(N))    
+    this%c = 0
+    allocate(this%d(N))
+    this%d =0
   end subroutine contVarAllocate
   
   subroutine contVarInit(this)
