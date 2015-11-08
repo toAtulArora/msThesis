@@ -55,6 +55,7 @@ program oneParticle
      
      !without enforcing the boundary condition
      do qStep=1,maxS
+        q=qFi(qStep)
         m1=psiDot(psic,del2psic,q)
         m2=psiDot(psic,del2psic,q + 0.5*dt*m1)
         m3=psiDot(psic,del2psic,q + 0.5*dt*m2)
