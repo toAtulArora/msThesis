@@ -54,8 +54,7 @@ program oneParticle
         m1=qDot(psic,q)
         m2=qDot(psic,q + 0.5*dt*m1)
         m3=qDot(psic,q + 0.5*dt*m2)
-        m4=qDot(psic,q + dt*m3)
-        
+        m4=qDot(psic,q + dt*m3)        
      end do
   end do
   
