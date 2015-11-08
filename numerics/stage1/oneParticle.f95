@@ -57,12 +57,14 @@ program oneParticle
      
      !without enforcing the boundary condition
      do qStep=1,maxS
+        ! q=qFi(qStep)
+        ! m1=psiDot(psic,del2psic,q)
+        ! m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
+        ! m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
+        ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
+        ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
         q=qFi(qStep)
-        m1=psiDot(psic,del2psic,q)
-        m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
-        m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
-        m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
-        psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+        psi(qStep,timeStep+1) = psic%f(qStep)*
      end do
      call nextPlot2d(x,abs(psic%f))     
   end do
