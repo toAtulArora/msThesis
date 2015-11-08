@@ -18,7 +18,7 @@ module classContVar
 
 contains
   subroutine contVarAllocate(this,Ndefined)
-    typ(contVar):: this
+    type(contVar):: this
     real :: Ndefined
     N=Ndefined
     allocate(f(N))
