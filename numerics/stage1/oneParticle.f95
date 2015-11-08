@@ -23,6 +23,7 @@ program oneParticle
   !allocates appropriate space in the contVar datatype
   call contVarAllocate(psic,maxS)
   call contVarAllocate(del2psic,maxS)
+
   psi=0
   x=0
   ! initialize the state to guassian
