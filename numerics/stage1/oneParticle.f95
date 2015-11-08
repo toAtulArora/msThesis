@@ -69,6 +69,8 @@ program oneParticle
   call endPlot()
 contains
   function qDot(psiParam,del2psiParam,q)
+    type(contVar), dimension(:) :: psiParam,del2psiParam
+    real :: q
     
   end function qDot
   subroutine initGaussian(psiPar,xPar)
