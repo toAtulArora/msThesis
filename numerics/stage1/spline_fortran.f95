@@ -171,11 +171,13 @@ contains
     !=======================================================================
     implicit none
     real ::  ispline
+    !double precision ispline
     integer n
     !double precision  u, x(n), y(n), b(n), c(n), d(n)
     real ::  u, x(n), y(n), b(n), c(n), d(n)
     integer i, j, k
-    double precision dx
+    !double precision dx
+    real :: dx
 
     ! if u is ouside the x() interval take a boundary value (left or right)
     if(u <= x(1)) then
