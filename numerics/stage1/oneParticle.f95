@@ -76,19 +76,19 @@ contains
 
   function evalDel2psi(psiPar,del2psiPar,xPar)
     complex, dimension(:) :: psiPar
-    complex, dimension(size(psiPar)) :: del2psiPar
+    complex, dimension(size(psiPar)) :: evalDel2psi
     real, dimension(:) :: xPar
     integer :: m
 
     !evaluate del2psi at tabulated points
     do m=2,maxS-1
-       del2psiPar(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
+       evalDel2psi(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
     end do
     !bad boundary conditions, but what to do :(
-    del2psiPar(1)=del2psiPar(2)
-    del2psiPar(maxS)=del2psiPar(maxS-1)
+    evalDel2psi(1)=evalDel2psi(2)
+    evalDel2psi(maxS)=evalDel2psi(maxS-1)
 
-  end subroutine initInterpolateDel2psi
+  end function initInterpolateDel2psi
 
   
   !OBSOLTE
