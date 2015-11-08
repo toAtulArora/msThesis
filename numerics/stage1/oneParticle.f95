@@ -37,7 +37,7 @@ program oneParticle
   do timeStep=2,maxT
      !pic the current psi and save it in psic
      psic%f=psi(:,timeStep)
-     del2psic=evalDel2psi(psic,x)
+     del2psic=evalDel2psi(psic%f,x)
      !evaluate del2 and splines coffecients for delt2
      call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !interpolate spline cofficients for psi
