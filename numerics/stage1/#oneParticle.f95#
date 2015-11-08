@@ -78,24 +78,7 @@ contains
   !OBSOLETE
   !this will generate the array b,c,d which will be used to interpolate del2psi
   subroutine initInterpolateDel2psi(psiPar,del2psiPar,xPar,b,c,d)
-    complex, dimension(:) :: psiPar,del2psiPar,b,c,d
-    real, dimension(:) :: xPar
-    real, dimension(size(xPar)) :: rb,rc,rd,ib,ic,id
-    integer :: m
 
-    !evaluate del2psi at tabulated points
-    do m=2,maxS-1
-       del2psiPar(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
-    end do
-    !bad boundary conditions, but what to do :(
-    del2psiPar(1)=del2psiPar(2)
-    del2psiPar(maxS)=del2psiPar(maxS-1)
-
-    !now find the coefficients to interpolate
-    call spline(xPar,real(del2psiPar),rb,rc,rd,size(xPar))
-    call spline(xPar,real((0,-i)*del2psiPar),ib,ic,id,size(xPar)) !this funky thing is just to send the imaginary part. for some reason couldn't figure how to do this any more simply in fortran
-    !combine the cofficients to a complex # array
-    b=rb + (0,1)*ib
     c=rc + (0,1)*ic
     d=rd + (0,1)*id
   end subroutine initInterpolateDel2psi
