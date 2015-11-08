@@ -8,8 +8,8 @@ program oneParticle
   
   real, dimension(maxS,maxT) :: qc
   complex :: k1,k2,k3,k4
-  !complex, dimension(maxS,maxT) :: q
-  type(contVar), dimension(maxT) :: psi
+  complex, dimension(maxS,maxT) :: q
+  !type(contVar), dimension(maxT) :: psi
   !complex, dimension(maxS,maxT) :: psi
   type(contVar) :: psic,del2psic
   complex :: m1,m2,m3,m4
