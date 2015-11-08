@@ -37,7 +37,7 @@ program oneParticle
 
   !start with that state
   psi(:,1)=psic%x
-  call nextPlot2d(x,abs(psic))
+  call nextPlot2d(x,abs(psic%x))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=2,maxT-1
      !pick the current psi and save it in psic
