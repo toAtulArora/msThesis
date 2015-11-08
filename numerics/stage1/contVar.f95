@@ -25,7 +25,7 @@ module classContVar
     allocate(b(N))
     allocate(c(N))
     allocate(d(N))    
-  end subroutine contVarN
+  end subroutine contVarAllocate
   
   subroutine contVarInit(this)
     type(contVar) :: this
