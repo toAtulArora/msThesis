@@ -79,7 +79,7 @@ contains
     end do
   end subroutine initGaussian
 
-  function evalDel2psi(psiPar,del2psiPar,xPar)
+  function evalDel2psi(psiPar,xPar)
     complex, dimension(:) :: psiPar
     complex, dimension(size(psiPar)) :: evalDel2psi
     real, dimension(:) :: xPar
