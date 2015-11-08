@@ -19,6 +19,8 @@ program oneParticle
   integer :: timeStep
   
   call startPlot()
+  
+  !allocates appropriate space in the contVar datatype
   call contVarAllocate(psic,maxS)
   call contVarAllocate(del2psic,maxS)
   psi=0
