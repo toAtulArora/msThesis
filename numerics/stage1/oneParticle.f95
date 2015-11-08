@@ -141,7 +141,8 @@ contains
     complex :: psiDot,kineticPart,potentialPart
     complex :: psiAtQ, del2psiAtQ
 
-    psiAtQ=contVarInterp(psiPar,
+    psiAtQ=contVarInterp(psiPar,q)
+    del2psiAtQ=contVarInterp(del2psiPar,q)
 
     !integer :: m
     !real :: q,qPlus,qMinus,qDelta
