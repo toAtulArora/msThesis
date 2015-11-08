@@ -35,7 +35,7 @@ program oneParticle
   del2psic%f=0
   x=0
   ! initialize the state to guassian
-  call initGaussian(psic,x)
+  call initGaussian(psic%f,x)
 
   !start with that state
   psi(:,1)=psic
