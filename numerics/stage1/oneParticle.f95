@@ -134,8 +134,8 @@ contains
   end function del2psiAtQ
   
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
-  function psiDot(psiAtQ,del2psiAtQ,q)
-    complex, dimension(:) :: psiPar
+  function psiDot(psiAtQ,del2psiPar,q)
+    type(contVar) :: psiPar,del2psiPar
     complex :: del2psiAtQ
     real :: q
     
