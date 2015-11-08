@@ -9,7 +9,7 @@
 FC = gfortran -fbackslash -g -ffree-line-length-0 -ffpe-trap=invalid,zero,overflow
 
 #source files, use the most dependent in the end
-SRCS = $(addsuffix .o, gnuplot_fortran spline contVar oneParticle)
+SRCS = $(addsuffix .o, gnuplot_fortran spline_fortran contVar oneParticle)
 
 PROGRAM = oneParticle
 
