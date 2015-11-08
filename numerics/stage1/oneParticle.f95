@@ -25,6 +25,7 @@ program oneParticle
   call contVarAllocate(del2psic,maxS)
 
   psi=0
+  del2psic=0
   x=0
   ! initialize the state to guassian
   call initGaussian(psic,x)
