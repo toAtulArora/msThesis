@@ -170,9 +170,10 @@ contains
     ! ispline = interpolated value at point u
     !=======================================================================
     implicit none
-    double precision ispline
+    real ::  ispline
     integer n
-    double precision  u, x(n), y(n), b(n), c(n), d(n)
+    !double precision  u, x(n), y(n), b(n), c(n), d(n)
+    real ::  u, x(n), y(n), b(n), c(n), d(n)
     integer i, j, k
     double precision dx
 
