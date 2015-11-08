@@ -19,7 +19,7 @@ module classContVar
 contains
   subroutine contVarAllocate(this,Ndefined)
     type(contVar):: this
-    real :: Ndefined
+    real :: Ndefined,N
     N=Ndefined
     allocate(this%f(N))
     allocate(this%x(N))
