@@ -23,6 +23,8 @@ program oneParticle
   !allocates appropriate space in the contVar datatype
   call contVarAllocate(psic,maxS)
   call contVarAllocate(del2psic,maxS)
+  psic%x=x
+  del2psic%x=x
 
   psi=0
   del2psic=0
@@ -37,10 +39,8 @@ program oneParticle
   do timeStep=2,maxT
      !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
-     psic%x=x
      !evaluate del2psi at specific points
      del2psic%f=evalDel2psi(psic%f,x)
-     del2psic%x=x
      
      !evaluate del2 and splines coffecients for delt2
      !call initInterpolateDel2psi(psic,del2psic,b,c,d)
