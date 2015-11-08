@@ -58,7 +58,7 @@ program oneParticle
      do qStep=1,maxS
         q=qFi(qStep)
         m1=psiDot(psic,del2psic,q)
-        m2=psiDot(psic,del2psic,q + 0.5*dt*m1)
+        m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
         m3=psiDot(psic,del2psic,q + 0.5*dt*m2)
         m4=psiDot(psic,del2psic,q + dt*m3)
         psi(q,timeStep+1)=psic + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
