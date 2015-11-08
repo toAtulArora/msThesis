@@ -35,8 +35,9 @@ program oneParticle
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=2,maxT
-     psic=psi(:,timeStep)
-     del2psic=evalDel2psi(psi,x)
+     !pic the current psi and save it in psic
+     psic%f=psi(:,timeStep)
+     del2psic=evalDel2psi(psic,x)
      !evaluate del2 and splines coffecients for delt2
      call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !interpolate spline cofficients for psi
