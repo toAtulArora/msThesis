@@ -37,12 +37,12 @@ program oneParticle
   do timeStep=2,maxT
      !pic the current psi and save it in psic
      psic%f=psi(:,timeStep)
-     del2psic=evalDel2psi(psic%f,x)
+     del2psic%f=evalDel2psi(psic%f,x)
      
      !evaluate del2 and splines coffecients for delt2
-     call initInterpolateDel2psi(psic,del2psic,b,c,d)
+     !call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !interpolate spline cofficients for psi
-     call initInterpolatePsi(psic,e,f,g)
+     !call initInterpolatePsi(psic,e,f,g)
      
      !without enforcing the boundary condition
      do qStep=1,maxS
@@ -74,8 +74,9 @@ contains
     end do
   end subroutine initGaussian
 
-  subroutine evalDel2psi(psiPar,del2psiPar,xPar)
-    complex, dimension(:) :: psiPar,del2psiPar
+  function evalDel2psi(psiPar,del2psiPar,xPar)
+    complex, dimension(:) :: psiPar
+    complex, dimension(size(psiPar)) :: del2psiPar
     real, dimension(:) :: xPar
     integer :: m
 
