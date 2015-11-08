@@ -19,9 +19,8 @@ program oneParticle
   integer :: timeStep
   
   call startPlot()
-  !any easier way of doing this?
-  call contVarInit(psi )
-  call contVarInit(
+  call contVarAllocate(psic,maxS)
+  call contVarAllocate(del2psic,maxS)
   psi=0
   x=0
   ! initialize the state to guassian
