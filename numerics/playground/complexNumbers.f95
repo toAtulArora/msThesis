@@ -24,6 +24,7 @@ contains
 
   function initTest(gla)
     real :: gla
+    real :: initTest
     gla=gla+1
   end function initTest
 end program testing
