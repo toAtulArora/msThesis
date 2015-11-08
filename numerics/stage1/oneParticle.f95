@@ -48,6 +48,10 @@ program oneParticle
      !call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !interpolate spline cofficients for psi
      !call initInterpolatePsi(psic,e,f,g)
+
+     !with the tabulated points defined, evalute the spline coefficients
+     contVarInit(psic)
+     contVarInit(del2psic)
      
      !without enforcing the boundary condition
      do qStep=1,maxS
