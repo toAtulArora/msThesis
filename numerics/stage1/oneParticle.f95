@@ -136,7 +136,7 @@ contains
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
   function psiDot(psiAtQ,del2psiPar,q)
     type(contVar) :: psiPar,del2psiPar
-    complex :: del2psiAtQ
+    complex :: psiAtQ, del2psiAtQ
     real :: q
     
     complex :: psiDot,kineticPart,potentialPart
