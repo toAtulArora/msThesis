@@ -55,10 +55,10 @@ program oneParticle
      
      !without enforcing the boundary condition
      do qStep=1,maxS
-        m1=qDot(psic,del2psic,q)
-        m2=qDot(psic,del2psic,q + 0.5*dt*m1)
-        m3=qDot(psic,del2psic,q + 0.5*dt*m2)
-        m4=qDot(psic,del2psic,q + dt*m3)        
+        m1=psiDot(psic,del2psic,q)
+        m2=psiDot(psic,del2psic,q + 0.5*dt*m1)
+        m3=psiDot(psic,del2psic,q + 0.5*dt*m2)
+        m4=psiDot(psic,del2psic,q + dt*m3)        
      end do
   end do
   
@@ -68,11 +68,6 @@ program oneParticle
 
   call endPlot()
 contains
-  function qDot(psiParam,del2psiParam,q)
-    type(contVar), dimension(:) :: psiParam,del2psiParam
-    real :: q
-    
-  end function qDot
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar
