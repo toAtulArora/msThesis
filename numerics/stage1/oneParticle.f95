@@ -159,7 +159,7 @@ contains
     ! qDelta=qPlus-q
     kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDot=(1/(0,1)hbar)*(kineticPart + potentialPart)
+    psiDot=((1/(0,1))*hbar)*(kineticPart + potentialPart)
     
   end function psiDot
 
