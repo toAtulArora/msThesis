@@ -101,7 +101,7 @@ contains
     evalDel2psi(1)=evalDel2psi(2)
     evalDel2psi(maxS)=evalDel2psi(maxS-1)
 
-  end function initInterpolateDel2psi
+  end function evalDel2psi !initInterpolateDel2psi
 
   
   !OBSOLTE
