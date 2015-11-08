@@ -1,7 +1,7 @@
 module classContVar
   implicit none
   !for interpolating
-  use spline
+  use spline_fortran
   
   private
 
