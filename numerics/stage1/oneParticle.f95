@@ -1,5 +1,6 @@
 program oneParticle
   use classContVar
+  use 
   implicit none
 
   real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.001, tMax=10, sigma=0.5
