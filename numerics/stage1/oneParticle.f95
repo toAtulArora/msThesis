@@ -3,7 +3,7 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.001, tMax=10, sigma=0.5
+  real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.1, tMax=50, sigma=0.5
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
@@ -40,12 +40,12 @@ program oneParticle
   psi(:,1)=psic%f
   call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
-  do timeStep=2,maxT-1
+  do timeStep=1,maxT-1
      !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
      !evaluate del2psi at specific points
      del2psic%f=evalDel2psi(psic%f,x)
-     
+     !write(*,*) del2psic%f
      !evaluate del2 and splines coffecients for delt2
      !call initInterpolateDel2psi(psic,del2psic,b,c,d)
      !interpolate spline cofficients for psi
@@ -57,16 +57,20 @@ program oneParticle
      
      !without enforcing the boundary condition
      do qStep=1,maxS
-        ! q=qFi(qStep)
+        q=qFi(qStep)
         ! m1=psiDot(psic,del2psic,q)
         ! m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
         ! m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
         ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
         ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
-        q=qFi(qStep)
+
+        ! q=qFi(qStep)
         psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
+        !write(*,*) psiDot(psic,del2psic,q)
      end do
-     call nextPlot2d(x,abs(psic%f))     
+     !psi(:,timeStep+1)=psi(:,timeStep)
+     call nextPlot2d(x,abs(psi(:,timeStep)))
+     ! call nextPlot2d(x,abs(psic%f))
   end do
   
   
@@ -150,8 +154,9 @@ contains
     complex :: psiAtQ, del2psiAtQ
 
     psiAtQ=contVarInterp(psiPar,q)
+    !write (*,*) psiAtQ
     del2psiAtQ=contVarInterp(del2psiPar,q)
-
+    !write(*,*) del2psiAtQ
     !integer :: m
     !real :: q,qPlus,qMinus,qDelta
     ! obtain q from index
@@ -168,7 +173,7 @@ contains
   function V(q)
     real :: q
     real :: V
-    V=-q*q
+    V=0 !-q*q
   end function V
   
   function qFi(index)
