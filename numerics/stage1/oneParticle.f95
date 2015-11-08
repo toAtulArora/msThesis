@@ -24,7 +24,7 @@ program oneParticle
   call contVarAllocate(psic,maxS)
   call contVarAllocate(del2psic,maxS)
   !we're assuming that x wouldn't change over iterations
-  (/ (x(j)=qFi(j),j=1,maxS) /)
+  x = (/(qFi(j),j=1,maxS)/)
   psic%x=x
   del2psic%x=x
 
