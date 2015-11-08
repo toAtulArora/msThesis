@@ -21,11 +21,11 @@ contains
     type(contVar):: this
     real :: Ndefined
     N=Ndefined
-    allocate(f(N))
-    allocate(x(N))
-    allocate(b(N))
-    allocate(c(N))
-    allocate(d(N))    
+    allocate(this%f(N))
+    allocate(this%x(N))
+    allocate(this%b(N))
+    allocate(this%c(N))
+    allocate(this%d(N))    
   end subroutine contVarAllocate
   
   subroutine contVarInit(this)
