@@ -35,7 +35,7 @@ program oneParticle
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=2,maxT
-     !pic the current psi and save it in psic
+     !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
      del2psic%f=evalDel2psi(psic%f,x)
      
