@@ -38,7 +38,7 @@ program oneParticle
   psi(:,1)=psic
   call nextPlot2d(x,abs(psic))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
-  do timeStep=2,maxT
+  do timeStep=2,maxT-1
      !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
      !evaluate del2psi at specific points
@@ -59,7 +59,7 @@ program oneParticle
         m2=psiDot(psic,del2psic,q + 0.5*dt*m1)
         m3=psiDot(psic,del2psic,q + 0.5*dt*m2)
         m4=psiDot(psic,del2psic,q + dt*m3)
-        
+        psi(q,timeStep+1)
      end do
   end do
   
