@@ -3,7 +3,7 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.1, tMax=50, sigma=0.5
+  real, parameter :: xMax=10, xMin=-10, dx=0.1, dt=0.1, tMax=50, sigma=0.9, xNot=0.0
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
@@ -64,13 +64,18 @@ program oneParticle
         ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
         ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
-        ! q=qFi(qStep)
+        !! q=qFi(qStep)
         psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
-        !write(*,*) psiDot(psic,del2psic,q)
+        !!write(*,*) psiDot(psic,del2psic,q)
      end do
      !psi(:,timeStep+1)=psi(:,timeStep)
      call nextPlot2d(x,abs(psi(:,timeStep)))
-     ! call nextPlot2d(x,abs(psic%f))
+     call nextPlot2d(x,abs(psic%f))
+     call contVarInit(psic)
+     call nextPlot2d(x,abs((/(contVarInterp(psic,qFi(j)),j=1,maxS)/)))
+     call nextPlot2d(x,x)
+     
+     !call nextPlot2d(x,abs(del2psic%f))
   end do
   
   
@@ -88,7 +93,7 @@ contains
     xPar=0
     do l=1,maxS
        q=qFi(l) !dx*l + xMin
-       psiPar(l)=exp(-(q*q)/(2*sigma*sigma))/(sigma*rootTwoPi)
+       psiPar(l)=exp(-((q-xNot)*(q-xNot))/(2*sigma*sigma))/(sigma*rootTwoPi)
        xPar(l)=q
     end do
   end subroutine initGaussian
@@ -101,7 +106,7 @@ contains
 
     !evaluate del2psi at tabulated points
     do m=2,maxS-1
-       evalDel2psi(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/dx
+       evalDel2psi(m)=( psiPar(m+1) + psiPar(m-1) - 2*psiPar(m) )/(dx*dx)
     end do
     !bad boundary conditions, but what to do :(
     evalDel2psi(1)=evalDel2psi(2)
@@ -144,7 +149,34 @@ contains
   !   real :: q,del2psiAtQ
   !   del2psiAtQ=ispline(q,xPar,real(del2psiPar),real(b),real(c),real(d),size(psiPar)) + (0,1)*ispline(q,xPar,real((0,-1)*del2psiPar),real((0,-1)*b),real((0,-1)*c),real((0,-1)*d),size(psiPar))
   ! end function del2psiAtQ
-  
+
+  !   !give it psi(q),del2psi(q) and q, it'll give you psi dot
+  ! function psiDot(psiPar,del2psiPar,qStep)
+  !   type(contVar) :: psiPar,del2psiPar
+  !   integer :: qStep
+    
+  !   complex :: psiDot,kineticPart,potentialPart
+  !   complex :: psiAtQ, del2psiAtQ
+
+  !   psiAtQ=psiPar%f(qStep) !contVarInterp(psiPar,q)
+  !   !write (*,*) psiAtQ
+  !   del2psiAtQ=del2psiPar%f(qStep) !contVarInterp(del2psiPar,q)
+  !   !write(*,*) del2psiAtQ
+  !   !integer :: m
+  !   !real :: q,qPlus,qMinus,qDelta
+  !   ! obtain q from index
+  !   ! q=qFi(m)
+  !   ! qPlus=qFi(m+1)
+  !   ! qMinus=qFi(m-1)
+  !   ! qDelta=qPlus-q
+  !   kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
+  !   potentialPart=V(q)*psiAtQ !psiPar(q)
+  !   psiDot=((0,-1)*hbar)*(kineticPart + potentialPart)
+    
+  ! end function psiDot
+
+
+
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
   function psiDot(psiPar,del2psiPar,q)
     type(contVar) :: psiPar,del2psiPar
@@ -166,7 +198,7 @@ contains
     ! qDelta=qPlus-q
     kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDot=((1/(0,1))*hbar)*(kineticPart + potentialPart)
+    psiDot=((0,-1)*hbar)*(kineticPart + potentialPart)
     
   end function psiDot
 

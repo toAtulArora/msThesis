@@ -3,7 +3,8 @@ module classContVar
   use spline_fortran
   implicit none
   
-  private
+
+  !private
 
   public :: contVar, contVarInit, contVarInterp, contVarAllocate
 
@@ -47,11 +48,11 @@ contains
   end subroutine contVarInit
 
   function contVarInterp(this,q)
-    type(contVar) :: this
+    type(contVar),intent(in) :: this
     !the value at which you want the value of f
     real :: q
     real :: contVarInterp
-    contVarInterp=ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
+    contVarInterp=this%f(int((q + 10)/(0.1))) !ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
   end function contVarInterp
 
 end module classContVar

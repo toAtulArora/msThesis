@@ -8,7 +8,7 @@
 %\bibliographystyle{apsrev4-1}
 %\bibliographystyle{apsrev}
 \usepackage{xcolor}
-\userpackage{url}
+\usepackage{url}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -2177,7 +2177,7 @@ Since I couldn't find anyone (surprisingly) to help me with this, I simply
  interpolate, using Ref 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "spline"
+key "splineReal"
 
 \end_inset
 
@@ -2199,7 +2199,9 @@ Wednesday | Nov 4
 
 \begin_layout Itemize
 [research/ms] Working on the interpolation; accommodating interpolation
- of complex by treating them as 2 reals
+ of complex by treating them as 2 reals.
+ So basically in fortran, here's one nice way of handling things.
+ [todo: complete this seciton]
 \end_layout
 
 \begin_layout Itemize
@@ -2210,7 +2212,79 @@ Wednesday | Nov 4
  Added that and sent it.
  He then wanted me to confirm what I had written.
  I did and reverted to him.
- 
+ He also read and confirmed that what I'd done was correct.
+ He infact read it within a half hour and was even able to explain certain
+ things I hadn't read, that were discussed in the paper.
+ All in all, made the required changes and sent them before sleeping.
+\end_layout
+
+\begin_layout Subsection
+Thursday | Nov 5
+\end_layout
+
+\begin_layout Itemize
+[research/summer] The paper got accepted today!
+\end_layout
+
+\begin_layout Itemize
+[research/ms] 
+\end_layout
+
+\begin_layout Subsection
+Friday | Nov 6
+\end_layout
+
+\begin_layout Itemize
+[revision] Spent the day reading about Corioli's force, it was rather interestin
+g.
+ I was wondering if there's a quantum corioli's effect.
+ And it turns out that there's one paper that discusses this.
+\end_layout
+
+\begin_layout Subsection
+Saturday | Nov 7
+\end_layout
+
+\begin_layout Itemize
+[revision] Was reading about corioli's force etc.
+ to prepare myself for presenting in front of the class, also did some coordinat
+e systems (spherical, polar etc.) and in the actual session could only complete
+ coordinate systems.
+ Also made a nice feedback + attendance sheet and from the feedback it looked
+ like they're happy with what they learnt.
+\end_layout
+
+\begin_layout Subsection
+Sunday | Nov 8
+\end_layout
+
+\begin_layout Itemize
+[research/ms] finished putting all the pieces together and debugging all
+ the errors ot get the program to run for the first time, only to realise
+ that RK4 can't work in principle.
+ After evaluating 
+\begin_inset Formula $m1$
+\end_inset
+
+, I realized that I can't do 
+\begin_inset Formula $q+m1\times dt$
+\end_inset
+
+ simply because 
+\begin_inset Formula $m1$
+\end_inset
+
+ is not guarenteed to be real.
+ I tried fixing this by taking absolute values and it still wouldn't give
+ the right results.
+ Spent some time in the night in trying to convert it to euler to see if
+ something improves.
+ No help.
+ Eventually found a small 
+\emph on
+mistake
+\emph default
+ in the second difference formula I was using.
 \end_layout
 
 \begin_layout Part
