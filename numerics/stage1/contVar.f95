@@ -15,6 +15,8 @@ module classContVar
      real, allocatable :: x(:)
      !the computed spline parameters
      complex, allocatable :: b(:),c(:),d(:)
+   contains
+     
   end type contVar
 
 contains
