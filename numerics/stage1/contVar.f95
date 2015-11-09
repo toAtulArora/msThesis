@@ -10,18 +10,20 @@ module classContVar
 
   type contVar
      !the data points f(x)
-     complex, allocatable :: f(:)
+     complex, public, allocatable :: f(:)
      !the corresponding (x)
-     real, allocatable :: x(:)
+     real, public,  allocatable :: x(:)
      !the computed spline parameters
-     complex, allocatable :: b(:),c(:),d(:)
+     complex, public, allocatable :: b(:),c(:),d(:)
    contains
-     
+     procedure, pass :: contVarAllocate
+     procedure, pass :: contVarInit
+     procedure, pass :: contVarInterp     
   end type contVar
 
 contains
   subroutine contVarAllocate(this,Ndefined)
-    type(contVar):: this
+    class(contVar),intent(inout):: this
     integer :: Ndefined,N
     N=Ndefined
     allocate(this%f(N))
@@ -37,7 +39,7 @@ contains
   end subroutine contVarAllocate
   
   subroutine contVarInit(this)
-    type(contVar) :: this
+    class(contVar),intent(inout) :: this
     !These are for holding the spline parameters temporarily
     real, dimension(size(this%x)) :: rb,rc,rd,ib,ic,id
     call spline(this%x,real(this%f),rb,rc,rd,size(this%x))
@@ -50,11 +52,14 @@ contains
   end subroutine contVarInit
 
   function contVarInterp(this,q)
-    type(contVar),intent(in) :: this
+    class(contVar),intent(inout) :: this
     !the value at which you want the value of f
     real :: q
-    real :: contVarInterp
-    contVarInterp=this%f(int((q + 10)/(0.1))) !ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
+    !integer :: qStep
+    complex :: contVarInterp
+    !contVarInterp=this%f(qStep)
+    !contVarInterp=this%f(int((q + 10)/(0.1))) !
+    contVarInterp=ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
   end function contVarInterp
 
 end module classContVar

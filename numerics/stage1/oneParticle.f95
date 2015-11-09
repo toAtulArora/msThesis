@@ -3,9 +3,10 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  real, parameter :: xMax=10, xMin=-10, dx=0.1, dt=0.1, tMax=50, sigma=0.9, xNot=0.0
+  real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.05, tMax=50, sigma=0.9, xNot=0.8, omegaSquare=4
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
+
 
   integer :: j,qStep !just for counting misc. things
   ! real, dimension(maxS,maxT) :: qc
@@ -15,6 +16,7 @@ program oneParticle
   real :: q
   !type(contVar), dimension(maxT) :: psi
   complex, dimension(maxS,maxT) :: psi
+  complex,dimension(maxS) :: debugArray !remove this from the final code
   type(contVar) :: psic,del2psic
   complex :: m1,m2,m3,m4
   !complex, dimension(maxS) :: psic,m1,m2,m3,m4,e,f,g,del2psic,b,c,d
@@ -25,8 +27,8 @@ program oneParticle
   call startPlot()
   
   !allocates appropriate space in the contVar datatype
-  call contVarAllocate(psic,maxS)
-  call contVarAllocate(del2psic,maxS)
+  call psic%contVarAllocate(maxS)
+  call del2psic%contVarAllocate(maxS)
   !we're assuming that x wouldn't change over iterations
   x = (/(qFi(j),j=1,maxS)/)
   psic%x=x
@@ -52,28 +54,37 @@ program oneParticle
      !call initInterpolatePsi(psic,e,f,g)
 
      !with the tabulated points defined, evalute the spline coefficients
-     call contVarInit(psic)
-     call contVarInit(del2psic)
+     call psic%contVarInit
+     call del2psic%contVarInit
      
      !without enforcing the boundary condition
      do qStep=1,maxS
-        q=qFi(qStep)
+        ! q=qFi(qStep)
         ! m1=psiDot(psic,del2psic,q)
         ! m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
         ! m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
         ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
         ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
-        !! q=qFi(qStep)
+        ! q=qFi(qStep)
         psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
         !!write(*,*) psiDot(psic,del2psic,q)
      end do
-     !psi(:,timeStep+1)=psi(:,timeStep)
+
      call nextPlot2d(x,abs(psi(:,timeStep)))
+     !psi(:,timeStep+1)=psi(:,timeStep)
+     ! call nextPlot2d(x,abs(psi(:,timeStep)))
+     !call nextPlot2d(x,abs(del2psic%f))
      call nextPlot2d(x,abs(psic%f))
-     call contVarInit(psic)
-     call nextPlot2d(x,abs((/(contVarInterp(psic,qFi(j)),j=1,maxS)/)))
-     call nextPlot2d(x,x)
+
+     ! call psic%contVarInit()
+     ! !debugArray = (/(psic%contVarInterp(j),j=1,maxS)/)
+
+     ! !debugArray = (/(psic%contVarInterp(qFi(j)),j=1,maxS)/)
+     ! !call nextPlot2d(x,abs(debugArray)) !abs((/(psic%contVarInterp(qFi(j)),j=1,maxS)/)))
+     ! call nextPlot2d(x,abs((/(psic%contVarInterp(qFi(j)),j=1,maxS)/)))
+
+     ! call nextPlot2d(x,x)
      
      !call nextPlot2d(x,abs(del2psic%f))
   end do
@@ -198,14 +209,14 @@ contains
     ! qDelta=qPlus-q
     kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDot=((0,-1)*hbar)*(kineticPart + potentialPart)
+    psiDot=((0,1)*hbar)*(kineticPart + potentialPart)
     
   end function psiDot
 
   function V(q)
     real :: q
     real :: V
-    V=0 !-q*q
+    V=omegaSquare*q*q
   end function V
   
   function qFi(index)

@@ -2260,7 +2260,7 @@ Sunday | Nov 8
 
 \begin_layout Itemize
 [research/ms] finished putting all the pieces together and debugging all
- the errors ot get the program to run for the first time, only to realise
+ the errors to get the program to run for the first time, only to realise
  that RK4 can't work in principle.
  After evaluating 
 \begin_inset Formula $m1$
@@ -2285,6 +2285,115 @@ Sunday | Nov 8
 mistake
 \emph default
  in the second difference formula I was using.
+\end_layout
+
+\begin_layout Section
+Perusing through the Tumult of the Palimpsest Code | Nov 9-15
+\end_layout
+
+\begin_layout Subsection
+Monday | Nov 9
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Working on trying to figure why the codes not working.
+ Now I'm in a situation where I 'print' an object (of custom type) before
+ sending to a function and then inside that function.
+ They produce different results.
+ WTH! Anyway, trying to figure this.
+ In one attempt found a way to add procedures to types themselves (like
+ a class).
+ Apparently, the proof of concept code works in isolation but is'nt working
+ with my code.
+ Trying to figure that.
+ Man Fortran's killing me today.
+ So figured that.
+ Here's the deal: when using procedures within a type, do the following:
+ 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+type contVar
+\end_layout
+
+\begin_layout Plain Layout
+
+	integer :: someVariables
+\end_layout
+
+\begin_layout Plain Layout
+
+	contains      
+\end_layout
+
+\begin_layout Plain Layout
+
+		procedure, pass :: contVarAllocate
+\end_layout
+
+\begin_layout Plain Layout
+
+end type contVar
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+contains
+\end_layout
+
+\begin_layout Plain Layout
+
+subroutine contVarAllocate(this,val)
+\end_layout
+
+\begin_layout Plain Layout
+
+	class(contVar) :: this
+\end_layout
+
+\begin_layout Plain Layout
+
+	integer :: val
+\end_layout
+
+\begin_layout Plain Layout
+
+	this%someVariables=val
+\end_layout
+
+\begin_layout Plain Layout
+
+end subroutine contVarAllocate
+\end_layout
+
+\end_inset
+
+The most important point in all of this is that you've to use the keywords
+ 
+\emph on
+class
+\emph default
+ when you're using the datatype inside a class.
+ The drawback is that doesn't fix the issue still :( 
+\begin_inset Newline newline
+\end_inset
+
+Next I tried debugging using dgb.
+ Spent quite some time, only to find that indeed before and after sending
+ the values are different.
+ :( 
+\begin_inset Newline newline
+\end_inset
+
+Eventually tried writing a code with an allocatable array separately and
+ that apparently does work alright.
 \end_layout
 
 \begin_layout Part
