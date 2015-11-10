@@ -19,9 +19,10 @@ program oneParticle
   complex, dimension(maxS,maxT) :: psi
   complex,dimension(maxS) :: debugArray !remove this from the final code
   type(contVar) :: psic,del2psic
-  complex :: m1,m2,m3,m4
+  !complex:: m1,m2,m3,m4
+  complex, dimension(maxS):: m1,m2,m3,m4  
   !complex, dimension(maxS) :: psic,m1,m2,m3,m4,e,f,g,del2psic,b,c,d
-  real, dimension(maxS) :: x
+  real, dimension(maxS) :: x, Varray
 
   integer :: timeStep
   
@@ -41,6 +42,8 @@ program oneParticle
 
   !start with that state
   psi(:,1)=psic%f
+  !init the potential array
+  Varray = (/ ( V(qFi(j)), j=1, maxS) /)
   !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=1,maxT-1
@@ -50,6 +53,7 @@ program oneParticle
 
      !evaluate del2psi at specific points
      ! del2psic%f=(/ (psic%contVarDel2(qFi(j)),j=1,maxS) /) !evalDel2psi(psic%f,x)
+     
      ! del2psic%f(1)=del2psic%f(2)
      ! del2psic%f(maxS)=del2psic%f(maxS-1)
 
@@ -66,20 +70,26 @@ program oneParticle
      !call psic%contVarInit
      !call del2psic%contVarInit
      
-     
-     !without enforcing the boundary condition
-     do qStep=1,maxS
-        q=qFi(qStep)
-        m1=psiDot(psic,del2psic,q)
-        m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
-        m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
-        m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
-        psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
-        ! q=qFi(qStep)
-        ! psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
-        !!write(*,*) psiDot(psic,del2psic,q)
-     end do
+     m1=psiDot(psic%f,Varray)
+     m2=psiDot(psic%f + 0.5*dt*m1,Varray)
+     m3=psiDot(psic%f + 0.5*dt*m2,Varray)
+     m4=psiDot(psic%f + dt*m3, Varray)
+     psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+     
+     ! !without enforcing the boundary condition
+     ! do qStep=1,maxS
+     !    q=qFi(qStep)
+     !    m1=psiDot(psic,del2psic,q)
+     !    m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
+     !    m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
+     !    m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
+     !    psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+
+     !    ! q=qFi(qStep)
+     !    ! psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
+     !    !!write(*,*) psiDot(psic,del2psic,q)
+     ! end do
      if (mod(timeStep,1000)==0) then
         call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
@@ -110,6 +120,18 @@ program oneParticle
 
   call endPlot()
 contains
+  function psiDot(psi,Varray)
+    complex, dimension(:) :: psi
+    real, dimension(:) :: Varray
+    complex, dimension(size(psi)) :: psiDot,kineticPart,potentialPart
+    kineticPart(2:size(psi)-1)=-hbar*hbar*evalDel2(psi(2:size(psi)-1))/2
+    kineticPart(1)=kineticPart(2)
+    kineticPart(size(psi))=kineticPart(size(psi)-1)
+
+    potentialPart=Varray*psi
+    psiDot=((0,-1)/hbar) * (kineticPart + potentialPart)
+  end function psiDot
+  
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar
@@ -126,7 +148,7 @@ contains
     end do
   end subroutine initGaussian
 
-  function evalDel2(y,m)
+  function evalDel2(y)
     complex, dimension(:) :: y
     complex, dimension(size(y)) :: evalDel2
     integer :: m
@@ -216,13 +238,14 @@ contains
   ! end function psiDot
 
 
+  
 
   !give it psi(q),del2psi(q) and q, it'll give you psi dot
-  function psiDot(psiPar,del2psiPar,q)
+  function psiDotLegacy(psiPar,del2psiPar,q)
     type(contVar) :: psiPar,del2psiPar
     real :: q
     
-    complex :: psiDot,kineticPart,potentialPart
+    complex :: psiDotLegacy,kineticPart,potentialPart
     complex :: psiAtQ, del2psiAtQ
 
     psiAtQ=psiPar%contVarInterp(q)
@@ -239,10 +262,10 @@ contains
     ! qDelta=qPlus-q
     kineticPart=-hbar*hbar*del2psiAtQ/2 !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDot=((0,-1)/hbar)*(kineticPart + potentialPart)
-    !psiDot=-omegaSquare*psiAtQ
+    psiDotLegacy=((0,-1)/hbar)*(kineticPart + potentialPart)
+    !psiDotLegacy=-omegaSquare*psiAtQ
     
-  end function psiDot
+  end function psiDotLegacy
 
   function V(q)
     real :: q
