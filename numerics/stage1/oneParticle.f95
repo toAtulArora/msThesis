@@ -4,7 +4,7 @@ program oneParticle
   implicit none
 
   !dt=0.0000001  
-  real, parameter :: xMax=10, xMin=-10, dx=0.5,dt=0.00001, tMax=4.0, sigma=1.5, xNot=2, omegaSquare=4
+  real, parameter :: xMax=10, xMin=-10, dx=0.1,dt=0.00001, tMax=4.0, sigma=1.5, xNot=2, omegaSquare=4
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
@@ -76,6 +76,7 @@ program oneParticle
      m3=psiDot(psic%f + 0.5*dt*m2,Varray)
      m4=psiDot(psic%f + dt*m3, Varray)
      psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+
      
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
@@ -124,12 +125,14 @@ contains
     complex, dimension(:) :: psi
     real, dimension(:) :: Varray
     complex, dimension(size(psi)) :: psiDot,kineticPart,potentialPart
-    kineticPart(2:size(psi)-1)=-hbar*hbar*evalDel2(psi(2:size(psi)-1))/2
+
+    kineticPart=-hbar*hbar*evalDel2(psi)/2
     kineticPart(1)=kineticPart(2)
     kineticPart(size(psi))=kineticPart(size(psi)-1)
 
     potentialPart=Varray*psi
     psiDot=((0,-1)/hbar) * (kineticPart + potentialPart)
+    ! psiDot=0
   end function psiDot
   
   subroutine initGaussian(psiPar,xPar)
