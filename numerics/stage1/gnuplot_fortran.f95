@@ -175,9 +175,9 @@ contains
   end subroutine startPlot
   subroutine endPlot()
     write (*,*) "Converting 3d graphs to avi.."
-    call system ("avconv -i 'temp/file%04d.jpeg' result3d.avi")
+    call system ("ffmpeg -i 'temp/file%04d.jpeg' result3d.avi")
     write(*,*) "Converting 2d graphs to avi.."
-    call system ("avconv -i 'temp2d/file%04d.jpeg' result2d.avi")
+    call system ("ffmpeg -i 'temp2d/file%04d.jpeg' result2d.avi")
 
     !write (*,*) "Done!"
     !TODO: command for creating a movie and cleanup

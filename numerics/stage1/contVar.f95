@@ -18,7 +18,8 @@ module classContVar
    contains
      procedure, pass :: contVarAllocate
      procedure, pass :: contVarInit
-     procedure, pass :: contVarInterp     
+     procedure, pass :: contVarInterp
+     procedure, pass :: contVarDel2
   end type contVar
 
 contains
@@ -61,5 +62,16 @@ contains
     !contVarInterp=this%f(int((q + 10)/(0.1))) !
     contVarInterp=ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
   end function contVarInterp
+
+  function contVarDel2(this,q)
+    class(contVar),intent(inout) :: this
+    !the value at which you want the value of f
+    real :: q
+    !integer :: qStep
+    complex :: contVarDel2
+    !contVarDel2=this%f(qStep)
+    !contVarDel2=this%f(int((q + 10)/(0.1))) !
+    contVarDel2=iDel2(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*iDel2(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
+  end function contVarDel2
 
 end module classContVar

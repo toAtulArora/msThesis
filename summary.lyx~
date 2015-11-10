@@ -2296,7 +2296,7 @@ Monday | Nov 9
 \end_layout
 
 \begin_layout Itemize
-[research/ms] Working on trying to figure why the codes not working.
+[research/ms] Working on trying to figure why the code's not working.
  Now I'm in a situation where I 'print' an object (of custom type) before
  sending to a function and then inside that function.
  They produce different results.
@@ -2394,6 +2394,58 @@ Next I tried debugging using dgb.
 
 Eventually tried writing a code with an allocatable array separately and
  that apparently does work alright.
+ Alright, 
+\emph on
+figured
+\emph default
+ it.
+ The issue was that the return type of my function was real and the value
+ I intended to return was complex.
+ So for some reason, that issue was rising.
+\begin_inset Newline newline
+\end_inset
+
+Even after resolving it, it just won't work.
+ Neither with Euler nor with RK4.
+ It just won't evolve properly.
+ The norm goes crazy.
+ Now I have no clue why it isn't working.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Nov 10
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Still can't figure what's really wrong.
+ Checked the 
+\begin_inset Formula $\nabla^{2}\psi$
+\end_inset
+
+ evaluated using the discrete difference formula and compared it to differentiat
+ing the interpolated polynomial.
+ The latter looked better, but the difference isn't all that marked.
+ I suppose I'd be forced to use FFT after all.
+ I suppose the basic difficulty is that in this 
+\begin_inset Formula $\dot{\psi}$
+\end_inset
+
+ involves a double derivative of 
+\begin_inset Formula $\psi$
+\end_inset
+
+ itself, whereas in all previous cases that I considered, 
+\begin_inset Formula $\dot{q}$
+\end_inset
+
+ will usually be a function of 
+\begin_inset Formula $q^{m}$
+\end_inset
+
+ etc.
+ Anyway, changing the approach at this stage doesn't feel feasable.
+ I doubt anyway that this will work.
+ 
 \end_layout
 
 \begin_layout Part

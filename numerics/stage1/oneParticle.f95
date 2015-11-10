@@ -3,7 +3,8 @@ program oneParticle
   use gnuplot_fortran
   implicit none
 
-  real, parameter :: xMax=10, xMin=-10, dx=0.01, dt=0.05, tMax=50, sigma=0.9, xNot=0.8, omegaSquare=4
+  !dt=0.0000001  
+  real, parameter :: xMax=10, xMin=-10, dx=0.5,dt=0.00001, tMax=4.0, sigma=1.5, xNot=2, omegaSquare=4
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
@@ -40,13 +41,21 @@ program oneParticle
 
   !start with that state
   psi(:,1)=psic%f
-  call nextPlot2d(x,abs(psic%f))
+  !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=1,maxT-1
      !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
+     call psic%contVarInit
+
      !evaluate del2psi at specific points
-     del2psic%f=evalDel2psi(psic%f,x)
+     ! del2psic%f=(/ (psic%contVarDel2(qFi(j)),j=1,maxS) /) !evalDel2psi(psic%f,x)
+     ! del2psic%f(1)=del2psic%f(2)
+     ! del2psic%f(maxS)=del2psic%f(maxS-1)
+
+     
+     !del2psic%f=evalDel2psi(psic%f,x)
+     
      !write(*,*) del2psic%f
      !evaluate del2 and splines coffecients for delt2
      !call initInterpolateDel2psi(psic,del2psic,b,c,d)
@@ -54,28 +63,34 @@ program oneParticle
      !call initInterpolatePsi(psic,e,f,g)
 
      !with the tabulated points defined, evalute the spline coefficients
-     call psic%contVarInit
-     call del2psic%contVarInit
+     !call psic%contVarInit
+     !call del2psic%contVarInit
+     
      
      !without enforcing the boundary condition
      do qStep=1,maxS
-        ! q=qFi(qStep)
-        ! m1=psiDot(psic,del2psic,q)
-        ! m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
-        ! m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
-        ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
-        ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
-
         q=qFi(qStep)
-        psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
+        m1=psiDot(psic,del2psic,q)
+        m2=psiDot(psic,del2psic,q + 0.5*dt*(abs(m1)))
+        m3=psiDot(psic,del2psic,q + 0.5*dt*(abs(m2)))
+        m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
+        psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+
+        ! q=qFi(qStep)
+        ! psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
         !!write(*,*) psiDot(psic,del2psic,q)
      end do
+     if (mod(timeStep,1000)==0) then
+        call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
+        !call nextPlot2d(x(2:maxS-1),abs( (/ (psiDot(psic,del2psic,(qFi(j))),j=2,maxS-1) /) ))
+        
+     end if
 
-     call nextPlot2d(x,abs(psi(:,timeStep)))
      !psi(:,timeStep+1)=psi(:,timeStep)
      ! call nextPlot2d(x,abs(psi(:,timeStep)))
      !call nextPlot2d(x,abs(del2psic%f))
-     call nextPlot2d(x,abs(psic%f))
+     ! call nextPlot2d(x,abs(del2psic%f))
 
      ! call psic%contVarInit()
      ! !debugArray = (/(psic%contVarInterp(j),j=1,maxS)/)
@@ -98,17 +113,31 @@ contains
   subroutine initGaussian(psiPar,xPar)
     complex, dimension(:) :: psiPar
     real, dimension(:) :: xPar
-    real :: q
+    real :: q,omega
     integer :: l
     psiPar=0
     xPar=0
+    omega=pi/(qFi(maxS))
     do l=1,maxS
        q=qFi(l) !dx*l + xMin
        psiPar(l)=exp(-((q-xNot)*(q-xNot))/(2*sigma*sigma))/(sigma*rootTwoPi)
+       !psiPar(l)=q !*q !cos(omega*q)
        xPar(l)=q
     end do
   end subroutine initGaussian
 
+  function evalDel2(y,m)
+    complex, dimension(:) :: y
+    complex, dimension(size(y)) :: evalDel2
+    integer :: m
+    do m=2,maxS-1
+       evalDel2(m)=( y(m+1) + y(m-1) - 2*y(m) )/(dx*dx)
+    end do
+    !bad boundary conditions, but what to do :(
+    evalDel2(1)=evalDel2(2)
+    evalDel2(maxS)=evalDel2(maxS-1)    
+  end function evalDel2
+  
   function evalDel2psi(psiPar,xPar)
     complex, dimension(:) :: psiPar
     complex, dimension(size(psiPar)) :: evalDel2psi
@@ -196,9 +225,10 @@ contains
     complex :: psiDot,kineticPart,potentialPart
     complex :: psiAtQ, del2psiAtQ
 
-    psiAtQ=contVarInterp(psiPar,q)
+    psiAtQ=psiPar%contVarInterp(q)
     !write (*,*) psiAtQ
-    del2psiAtQ=contVarInterp(del2psiPar,q)
+    del2psiAtQ=psiPar%contVarDel2(q)
+    
     !write(*,*) del2psiAtQ
     !integer :: m
     !real :: q,qPlus,qMinus,qDelta
@@ -207,16 +237,17 @@ contains
     ! qPlus=qFi(m+1)
     ! qMinus=qFi(m-1)
     ! qDelta=qPlus-q
-    kineticPart=-hbar*hbar*del2psiAtQ !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
+    kineticPart=-hbar*hbar*del2psiAtQ/2 !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
     potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDot=((0,1)*hbar)*(kineticPart + potentialPart)
+    psiDot=((0,-1)/hbar)*(kineticPart + potentialPart)
+    !psiDot=-omegaSquare*psiAtQ
     
   end function psiDot
 
   function V(q)
     real :: q
     real :: V
-    V=omegaSquare*q*q
+    V= omegaSquare*q*q/2
   end function V
   
   function qFi(index)
