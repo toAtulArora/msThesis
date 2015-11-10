@@ -66,7 +66,7 @@ program oneParticle
         ! m4=psiDot(psic,del2psic,q + dt*(abs(m3)))
         ! psi(qStep,timeStep+1)=psic%f(qStep) + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
-        ! q=qFi(qStep)
+        q=qFi(qStep)
         psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
         !!write(*,*) psiDot(psic,del2psic,q)
      end do
