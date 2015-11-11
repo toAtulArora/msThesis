@@ -105,7 +105,8 @@ program oneParticle
      !    !!write(*,*) psiDot(psic,del2psic,q)
      ! end do
      if (mod(timeStep,100)==0) then
-        call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        !call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        call nextPlot2d( (/ (tFi(j),j=1,timeStep) /) , q(1:timeStep))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psiDot(psic,del2psic,(qFi(j))),j=2,maxS-1) /) ))
         
