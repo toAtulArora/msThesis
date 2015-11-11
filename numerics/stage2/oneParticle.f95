@@ -127,7 +127,8 @@ program oneParticle
 contains
   function qDot(psiPar,q)
     type(contVar) :: psiPar
-    psiPar%contVarDel(
+    real :: qDot
+    qDot = psiPar%contVarDel(q)
   end function qDot
   function psiDot(psi,Varray)
     complex, dimension(:) :: psi
