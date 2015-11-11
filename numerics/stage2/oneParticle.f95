@@ -38,12 +38,14 @@ program oneParticle
 
   x=0
   ! initialize the state to guassian
-  call initGaussian(psic%f,x)
-
+  call initGaussian(psic%f,x)  
   !start with that state
   psi(:,1)=psic%f
   !init the potential array
   Varray = (/ ( V(qFi(j)), j=1, maxS) /)
+
+  ! initialize the particle to be at 0
+  q=0
   !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
   do timeStep=1,maxT-1
