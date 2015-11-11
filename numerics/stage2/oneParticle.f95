@@ -126,6 +126,7 @@ program oneParticle
   call endPlot()
 contains
   function qDot(psiPar,q)
+    type(contVar) :: psiPar
     
   end function qDot
   function psiDot(psi,Varray)
