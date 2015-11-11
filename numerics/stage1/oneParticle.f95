@@ -4,7 +4,7 @@ program oneParticle
   implicit none
 
   !dt=0.0000001  
-  real, parameter :: xMax=10, xMin=-10, dx=0.1,dt=0.0001, tMax=4.0, sigma=0.5, xNot=-2, omegaSquare=4
+  real, parameter :: xMax=20, xMin=-20, dx=0.1,dt=0.001, tMax=16.0, sigma=0.5, xNot=-2, omegaSquare=4
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
   integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
@@ -91,7 +91,7 @@ program oneParticle
      !    ! psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
      !    !!write(*,*) psiDot(psic,del2psic,q)
      ! end do
-     if (mod(timeStep,1000)==0) then
+     if (mod(timeStep,100)==0) then
         call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psiDot(psic,del2psic,(qFi(j))),j=2,maxS-1) /) ))
