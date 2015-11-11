@@ -155,6 +155,10 @@ contains
     end do
   end subroutine initGaussian
 
+  function evalDel(y)
+    
+  end function evalDel
+  
   function evalDel2(y)
     complex, dimension(:) :: y
     complex, dimension(size(y)) :: evalDel2
