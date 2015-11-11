@@ -6,7 +6,7 @@ program oneParticle
   !dt=0.0000001  
   real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=8.0, sigma=0.5, xNot=-2, omegaSquare=16
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
-  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, particleN=3
+  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
 
 
   integer :: j,qStep !just for counting misc. things
