@@ -84,11 +84,13 @@ program oneParticle
      m4=psiDot(psic%f + dt*m3, Varray)
      psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
+     !evolve the particle using RK4 (don't know how useful it is..but let's see)
      k1=qDot(psic,qc)
      k2=qDot(psic,qc+0.5*dt*k1)
      k3=qDot(psic,qc+0.5*dt*k2)
      k4=qDot(psic,qc+dt*k3)
      q = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
+     
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
      !    q=qFi(qStep)
