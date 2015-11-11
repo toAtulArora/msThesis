@@ -90,7 +90,7 @@ program oneParticle
      k3=qDot(psic,qc+0.5*dt*k2)
      k4=qDot(psic,qc+dt*k3)
      q(timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
-     write(*,*) qc
+     write(*,*) k1
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
      !    q=qFi(qStep)
