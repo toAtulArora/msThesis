@@ -128,7 +128,7 @@ contains
   function qDot(psiPar,q)
     type(contVar) :: psiPar
     real :: qDot
-    qDot = hbar*(1/m)*psiPar%contVarDel(q)
+    qDot = hbar*(1/m)* real( (0,-1) * psiPar%contVarDel(q)/psiPar%contVarInterp(q))
     
   end function qDot
   function psiDot(psi,Varray)
