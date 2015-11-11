@@ -128,7 +128,8 @@ contains
   function qDot(psiPar,q)
     type(contVar) :: psiPar
     real :: qDot
-    qDot = psiPar%contVarDel(q)
+    qDot = hbar*(1/m)*psiPar%contVarDel(q)
+    
   end function qDot
   function psiDot(psi,Varray)
     complex, dimension(:) :: psi
