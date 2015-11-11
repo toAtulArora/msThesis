@@ -210,10 +210,10 @@ contains
   end function ispline
 
 
-  function iDel2(u, x, y, b, c, d, n)
+  function iDel(u, x, y, b, c, d, n)
     !======================================================================
-    ! function iDel2 evaluates the second derivative using cubic spline interpolation at point z
-    ! iDel2 = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
+    ! function iDel evaluates the second derivative using cubic spline interpolation at point z
+    ! iDel = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
     ! where  x(i) <= u <= x(i+1)
     !----------------------------------------------------------------------
     ! input..
@@ -222,11 +222,11 @@ contains
     ! b, c, d = arrays of spline coefficients computed by spline
     ! n       = the number of data points
     ! output:
-    ! iDel2 = interpolated value at point u
+    ! iDel = interpolated value at point u
     !=======================================================================
     implicit none
-    real ::  iDel2
-    !double precision iDel2
+    real ::  iDel
+    !double precision iDel
     integer n
     !double precision  u, x(n), y(n), b(n), c(n), d(n)
     real ::  u, x(n), y(n), b(n), c(n), d(n)
@@ -236,11 +236,11 @@ contains
 
     ! if u is ouside the x() interval take a boundary value (left or right)
     if(u <= x(1)) then
-       iDel2 = y(1)
+       iDel = y(1)
        return
     end if
     if(u >= x(n)) then
-       iDel2 = y(n)
+       iDel = y(n)
        return
     end if
 
@@ -261,8 +261,8 @@ contains
     !  evaluate spline interpolation
     !*
     dx = u - x(i)
-    iDel2 = 2*c(i) + 6*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
-  end function iDel2
+    iDel = 2*c(i)*dx + 3*dx*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
+  end function iDel
 
   function iDel2(u, x, y, b, c, d, n)
     !======================================================================
