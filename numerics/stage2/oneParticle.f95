@@ -11,7 +11,7 @@ program oneParticle
 
   integer :: j,qStep !just for counting misc. things
   ! real, dimension(maxS,maxT) :: qc
-  complex :: k1,k2,k3,k4,qc
+  real :: k1,k2,k3,k4,qc
   ! complex, dimension(maxS,maxT) :: q
 
   real, dimension(maxT) :: q
