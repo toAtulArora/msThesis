@@ -46,6 +46,7 @@ program oneParticle
 
   ! initialize the particle to be at 0
   q=0
+
   
   !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
