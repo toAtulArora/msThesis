@@ -47,7 +47,6 @@ program oneParticle
 
   ! initialize the particle to be at 0
   q=0
-  qc=0
   
   !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
@@ -56,6 +55,9 @@ program oneParticle
      psic%f=psi(:,timeStep)
      call psic%contVarInit
 
+     !pick the particle's current location
+     qc=q(timeStep)
+     
      !evaluate del2psi at specific points
      ! del2psic%f=(/ (psic%contVarDel2(qFi(j)),j=1,maxS) /) !evalDel2psi(psic%f,x)
      
