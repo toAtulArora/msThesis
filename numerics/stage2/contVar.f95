@@ -82,7 +82,7 @@ contains
     complex :: contVarDel
     !contVarDel=this%f(qStep)
     !contVarDel=this%f(int((q + 10)/(0.1))) !
-    contVarDel=iDel2(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*iDel2(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
+    contVarDel=iDel(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*iDel(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
   end function contVarDel
 
 
