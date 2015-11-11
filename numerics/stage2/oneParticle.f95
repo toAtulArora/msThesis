@@ -136,7 +136,7 @@ contains
     real, dimension(:) :: Varray
     complex, dimension(size(psi)) :: psiDot,kineticPart,potentialPart
 
-    kineticPart=-hbar*hbar*evalDel2(psi)/2
+    kineticPart=-hbar*hbar*evalDel2(psi)/(2*m)
     kineticPart(1)=kineticPart(2)
     kineticPart(size(psi))=kineticPart(size(psi)-1)
 
