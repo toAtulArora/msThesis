@@ -261,7 +261,7 @@ contains
     !  evaluate spline interpolation
     !*
     dx = u - x(i)
-    iDel = 2*c(i)*dx + 3*dx*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
+    iDel = b(i) + 2*c(i)*dx + 3*dx*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
   end function iDel
 
   function iDel2(u, x, y, b, c, d, n)
