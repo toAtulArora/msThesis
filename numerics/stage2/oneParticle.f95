@@ -136,6 +136,7 @@ program oneParticle
 contains
   function qDot(psiPar,q)
     type(contVar) :: psiPar
+    real :: q
     real :: qDot
     qDot = hbar*(1/m)* real( (0,-1) * psiPar%contVarDel(q)/psiPar%contVarInterp(q))    
   end function qDot
