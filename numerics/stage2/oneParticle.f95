@@ -125,6 +125,9 @@ program oneParticle
 
   call endPlot()
 contains
+  function qDot(psiPar,q)
+    
+  end function qDot
   function psiDot(psi,Varray)
     complex, dimension(:) :: psi
     real, dimension(:) :: Varray
