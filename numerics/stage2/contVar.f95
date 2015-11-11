@@ -20,6 +20,7 @@ module classContVar
      procedure, pass :: contVarInit
      procedure, pass :: contVarInterp
      procedure, pass :: contVarDel2
+     procedure, pass :: contVarDel
   end type contVar
 
 contains
