@@ -14,7 +14,8 @@ program oneParticle
   complex :: k1,k2,k3,k4,qc
   ! complex, dimension(maxS,maxT) :: q
 
-  real :: q
+  real, dimension(maxT) :: q
+  
   !type(contVar), dimension(maxT) :: psi
   complex, dimension(maxS,maxT) :: psi
   complex,dimension(maxS) :: debugArray !remove this from the final code
@@ -82,6 +83,10 @@ program oneParticle
      psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
      k1=qDot(psic,q)
+     k2=qDot(psic,q+0.5*dt*k1)
+     k3=qDot(psic,q+0.5*dt*k2)
+     k4=qDot(psic,q+dt*k3)
+     
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
      !    q=qFi(qStep)
