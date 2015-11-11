@@ -81,7 +81,7 @@ program oneParticle
      m4=psiDot(psic%f + dt*m3, Varray)
      psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
-     k1=qDot(psic%f,q)
+     k1=qDot(psic,q)
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
      !    q=qFi(qStep)
