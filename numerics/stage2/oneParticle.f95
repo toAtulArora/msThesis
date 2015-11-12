@@ -6,15 +6,17 @@ program oneParticle
   !dt=0.0000001  
   real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=8.0, sigma=0.5, xNot=-2, omegaSquare=16,m=1
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
-  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt
+  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, ensambleSize=15
 
 
   integer :: j,qStep !just for counting misc. things
   ! real, dimension(maxS,maxT) :: qc
-  real :: k1,k2,k3,k4,qc
+  real, dimension(ensambleSize) :: k1,k2,k3,k4,qc
+  ! this is for plotting
+  real, dimension(ensambleSize*maxT) :: qTemp
   ! complex, dimension(maxS,maxT) :: q
 
-  real, dimension(maxT) :: q
+  real, dimension(ensambleSize,maxT) :: q
   
   !type(contVar), dimension(maxT) :: psi
   complex, dimension(maxS,maxT) :: psi
@@ -46,7 +48,9 @@ program oneParticle
   Varray = (/ ( V(qFi(j)), j=1, maxS) /)
 
   ! initialize the particle to be at 0
-  q=0
+  q(:,1)=initEnsamble(psic)
+  !q(:,1)= (/ ( qFi(j),j=1,maxS, maxS/ensambleSize) /)
+  
   
   !call nextPlot2d(x,abs(psic%f))
   !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
@@ -56,7 +60,7 @@ program oneParticle
      call psic%contVarInit
 
      !pick the particle's current location
-     qc=q(timeStep)
+     qc=q(:,timeStep)
      
      !evaluate del2psi at specific points
      ! del2psic%f=(/ (psic%contVarDel2(qFi(j)),j=1,maxS) /) !evalDel2psi(psic%f,x)
@@ -76,7 +80,8 @@ program oneParticle
      !with the tabulated points defined, evalute the spline coefficients
      !call psic%contVarInit
      !call del2psic%contVarInit
-     
+
+     ! Varray = (/ ( Vdouble(qFi(j)), j=1, maxS) /)
 
      m1=psiDot(psic%f,Varray)
      m2=psiDot(psic%f + 0.5*dt*m1,Varray)
@@ -89,7 +94,7 @@ program oneParticle
      k2=qDot(psic,qc+0.5*dt*k1)
      k3=qDot(psic,qc+0.5*dt*k2)
      k4=qDot(psic,qc+dt*k3)
-     q(timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
+     q(:,timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
      ! write(*,*) k1
      ! !without enforcing the boundary condition
      ! do qStep=1,maxS
@@ -105,8 +110,13 @@ program oneParticle
      !    !!write(*,*) psiDot(psic,del2psic,q)
      ! end do
      if (mod(timeStep,100)==0) then
-        !call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
-        call nextPlot2d( (/ (tFi(j),j=1,timeStep) /) , q(1:timeStep))
+     ! if (mod(timeStep,maxT/10)==0) then
+        call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        !       call nextPlot2d( (/  ( tFi(j),j=1,timeStep) /) , q(1,1:timeStep)   )
+
+        !qTemp=(/ (q(j,1:timeStep),j=1,ensambleSize) /)
+        !call nextPlot2d( (/ ( tFi(mod(j,timeStep)),j=1,timeStep*ensambleSize) /) ,   qTemp(1:timeStep*ensambleSize)   )
+         
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psiDot(psic,del2psic,(qFi(j))),j=2,maxS-1) /) ))
         
@@ -137,10 +147,12 @@ program oneParticle
 contains
   function qDot(psiPar,q)
     type(contVar) :: psiPar
-    real :: q
-    real :: qDot
-    ! write(*,*) psiPar%contVarDel(q) 
-    qDot = hbar*(1/m)* real( (0,-1) * psiPar%contVarDel(q)/psiPar%contVarInterp(q))    
+    real,dimension(:) :: q
+    real,dimension(size(q)) :: qDot
+    ! write(*,*) psiPar%contVarDel(q)
+    !precision(q(1))
+    qDot = hbar*(1/m)* real( (0,-1) * psiPar%contVarDel(q)/(psiPar%contVarInterp(q)+ (1E-24) ) )
+    !write(*,*) psiPar%contVarDel(q)
   end function qDot
   
   function psiDot(psi,Varray)
@@ -173,6 +185,36 @@ contains
     end do
   end subroutine initGaussian
 
+
+  function initEnsamble(psiPar)
+    type(contVar) :: psiPar
+    real,dimension(size(psiPar%f)) :: prob
+    real :: randHeight,probMax,randQ
+    integer :: randIndex,particlesSoFar
+    real,dimension(ensambleSize) :: initEnsamble
+
+    !TODO: Describe the lagorithm somewhere (this is new and generalizable, although equivalent to the older one you'd thought of independently (but turned out to be standard))
+    particlesSoFar=0
+    prob=abs(psiPar%f)*abs(psiPar%f)
+    probMax=maxval(prob)
+    do
+       randHeight = rand()*probMax
+       !randIndex = rand()*maxS
+       randQ=rand()*(xMax-xMin) + xMin
+       if (randIndex == 0) then
+          cycle
+       end if
+       !the following step could be improved using the interpolation, but pehraps later; not that important
+       if ( prob(iFq(randQ)) > randHeight) then
+          particlesSoFar=particlesSoFar + 1
+          initEnsamble(particlesSoFar) = randQ !qFi(randIndex)
+          if ( particlesSoFar >= ensambleSize) then
+             exit
+          end if
+       end if
+    end do
+   
+  end function initEnsamble
   ! function evalDel(y)
     
   ! end function evalDel
@@ -273,32 +315,32 @@ contains
 
   
 
-  !give it psi(q),del2psi(q) and q, it'll give you psi dot
-  function psiDotLegacy(psiPar,del2psiPar,q)
-    type(contVar) :: psiPar,del2psiPar
-    real :: q
+  ! !give it psi(q),del2psi(q) and q, it'll give you psi dot
+  ! function psiDotLegacy(psiPar,del2psiPar,q)
+  !   type(contVar) :: psiPar,del2psiPar
+  !   real :: q
     
-    complex :: psiDotLegacy,kineticPart,potentialPart
-    complex :: psiAtQ, del2psiAtQ
+  !   complex :: psiDotLegacy,kineticPart,potentialPart
+  !   complex :: psiAtQ, del2psiAtQ
 
-    psiAtQ=psiPar%contVarInterp(q)
-    !write (*,*) psiAtQ
-    del2psiAtQ=psiPar%contVarDel2(q)
+  !   psiAtQ=psiPar%contVarInterp(q)
+  !   !write (*,*) psiAtQ
+  !   del2psiAtQ=psiPar%contVarDel2(q)
     
-    !write(*,*) del2psiAtQ
-    !integer :: m
-    !real :: q,qPlus,qMinus,qDelta
-    ! obtain q from index
-    ! q=qFi(m)
-    ! qPlus=qFi(m+1)
-    ! qMinus=qFi(m-1)
-    ! qDelta=qPlus-q
-    kineticPart=-hbar*hbar*del2psiAtQ/2 !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
-    potentialPart=V(q)*psiAtQ !psiPar(q)
-    psiDotLegacy=((0,-1)/hbar)*(kineticPart + potentialPart)
-    !psiDotLegacy=-omegaSquare*psiAtQ
+  !   !write(*,*) del2psiAtQ
+  !   !integer :: m
+  !   !real :: q,qPlus,qMinus,qDelta
+  !   ! obtain q from index
+  !   ! q=qFi(m)
+  !   ! qPlus=qFi(m+1)
+  !   ! qMinus=qFi(m-1)
+  !   ! qDelta=qPlus-q
+  !   kineticPart=-hbar*hbar*del2psiAtQ/2 !(psiPar(qPlus) + psiPar(qMinus) - 2*psiPar(q))/(qDelta*qDelta)
+  !   potentialPart=V(q)*psiAtQ !psiPar(q)
+  !   psiDotLegacy=((0,-1)/hbar)*(kineticPart + potentialPart)
+  !   !psiDotLegacy=-omegaSquare*psiAtQ
     
-  end function psiDotLegacy
+  ! end function psiDotLegacy
 
   function V(q)
     real :: q
@@ -311,6 +353,13 @@ contains
     real::qFi
     qFi=dx*index + xMin
   end function qFi
+
+  function iFq(q)
+    real:: q
+    integer::iFq
+    iFq= (q - xMin)/dx
+  end function iFq
+  
   function tFi(index)
     integer:: index
     real:: tFi

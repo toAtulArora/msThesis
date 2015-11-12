@@ -170,103 +170,52 @@ contains
     ! ispline = interpolated value at point u
     !=======================================================================
     implicit none
-    real ::  ispline
+    real,dimension(:) ::  u
+
+    real,dimension(size(u)) ::  ispline
     !double precision ispline
-    integer n
+    integer n,m
     !double precision  u, x(n), y(n), b(n), c(n), d(n)
-    real ::  u, x(n), y(n), b(n), c(n), d(n)
+    real :: x(n), y(n), b(n), c(n), d(n)
     integer i, j, k
     !double precision dx
     real :: dx
 
-    ! if u is ouside the x() interval take a boundary value (left or right)
-    if(u <= x(1)) then
-       ispline = y(1)
-       return
-    end if
-    if(u >= x(n)) then
-       ispline = y(n)
-       return
-    end if
-
-    !*
-    !  binary search for for i, such that x(i) <= u <= x(i+1)
-    !*
-    i = 1
-    j = n+1
-    do while (j > i+1)
-       k = (i+j)/2
-       if(u < x(k)) then
-          j=k
-       else
-          i=k
+    do m=1,size(u)
+       ! if u is ouside the x() interval take a boundary value (left or right)
+       if(u(m) <= x(1)) then
+          ispline(m) = y(1)
+          cycle
        end if
+       if(u(m) >= x(n)) then
+          ispline(m) = y(n)
+          cycle
+       end if
+
+       !*
+       !  binary search for for i, such that x(i) <= u <= x(i+1)
+       !*
+       i = 1
+       j = n+1
+       do while (j > i+1)
+          k = (i+j)/2
+          if(u(m) < x(k)) then
+             j=k
+          else
+             i=k
+          end if
+       end do
+       !*
+       !  evaluate spline interpolation
+       !*
+       dx = u(m) - x(i)
+       ispline(m) = y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
     end do
-    !*
-    !  evaluate spline interpolation
-    !*
-    dx = u - x(i)
-    ispline = y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
   end function ispline
-
-
-  function iDel(u, x, y, b, c, d, n)
-    !======================================================================
-    ! function iDel evaluates the second derivative using cubic spline interpolation at point z
-    ! iDel = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
-    ! where  x(i) <= u <= x(i+1)
-    !----------------------------------------------------------------------
-    ! input..
-    ! u       = the abscissa at which the spline is to be evaluated
-    ! x, y    = the arrays of given data points
-    ! b, c, d = arrays of spline coefficients computed by spline
-    ! n       = the number of data points
-    ! output:
-    ! iDel = interpolated value at point u
-    !=======================================================================
-    implicit none
-    real ::  iDel
-    !double precision iDel
-    integer n
-    !double precision  u, x(n), y(n), b(n), c(n), d(n)
-    real ::  u, x(n), y(n), b(n), c(n), d(n)
-    integer i, j, k
-    !double precision dx
-    real :: dx
-
-    ! if u is ouside the x() interval take a boundary value (left or right)
-    if(u <= x(1)) then
-       iDel = y(1)
-       return
-    end if
-    if(u >= x(n)) then
-       iDel = y(n)
-       return
-    end if
-
-    !*
-    !  binary search for for i, such that x(i) <= u <= x(i+1)
-    !*
-    i = 1
-    j = n+1
-    do while (j > i+1)
-       k = (i+j)/2
-       if(u < x(k)) then
-          j=k
-       else
-          i=k
-       end if
-    end do
-    !*
-    !  evaluate spline interpolation
-    !*
-    dx = u - x(i)
-    iDel = b(i) + 2*c(i)*dx + 3*dx*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
-  end function iDel
 
   function iDel2(u, x, y, b, c, d, n)
     !======================================================================
-    ! function iDel2 evaluates the second derivative using cubic spline interpolation at point z
+    ! function iDel2 evaluates the cubic spline interpolation at point z
     ! iDel2 = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
     ! where  x(i) <= u <= x(i+1)
     !----------------------------------------------------------------------
@@ -279,43 +228,219 @@ contains
     ! iDel2 = interpolated value at point u
     !=======================================================================
     implicit none
-    real ::  iDel2
+    real,dimension(:) ::  u
+    real,dimension(size(u)) ::  iDel2
     !double precision iDel2
-    integer n
+    integer n,m
     !double precision  u, x(n), y(n), b(n), c(n), d(n)
-    real ::  u, x(n), y(n), b(n), c(n), d(n)
+
+    real :: x(n), y(n), b(n), c(n), d(n)
     integer i, j, k
     !double precision dx
     real :: dx
 
-    ! if u is ouside the x() interval take a boundary value (left or right)
-    if(u <= x(1)) then
-       iDel2 = y(1)
-       return
-    end if
-    if(u >= x(n)) then
-       iDel2 = y(n)
-       return
-    end if
-
-    !*
-    !  binary search for for i, such that x(i) <= u <= x(i+1)
-    !*
-    i = 1
-    j = n+1
-    do while (j > i+1)
-       k = (i+j)/2
-       if(u < x(k)) then
-          j=k
-       else
-          i=k
+    do m=1,size(u)
+       ! if u is ouside the x() interval take a boundary value (left or right)
+       if(u(m) <= x(1)) then
+          iDel2(m) = y(1)
+          cycle
        end if
+       if(u(m) >= x(n)) then
+          iDel2(m) = y(n)
+          cycle
+       end if
+
+       !*
+       !  binary search for for i, such that x(i) <= u <= x(i+1)
+       !*
+       i = 1
+       j = n+1
+       do while (j > i+1)
+          k = (i+j)/2
+          if(u(m) < x(k)) then
+             j=k
+          else
+             i=k
+          end if
+       end do
+       !*
+       !  evaluate spline interpolation
+       !*
+       dx = u(m) - x(i)
+       iDel2(m) = 2*c(i) + 6*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
     end do
-    !*
-    !  evaluate spline interpolation
-    !*
-    dx = u - x(i)
-    iDel2 = 2*c(i) + 6*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
   end function iDel2
+  
+  function iDel(u, x, y, b, c, d, n)
+    !======================================================================
+    ! function iDel evaluates the cubic spline interpolation at point z
+    ! iDel = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
+    ! where  x(i) <= u <= x(i+1)
+    !----------------------------------------------------------------------
+    ! input..
+    ! u       = the abscissa at which the spline is to be evaluated
+    ! x, y    = the arrays of given data points
+    ! b, c, d = arrays of spline coefficients computed by spline
+    ! n       = the number of data points
+    ! output:
+    ! iDel = interpolated value at point u
+    !=======================================================================
+    implicit none
+    real,dimension(:) ::  u
+    real,dimension(size(u)) ::  iDel
+    !double precision iDel
+    integer n,p
+    !double precision  u, x(n), y(n), b(n), c(n), d(n)
+
+    real :: x(n), y(n), b(n), c(n), d(n)
+    integer i, j, k
+    !double precision dx
+    real :: dx
+    
+    do p=1,size(u)
+       !write(*,*) "ehhlo"
+       ! if u is ouside the x() interval take a boundary value (left or right)
+       if(u(p) <= x(1)) then
+          iDel(p) = y(1)
+          cycle
+       end if
+       if(u(p) >= x(n)) then
+          iDel(p) = y(n)
+          cycle
+       end if
+
+       !*
+       !  binary search for for i, such that x(i) <= u <= x(i+1)
+       !*
+       i = 1
+       j = n+1
+       do while (j > i+1)
+          k = (i+j)/2
+          if(u(p) < x(k)) then
+             j=k
+          else
+             i=k
+          end if
+       end do
+       !*
+       !  evaluate spline interpolation
+       !*
+       dx = u(p) - x(i)       
+       iDel(p) = b(i) + 2*c(i)*dx + 3*dx*dx*d(i) !2*c(i) + 6*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
+       !write(*,*) "ehhlo"
+    end do
+    !iDel=resp
+  end function iDel
+
+
+  ! function iDel(u, x, y, b, c, d, n)
+  !   !======================================================================
+  !   ! function iDel evaluates the second derivative using cubic spline interpolation at point z
+  !   ! iDel = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
+  !   ! where  x(i) <= u <= x(i+1)
+  !   !----------------------------------------------------------------------
+  !   ! input..
+  !   ! u       = the abscissa at which the spline is to be evaluated
+  !   ! x, y    = the arrays of given data points
+  !   ! b, c, d = arrays of spline coefficients computed by spline
+  !   ! n       = the number of data points
+  !   ! output:
+  !   ! iDel = interpolated value at point u
+  !   !=======================================================================
+  !   implicit none
+  !   real,dimension(:) ::  iDel
+  !   !double precision iDel
+  !   integer n
+  !   !double precision  u, x(n), y(n), b(n), c(n), d(n)
+  !   real, dimension(:) ::  u
+  !   real :: x(n), y(n), b(n), c(n), d(n)
+  !   integer i, j, k
+  !   !double precision dx
+  !   real :: dx
+
+  !   ! if u is ouside the x() interval take a boundary value (left or right)
+  !   if(u <= x(1)) then
+  !      iDel = y(1)
+  !      return
+  !   end if
+  !   if(u >= x(n)) then
+  !      iDel = y(n)
+  !      return
+  !   end if
+
+  !   !*
+  !   !  binary search for for i, such that x(i) <= u <= x(i+1)
+  !   !*
+  !   i = 1
+  !   j = n+1
+  !   do while (j > i+1)
+  !      k = (i+j)/2
+  !      if(u < x(k)) then
+  !         j=k
+  !      else
+  !         i=k
+  !      end if
+  !   end do
+  !   !*
+  !   !  evaluate spline interpolation
+  !   !*
+  !   dx = u - x(i)
+  !   iDel = b(i) + 2*c(i)*dx + 3*dx*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
+  ! end function iDel
+
+!   function iDel2(u, x, y, b, c, d, n)
+!     !======================================================================
+!     ! function iDel2 evaluates the second derivative using cubic spline interpolation at point z
+!     ! iDel2 = y(i)+b(i)*(u-x(i))+c(i)*(u-x(i))**2+d(i)*(u-x(i))**3
+!     ! where  x(i) <= u <= x(i+1)
+!     !----------------------------------------------------------------------
+!     ! input..
+!     ! u       = the abscissa at which the spline is to be evaluated
+!     ! x, y    = the arrays of given data points
+!     ! b, c, d = arrays of spline coefficients computed by spline
+!     ! n       = the number of data points
+!     ! output:
+!     ! iDel2 = interpolated value at point u
+!     !=======================================================================
+!     implicit none
+!     real,dimension(:) ::  iDel2
+!     !double precision iDel2
+!     integer n
+!     !double precision  u, x(n), y(n), b(n), c(n), d(n)
+!     real,dimension(:) ::  u
+!     real :: x(n), y(n), b(n), c(n), d(n)
+!     integer i, j, k
+!     !double precision dx
+!     real :: dx
+
+!     ! if u is ouside the x() interval take a boundary value (left or right)
+!     if(u <= x(1)) then
+!        iDel2 = y(1)
+!        return
+!     end if
+!     if(u >= x(n)) then
+!        iDel2 = y(n)
+!        return
+!     end if
+
+!     !*
+!     !  binary search for for i, such that x(i) <= u <= x(i+1)
+!     !*
+!     i = 1
+!     j = n+1
+!     do while (j > i+1)
+!        k = (i+j)/2
+!        if(u < x(k)) then
+!           j=k
+!        else
+!           i=k
+!        end if
+!     end do
+!     !*
+!     !  evaluate spline interpolation
+!     !*
+!     dx = u - x(i)
+!     iDel2 = 2*c(i) + 6*dx*d(i) !y(i) + dx*(b(i) + dx*(c(i) + dx*d(i)))
+!   end function iDel2
   
 end module spline_fortran

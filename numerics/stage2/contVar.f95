@@ -56,9 +56,9 @@ contains
   function contVarInterp(this,q)
     class(contVar),intent(inout) :: this
     !the value at which you want the value of f
-    real :: q
+    real,dimension(:) :: q
     !integer :: qStep
-    complex :: contVarInterp
+    complex,dimension(size(q)) :: contVarInterp
     !contVarInterp=this%f(qStep)
     !contVarInterp=this%f(int((q + 10)/(0.1))) !
     contVarInterp=ispline(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*ispline(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
@@ -67,9 +67,9 @@ contains
   function contVarDel2(this,q)
     class(contVar),intent(inout) :: this
     !the value at which you want the value of f
-    real :: q
+    real,dimension(:) :: q
     !integer :: qStep
-    complex :: contVarDel2
+    complex,dimension(size(q)) :: contVarDel2
     !contVarDel2=this%f(qStep)
     !contVarDel2=this%f(int((q + 10)/(0.1))) !
     contVarDel2=iDel2(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*iDel2(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
@@ -78,11 +78,12 @@ contains
   function contVarDel(this,q)
     class(contVar),intent(inout) :: this
     !the value at which you want the value of f
-    real :: q
+    real, dimension(:) :: q
     !integer :: qStep
-    complex :: contVarDel
+    complex, dimension(size(q)) :: contVarDel
     !contVarDel=this%f(qStep)
     !contVarDel=this%f(int((q + 10)/(0.1))) !
+    !write(*,*) "ehllo", q
     contVarDel=iDel(q,this%x,real(this%f),real(this%b),real(this%c),real(this%d),size(this%x)) + (0,1)*iDel(q,this%x,real((0,-1)*this%f),real((0,-1)*this%b),real((0,-1)*this%c),real((0,-1)*this%d),size(this%x))
   end function contVarDel
 
