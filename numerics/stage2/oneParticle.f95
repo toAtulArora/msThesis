@@ -4,7 +4,7 @@ program oneParticle
   implicit none
 
   !dt=0.0000001  
-  real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=8.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
+  real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=4.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
   ! real, parameter :: xMax=20, xMin=-20, dx=0.05,dt=0.0001, tMax=8.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
 
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
