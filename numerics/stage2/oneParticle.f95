@@ -382,9 +382,9 @@ contains
     real, dimension(:) :: Varray
     integer :: centre1,centre2,width,l
 
-    centre1=maxS/2 + maxS/4
-    centre2=maxS/2 - maxS/4
-    width=maxS/8
+    centre1=maxS/2 + maxS/8
+    centre2=maxS/2 - maxS/8
+    width=maxS/16
 
     Varray=1E3
     do l=1,width
