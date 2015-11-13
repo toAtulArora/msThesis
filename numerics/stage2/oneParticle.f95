@@ -83,7 +83,7 @@ program oneParticle
 
      if(timeStep == 1 ) then
         Varray=0
-     elseif (timeStep 
+     elseif (timeStep == maxT/4) then
         Varray=1E24
         
      end if
