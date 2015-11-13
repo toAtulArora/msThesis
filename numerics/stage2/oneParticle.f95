@@ -386,7 +386,7 @@ contains
     centre2=maxS/2 - maxS/4
     width=maxS/8
 
-    Varray=1E10
+    Varray=1E3
     do l=1,width
        Varray(centre1 + l - (width/2) ) = 0
        Varray(centre2 + l - (width/2) ) = 0
