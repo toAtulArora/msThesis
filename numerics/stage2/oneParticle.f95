@@ -100,6 +100,11 @@ program oneParticle
      ! k3=qDot(psic,qc+0.5*dt*k2)
      ! k4=qDot(psic,qc+dt*k3)
      ! q(:,timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
+
+
+
+
+
      
      ! write(*,*) k1
      ! !without enforcing the boundary condition
@@ -116,8 +121,9 @@ program oneParticle
      !    !!write(*,*) psiDot(psic,del2psic,q)
      ! end do
      if (mod(timeStep,100)==0) then
-     ! if (mod(timeStep,maxT/10)==0) then
-        call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        ! if (mod(timeStep,maxT/10)==0) then
+        call nextPlot2d(x(2:maxS-1),)
+        ! call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
         !       call nextPlot2d( (/  ( tFi(j),j=1,timeStep) /) , q(1,1:timeStep)   )
 
         !qTemp=(/ (q(j,1:timeStep),j=1,ensambleSize) /)
