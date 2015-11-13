@@ -81,6 +81,12 @@ program oneParticle
      !call psic%contVarInit
      !call del2psic%contVarInit
 
+     if(tFi(timeStep) < 1 ) then
+        Varray=0
+     else
+        Varray=1E24
+        
+     end if
      ! Varray = (/ ( Vdouble(qFi(j)), j=1, maxS) /)
 
      m1=psiDot(psic%f,Varray)
