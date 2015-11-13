@@ -373,8 +373,7 @@ contains
 
   subroutine doubleSlitPotential(Varray)
     real, dimension(:) :: Varray
-    real :: centre1,centre2,width
-    integer :: l
+    integer :: centre1,centre2,width,l
 
     centre1=maxS/2 + maxS/4
     centre2=maxS/2 - maxS/4
