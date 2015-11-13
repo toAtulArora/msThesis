@@ -84,8 +84,7 @@ program oneParticle
      if(timeStep == 1 ) then
         Varray=0
      elseif (timeStep == maxT/4) then
-        Varray=1E24
-        
+        call doubleSlitPotential(Varray)
      end if
      ! Varray = (/ ( Vdouble(qFi(j)), j=1, maxS) /)
 
