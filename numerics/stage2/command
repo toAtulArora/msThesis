@@ -1,3 +1,3 @@
  set terminal jpeg
- set output 'temp2d/file0533.jpeg'
+ set output 'temp2d/file0655.jpeg'
  plot 'tempData.dat' w lp
