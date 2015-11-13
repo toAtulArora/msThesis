@@ -2468,6 +2468,20 @@ Talked to sudeshna ma'am.
  
 \end_layout
 
+\begin_layout Itemize
+Talked to Abhishek sir and realized that I wasn't really using RK4.
+ I had made a mistake in understanding how to implement.
+ Affter the discussion figured that, fixed it and it started working!
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Nov 11
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Numerics: 
+\end_layout
+
 \begin_layout Part
 Appended Topics
 \end_layout

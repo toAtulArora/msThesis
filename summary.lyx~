@@ -2448,6 +2448,34 @@ ing the interpolated polynomial.
  
 \end_layout
 
+\begin_layout Itemize
+Talked to sudeshna ma'am.
+ While talking to her, realized that we have to keep the 
+\begin_inset Formula $\Delta t/\Delta x^{2}\le10^{-6}$
+\end_inset
+
+ or so for euler and 
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+ or so for RK4.
+ I had made another small mistake.
+ I was returning only the real part of 
+\begin_inset Formula $\nabla^{2}\psi$
+\end_inset
+
+ initially (in the differentiation of the interpolate polynomial method).
+ 
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Nov 11
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Part
 Appended Topics
 \end_layout

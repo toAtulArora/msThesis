@@ -8,7 +8,7 @@ program oneParticle
   ! real, parameter :: xMax=20, xMin=-20, dx=0.05,dt=0.0001, tMax=8.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
 
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
-  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, ensambleSize=15
+  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, ensambleSize=200
 
 
   integer :: j,qStep !just for counting misc. things

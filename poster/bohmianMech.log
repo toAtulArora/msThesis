@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  29 OCT 2015 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  13 NOV 2015 14:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bohmianMech.tex
 (./bohmianMech.tex
-LaTeX2e <2014/05/01>
+LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 7 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/a0poster/a0poster.cls
 Document Class: a0poster 2004/01/31 v1.22b a0poster class (GK, MW)
@@ -67,14 +67,14 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -82,7 +82,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -534,7 +534,7 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
@@ -681,10 +681,10 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+kurier on input line 10
-0.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/t1kurier.fd
 File: t1kurier.fd 2008/07/22 v0.995 font definition file for T1/kurier (MW)
@@ -802,20 +802,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./bohmianMech.aux)
 \openout1 = `bohmianMech.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -855,15 +855,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(113.81102pt, 2165.2549pt, 113.81102pt)
-* v-part:(T,H,B)=(113.81102pt, 3155.41046pt, 113.81102pt)
+* h-part:(L,W,R)=(28.45274pt, 2335.97145pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 3326.12701pt, 28.45274pt)
 * \paperwidth=2392.87694pt
 * \paperheight=3383.0325pt
-* \textwidth=2165.2549pt
-* \textheight=3155.41046pt
-* \oddsidemargin=41.54103pt
-* \evensidemargin=41.54103pt
-* \topmargin=41.54103pt
+* \textwidth=2335.97145pt
+* \textheight=3326.12701pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-43.81725pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -881,7 +881,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 119.
+Package hyperref Info: Link coloring OFF on input line 125.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -890,58 +890,99 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
+LaTeX Info: Redefining \ref on input line 125.
+LaTeX Info: Redefining \pageref on input line 125.
+LaTeX Info: Redefining \nameref on input line 125.
 
 (./bohmianMech.out) (./bohmianMech.out)
 \@outlinefile=\write5
 \openout5 = `bohmianMech.out'.
 
 LaTeX Font Info:    Try loading font information for OT1+kurierm on input line 
-139.
+145.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/ot1kurierm.fd
 File: ot1kurierm.fd 2005/10/03 v1.2 font definition file for OT1/kurierm (MW)
 )
 LaTeX Font Info:    Try loading font information for OML+kurier on input line 1
-39.
+45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omlkurier.fd
 File: omlkurier.fd 2008/07/22 v0.995 font definition file for OML/kurier (MW)
 )
 LaTeX Font Info:    Try loading font information for OMS+kurier on input line 1
-39.
+45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omskurier.fd
 File: omskurier.fd 2008/07/22 v0.995 font definition file for OMS/kurier (MW)
 )
 LaTeX Font Info:    Try loading font information for OMX+kurier on input line 1
-39.
+45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omxkurier.fd
 File: omxkurier.fd 2008/07/22 v0.995 font definition file for OMX/kurier (MW)
 )
-LaTeX Font Info:    Try loading font information for T1+cmtl on input line 139.
+LaTeX Font Info:    Try loading font information for T1+cmtl on input line 145.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--167
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+
+ []
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ? in font nullfont!
 
 Overfull \hbox (65.29169pt too wide) has occurred while \output is active
  [][] 
@@ -952,35 +993,36 @@ Overfull \hbox (65.29169pt too wide) has occurred while \output is active
 
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 609.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 609.
 
 (./bohmianMech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 609.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 609.
 Package rerunfilecheck Info: File `bohmianMech.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 609.
  ) 
 Here is how much of TeX's memory you used:
- 19752 strings out of 494968
- 398643 string characters out of 6178965
- 563125 words of memory out of 5000000
- 22599 multiletter control sequences out of 15000+600000
- 78926 words of font info for 73 fonts, out of 8000000 for 9000
+ 19754 strings out of 494948
+ 398665 string characters out of 6178809
+ 599791 words of memory out of 5000000
+ 22615 multiletter control sequences out of 15000+600000
+ 82056 words of font info for 74 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,14n,84p,878b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc}{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/kurier/rm-kurier.enc} </home/atul/.texmf-var/fonts/p
-k/ljfour/public/cmbright/ebtl10.1792pk></usr/share/texlive/texmf-dist/fonts/typ
-e1/nowacki/kurier/kurierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowack
-i/kurier/kurierr.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/
-kurierri.pfb>
-Output written on bohmianMech.pdf (1 page, 76348 bytes).
+ 62i,14n,84p,882b,1146s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/sy-kurier.enc}{/usr/sha
+re/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/share/texlive/
+texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc}{/usr/share/texlive/texmf-dist/
+fonts/enc/dvips/kurier/rm-kurier.enc} </home/atul/.texmf-var/fonts/pk/ljfour/pu
+blic/cmbright/ebtl10.1792pk></usr/share/texlive/texmf-dist/fonts/type1/public/h
+fbright/hfbrbs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/
+kurierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierr.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierri.pfb>
+Output written on bohmianMech.pdf (1 page, 101839 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 
