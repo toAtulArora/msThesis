@@ -129,11 +129,11 @@ program oneParticle
      if (mod(timeStep,100)==0) then
         ! if (mod(timeStep,maxT/10)==0) then
         !call nextPlot2d(x(2:maxS-1),Varray(2:maxS-1))
-        call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        ! call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
         !       call nextPlot2d( (/  ( tFi(j),j=1,timeStep) /) , q(1,1:timeStep)   )
 
-        !qTemp=(/ (q(j,1:timeStep),j=1,ensambleSize) /)
-        !call nextPlot2d( (/ ( tFi(mod(j,timeStep)),j=1,timeStep*ensambleSize) /) ,   qTemp(1:timeStep*ensambleSize)   )
+        qTemp=(/ (q(j,1:timeStep),j=1,ensambleSize) /)
+        call nextPlot2d( (/ ( tFi(mod(j,timeStep)),j=1,timeStep*ensambleSize) /) ,   qTemp(1:timeStep*ensambleSize)   )
          
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psic%contVarDel2(qFi(j)),j=2,maxS-1) /) ))
         !call nextPlot2d(x(2:maxS-1),abs( (/ (psiDot(psic,del2psic,(qFi(j))),j=2,maxS-1) /) ))
