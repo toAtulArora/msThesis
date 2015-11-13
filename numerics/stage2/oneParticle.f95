@@ -374,10 +374,16 @@ contains
   subroutine doubleSlitPotential(Varray)
     real, dimension(:) :: Varray
     real :: centre1,centre2,width
-    Varray=1E24
+    integer :: l
+
     centre1=maxS/2 + maxS/4
     centre2=maxS/2 - maxS/4
     width=maxS/8
-    
+
+    Varray=1E24
+    do l=1,width
+       Varray(centre1 + l - (width/2) ) = 0
+       Varray(centre2 + l - (width/2) ) = 0
+    end do
   end subroutine doubleSlitPotential
 end program oneParticle
