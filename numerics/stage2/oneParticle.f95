@@ -53,7 +53,9 @@ program oneParticle
   
   
   !call nextPlot2d(x,abs(psic%f))
-  !call plot2dSave(x,x,filename='initialState.pdf',picFormat=1)
+  call doubleSlitPotential(Varray)
+  call plot2dSave(x,Varray,filename='potential.pdf',picFormat=1)
+  
   do timeStep=1,maxT-1
      !pick the current psi and save it in psic
      psic%f=psi(:,timeStep)
