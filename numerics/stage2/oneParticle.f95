@@ -88,18 +88,18 @@ program oneParticle
      end if
      ! Varray = (/ ( Vdouble(qFi(j)), j=1, maxS) /)
 
-     ! m1=psiDot(psic%f,Varray)
-     ! m2=psiDot(psic%f + 0.5*dt*m1,Varray)
-     ! m3=psiDot(psic%f + 0.5*dt*m2,Varray)
-     ! m4=psiDot(psic%f + dt*m3, Varray)
-     ! psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
+     m1=psiDot(psic%f,Varray)
+     m2=psiDot(psic%f + 0.5*dt*m1,Varray)
+     m3=psiDot(psic%f + 0.5*dt*m2,Varray)
+     m4=psiDot(psic%f + dt*m3, Varray)
+     psi(:,timeStep+1)=psic%f + (dt/6)*(m1 + 2*m2 + 2*m3 + m4)
 
      !evolve the particle using RK4 (don't know how useful it is..but let's see)
-     ! k1=qDot(psic,qc)
-     ! k2=qDot(psic,qc+0.5*dt*k1)
-     ! k3=qDot(psic,qc+0.5*dt*k2)
-     ! k4=qDot(psic,qc+dt*k3)
-     ! q(:,timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
+     k1=qDot(psic,qc)
+     k2=qDot(psic,qc+0.5*dt*k1)
+     k3=qDot(psic,qc+0.5*dt*k2)
+     k4=qDot(psic,qc+dt*k3)
+     q(:,timeStep+1) = qc + (dt/6)*(k1 + 2*k2 + 2*k3 + k4)
 
 
 
@@ -386,7 +386,7 @@ contains
     centre2=maxS/2 - maxS/4
     width=maxS/8
 
-    Varray=1E24
+    Varray=1E10
     do l=1,width
        Varray(centre1 + l - (width/2) ) = 0
        Varray(centre2 + l - (width/2) ) = 0
