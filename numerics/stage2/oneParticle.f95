@@ -370,4 +370,10 @@ contains
     real:: tFi
     tFi=dt*index
   end function tFi
+
+  subroutine doubleSlitPotential(Varray)
+    Varray=1E24
+    maxS/2 + maxS/4
+    maxS/2 - maxS/4
+  end subroutine doubleSlitPotential
 end program oneParticle
