@@ -14,6 +14,8 @@
 %%%%%%%%%%%%%%%CUSTOM HEADER
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
+\usepackage{braket}
+\newcommand{\mean}[1]{\langle #1 \rangle}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -115,10 +117,10 @@
 
 
 
-\title{Bohmian Mechanics and Contextuality in Phase Space}
+\title{Bohmian Mechanics and Contextuality in (q,p)}
 \author{Atul Singh Arora\\
-  QCQI Group, IISER Mohali, India\\
-  \texttt{ms11003@iisermohali.ac.in}
+  QCQI Group, IISER Mohali, India %\\
+  % \texttt{ms11003@iisermohali.ac.in}
 }
 
 
@@ -172,7 +174,7 @@
   %\blocknode
   %{Introduction}
   %{
-\subsection*{Introduction}
+\subsection*{Content}
     I will first discuss Bohmian Mechanics and then go on to discuss the known standard tests of determinism (GHZ and contextuality). Thereafter I will describe how the GHZ test is explained from the Bohmian perspective and also discuss a generalization of the GHZ test to phase space $(q,p)$. Finally, I'll show some simulation results which will be generalized in the future to perform the generalized GHZ test using BM.
   }
 
@@ -218,22 +220,97 @@
 
 
  \blocknode
- {Determinism Tests and Contextuality}
+ {Determinism}
  {
    \subsection*{The GHZ test}
 Objective: To show that realism is incompatible with QM. 
 
 Assume: Three particles are allowed to interact and three observers are given one particle each. The interaction is such that the following holds. There are two properties of these particles one can measure, X or Y. The outcome of the measurement is either 1 or -1. 
 
-Construction: Interestingly, for a specific initial state of these particles, if they measure $A=X\otimes Y\otimes Y$ then the outcome is guarenteed by QM to be +1. This also holds for $B=Y\otimes X\otimes Y$ and $C=Y \otimes Y \otimes X$. However, if $D=X\otimes X\otimes X$ is measured, then the result is -1.\footnote{The tensor has been ommited henceforth. The details have been}
+Construction: Interestingly, for a specific initial state of these particles, if they measure $A=X\otimes Y\otimes Y$ then the outcome is guarenteed by QM to be +1. This also holds for $B=Y\otimes X\otimes Y$ and $C=Y \otimes Y \otimes X$. However, if $D=X\otimes X\otimes X$ is measured, then the result is -1.\footnote{The tensor has been ommited henceforth. The details have been} Explicitly, this can be achieved with 3 spin half particles for example, with $\ket{\psi} = (\ket{000} - \ket{111})/\sqrt{2}$ (where $\sigma_z\ket{0/1}=\pm\ket{0/1}$) and $X,Y,Z$ as pauli spin operators.
 
 Hypothesis: Assume that the world is deterministic, viz. the properties had predefined values. Then if we evaluate $ABC$, then we know by construction that it must be $=1$. However, it is also true that $ABC=D$ (because $Y^2=1$). By construction we also know that $D=-1$. Thus we arrive at $+1=-1$. 
 
-Conclusion: This entails that our hypothesis must be wrong.
+Conclusion: This entails that our hypothesis must be wrong. More precisely, this implies that we can't have non-contextual determinism where the qualification ``non-contextual'' is subtle but necessary.
+
+\subsection*{Contextuality}
+Two observables $A$ and $B$ are mutually compatible if the result of measuring $A$ doesn't depend on whether $B$ is measured (before, after, simultanesouly or not measured at all). If we restrict ourselves to hidden variable models that assert that $A$ and $B$ have predefined values, irrespective of which compatible observable is measured, then such a theory would be termed ``non-contextual'' and deterministic. Kochen-Specker proved that such theories, viz. non-contextual deterministic theories are inconsistent with QM. Mermin and Peres showed this for a four-level system. Consider the following operators. 
+\[
+\begin{array}{ccc}
+A_{11} = \sigma_z\otimes \mathbb I & A_{12} = \mathbb I \otimes \sigma_z & A_{13}=\sigma_z\otimes \sigma_ z \\
+A_{21} = \mathbb I \otimes \sigma_x & A_{22} = \sigma_x \otimes \mathbb I & A_{23}=\sigma_x\otimes \sigma_x \\
+A_{31} = \sigma_z \otimes \sigma_x & A_{32} = \sigma_x \otimes \sigma_z & A_{33}=\sigma_y\otimes \sigma_y
+
+\end{array}
+\]
+Note that operators along a given row commute. This also holds for a given column and thus these are compatible. Also note that the measurement product along any row ($R_K$) or column ($C_k$) is 1, except for column three; $C_3=-1$. Thus, QM predicts $\prod_{k=1,2,3}R_kC_k=-1$, in contrast to non-contextual models.\footnote{TODO: Verify this} Since no experiment yields ideal results, an inequality must be constructed. It has been shown that all non-contextual theories must satisfy $\mean{\chi_{KS}} = \mean{R_1} + \mean{R_2} + \mean{R_3} + \mean{C_1} + \mean{C_2} - \mean{C_3} \le 4$. QM yields $\mean{\chi_{KS}}=6$. 
+
+
+\vspace{5mm}
+Remarks:
+
+(1) Note that Mermin's test is state independent, unlike the GHZ test.
+
+(2) While there's a subtle connection between the Bell test and Contextuality, the latter is more suited for testing determinism (non-contextual) because the locality assumption is not required.
+
+% ``Non-contextuality'' here means that the values don't depend on which other property is being measured.
  }
 
-What happens if I type here directly?
 
+
+
+%http://www.nature.com/nature/journal/v460/n7254/pdf/nature08172.pdf
+
+\blocknode
+{GHZ, Spins, Phase Space and BM}
+{
+In this section we'll first sketch the analysis of the GHZ situation using BM. That BM is able to explain this is not very surprising since spins are not assigned predefined values in BM, unlike $(q,p)$. A generalization of the GHZ test to phase space is thus desired. Such a generalization has been discussed in the literature and is briefly summarized.
+}
+
+\startthirdcolumn
+
+\blocknode
+{}
+{
+\subsection*{Spin GHZ | BM Analysis}
+Assuming that Stern Gerlach type apparatus are used to measure the spins of the different particles, the initial state of the system maybe described as $\ket{\Psi(r_1,r_2,r_3,t=0)}=(\psi_{+++}\ket{000} - \psi_{---}\ket{111})/\sqrt 2$, where $r_i$ represents the position vector in the frame of the $i^{th}$ observer. If the particles are assumed to be gaussian initially and propogating (with speed $v_0$ for instance) along the axes of their respective SG apparatus, then one can further define $\psi_{\pm \pm \pm}$. It can be shown that\footnote{details have been skipped for brevity and clarity} the time evolution of $\psi_{\pm \pm \pm}$ can be written as products of 3 single particle solutions of SG setup, which was analyzed by Bohm himself. Once $\ket{\Psi(r_i,t)}$ is known, one can evaluate the equation of motion for the three particles using the formalism of BM. If the SG apparatus are setup to measure say $XYY$, then it is found that (in the directioni relevent to measurement), four attractors basins form: $(+++)$, $(+--)$, $(--+)$ and $(-+-)$. The product is always $+1$ as was predicted by QM. However, when the SG apparatus are setup to measure $XXX$, the trajectories are found to obey equations which posses four attractive basins: $(---)$, $(-++)$, $(+-+)$ and $(++-)$. In this case, we get $-1$ as the product, again in agreement with QM.
+
+\vspace{5mm}
+Remarks:
+
+Non locality enters from the fact that the attractor basins depend on the settings of \emph{all} SG apparatus. Contextuality from this perspective is essentially the statement that the results of an experiment, depend on the experiment being performed.
+
+\subsection*{Phase space GHZ}
+Consider unitary operators $X, Y$ and the following redefinitions; $A=X^{\dagger}YY^{\dagger}$, $B=Y^{\dagger} X^{\dagger} Y$, $C=Y Y^{\dagger}X^{\dagger}$ and $D=XXX$. If the following anti-commutations hold, then we'll arrive at a GHZ like situation; $\{X,Y\}=0$ and $\{X,Y^{\dagger}\}$. Given this, it follows that (1) $A,B,C,D$ all commute and (2) $ABCD = -\mathbb I$. Thus any simultaneous eigenstate of $A,B,C,D$ will result in the GHZ situation. 
+
+Explicitly, in phase space, for some length scale L, $X\equiv \exp{(i \sqrt{\pi} x/L)}$ and $Y \equiv \exp{(i \sqrt{\pi} pL)}$ ($\hbar$ is chosen to be 1 in this section) satisfies the aforesaid conditions. To construct the simultaneous eigenstates, observe that for 
+\begin{align*}
+\ket{\uparrow}_{x_0, p_0}\equiv & \frac{1}{\sqrt{2}} \big( \sum_{k=-\infty} ^{\infty} e^{i\pi 2 k p_0} \ket{x=x_0 + 2k} + \\
+ & i \sum_{k=-\infty} ^{\infty} e^{i\pi (2 k +1 ) p_0} \ket{x=x_0 + 2k + 1} \big),
+\end{align*} 
+
+\begin{align*}
+\ket{\downarrow}_{x_0, p_0}\equiv & \frac{1}{\sqrt{2}} \big( \sum_{k=-\infty} ^{\infty} e^{i\pi 2 k p_0}\ket{x=x_0+2k} - \\
+&i\sum_{k=-\infty} ^{\infty} e^{i\pi (2 k + 1) p_0}\ket{x=x_0+2k + 1}  \big),
+\end{align*}
+we yield\footnote{here $x_0,p_0 \in [0,1[$ and are numbers. Strictly one must write in place of $x$, $\sqrt{\pi} Lx$ and for $p$, $\sqrt p/L$.} $X\ket{\uparrow}=\ket{\downarrow}$,  $Y\ket{\uparrow}=i\ket{\downarrow}$ and $Z\ket{\uparrow}=\ket{\uparrow}$ and similarly for $\ket{\downarrow}$. From this, the generalization of the GHZ state is found to be $\ket{\Psi}=\frac{1}{\sqrt{2}}(\ket{\uparrow \uparrow \uparrow} - \ket{\downarrow \downarrow \downarrow})$.
+
+With the states and the operators defined in phase space, the GHZ test has been extended.
+}
+
+\blocknode
+{Results and Immediate Goals}
+{
+In addition to narrowing the problem and surveying the literature, the first few stages of writing a BM simulator have been achieved. This is of special interest since analytic solutions to Bohmian trajectories are rarely simple. Trajectories for free evolution, squeezed state evolution under harmonic potential and a one dimensional analogue of the double slit experiment have been simulated and found to be qualitatively satisfactory. The simulator was written in Fortran, uses RK-4 and spline interpolation for evaluation.
+
+Numerically, extension to many particles and ability to handle spins are the essential next steps. These are required to validate the spin GHZ test as described. Theoretically, improvement of the phase space GHZ test is desired so that normalizable states can yield the paradox. The analogue of the SG apparatus for measuring $p$ is essential for a Bohmian analysis.
+}
+
+\blocknode
+{Future Scope}
+{
+A more ambitious goal would be to explore phase space contextuality using BM to understand its relation with non locality more directly. A puzzling question is that while formally in QM, spins and (q,p) are handled rather similarly, why can't we extend BM in a manner such that spins are as `deterministic' as (q,p)? It is worth attempting to find such a formulation or to show that it doesn't exist. This is of great interest for this answer must depend on the fundamental difference between spins and (q,p) as properties. The thesis problem is a step in this direction.
+}
 
     % \coloredbox{colorthree!50!}{
     %   \textbackslash documentclass\{a0poster\}\\
