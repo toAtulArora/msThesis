@@ -81,9 +81,9 @@ program oneParticle
      !call psic%contVarInit
      !call del2psic%contVarInit
 
-     if(tFi(timeStep) < 1 ) then
+     if(timeStep == 1 ) then
         Varray=0
-     else
+     elseif (timeStep 
         Varray=1E24
         
      end if
