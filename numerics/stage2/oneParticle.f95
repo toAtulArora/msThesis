@@ -372,8 +372,11 @@ contains
   end function tFi
 
   subroutine doubleSlitPotential(Varray)
+    real, dimension(:) :: Varray
+    real :: centre1,centre2
     Varray=1E24
-    maxS/2 + maxS/4
-    maxS/2 - maxS/4
+    centre1=maxS/2 + maxS/4
+    centre2=maxS/2 - maxS/4
+    
   end subroutine doubleSlitPotential
 end program oneParticle
