@@ -377,6 +377,7 @@ contains
     Varray=1E24
     centre1=maxS/2 + maxS/4
     centre2=maxS/2 - maxS/4
+    width=maxS/8
     
   end subroutine doubleSlitPotential
 end program oneParticle
