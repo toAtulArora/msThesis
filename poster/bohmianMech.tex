@@ -16,17 +16,21 @@
 \renewcommand{\Im}{\operatorname{Im}}
 \usepackage{braket}
 \newcommand{\mean}[1]{\langle #1 \rangle}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\usepackage{graphicx}
+\bibliographystyle{plain} %apsrev4-1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%% --------- Change here if you want ---------- %%%%%
 %% margin for the geometry package, must be changed before using the geometry package
 %% default value is 4cm
-\setmargin{1}
+\setmargin{0.8}
 
 %% the space between the blocks
 %% default value is 2cm
-\setblockspacing{0.5}
+\setblockspacing{0.45}
 
 %% the height of the title stripe in block nodes, decrease it to save space
 %% default value is 3cm
@@ -161,7 +165,7 @@
   \blocknode
   {Introduction}
   {
-\subsection*{Abstract}
+\section*{Abstract}
     There are atleast two known theories that describe the same physical world; Quantum Mechanics and Bohmian Mechanics (also uses the Schr\"odinger Equation). While the latter is not popularly known, it provides exceptional clarity about certain aspects of reality. So far, no tests are known that can distinguish these two. One fundamental difference between them is that that the latter is deterministic (in the sense that $(q,p)$ are well defined). The purpose of this thesis is to get these theories head on; we aim to construct a theoretical situation where this type of determinism is refuted by Quantum Mechanics (using generalization of the GHZ test, contextuality etc.) and analyze it using Bohmian Mechanics. This is a step towards understanding the relation between contextuality and non-locality.
   %}
 
@@ -174,15 +178,15 @@
   %\blocknode
   %{Introduction}
   %{
-\subsection*{Content}
+\section*{Content}
     I will first discuss Bohmian Mechanics and then go on to discuss the known standard tests of determinism (GHZ and contextuality). Thereafter I will describe how the GHZ test is explained from the Bohmian perspective and also discuss a generalization of the GHZ test to phase space $(q,p)$. Finally, I'll show some simulation results which will be generalized in the future to perform the generalized GHZ test using BM.
   }
 
 
   \blocknode%
-  {Bohmian Mechanics}%
+  {Bohmian Mechanics \cite{holland,detlefBook,bohm1}}%
   {
-    \subsection*{Background}
+    \section*{Background}
     The Quantum Mechanics that is taught, is usually the one which uses the `Copenhagen interpretation'. This interpretation asserts that the most complete possible specification of an individual system, is in terms of $\psi$ which yields only probabilistic results. While it can be shown to be consistent, it is worth exploring the reasons for believing this assertion. David Bohm\footnote{Historically, de Broglie had formulated a similar theory and then gave it up until Bohm independently re-discovered it} in an attempt to investigate the truth behind this, constructed a theory with `hidden variables' (positions and momenta $(q,p)$ of particles) that in principle completely specified the system but in practice get averaged over. He was able to show that his theory yields the same results as Quantum Mechanics in all the physical situations he considered.
     Such a theory is worth studying because the following are at stake. 
 
@@ -195,20 +199,15 @@
     %   \blocknode
     %   {Bohmian Mechanics | Formalism}
     %   {
-    \subsection*{Formalism}
+    \section*{Formalism}
     According to Bohm's original formulation of Bohmian Mechanics, a particle is associated with (1) a position and momentum $(q,p)$, precisely and continuously defined \& (2) a wave ($\psi$). For their description, the following are assumed:
     \begin{itemize}
     \item The $\psi$-field satisfies the Schr\"odinger equation.
-    \item The particle momentum is restricted to $mv=p=\nabla S=\hbar \Im(\nabla (\psi/\psi)) $, where $\psi=Re^{iS/\hbar}$.
+    \item The particle momentum is restricted to $mv=p=\nabla S=\hbar \Im(\nabla \psi/\psi) $, where $\psi=Re^{iS/\hbar}$ and $\Im$ is the imaginary part.
     \item In practice, we don't control/predict precise locations of the particle; instead we have a stistical ensamble with probability densities $\rho(q)=|\psi(q)|^2$.
     \end{itemize}
-  }
 
- \startsecondcolumn 
-
- \blocknode
- {}
- {
+    \vspace{0.5 mm}
     Comments:
 
     (1) Note that the observers play no fundamental role in the formalism. If $\hbar = 0$ then we recover the classical Hamilton-Jacobi equation. Unlike QM, BM has a clear classical limit. 
@@ -218,11 +217,18 @@
     (3) Extension to spins: In BM, the particle only has $(q,p)$. The spin is associated only with the wavefunction. For a spinor, say $\Psi \equiv (\psi_+,\psi_-)^T$, the generalization is that $mv=\hbar \Im ( (\Psi,\nabla \Psi)/(\Psi,\Psi))$ where $(.,.)$ represents inner product in the spin space $\mathbb C ^2$.
  }
 
+  % }
+
+ \startsecondcolumn 
+
+ % \blocknode
+ % {}
+ % {
 
  \blocknode
  {Determinism}
  {
-   \subsection*{The GHZ test}
+   \section*{The GHZ test \cite{peresContext}}
 Objective: To show that realism is incompatible with QM. 
 
 Assume: Three particles are allowed to interact and three observers are given one particle each. The interaction is such that the following holds. There are two properties of these particles one can measure, X or Y. The outcome of the measurement is either 1 or -1. 
@@ -233,7 +239,7 @@ Hypothesis: Assume that the world is deterministic, viz. the properties had pred
 
 Conclusion: This entails that our hypothesis must be wrong. More precisely, this implies that we can't have non-contextual determinism where the qualification ``non-contextual'' is subtle but necessary.
 
-\subsection*{Contextuality}
+\section*{Contextuality \cite{peresContext,Koc}}
 Two observables $A$ and $B$ are mutually compatible if the result of measuring $A$ doesn't depend on whether $B$ is measured (before, after, simultanesouly or not measured at all). If we restrict ourselves to hidden variable models that assert that $A$ and $B$ have predefined values, irrespective of which compatible observable is measured, then such a theory would be termed ``non-contextual'' and deterministic. Kochen-Specker proved that such theories, viz. non-contextual deterministic theories are inconsistent with QM. Mermin and Peres showed this for a four-level system. Consider the following operators. 
 \[
 \begin{array}{ccc}
@@ -265,6 +271,16 @@ Remarks:
 {GHZ, Spins, Phase Space and BM}
 {
 In this section we'll first sketch the analysis of the GHZ situation using BM. That BM is able to explain this is not very surprising since spins are not assigned predefined values in BM, unlike $(q,p)$. A generalization of the GHZ test to phase space is thus desired. Such a generalization has been discussed in the literature and is briefly summarized.
+
+\section*{Spin GHZ | BM Analysis \cite{spinGHZ}}
+Assuming that Stern Gerlach type apparatus are used to measure the spins of the different particles, the initial state of the system maybe described as $\ket{\Psi(r_1,r_2,r_3,t=0)}=(\psi_{+++}\ket{000} - \psi_{---}\ket{111})/\sqrt 2$, where $r_i$ represents the position vector in the frame of the $i^{th}$ observer. If the particles are assumed to be gaussian initially and propogating (with speed $v_0$ for instance) along the axes of their respective SG apparatus, then one can further define $\psi_{\pm \pm \pm}$. It can be shown that\footnote{details have been skipped for brevity and clarity} the time evolution of $\psi_{\pm \pm \pm}$ can be written as products of 3 single particle solutions of SG setup, which was analyzed by Bohm himself. Once $\ket{\Psi(r_i,t)}$ is known, one can evaluate the equation of motion for the three particles using the formalism of BM. If the SG apparatus are setup to measure say $XYY$, then it is found that (in the directioni relevent to measurement), four attractors basins form: $(+++)$, $(+--)$, $(--+)$ and $(-+-)$. The product is always $+1$ as was predicted by QM. However, when the SG apparatus are setup to measure $XXX$, the trajectories are found to obey equations which posses four attractive basins: $(---)$, $(-++)$, $(+-+)$ and $(++-)$. In this case, we get $-1$ as the product, again in agreement with QM.
+
+
+\vspace{5mm}
+Remarks:
+
+Non locality enters from the fact that the attractor basins depend on the settings of \emph{all} SG apparatus. Contextuality from this perspective is essentially the statement that the results of an experiment, depend on the experiment being performed. \cite{detlefBook}
+
 }
 
 \startthirdcolumn
@@ -272,15 +288,8 @@ In this section we'll first sketch the analysis of the GHZ situation using BM. T
 \blocknode
 {}
 {
-\subsection*{Spin GHZ | BM Analysis}
-Assuming that Stern Gerlach type apparatus are used to measure the spins of the different particles, the initial state of the system maybe described as $\ket{\Psi(r_1,r_2,r_3,t=0)}=(\psi_{+++}\ket{000} - \psi_{---}\ket{111})/\sqrt 2$, where $r_i$ represents the position vector in the frame of the $i^{th}$ observer. If the particles are assumed to be gaussian initially and propogating (with speed $v_0$ for instance) along the axes of their respective SG apparatus, then one can further define $\psi_{\pm \pm \pm}$. It can be shown that\footnote{details have been skipped for brevity and clarity} the time evolution of $\psi_{\pm \pm \pm}$ can be written as products of 3 single particle solutions of SG setup, which was analyzed by Bohm himself. Once $\ket{\Psi(r_i,t)}$ is known, one can evaluate the equation of motion for the three particles using the formalism of BM. If the SG apparatus are setup to measure say $XYY$, then it is found that (in the directioni relevent to measurement), four attractors basins form: $(+++)$, $(+--)$, $(--+)$ and $(-+-)$. The product is always $+1$ as was predicted by QM. However, when the SG apparatus are setup to measure $XXX$, the trajectories are found to obey equations which posses four attractive basins: $(---)$, $(-++)$, $(+-+)$ and $(++-)$. In this case, we get $-1$ as the product, again in agreement with QM.
 
-\vspace{5mm}
-Remarks:
-
-Non locality enters from the fact that the attractor basins depend on the settings of \emph{all} SG apparatus. Contextuality from this perspective is essentially the statement that the results of an experiment, depend on the experiment being performed.
-
-\subsection*{Phase space GHZ}
+\section*{Phase space GHZ \cite{MassarGHZ01}}
 Consider unitary operators $X, Y$ and the following redefinitions; $A=X^{\dagger}YY^{\dagger}$, $B=Y^{\dagger} X^{\dagger} Y$, $C=Y Y^{\dagger}X^{\dagger}$ and $D=XXX$. If the following anti-commutations hold, then we'll arrive at a GHZ like situation; $\{X,Y\}=0$ and $\{X,Y^{\dagger}\}$. Given this, it follows that (1) $A,B,C,D$ all commute and (2) $ABCD = -\mathbb I$. Thus any simultaneous eigenstate of $A,B,C,D$ will result in the GHZ situation. 
 
 Explicitly, in phase space, for some length scale L, $X\equiv \exp{(i \sqrt{\pi} x/L)}$ and $Y \equiv \exp{(i \sqrt{\pi} pL)}$ ($\hbar$ is chosen to be 1 in this section) satisfies the aforesaid conditions. To construct the simultaneous eigenstates, observe that for 
@@ -299,18 +308,48 @@ With the states and the operators defined in phase space, the GHZ test has been 
 }
 
 \blocknode
-{Results and Immediate Goals}
+{Achievements and Outlook}
 {
-In addition to narrowing the problem and surveying the literature, the first few stages of writing a BM simulator have been achieved. This is of special interest since analytic solutions to Bohmian trajectories are rarely simple. Trajectories for free evolution, squeezed state evolution under harmonic potential and a one dimensional analogue of the double slit experiment have been simulated and found to be qualitatively satisfactory. The simulator was written in Fortran, uses RK-4 and spline interpolation for evaluation.
+\section*{Results}
+In addition to narrowing the problem and surveying the literature, the first few stages of writing a BM simulator have been achieved. This is of special interest since analytic solutions to Bohmian trajectories are rarely simple. Trajectories for free evolution, squeezed state evolution under harmonic potential (shown in the figure) and a one dimensional analogue of the double slit experiment have been simulated and found to be qualitatively satisfactory. The simulator was written in Fortran, uses RK-4 and spline interpolation for evaluation.\\
+\vspace{1mm}
+% \begin{figure}[h]
+% \caption{Glaba}
+% \centering
+% {
+\begin{center}
+   \includegraphics[width=0.3\textwidth]{harmonic1}
+   \includegraphics[width=0.3\textwidth]{harmonic2}
+   \includegraphics[width=0.3\textwidth]{harmonic} 
+\end{center}
+% }
+% \end{figure}
 
+\section*{Immediate Goals}
 Numerically, extension to many particles and ability to handle spins are the essential next steps. These are required to validate the spin GHZ test as described. Theoretically, improvement of the phase space GHZ test is desired so that normalizable states can yield the paradox. The analogue of the SG apparatus for measuring $p$ is essential for a Bohmian analysis.
+% }
+
+% \blocknode
+% {Future Scope}
+% {
+\section*{Future Scope}
+A more ambitious goal would be to explore phase space contextuality \cite{AliContext} using BM to understand its relation with non locality more directly. A puzzling question is that while formally in QM, spins and (q,p) are handled rather similarly, why can't we extend BM in a manner such that spins are as `deterministic' as (q,p)? It is worth attempting to find such a formulation or to show that it doesn't exist. This is of great interest for this answer must depend on the fundamental difference between spins and (q,p) as properties. The thesis problem is a step in this direction.
 }
 
 \blocknode
-{Future Scope}
+{Acknowledgement and References}
 {
-A more ambitious goal would be to explore phase space contextuality using BM to understand its relation with non locality more directly. A puzzling question is that while formally in QM, spins and (q,p) are handled rather similarly, why can't we extend BM in a manner such that spins are as `deterministic' as (q,p)? It is worth attempting to find such a formulation or to show that it doesn't exist. This is of great interest for this answer must depend on the fundamental difference between spins and (q,p) as properties. The thesis problem is a step in this direction.
+\section*{Acknowledgement}
+I thank my project guide Prof. Arvind for his timely guidance and encouragement, despite not having faith in Bohmian Mechanics. I am greatful to Dr. Abhishek Chowdhury and Dr. Sudeshna Sinha for their brief yet extremely useful assistance with the simulation. I also acknowledge my QCQI group members, Kishor Bharti, Rajendra Bhati and Jaskaran Singh for various discussions. The QCQI group meetings have been conducive in narrowing the thesis problem; the speakers Samridhi Gambhir and Arun Sehrawat deserve a special mention. 
+
+%\nocite{*}
+\tiny{
+\bibliography{summary}}
+
 }
+
+%\bibliography{summary}
+
 
     % \coloredbox{colorthree!50!}{
     %   \textbackslash documentclass\{a0poster\}\\

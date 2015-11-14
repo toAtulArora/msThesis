@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{AliContext}
+Ali Asadian, Costantino Budroni, Frank E.~S. Steinhoff, Peter Rabl, and Otfried
+  G\"uhne.
+\newblock Contextuality in phase space.
+\newblock {\em Phys. Rev. Lett.}, 114:250403, Jun 2015.
+
+\bibitem{bohm1}
+David Bohm.
+\newblock A suggested interpretation of the quantum theory in terms of "hidden"
+  variables. i.
+\newblock {\em Phys. Rev.}, 85:166--179, Jan 1952.
+
+\bibitem{spinGHZ}
+Thomas Durt and Yves Pierseaux.
+\newblock Bohm's interpretation and maximally entangled states.
+\newblock {\em Phys. Rev. A}, 66:052109, Nov 2002.
+
+\bibitem{detlefBook}
+Detlef Dürr, Sheldon Goldstein, and Nino Zanghì.
+\newblock {\em Quantum Physics Without Quantum Philosophy}.
+\newblock Springer Berlin Heidelberg, 2012.
+
+\bibitem{holland}
+Peter~R. Holland.
+\newblock {\em The Quantum Theory of Motion}.
+\newblock Cambridge University Press, 1993.
+\newblock Cambridge Books Online.
+
+\bibitem{MassarGHZ01}
+Serge Massar and Stefano Pironio.
+\newblock Greenberger-horne-zeilinger paradox for continuous variables.
+\newblock {\em Phys. Rev. A}, 64:062108, Nov 2001.
+
+\bibitem{peresContext}
+N.~David Mermin.
+\newblock Simple unified form for the major no-hidden-variables theorems.
+\newblock {\em Phys. Rev. Lett.}, 65:3373--3376, Dec 1990.
+
+\bibitem{Koc}
+E.~Specker Simon~Kochen.
+\newblock The problem of hidden variables in quantum mechanics.
+\newblock {\em Indiana Univ. Math. J.}, 17:59--87, 1968.
+
+\end{thebibliography}

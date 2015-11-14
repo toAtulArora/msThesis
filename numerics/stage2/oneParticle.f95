@@ -4,11 +4,11 @@ program oneParticle
   implicit none
 
   !dt=0.0000001  
-  real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=4.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
-  ! real, parameter :: xMax=20, xMin=-20, dx=0.05,dt=0.0001, tMax=8.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
+  real, parameter :: xMax=15, xMin=-15, dx=0.1,dt=0.0001, tMax=4.0, sigma=0.5, xNot=-2, omegaSquare=16,m=1
+  ! real, parameter :: xMax=15, xMin=-20, dx=0.1,dt=0.0001, tMax=4.0, sigma=0.5, xNot=0, omegaSquare=16,m=1
 
   real, parameter:: pi=3.14159265359,rootTwoPi=sqrt(2*pi),hbar=1
-  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, ensambleSize=200
+  integer, parameter :: maxS=(xMax-xMin)/dx, maxT=tMax/dt, ensambleSize=15
 
 
   integer :: j,qStep !just for counting misc. things
@@ -55,7 +55,7 @@ program oneParticle
   
   
   !call nextPlot2d(x,abs(psic%f))
-  call doubleSlitPotential(Varray)
+  ! call doubleSlitPotential(Varray)
   call plot2dSave(x,Varray,filename='potential.pdf',picFormat=1)
   
   do timeStep=1,maxT-1
@@ -85,13 +85,16 @@ program oneParticle
      !call psic%contVarInit
      !call del2psic%contVarInit
 
-     if(timeStep == 1 ) then
-        Varray=0
-     elseif (timeStep == maxT/8) then
-        call doubleSlitPotential(Varray)
-     elseif (timeStep == maxT/8 + 5) then !maxT/64) then
-        Varray=0
-     end if
+     
+     ! if(timeStep == 1 ) then
+     !    Varray=0
+     ! elseif (timeStep == maxT/8) then
+     !    call doubleSlitPotential(Varray)
+     ! elseif (timeStep == maxT/8 + 5) then !maxT/64) then
+     !    Varray=0
+     ! end if
+
+
      ! Varray = (/ ( Vdouble(qFi(j)), j=1, maxS) /)
 
      m1=psiDot(psic%f,Varray)
@@ -129,7 +132,8 @@ program oneParticle
      if (mod(timeStep,100)==0) then
         ! if (mod(timeStep,maxT/10)==0) then
         !call nextPlot2d(x(2:maxS-1),Varray(2:maxS-1))
-        ! call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        !call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))
+        
         !       call nextPlot2d( (/  ( tFi(j),j=1,timeStep) /) , q(1,1:timeStep)   )
 
         qTemp=(/ (q(j,1:timeStep),j=1,ensambleSize) /)

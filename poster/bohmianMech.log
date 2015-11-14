@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  14 NOV 2015 05:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  14 NOV 2015 07:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**bohmianMech.tex
+**bohmianMech
 (./bohmianMech.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 7 languages loaded.
@@ -546,6 +546,18 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \c@figurecounter=\count124
 )
 (/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box60
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen168
+\ttl@minus=\dimen169
+\ttl@toksa=\toks33
+\titlewidth=\dimen170
+\titlewidthlast=\dimen171
+\titlewidthfirst=\dimen172
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -559,15 +571,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count125
 \Gm@cntv=\count126
 \c@Gm@tempcnt=\count127
-\Gm@bindingoffset=\dimen168
-\Gm@wd@mp=\dimen169
-\Gm@odd@mp=\dimen170
-\Gm@even@mp=\dimen171
-\Gm@layoutwidth=\dimen172
-\Gm@layoutheight=\dimen173
-\Gm@layouthoffset=\dimen174
-\Gm@layoutvoffset=\dimen175
-\Gm@dimlist=\toks33
+\Gm@bindingoffset=\dimen173
+\Gm@wd@mp=\dimen174
+\Gm@odd@mp=\dimen175
+\Gm@even@mp=\dimen176
+\Gm@layoutwidth=\dimen177
+\Gm@layoutheight=\dimen178
+\Gm@layouthoffset=\dimen179
+\Gm@layoutvoffset=\dimen180
+\Gm@dimlist=\toks34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cmbright/cmbright.sty
 Package: cmbright 2005/04/13 v8.1 (WaS)
@@ -742,7 +754,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen176
+\@linkdim=\dimen181
 \Hy@linkcounter=\count130
 \Hy@pagecounter=\count131
 
@@ -768,10 +780,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen177
+\XeTeXLinkMargin=\dimen182
 \Fld@menulength=\count134
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -798,39 +810,39 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip48
 )
 (./bohmianMech.aux)
 \openout1 = `bohmianMech.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count140
-\scratchdimen=\dimen180
-\scratchbox=\box60
+\scratchdimen=\dimen185
+\scratchbox=\box61
 \nofMPsegments=\count141
 \nofMParguments=\count142
-\everyMPshowfont=\toks34
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count143
-\MPscratchDim=\dimen181
+\MPscratchDim=\dimen186
 \MPnumerator=\count144
 \makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks35
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -846,7 +858,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box61
+\AtBeginShipoutBox=\box62
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -856,15 +868,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(28.45274pt, 2335.97145pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 3326.12701pt, 28.45274pt)
+* h-part:(L,W,R)=(22.76228pt, 2347.35237pt, 22.76228pt)
+* v-part:(T,H,B)=(22.76228pt, 3337.50793pt, 22.76228pt)
 * \paperwidth=2392.87694pt
 * \paperheight=3383.0325pt
-* \textwidth=2335.97145pt
-* \textheight=3326.12701pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-43.81725pt
+* \textwidth=2347.35237pt
+* \textheight=3337.50793pt
+* \oddsidemargin=-49.5077pt
+* \evensidemargin=-49.5077pt
+* \topmargin=-49.5077pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -882,7 +894,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 127.
+Package hyperref Info: Link coloring OFF on input line 131.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -891,89 +903,95 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 127.
-LaTeX Info: Redefining \pageref on input line 127.
-LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 131.
+LaTeX Info: Redefining \pageref on input line 131.
+LaTeX Info: Redefining \nameref on input line 131.
 
 (./bohmianMech.out) (./bohmianMech.out)
 \@outlinefile=\write5
 \openout5 = `bohmianMech.out'.
 
 LaTeX Font Info:    Try loading font information for OT1+kurierm on input line 
-147.
+151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/ot1kurierm.fd
 File: ot1kurierm.fd 2005/10/03 v1.2 font definition file for OT1/kurierm (MW)
 )
 LaTeX Font Info:    Try loading font information for OML+kurier on input line 1
-47.
+51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omlkurier.fd
 File: omlkurier.fd 2008/07/22 v0.995 font definition file for OML/kurier (MW)
 )
 LaTeX Font Info:    Try loading font information for OMS+kurier on input line 1
-47.
+51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omskurier.fd
 File: omskurier.fd 2008/07/22 v0.995 font definition file for OMS/kurier (MW)
 )
 LaTeX Font Info:    Try loading font information for OMX+kurier on input line 1
-47.
+51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kurier/omxkurier.fd
 File: omxkurier.fd 2008/07/22 v0.995 font definition file for OMX/kurier (MW)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--257
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 
  []
 
+<harmonic1.jpeg, id=45, 481.8pt x 361.35pt>
+File: harmonic1.jpeg Graphic file (type jpg)
+ <use harmonic1.jpeg>
+Package pdftex.def Info: harmonic1.jpeg used on input line 337.
+(pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
 
-Underfull \hbox (badness 1466) in paragraph at lines 299--299
-\T1/kurier/m/n/24.88 of the sys-tem maybe de-scribed as $[] \OT1/kurierm/m/n/24
-.88 =
+<harmonic2.jpeg, id=46, 481.8pt x 361.35pt>
+File: harmonic2.jpeg Graphic file (type jpg)
+ <use harmonic2.jpeg>
+Package pdftex.def Info: harmonic2.jpeg used on input line 337.
+(pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
+
+<harmonic.jpeg, id=47, 481.8pt x 361.35pt>
+File: harmonic.jpeg Graphic file (type jpg)
+ <use harmonic.jpeg>
+Package pdftex.def Info: harmonic.jpeg used on input line 337.
+(pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
-
- []
-
-
+(./bohmianMech.bbl)
 Overfull \hbox (65.29169pt too wide) has occurred while \output is active
  [][] 
  []
@@ -982,25 +1000,25 @@ Overfull \hbox (65.29169pt too wide) has occurred while \output is active
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
-
-(./bohmianMech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 686.
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./
+harmonic1.jpeg> <./harmonic2.jpeg> <./harmonic.jpeg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
+ (./bohmianMech.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
 Package rerunfilecheck Info: File `bohmianMech.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 686.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
  ) 
 Here is how much of TeX's memory you used:
- 19776 strings out of 494948
- 398893 string characters out of 6178809
- 659075 words of memory out of 5000000
- 22631 multiletter control sequences out of 15000+600000
- 81742 words of font info for 73 fonts, out of 8000000 for 9000
+ 20056 strings out of 494948
+ 402421 string characters out of 6178809
+ 652077 words of memory out of 5000000
+ 22897 multiletter control sequences out of 15000+600000
+ 78612 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,17n,84p,1380b,1166s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,84p,1376b,1198s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ex-kurier.enc}{/usr/sha
 re/texlive/texmf-dist/fonts/enc/dvips/kurier/sy-kurier.enc}{/usr/share/texlive/
 texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/share/texlive/texmf-dist/
@@ -1009,10 +1027,10 @@ vips/kurier/rm-kurier.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfb
 right/hfbrbs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/ku
 rierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierr.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierri.pfb>
-Output written on bohmianMech.pdf (1 page, 113409 bytes).
+Output written on bohmianMech.pdf (1 page, 330300 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  15 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
