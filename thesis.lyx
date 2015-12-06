@@ -112,8 +112,8 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Abstract
-Einstein started with showing that QM must be incomplete if one assumes
- (a) realism and (b) locality.
+Einstein started with showing that Quantum Mechanics (QM) must be incomplete
+ if one assumes (a) realism and (b) locality.
  He wanted us to believe that there must be some theory which satisifed
  both (a) & (b) and can produce the intended results.
  Bell later showed that certain correlations between measurable properties
@@ -128,11 +128,44 @@ Einstein started with showing that QM must be incomplete if one assumes
 Our story begins with a theory which satisfies (a) but not (b), while being
  completely identical with QM in terms of experimental predictions.
  Such a theory should exist is by itself rather discomforting.
- Infact, the said theory, known as Bohmian Mechanics, is deterministic.
+ Infact, the said theory, known as Bohmian Mechanics (BM), is deterministic.
  Which entails that while it maybe expected that the correlations can arise
  from the explicit non locality in the theory, what happens to questions
  related to contextuality? It is this that will be explored in the remainder
  of the text.
+\end_layout
+
+\begin_layout Abstract
+For the reader who's more familiar, it would already be known that usual
+ formulations of contextuality (and other determinism tests) are for discrete
+ degrees of freedom, viz.
+ spins (for massive particles).
+ Since Bohmian Mechanics doesn't claim that spins have pre-defined values,
+ it is not surprising that both are compatible, yet the analysis is illuminating.
+ It sheds light on how non-locality and contextuality are related.
+ Further, tests of contextuality maybe extended to phase space (
+\begin_inset Formula $q,p$
+\end_inset
+
+).
+ In this setting then, the tests show that (
+\begin_inset Formula $q,p$
+\end_inset
+
+) can't be deterministic, roughly speaking, while antithetically, BM is
+ infact deterministic in (
+\begin_inset Formula $q,p$
+\end_inset
+
+)! To explore this apparent contradiction, we construct an appropriate test
+ of determinism and analyse it in the framework of BM.
+ The analysis is expected to provide further insights into the relation
+ between non-locality and contextuality, especially in continuous variables,
+ where the current understanding is limited.
+ Additionally, we might glimpses into learning the fundamental difference
+ between spins (discrete) and phase space variables (continuous), if at
+ all there is any.
+ 
 \end_layout
 
 \begin_layout Part
@@ -141,6 +174,171 @@ Prior Art
 
 \begin_layout Chapter
 Classical Mechanics
+\end_layout
+
+\begin_layout Standard
+It is worthwhile spending some time trying reformulate classical mechanics
+ (CM) into a form that is closest to quantum mechanics.
+ Although this is not necessary for understanding BM (and may very well
+ be skipped), doing so brings with it it's own perspective and excitement.
+\end_layout
+
+\begin_layout Section
+The Hamilton Jacobi Theory
+\end_layout
+
+\begin_layout Standard
+Let's start with a Lagrangian, 
+\begin_inset Formula $L=L(q,\dot{q},t)$
+\end_inset
+
+, where 
+\begin_inset Formula $p_{i}:=\partial L/\partial\dot{q}_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $H:=p_{i}\dot{q}_{i}-L$
+\end_inset
+
+, 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ represents the position of the 
+\begin_inset Formula $i$
+\end_inset
+
+th particle and 
+\begin_inset Formula $q,\dot{q}$
+\end_inset
+
+ refer to the set 
+\begin_inset Formula $\{q_{1},q_{2},\dots\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{\dot{q}_{1},\dot{q}_{2},\dots\}$
+\end_inset
+
+ respectivley.
+ If we imagine a path that the particle takes from a point 
+\begin_inset Formula $q_{0},t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $q,t$
+\end_inset
+
+, then we can define a quantity 
+\begin_inset Formula $I(q,t;q_{0},t_{0}):=\int_{q_{0},t_{0}}^{q,t}L(q,\dot{q},t)dt$
+\end_inset
+
+ where the integral is taken along the aforesaid path.
+ We know from experiments that the path the particle actually takes, given
+ 
+\begin_inset Formula $L$
+\end_inset
+
+, is one which extremizes 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ This entails that, just like at the extremum value of the function, it's
+ derivative vanishes, the first order variation of 
+\begin_inset Formula $I$
+\end_inset
+
+ for a path that extremizes 
+\begin_inset Formula $I$
+\end_inset
+
+ must vanish; viz.
+ 
+\begin_inset Formula $\delta I=0$
+\end_inset
+
+ for any extremal path.
+ As the reader would recall, after some calculation, this yields 
+\begin_inset Formula 
+\[
+\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_{i}}-\frac{\partial L}{\partial q_{i}}=0.
+\]
+
+\end_inset
+
+This can be expressed in terms of 
+\begin_inset Formula $H$
+\end_inset
+
+ instead of 
+\begin_inset Formula $L$
+\end_inset
+
+ by substituting for 
+\begin_inset Formula $L$
+\end_inset
+
+ in the definition of 
+\begin_inset Formula $I$
+\end_inset
+
+ and changing the independent variables from 
+\begin_inset Formula $(q,\dot{q})$
+\end_inset
+
+ to 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+ & varying them, where 
+\begin_inset Formula $p$
+\end_inset
+
+ refers to 
+\begin_inset Formula $\{p_{1},p_{2},\dots\}$
+\end_inset
+
+.
+ The result is the familiar Hamilton equations (this again requires some
+ calculation and may not always be possible) 
+\begin_inset Formula 
+\[
+\dot{q}_{i}=\frac{\partial H}{\partial p_{i}},\dot{\,p}_{i}=-\frac{\partial H}{\partial q_{i}}.
+\]
+
+\end_inset
+
+Defn: Canoncial Transformation: 
+\begin_inset Formula $q,p\,\rightarrow\,Q=Q(q,p,t),\,P=P(q,p,t)$
+\end_inset
+
+ is a a canonical transformation if 
+\begin_inset Formula $Q,P$
+\end_inset
+
+ preserve the form of the Hamilton Equations, viz.
+ if 
+\begin_inset Formula $K=K(Q,P,t)$
+\end_inset
+
+ is the new 
+\begin_inset Formula $H$
+\end_inset
+
+, then we must have 
+\begin_inset Formula $\dot{Q}_{i}=\frac{\partial K}{\partial P_{i}},\,\dot{P}_{i}=-\frac{\partial K}{\partial Q_{i}}$
+\end_inset
+
+ which must've come from 
+\begin_inset Formula $I=\int P_{i}dQ_{i}-Kdt$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+{Various parts missing}
 \end_layout
 
 \begin_layout Section
@@ -687,6 +885,74 @@ The potential is
 Now we've made plausible various things which would've seemed arbitrary
  otherwise.
  
+\end_layout
+
+\begin_layout Chapter
+Bohm's original proposal - A suggested interpretation of Quantum Theory
+ in terms of 
+\begin_inset Quotes eld
+\end_inset
+
+Hidden Variables
+\begin_inset Quotes erd
+\end_inset
+
+ I
+\end_layout
+
+\begin_layout Standard
+The usual interpretation of quantum mechanics (QM) is self consistent.
+ It assumes however that the most complete possible specification of an
+ individual system is in terms of 
+\begin_inset Formula $\psi$
+\end_inset
+
+ that yields only probabilistic results.
+ To investigate if this assumption is accurate, it is reasonable to expect
+ an experimental test to exist.
+ However, as will be shown, no experiment can test this interpretation.
+ The other alternative then, is to attempt constructing a theory, which
+ has extra variables which in principle completely specify the system but
+ in practice get averaged over.
+
+\color blue
+ If such a theory existed then it is obvious that the assumption false.
+ 
+\color inherit
+In his paper, Bohm describes such a theory.
+ This theory yields the same results as QM in all physical situations studied
+ and is shown to be broader conceptually.
+ The mathematics used is shown to be more general.
+ Bohm's idea was that while QM fails at high energies, his theory might
+ work.
+ In retrospection though, one realizes how both BM and QM suffer from the
+ same problem which requires quantum field theory (QFT) to remedy.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The usual interpretation assumes that the wavefunction is the most complete
+ description.
+ This description was criticized by Einstein for he believed that there
+ must exist a better, precise theory that describes nature as opposed to
+ QM that claims nature is fundamentally probabilistic.
+ Einstein's views have themselves been criticised to be irrelevant because
+ the usual QM interpretation is in excellent agreement with experiments.
+ 
+\end_layout
+
+\begin_layout Chapter
+Theory and it's location
+\end_layout
+
+\begin_layout Standard
+From the point of view of QM, the latter is just an appropriate limit of
+ the former, while from the perspective of BM, the latter is treated significant
+ly differently from the former.
+ Perhaps then one can imagine a more 'secular' formulation.
 \end_layout
 
 \end_body

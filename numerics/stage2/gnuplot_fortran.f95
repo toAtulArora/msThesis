@@ -155,7 +155,8 @@ contains
     real, intent(in), dimension(:) :: x,y
     graph2dCount = graph2dCount+1
     write(fileName,'(a,i4.4,a)') 'file',graph2dCount,'.jpeg'
-    call plot2dSave(x,y,fileName)
+    !write(fileName,'(a,i4.4,a)') 'file',graph2dCount,'.pdf'
+    call plot2dSave(x,y,fileName)!,picFormat=1)
   end subroutine nextPlot2d
 
   subroutine nextPlot3d(x,y,z)

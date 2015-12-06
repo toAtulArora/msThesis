@@ -129,7 +129,7 @@ program oneParticle
      !    ! psi(qStep,timeStep+1) = psic%f(qStep) + psiDot(psic,del2psic,q)*dt
      !    !!write(*,*) psiDot(psic,del2psic,q)
      ! end do
-     if (mod(timeStep,100)==0) then
+     if (mod(timeStep,100)==0 ) then
         ! if (mod(timeStep,maxT/10)==0) then
         !call nextPlot2d(x(2:maxS-1),Varray(2:maxS-1))
         !call nextPlot2d(x(2:maxS-1),abs(psi(2:maxS-1,timeStep)))

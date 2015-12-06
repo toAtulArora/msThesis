@@ -2288,7 +2288,8 @@ mistake
 \end_layout
 
 \begin_layout Section
-Perusing through the Tumult of the Palimpsest Code | Nov 9-15
+Perusing through the Tumult of the Palimpsest Code | The hegemony of constructin
+g the exegesis of my work | Nov 9-15
 \end_layout
 
 \begin_layout Subsection
@@ -2468,12 +2469,598 @@ Talked to sudeshna ma'am.
  
 \end_layout
 
+\begin_layout Itemize
+Talked to Abhishek sir and realized that I wasn't really using RK4.
+ I had made a mistake in understanding how to implement.
+ Affter the discussion figured that, fixed it and it started working! The
+ mistake was that I was using different 
+\begin_inset Formula $x$
+\end_inset
+
+s for finding 
+\begin_inset Formula $k_{1},k_{2},\dots$
+\end_inset
+
+ whereas to evaluate 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+ for example, I needed 
+\begin_inset Formula $x+0.5\,dt\,k_{1}$
+\end_inset
+
+ but 
+\begin_inset Formula $k_{1}$
+\end_inset
+
+is complex in general.
+ So I already had hints on things going wrong.
+ But I realised after that 
+\begin_inset Formula $\psi+0.5\,dt\,k_{1}$
+\end_inset
+
+ is what I had to use because in some sense, I'm treating 
+\begin_inset Formula $\psi$
+\end_inset
+
+ as a functional.
+ So, given an 
+\begin_inset Formula $x$
+\end_inset
+
+, I have to find 
+\begin_inset Formula $\dot{\psi}$
+\end_inset
+
+ at different 
+\begin_inset Formula $\psi$
+\end_inset
+
+s not different 
+\begin_inset Formula $x$
+\end_inset
+
+s.
+ So that fixed things.
+ It was sad though because the interpolation code was completely useless!
+\end_layout
+
 \begin_layout Subsection
-Wednesday | Nov 11
+Wednesday, Thursday | Nov 11, 12
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Numerics: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Got almost all basic stages to work.
+ Was able to get the harmonic oscillator (as was done yesterday).
+ Improved on the parameters.
+ Then attempted to get one particle trajectory.
+ And it worked! 
+\end_layout
+
+\begin_layout Itemize
+As it turns out, interpolation was not useless but rather important.
+ This is because I needed to find 
+\begin_inset Formula $\dot{q}$
+\end_inset
+
+ at different 
+\begin_inset Formula $q$
+\end_inset
+
+s and 
+\begin_inset Formula $\dot{q}$
+\end_inset
+
+ is a function of 
+\begin_inset Formula $\psi(q)$
+\end_inset
+
+.
+ So in effect I needed both 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and 
+\begin_inset Formula $\nabla\psi$
+\end_inset
+
+ at arbitrary points.
+ This worked well because I had already the interpolation code.
+ 
+\end_layout
+
+\begin_layout Itemize
+Next was to generalize this to handle an ensamble of particles.
+ This was done by extending the interpolation code to handle arrays naturally
+ and then the beauty of fortran kicked in and everything eventually started
+ working smooth.
+ Ofcourse I had made minor mistakes here and there, for example trying to
+ add precision(real) to 
+\begin_inset Formula $\psi$
+\end_inset
+
+ so that I don't get a division by zero in 
+\begin_inset Formula $\dot{q}$
+\end_inset
+
+ but that doesn't work like expected.
+ 
+\end_layout
+
+\begin_layout Itemize
+Anyway, after all of this, I realized that I need one last thing.
+ I must start with particles distributed according to 
+\begin_inset Formula $|\psi|^{2}$
+\end_inset
+
+and then evolve them.
+ This did work finally.
+ For this I wrote an algorithm, which was similar to the one I figured as
+ an answer to Bagla sir's question in the computational physics course.
+ That was a standard method of using the cumulative distribution and then
+ inverting it.
+ This new method was basically something that can be, unlike the former,
+ generalized to arbitrary dimensions (at least intuitively, haven't proven
+ this).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The algorithm is simply this.
+ Start with finding the maximum of the probability density function, call
+ it 
+\begin_inset Formula $P_{\text{max}}$
+\end_inset
+
+.
+ Then construct an interval from 0 to 
+\begin_inset Formula $P_{\text{max}}$
+\end_inset
+
+ and successively choose a point in this interval, and move in constant
+ steps; at some iteration, call this point 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Next, construct random numbers uniformly in the relevant range (over which
+ the PDF is defined; viz.
+ the relevant domain if you're fussy).
+ Let's call it for instance 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Then check if 
+\begin_inset Formula $P(x)>h$
+\end_inset
+
+.
+ If it is, then you accept this point (save it in some array that'll represent
+ the set of points which follow the said distribution).
+ Else you reject the point.
+ Repeat this a fixed number of times for each 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ The claim is the set of points you get will satisfy the same PDF.
+ Why it works is intuitively obvious.
+ Start with considering 
+\begin_inset Formula $h=0$
+\end_inset
+
+.
+ All points are accepted.
+ Then as 
+\begin_inset Formula $h$
+\end_inset
+
+ increases, fewer and fewer points are accepted; viz.
+ those which are more likely according to the PDF, get more representation
+ in the final set of points.
+ This is readily generalizable.
+ 
+\end_layout
+
+\begin_layout Itemize
+There is however a major draw back.
+ How many particles you'll have in the final array is stochastic in this
+ algorithm.
+ However, this can be easily fixed.
+ Consider the further generalization.
+ Find 
+\begin_inset Formula $h$
+\end_inset
+
+ uniform randomly and then find 
+\begin_inset Formula $x$
+\end_inset
+
+ uniformly randomly as stated.
+ If 
+\begin_inset Formula $x$
+\end_inset
+
+ is accepted, good else repeat till you have enough particles.
+ Because of the stochastic nature of 
+\begin_inset Formula $x$
+\end_inset
+
+, increasing 
+\begin_inset Formula $h$
+\end_inset
+
+ sequentially, or selecting it randomly, both are equivalent.
+ The latter however allows for an obvious way of fixing the number of particles.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Friday, Saturday | Nov 13, 14 [intensity: 30 hours up out of 32 hours elapsed]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Working on finalizing the poster (here's the final 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-Poster"
+
+\end_inset
+
+).
+ Did various things.
+ Read the paper that had analysed the GHZ and Bell case with Bohmian Mechanics,
+ then looked at contextuality (the pierse mermin version) and finally looked
+ at the phase space GHZ test.
+ I liked the final output.
+ Getting it printed was a chore by itself.
+ However I was told later that there's too much text in it.
+ 
+\end_layout
+
+\begin_layout Itemize
+[teaching] Took a class on Coriolis force.
+ It was fun.
+ Couldn't do too many examples though.
+\end_layout
+
+\begin_layout Itemize
+[misc] Food improvement failed again today.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename poster/release/atulMS11003.pdf
+	lyxscale 50
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Poster 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Poster"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sunday | Nov 15 [unwell]
+\end_layout
+
+\begin_layout Itemize
+[misc] I was too exhausted by the time Sunday hit.
+ It was worth it though, finishing all the work in time.
+ Emailed the poster to Arvind sir.
+\end_layout
+
+\begin_layout Section
+The judgement day | amending dilapidated machines and minds
+\end_layout
+
+\begin_layout Subsection
+Monday | Nov 16 [judgement day]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Presented the poster to various people.
+ Abhishek sir was impressed and Sudeshna ma'am also seemed impressed.
+ Explained it also to yoyo and another person who's name I don't remember.
+ Was able to express the idea and excitement.
+ Aulakh sir felt it was philosophy (ofcourse he didn't spend enough time
+ understanding what's being said).
+ KP Singh felt that since BM doesn't make any 'new' predictions, it must
+ be useless as a theory.
+ He didn't call it philosophy but I doubt he thinks it is of any use.
+\end_layout
+
+\begin_layout Itemize
+[misc] Food improvement finally worked! Packed for leaving.
+\end_layout
+
+\begin_layout Subsection
+Tuesday, Wednesday | Nov 17, 18 [travel + home]
+\end_layout
+
+\begin_layout Itemize
+[misc] Fixed Anika bhena's [had to open it, re-attach the keyboard, and
+ unplug it], Attika bhena's [win 10 issues (partly fixed), applications]
+ and mum's computer [formatted to win 8.1, explained how to transfer information].
+ Also got the warranty issue taken care of and returned the defective product.
+ 
+\end_layout
+
+\begin_layout Itemize
+[research/summer] Got an email from PRA, requesting a response to the proof
+ of the PRA submission.
+\end_layout
+
+\begin_layout Subsection
+Thursday | Nov 19 [partly travelled + working]
+\end_layout
+
+\begin_layout Itemize
+[misc] reached IISER @ 10:30 or so.
+ ate something, bathed etc.
+ and reached CAF by 12:30; went for lunch at 1:30 and after lunch, slept.
+ Woke up at 6, went grocery shopping and then gym + food related.
+\end_layout
+
+\begin_layout Itemize
+[research/summer] Looked at the PRA proof.
+ These guys are rather meticulous.
+ Wrote to Ali about the PRA thing.
+ He's in a conference he said.
+\end_layout
+
+\begin_layout Subsection
+Friday | Nov 20
+\end_layout
+
+\begin_layout Itemize
+[PhD] Responded to Almut, University of Leeds for the offer.
+\end_layout
+
+\begin_layout Itemize
+[research/summer] Responding to the PRA proof.
+ Wrote a rough response and sent it to Ali.
+ This happened a few times.
+ The final version (roughly) was sent to Ali at night.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Got the cycle!
+\end_layout
+
+\begin_layout Subsection
+Saturday | Nov 21
+\end_layout
+
+\begin_layout Itemize
+[research/summer] The response to the proof was submitted finally.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Birthday celebration! A lot of things that happened, happened really
+ well! Had a great time.
+\end_layout
+
+\begin_layout Itemize
+[course/gr] Started with Ashok Sen's GR lectures; lecture 1
+\end_layout
+
+\begin_layout Subsection
+Sunday | Nov 22
+\end_layout
+
+\begin_layout Itemize
+[misc.] post party, sleep caught up
+\end_layout
+
+\begin_layout Itemize
+[course/gr] Started with Ashok Sen's GR lectures; lecture 1
+\end_layout
+
+\begin_layout Section
+Aftermath, Eliciting pillory, Gleaning GR | Nov 23 - 29
+\end_layout
+
+\begin_layout Subsection
+Monday | Nov 23
+\end_layout
+
+\begin_layout Itemize
+[misc.] sGRE scores received.
+ Not applying to the US anymore.
+\end_layout
+
+\begin_layout Itemize
+[course/gr] lecture 2 (iGuess) | also scanned and uploaded the notes
+\end_layout
+
+\begin_layout Itemize
+[PhD] looking up universities where I can apply given the GRE scores; wrote
+ to sudipta (iGuess)
+\end_layout
+
+\begin_layout Itemize
+[research/ms] thought of a way of constructing more optimized operators.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Nov 24
+\end_layout
+
+\begin_layout Itemize
+[misc.] talked to Bag about US applications and QG in general.
+\end_layout
+
+\begin_layout Itemize
+[course/gr] lecture 3 (iGuess)
+\end_layout
+
+\begin_layout Itemize
+[course/qg] lecture 1 (PIRSA, by Rovelli)
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Nov 25
+\end_layout
+
+\begin_layout Itemize
+[course/gr] lecture 4
+\end_layout
+
+\begin_layout Itemize
+[course/qg] lecture 2 (partly)
+\end_layout
+
+\begin_layout Itemize
+[PhD/exam] TIFR questions (section A almost done)
+\end_layout
+
+\begin_layout Subsection
+Thursday | Nov 26
+\end_layout
+
+\begin_layout Itemize
+[research/summer] Received the second proof of the paper.
+ Have to figure it out and fix it.
+\end_layout
+
+\begin_layout Itemize
+[course/gr] lecture 5
+\end_layout
+
+\begin_layout Itemize
+[course/phil] assembling information and question 2 done
+\end_layout
+
+\begin_layout Itemize
+[PhD/exam] Working on TIFR questions, section B.
+ Started reading griffiths (the transmission lines chapter).
+\end_layout
+
+\begin_layout Itemize
+[PhD] wrote some emails (3 people in the list that Sudipta had given)
+\end_layout
+
+\begin_layout Subsection
+Friday | Nov 27
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Optimized observables for the finite wavefunctions can be
+ given in terms the usual displacement 
+\begin_inset Formula $e^{i\hat{p}L/\hbar}$
+\end_inset
+
+ followed by a displacement of some periodic clump in the opposite direction
+ 
+\begin_inset Formula $e^{-if(\hat{x}_{\text{mod}NL})\hat{p}NL/\hbar}$
+\end_inset
+
+ (check this) where 
+\begin_inset Formula $f$
+\end_inset
+
+ is used to define the 
+\begin_inset Quotes eld
+\end_inset
+
+clump
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of 'slits' for the given eigenstate.
+ So the full operator would perhaps be 
+\begin_inset Formula $e^{-if(\hat{x}_{\text{mod}NL})\hat{p}NL/\hbar}e^{i\hat{p}L/\hbar}$
+\end_inset
+
+.
+ The difficulty then is to see how one can create an operator of the form
+ 
+\begin_inset Formula $X^{\dagger}X=1$
+\end_inset
+
+.
+ This still needs to be worked out.
+\end_layout
+
+\begin_layout Itemize
+[course/gr] lecture 6
+\end_layout
+
+\begin_layout Itemize
+[research/summer] The proof I think is still quoting the wrong references.
+ Other things seem to be alright.
+\end_layout
+
+\begin_layout Itemize
+[PhD/exam] Worked on 2 TIFR questions; got stuck at them; had to talk to
+ Bag.
+\end_layout
+
+\begin_layout Itemize
+[course/phil] Q3 done, working on Q4.
+\end_layout
+
+\begin_layout Subsection
+Saturday | Nov 28
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Real Bell Test in (q,p) and not one that's based on the spin
+ case.
+ Imagine there was no spin.
+ How would we have arrived at an inequality for local realism? I don't want
+ to look at a subspace.
+ Perhaps there's a more direct way which we're oblivion to at the moment.
+\end_layout
+
+\begin_layout Itemize
+[course/phil] Q4 working on it.
 \end_layout
 
 \begin_layout Part

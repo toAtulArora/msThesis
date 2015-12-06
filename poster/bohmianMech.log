@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  14 NOV 2015 07:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  14 NOV 2015 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -969,25 +969,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--337
 
  []
 
-<harmonic1.jpeg, id=45, 481.8pt x 361.35pt>
+<harmonic1.jpeg, id=44, 481.8pt x 361.35pt>
 File: harmonic1.jpeg Graphic file (type jpg)
  <use harmonic1.jpeg>
 Package pdftex.def Info: harmonic1.jpeg used on input line 337.
 (pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
 
-<harmonic2.jpeg, id=46, 481.8pt x 361.35pt>
+<harmonic2.jpeg, id=45, 481.8pt x 361.35pt>
 File: harmonic2.jpeg Graphic file (type jpg)
  <use harmonic2.jpeg>
 Package pdftex.def Info: harmonic2.jpeg used on input line 337.
 (pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
 
-<harmonic.jpeg, id=47, 481.8pt x 361.35pt>
+<harmonic.jpeg, id=46, 481.8pt x 361.35pt>
 File: harmonic.jpeg Graphic file (type jpg)
  <use harmonic.jpeg>
 Package pdftex.def Info: harmonic.jpeg used on input line 337.
 (pdftex.def)             Requested size: 209.97992pt x 157.48372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
 
  []
 
@@ -1002,23 +1002,23 @@ Overfull \hbox (65.29169pt too wide) has occurred while \output is active
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./
 harmonic1.jpeg> <./harmonic2.jpeg> <./harmonic.jpeg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 726.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 726.
  (./bohmianMech.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 726.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 726.
 Package rerunfilecheck Info: File `bohmianMech.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 726.
  ) 
 Here is how much of TeX's memory you used:
- 20056 strings out of 494948
- 402421 string characters out of 6178809
- 652077 words of memory out of 5000000
+ 20055 strings out of 494948
+ 402410 string characters out of 6178809
+ 650350 words of memory out of 5000000
  22897 multiletter control sequences out of 15000+600000
  78612 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,17n,84p,1376b,1198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,84p,1375b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ex-kurier.enc}{/usr/sha
 re/texlive/texmf-dist/fonts/enc/dvips/kurier/sy-kurier.enc}{/usr/share/texlive/
 texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/share/texlive/texmf-dist/
@@ -1027,10 +1027,10 @@ vips/kurier/rm-kurier.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/hfb
 right/hfbrbs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/ku
 rierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierr.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierri.pfb>
-Output written on bohmianMech.pdf (1 page, 330300 bytes).
+Output written on bohmianMech.pdf (1 page, 330088 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
