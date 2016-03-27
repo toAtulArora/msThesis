@@ -1,0 +1,882 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass revtex4-1
+\options a4paper,british,pra,twocolumn,superscriptaddress,nofootinbib
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Is Quantum Mechanics truly Contextual?
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Affiliation
+Indian Institute of Science Education & Research (IISER), Mohali
+\end_layout
+
+\begin_layout Author Email
+ms11003@iisermohali.ac.in, to.AtulArora@gmail.com
+\end_layout
+
+\begin_layout Author
+Arvind
+\end_layout
+
+\begin_layout Affiliation
+Indian Institute of Science Education & Research (IISER), Mohali
+\end_layout
+
+\begin_layout Abstract
+Violation of the KCBS inequality doesn't imply contextuality, since we explicitl
+y show how a non-contextual hidden variable (NCHV) construction can yield
+ a violation.
+ A new peculiar property, we call `non-multiplicativity', has been identified
+ by analyzing the said non-contextual model.
+ Non-multiplicativity, we show, is sufficient to explain the violation.
+ The class of theories which can't violate the inequality, are thus refined
+ to `non-contextual multiplicative hidden variable' (NCMHV) theories.
+ The general version of the NCHV construction is presented, which explains
+ all results of QM, by identifying and restricting a previously known successful
+ hidden variable formulation of QM.
+ Effectively we explicitly show that we can describe all quantum phenomena
+ that QM can, without contextuality entering the picture.
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+*We thus present a `true' test of contextuality, one which is neither violated
+ by QM, nor by NCAHV theories, but may only be violated by theories, which
+ indeed assign values, depending on the context of the measurement.
+ Such a theory has been constructed and the violation demonstrated.*
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+There are two tests of hidden variable theories, which have gained popularity
+ in the physics community, Bell's Locality test and Kochen & Specker's Contextua
+lity test.
+ Both were designed to rule out certain classes of theories, and with them,
+ their associated properties.
+ In case of the former, locality is given up, although one still preserves
+ no-signalling.
+ In the case of the latter, it is believed that non-contextuality must be
+ given up.
+ Since the class of theories which are ruled out, satisfy our intuitive
+ understanding of nature (classical properties), their exclusion entails
+ that quantum mechanics has these non-classical features, which can be harnessed
+ as a resource to perform tasks that were otherwise impossible.
+\end_layout
+
+\begin_layout Section
+Contextuality and Multiplicativity
+\end_layout
+
+\begin_layout Standard
+Consider a set of 9 observables, as listed in Mat.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:observables"
+
+\end_inset
+
+, which take the value 
+\begin_inset Formula $\pm1$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{C}_{j}:=\prod_{i}\hat{A}_{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{R}_{i}:=\prod_{j}\hat{A}_{ij}$
+\end_inset
+
+ (
+\begin_inset Formula $i,j\in\{1,2,3\}$
+\end_inset
+
+).
+ 
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{ccc}
+\hat{A}_{11} & \hat{A}_{12} & \hat{A}_{13}\\
+\hat{A}_{21} & \hat{A}_{22} & \hat{A}_{23}\\
+\hat{A}_{31} & \hat{A}_{32} & \hat{A}_{33}
+\end{array}\right]\label{eq:observables}
+\end{equation}
+
+\end_inset
+
+This is motivated by the Peres Mermin (PM) construction, where observables
+ along a row (and also column) commute.
+ For an appropriate choice of 
+\begin_inset Formula $\hat{A}_{ij}$
+\end_inset
+
+, they showed that 
+\begin_inset Formula 
+\begin{equation}
+\hat{C}_{3}=-\hat{1},\,\hat{C}_{j}=\hat{1}\,(j\neq3),\,\hat{R}_{i}=\hat{1},\,\forall\,j,i.\label{eq:conditionsOnPM}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{1}$
+\end_inset
+
+ is identity.
+ Consequently, 
+\begin_inset Formula 
+\begin{equation}
+\hat{\chi}_{\text{KCBS}}=\hat{R}_{1}+\hat{R}_{2}+\hat{R}_{3}+\hat{C}_{1}+\hat{C}_{2}-\hat{C}_{3}=6.\hat{1}\label{eq:KCBS}
+\end{equation}
+
+\end_inset
+
+ for QM, given the PM situation.
+ Experimentally, one evaluates 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{KCBS}}\right\rangle $
+\end_inset
+
+ by measuring 
+\begin_inset Formula $\left\langle \hat{R}_{i}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle \hat{C}_{j}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now imagine a theory that assigns values to these observables, as given
+ in Mat.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simplest"
+
+\end_inset
+
+, representing a given state, which satisfies all conditions listed in Eqns.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:conditionsOnPM"
+
+\end_inset
+
+, except 
+\begin_inset Formula $\hat{C}_{3}\to1$
+\end_inset
+
+ instead of 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right]\label{eq:simplest}
+\end{equation}
+
+\end_inset
+
+One can check that it is not easy to modify the assigned values, s.t.
+ all constraints are satisfied.
+ In fact it is impossible [put citation].
+ It clearly follows that such simplistic `deterministic' theories, can't
+ explain all predictions of Quantum Mechanics (QM).
+ Explicitly, for the aforesaid 
+\begin_inset Formula 
+\begin{equation}
+\left\langle \hat{\chi}_{\text{KCBS}}\right\rangle \le4,\label{eq:KCBSclassical}
+\end{equation}
+
+\end_inset
+
+and this holds quite generally, for such theories, where the ensemble is
+ taken to be identical copies of the given state.
+ To modify the nature of the theory itself, consider 
+\begin_inset Formula $\hat{A}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}$
+\end_inset
+
+, which are s.t.
+ 
+\begin_inset Formula $[\hat{A},\hat{B}]=0$
+\end_inset
+
+.
+ Simultaneous eigenstates 
+\begin_inset Formula $\left|a,b\right\rangle $
+\end_inset
+
+ can be constructed s.t.
+ 
+\begin_inset Formula $\hat{A}\left|a,b\right\rangle =a\left|a,b\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}\left|a,b\right\rangle =b\left|a,b\right\rangle $
+\end_inset
+
+.
+ Consequently, 
+\begin_inset Formula $f(\hat{A},\hat{B})\left|a,b\right\rangle =f(a,b)\left|a,b\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $f$
+\end_inset
+
+ is an arbitrary function.
+ It appears reasonable therefore, that if a theory assigns 
+\begin_inset Formula $m(\hat{A})=a$
+\end_inset
+
+ and 
+\begin_inset Formula $m(\hat{B})=b$
+\end_inset
+
+, the value assigned to 
+\begin_inset Formula $\hat{C}:=\hat{A}\hat{B}=-\hat{\sigma}_{z}\otimes\hat{\sigma}_{z}$
+\end_inset
+
+ in particular, must be 
+\begin_inset Formula $m(\hat{C})=ab$
+\end_inset
+
+, where 
+\begin_inset Formula $m(\hat{*})$
+\end_inset
+
+ represents the value a measurement will yield, corresponding to the observable.
+ However this is not a requirement, since for the state 
+\begin_inset Formula $\left|11\right\rangle :=\left|1\right\rangle \otimes\left|1\right\rangle $
+\end_inset
+
+ written in the computational basis, 
+\begin_inset Formula $m(\hat{C})=-1$
+\end_inset
+
+ while 
+\begin_inset Formula $m(\hat{A})=\pm1$
+\end_inset
+
+ and 
+\begin_inset Formula $m(\hat{B})=\pm1$
+\end_inset
+
+, independently, according to QM, with probability half.
+ Thus, even if according to some theory, 
+\begin_inset Formula $m(\hat{A})=1$
+\end_inset
+
+ and 
+\begin_inset Formula $m(\hat{B})=1$
+\end_inset
+
+, it can still assign 
+\begin_inset Formula $m(\hat{A}\hat{B})=-1$
+\end_inset
+
+.
+ Accordingly, we define a new property, 
+\emph on
+multiplicativity,
+\emph default
+ which a theory is said to have, if the value assigned to commuting observables,
+ entails that the value assigned to an arbitrary function of these observables,
+ equals the value obtained by replacing the observables with their corresponding
+ values, viz.
+ if 
+\begin_inset Formula $m(f(\hat{A},\hat{B}))=f(m(\hat{A}),m(\hat{B}))$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\,f,\,\hat{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $[\hat{A},\hat{B}]=0$
+\end_inset
+
+.
+ Specifically it requires 
+\begin_inset Formula $m(\hat{A}\hat{B})=m(\hat{A})m(\hat{B})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+If we now consider theories that are not multiplicative (henceforth termed
+ as non-multiplicative theories), then it is almost obvious that an assignment
+ can be made that violates inequality 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+.
+ For instance, imagine a theory that assigns values to 
+\begin_inset Formula $\hat{A}_{ij}$
+\end_inset
+
+ as in Eqn.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simplest"
+
+\end_inset
+
+, and 
+\begin_inset Formula $m(\hat{R}_{i})=1$
+\end_inset
+
+, 
+\begin_inset Formula $m(\hat{C}_{1})=m(\hat{C}_{2})=1$
+\end_inset
+
+, 
+\begin_inset Formula $m(C_{3})=-1$
+\end_inset
+
+ to trivially and precisely satisfy Eqn.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:conditionsOnPM"
+
+\end_inset
+
+.
+ Consequently, for this theory, 
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle =6>4$
+\end_inset
+
+, where the average again, is done over identical ensembles.
+\end_layout
+
+\begin_layout Standard
+Non-multiplicative theories are interesting for atleast two reasons.
+ First, contrary to the apparently artificial construction exemplified and
+ its limitless freedom in making assignments, there is already a quantum
+ theory, which is non-multiplicative.
+ It is completely deterministic, in principle, and all its predictions match
+ with those of QM.
+ The second reason, we postpone to the end of this section.
+\end_layout
+
+\begin_layout Standard
+Note that we could've taken multiplicativity for granted, and tried to check
+ if some other aspect of the theory can be changed, to still allow for a
+ violation of inequality 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+.
+ This approach is already known and it results in the notion of 
+\emph on
+contextuality
+\emph default
+, which requires that the values assigned to an (or strictly, at least one)
+ observable, depends on which set of commuting observables, it is measured
+ with.
+ Here we construct a scheme for such a contextual assignment, as an algorithm,
+ which will engender a deterministic assignment and will explicitly yield
+ a violation.
+ The aim is to see if a test can be conceived that distinguishes between
+ non-multiplicativity and contextuality.
+\begin_inset Newline newline
+\end_inset
+
+Imagine that initially the assignment is as given in Mat.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simplest"
+
+\end_inset
+
+.
+ The system is assumed to be capable of remembering the last three observables
+ that were measured.
+ The general scheme is that upon measurement of an observable, yield the
+ value as saved in the matrix, append the observable in the 3 element memory
+ and update the matrix, once the context (set of commuting observables)
+ is known, to satisfy the requirements of Eqns.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:conditionsOnPM"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+If for example, we start with measuring 
+\begin_inset Formula $\hat{A}_{33}$
+\end_inset
+
+.
+ The system will yield 
+\begin_inset Formula $m(\hat{A}_{33})=1$
+\end_inset
+
+, in accordance with the values in the matrix.
+ The memory would read 
+\begin_inset Formula $[*,*,A_{33}]$
+\end_inset
+
+.
+ Since the context is not known yet, the matrix is left unchanged.
+ Next, say 
+\begin_inset Formula $\hat{A}_{23}$
+\end_inset
+
+ is measured.
+ The system yields 
+\begin_inset Formula $m(\hat{A}_{23})=1$
+\end_inset
+
+ and the memory becomes 
+\begin_inset Formula $[*,A_{33},A_{23}]$
+\end_inset
+
+.
+ The context at this stage, is known.
+ To satisfy 
+\begin_inset Formula $m(\hat{C}_{1})=-1$
+\end_inset
+
+, the matrix is updated to Mat.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:matMemoryIterated"
+
+\end_inset
+
+.
+ Now if 
+\begin_inset Formula $\hat{A}_{13}$
+\end_inset
+
+ is measured, the result is 
+\begin_inset Formula $m(\hat{A}_{13})=-1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{ccc}
+1 & 1 & -1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right]\label{eq:matMemoryIterated}
+\end{equation}
+
+\end_inset
+
+The reader can convince him(her)self that the algorithm facilitates satisfaction
+ of all constraints given in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:conditionsOnPM"
+
+\end_inset
+
+ and consequently, violates 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+.
+ As a remark, we must add that the given contextual construction is multiplicati
+ve, since we assumed 
+\begin_inset Formula $m(\hat{C}_{3})=m(\hat{A}_{33}\hat{A}_{23}\hat{A}_{13})=m(\hat{A}_{33})m(\hat{A}_{23})m(\hat{A}_{13})$
+\end_inset
+
+ and the former non-multiplicative construction was non-contextual, as the
+ assignment was independent of which observable is measured.
+ 
+\end_layout
+
+\begin_layout Standard
+The fact that non-multiplicative theories can violate the KCBS inequality,
+ without being contextual, is the second reason why they are interesting.
+ It shows that a violation of the KCBS inequality, doesn't imply that the
+ theory must be contextual.
+ Henceforth, the terms `Contextual Multiplicative Hidden Variable' (CMHV)
+ and `Non-Contextual Non-Multiplicative Hidden Variable' (nCnMHV) will be
+ used to refer to these theories succinctly.
+\end_layout
+
+\begin_layout Section
+Can Contextuality be Distinguished from Non-multiplicativity experimentally
+\end_layout
+
+\begin_layout Standard
+Before constructing a general test, we focus our attention to the two specific
+ constructions, delineated in the previous section, that violate 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+.
+ So far, to evaluate 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{KCBS}}\right\rangle $
+\end_inset
+
+, we have been evaluating 
+\begin_inset Formula $\left\langle \hat{R}_{i}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle \hat{C}_{j}\right\rangle $
+\end_inset
+
+, which in turn are evaluated as, 
+\begin_inset Formula $\left\langle m(\hat{C}_{j})\right\rangle =m(\hat{C}_{j})$
+\end_inset
+
+ for example, where the equality follows from the identical ensemble assumption.
+ Note that for the aforesaid CMHV construction, although strictly we had
+ 
+\begin_inset Formula $m(\hat{C}_{j})=m_{3}(\hat{A}_{13})m_{2}(\hat{A}_{23})m_{1}(\hat{A}_{33})$
+\end_inset
+
+, where 
+\begin_inset Formula $m_{l}(\hat{*})$
+\end_inset
+
+ denotes measuring an observable, at time a step parametrized by 
+\begin_inset Formula $l$
+\end_inset
+
+, re-ordering the measurement sequence leaves the result invariant.
+ Thus we were justified at writing 
+\begin_inset Formula $m(\hat{C}_{j})=m(\hat{A}_{33})m(\hat{A}_{23})m(\hat{A}_{13})$
+\end_inset
+
+.
+ Accordingly, we modify the KCBS test by replacing measurement of 
+\begin_inset Formula $\hat{C}_{j}$
+\end_inset
+
+ (for example) by a sequential measurement of 
+\begin_inset Formula $\hat{A}_{3j},\,\hat{A}_{2j},\,\hat{A}_{1j}$
+\end_inset
+
+, viz.
+ we define 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle \chi_{2}\right\rangle : & = & \left\langle m^{R(1)}\right\rangle +\left\langle m^{R(2)}\right\rangle +\left\langle m^{R(3)}\right\rangle +\\
+ &  & \left\langle m^{C(1)}\right\rangle +\left\langle m^{C(2)}\right\rangle -\left\langle m^{C(3)}\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $m^{R(i)}=m_{1}(\hat{A}_{i1})m_{2}(\hat{A}_{i2})m_{3}(\hat{A}_{i3})$
+\end_inset
+
+ and 
+\begin_inset Formula $m^{C(j)}=m_{1}(\hat{A}_{1j})m_{2}(\hat{A}_{2j})m_{3}(\hat{A}_{3j})$
+\end_inset
+
+.
+ It immediately follows that a simplistic `deterministic' theory (as described
+ earlier), must satisfy 
+\begin_inset Formula 
+\begin{equation}
+\left\langle \chi_{2}\right\rangle \le4,\label{eq:chi2classical}
+\end{equation}
+
+\end_inset
+
+as they are multiplicative, which makes 
+\begin_inset Formula $\left\langle \chi_{2}\right\rangle =\left\langle \chi_{\text{KCBS}}\right\rangle $
+\end_inset
+
+.
+ Thus a violation must signal non-classicality.
+ Now a multiplicative theory that violates 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+, will also violate 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:chi2classical"
+
+\end_inset
+
+, including our CMHV construction.
+ However, one can violate 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KCBSclassical"
+
+\end_inset
+
+ without violating 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:chi2classical"
+
+\end_inset
+
+, as is the case for the nCnMHV construction presented here.
+\end_layout
+
+\begin_layout Itemize
+Try to arrive at general conclusions for the following cases: 
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle \chi_{2}\right\rangle >4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle \chi_{2}\right\rangle \le4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle >4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(nCnM+CM)?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nCnM?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle \le4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+?
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+classical
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quantum Mechanics as a Non-Contextual Hidden Variable Theory
+\end_layout
+
+\begin_layout Itemize
+Generate the table for all observables, assuming some hidden variables and
+ show the violation of the KCBS inequality
+\end_layout
+
+\begin_layout Itemize
+Generalize the test to phase space, where the competition is more fierce
+ (perhaps) & Discuss the RS Theory (perhaps)
+\end_layout
+
+\end_body
+\end_document

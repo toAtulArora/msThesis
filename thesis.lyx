@@ -3,6 +3,17 @@
 \begin_document
 \begin_header
 \textclass memoir
+\begin_preamble
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language british
@@ -125,20 +136,19 @@ Einstein started with showing that Quantum Mechanics (QM) must be incomplete
 \begin_inset Newline newline
 \end_inset
 
-Our story begins with a theory which satisfies (a) but not (b), while being
- completely identical with QM in terms of experimental predictions.
+We start with a theory which satisfies (a) but not (b), while being completely
+ identical with QM in terms of experimental predictions.
  Such a theory should exist is by itself rather discomforting.
  Infact, the said theory, known as Bohmian Mechanics (BM), is deterministic.
  Which entails that while it maybe expected that the correlations can arise
- from the explicit non locality in the theory, what happens to questions
- related to contextuality? It is this that will be explored in the remainder
- of the text.
+ from the explicit non locality in the theory, we explore what happens to
+ questions related to contextuality, which roughly asserts that deterministic
+ assignment of outcomes is not possible.
 \end_layout
 
 \begin_layout Abstract
-For the reader who's more familiar, it would already be known that usual
- formulations of contextuality (and other determinism tests) are for discrete
- degrees of freedom, viz.
+More precisely, it is already known that usual formulations of contextuality
+ (and other determinism tests) are for discrete degrees of freedom, viz.
  spins (for massive particles).
  Since Bohmian Mechanics doesn't claim that spins have pre-defined values,
  it is not surprising that both are compatible, yet the analysis is illuminating.
@@ -159,13 +169,34 @@ For the reader who's more familiar, it would already be known that usual
 
 )! To explore this apparent contradiction, we construct an appropriate test
  of determinism and analyse it in the framework of BM.
- The analysis is expected to provide further insights into the relation
+ Various possible extensions are discussed, with their advantages and limitation
+s.
+ A simplified extension of the Perse-Mermin construction is used to hint
+ that BM, despite being a non-contextual hidden variable theory, can violate
+ the KCBS inequality, suggesting that we need to refine the notion of contextual
+ity.
+ The root of the paradox, an innocuous oversight, has been recognized and
+ delineated.
+ For clarity, the Bell Test is extended to phase space and it is contrasted
+ with the aforesaid, where this oversight doesn't cause any significant
+ error.
+ The analysis is further expected to provide insights into the relation
  between non-locality and contextuality, especially in continuous variables,
  where the current understanding is limited.
- Additionally, we might glimpses into learning the fundamental difference
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Additionally, we might get glimpses into learning the fundamental difference
  between spins (discrete) and phase space variables (continuous), if at
  all there is any.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part
@@ -185,6 +216,17 @@ It is worthwhile spending some time trying reformulate classical mechanics
 
 \begin_layout Section
 The Hamilton Jacobi Theory
+\end_layout
+
+\begin_layout Subsection
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -314,7 +356,7 @@ Defn: Canoncial Transformation:
 \end_inset
 
  is a a canonical transformation if 
-\begin_inset Formula $Q,P$
+\begin_inset Formula $Q,\,P$
 \end_inset
 
  preserve the form of the Hamilton Equations, viz.
@@ -330,15 +372,871 @@ Defn: Canoncial Transformation:
 \begin_inset Formula $\dot{Q}_{i}=\frac{\partial K}{\partial P_{i}},\,\dot{P}_{i}=-\frac{\partial K}{\partial Q_{i}}$
 \end_inset
 
- which must've come from 
+ which could've come from 
 \begin_inset Formula $I=\int P_{i}dQ_{i}-Kdt$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It is known that if two 
+\begin_inset Formula $L$
+\end_inset
+
+s differ by 
+\begin_inset Formula $\frac{df}{dt}$
+\end_inset
+
+, where 
+\begin_inset Formula $f$
+\end_inset
+
+ [check: where 
+\begin_inset Formula $f=f(q,\dot{q},t)$
+\end_inset
+
+] is some function, then they yield identical equations of motion.
+ 
+\color blue
+[) This follows at once by recalling that 
+\begin_inset Formula $I_{1}=\int_{q_{0},t}^{q,t}L_{1}dt$
+\end_inset
+
+ and noting that 
+\begin_inset Formula $I_{2}=\int_{q_{0},t}^{q,t}L_{1}dt+F-F_{0}$
+\end_inset
+
+ entails that the variation 
+\begin_inset Formula $\delta I_{2}=\delta I_{1}+\cancelto{0}{\delta F}-\cancelto{0}{\delta F_{0}}=\delta I_{1}$
+\end_inset
+
+(].
+
+\color inherit
+ Thus if we write the Lagrangian in terms of the Hamiltonian and impose
+ 
+\begin_inset Formula 
+\[
+P_{i}dQ_{i}-K(Q,P)dt+\frac{dF}{dt}=p_{i}dq_{i}-H(q,p)dt,
+\]
+
+\end_inset
+
+then we're guaranteed that the equation of motion (EOM) will be identical
+ and hence describe the same physical system.
+ Assuming a specific functional form, viz.
+ 
+\begin_inset Formula $F=F(q,Q,t)$
+\end_inset
+
+, one can evaluate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+p_{i}= & \frac{\partial F}{\partial q_{i}},\\
+P_{i}=- & \frac{\partial F}{\partial Q_{i}},\\
+K= & H+\frac{\partial F}{\partial t}.
+\end{align*}
+
+\end_inset
+
+
+\color blue
+[) This follows from the restatement 
+\begin_inset Formula $\left(P_{i}+\frac{\partial F}{\partial q_{i}}\right)\dot{Q}_{i}-\left(p_{i}-\frac{\partial F}{\partial q_{i}}\right)\dot{q}_{i}+\left(K-H-\frac{\partial F}{\partial t}\right)=0$
+\end_inset
+
+ and by choosing 
+\begin_inset Formula $q,\,Q$
+\end_inset
+
+ to be the independent variables.
+ (] 
+\color inherit
+Note that the first equation will yield 
+\begin_inset Formula $Q$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The following equation yields 
+\begin_inset Formula $P$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The last equation yields 
+\begin_inset Formula $K$
+\end_inset
+
+, since 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ are known (it's not obvious though that writing 
+\begin_inset Formula $K=K(Q,P)$
+\end_inset
+
+ will be straight forward).
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, given 
+\begin_inset Formula $F(q,Q,t)$
+\end_inset
+
+ we can find the canonical transformation 
+\begin_inset Formula $Q=Q(q,p,t)$
+\end_inset
+
+, 
+\begin_inset Formula $P=P(q,p,t)$
+\end_inset
+
+ and even 
+\begin_inset Formula $K=K(q,p,t)$
+\end_inset
+
+.
+ Defn: (by example) 
+\begin_inset Formula $F$
+\end_inset
+
+ is a generating function.
+\end_layout
+
+\begin_layout Standard
+Next let us consider a case where the transformed variables are almost the
+ same as the original set, viz.
+ 
+\begin_inset Formula 
+\begin{align*}
+Q_{i}= & q_{i}+\delta q_{i},\\
+P_{i}= & p_{i}+\delta p_{i}.
+\end{align*}
+
+\end_inset
+
+The claim is that 
+\begin_inset Formula $\delta q_{i}=\epsilon\partial G/\partial p_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta p_{i}=-\epsilon\partial G/\partial q_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $G=G(q,p,t)$
+\end_inset
+
+ is the generating function and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is small.
+ 
+\color blue
+[) This is plaussible by simply taking a generating function which is a
+ function of 
+\begin_inset Formula $(q,p,t)$
+\end_inset
+
+ instead of 
+\begin_inset Formula $(q,Q,t)$
+\end_inset
+
+ as was 
+\begin_inset Formula $F$
+\end_inset
+
+ (] 
+\color inherit
+Note that for 
+\begin_inset Formula $\epsilon=dt,\,G=H$
+\end_inset
+
+, it follows 
+\begin_inset Formula $\partial q=dt\partial H/\partial p_{i}=dt\dot{q}_{i}=dq_{i}$
+\end_inset
+
+ and similarly 
+\begin_inset Formula $\delta p_{i}=dp_{i}$
+\end_inset
+
+.
+ The central idea is that infinitesimal canonical transformations 
+\begin_inset Formula $\leftrightarrow$
+\end_inset
+
+ infinitesimal motion.
+ Successive infinitesimal canonical transformations yield a finite canonical
+ transformation.
+ Successive infinitesimal motion describes observed motion.
+ Consequently, any observed classical motion can be described by an appropriate
+ canonical transformation.
+ This can be used to find the motion itself, in fact.
+\end_layout
+
+\begin_layout Standard
+One tries to find a canonical transformation corresponding to 
+\begin_inset Formula $q=q(q_{0},p_{0},t),\,p=p(q_{0},p_{0},t)$
+\end_inset
+
+ which can be inverted to yield 
+\begin_inset Formula $q_{0},p_{0}$
+\end_inset
+
+(at 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+) given 
+\begin_inset Formula $q,p,t$
+\end_inset
+
+.
+ 
+\color blue
+[) Thus, all points along the trajectory, viz.
+ the set 
+\begin_inset Formula $(q,p,t)$
+\end_inset
+
+, all map to the same point 
+\begin_inset Formula $(q_{0},p_{0},t_{0})$
+\end_inset
+
+.
+ (]
+\color inherit
+ The mapped point, must not evolve with time.
+ Thus, we demand (or require) that 
+\begin_inset Formula $K=0$
+\end_inset
+
+ (basically must be constant, can be 
+\begin_inset Formula $\neq0$
+\end_inset
+
+) so that 
+\begin_inset Formula $\dot{Q}=0,\,\dot{P}=0$
+\end_inset
+
+.
+ Conventionally, the associated generating function is denoted by 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $S=S(q,Q,t)$
+\end_inset
+
+.
+ From the earlier discussion, it follows that 
+\begin_inset Formula $p=\partial S/\partial q$
+\end_inset
+
+ := Jacobi Law (Defn).
+ Also, 
+\begin_inset Formula $K=H+\partial S/\partial t$
+\end_inset
+
+ 
+\begin_inset Formula $\implies\partial S/\partial t+H(q,\partial S/\partial q,t)=0$
+\end_inset
+
+ := Hamilton Jacobi Equation (Defn).
+ This is a first order partial differential equation in 
+\begin_inset Formula $(n+1)$
+\end_inset
+
+ variables, 
+\begin_inset Formula $q,t$
+\end_inset
+
+.
+ It is sufficient to define 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Defn: 
+\begin_inset Formula $S:=$
+\end_inset
+
+Hamilton's principle function.
+ Since only derivatives of 
+\begin_inset Formula $S$
+\end_inset
+
+ appear in the EOM, only 
+\begin_inset Formula $n$
+\end_inset
+
+ non-additive constants are relevant, viz.
+ 
+\begin_inset Formula $S=S(q,\alpha,t)$
+\end_inset
+
+.
+ By assumption, 
+\begin_inset Formula $\alpha=Q$
+\end_inset
+
+; however in general, one may use a combination of 
+\begin_inset Formula $Q$
+\end_inset
+
+s and 
+\begin_inset Formula $P$
+\end_inset
+
+s.
+ 
+\end_layout
+
+\begin_layout Standard
+Scheme 1: Consider the following overview of how this is implemented in
+ practice.
+ (1) Substitute 
+\begin_inset Formula $\partial S/\partial q=p$
+\end_inset
+
+ in 
+\begin_inset Formula $\partial S/\partial t+H=0$
+\end_inset
+
+.
+ (2) Solve for 
+\begin_inset Formula $S$
+\end_inset
+
+ and obtain 
+\begin_inset Formula $n$
+\end_inset
+
+ non-additive integration constants, 
+\begin_inset Formula $\alpha_{1},\dots\alpha_{n}$
+\end_inset
+
+.
+ (3) Define independent linear combinations of 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ as 
+\begin_inset Formula $Q_{i}\equiv\gamma_{i}(\alpha_{1},\dots\alpha_{n})$
+\end_inset
+
+.
+ (4) Now recall that 
+\begin_inset Formula $P_{i}=-\partial S/\partial\gamma_{i}\equiv\beta_{i}$
+\end_inset
+
+.
+ From this equation, in principle, 
+\begin_inset Formula $q$
+\end_inset
+
+ can be obtained in terms of (
+\begin_inset Formula $\beta,\gamma$
+\end_inset
+
+), granted 
+\begin_inset Formula $\det\left(\partial^{2}S/\partial q_{i}\partial\gamma_{j}\right)\neq0$
+\end_inset
+
+.
+ 
+\color blue
+[) Where did the 
+\begin_inset Formula $Q,\,\beta$
+\end_inset
+
+ get defined? Well, you specify it by matching the initial conditions 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ with 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{i}(=\beta_{i})$
+\end_inset
+
+ using appropriate linear combinations of 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+.
+ (]
+\end_layout
+
+\begin_layout Subsection
+The Action Function
+\end_layout
+
+\begin_layout Standard
+Assume that the system starts from 
+\begin_inset Formula $(q_{0},t_{0})$
+\end_inset
+
+ and reaches 
+\begin_inset Formula $(q,t)$
+\end_inset
+
+ through the path 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ Accordingly
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+According to the usual action principle, the action corresponding to the
+ path (
+\begin_inset Formula $\gamma$
+\end_inset
+
+) that the system really take, is denoted here, by 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Formally
+\end_layout
+
+\end_inset
+
+, the (extremized) action will be 
+\begin_inset Formula $I(q,t;q_{0},t_{0})=\int_{\gamma}L(q,\dot{q},t)dt$
+\end_inset
+
+.
+ The idea is to look at variations in 
+\begin_inset Formula $I$
+\end_inset
+
+, induced by varying 
+\begin_inset Formula $q,t$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+, while holding 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ fixed.
+ The motivation for this is the Hamilton Jacobi formalism, as was just set
+ up.
+ Upon substituting for 
+\begin_inset Formula $H$
+\end_inset
+
+ in the expression for 
+\begin_inset Formula $I$
+\end_inset
+
+, one can evaluate 
+\begin_inset Formula $dI=pdq-Hdt-p_{0}dq_{0}$
+\end_inset
+
+.
+ 
+\color blue
+[) This step needs some work to derive, but take it as a claim for the moment
+ (]
+\color inherit
+ Also, 
+\begin_inset Formula $dI=(\partial I/\partial q)dq+(\partial I/\partial t)dt+(\partial I/\partial q_{0})dq_{0}$
+\end_inset
+
+.
+ Equating these yields 
+\begin_inset Formula $\partial I/\partial q=p$
+\end_inset
+
+, 
+\begin_inset Formula $H=-\partial I/\partial t$
+\end_inset
+
+, 
+\begin_inset Formula $p_{0}=-\partial I/\partial q_{0}$
+\end_inset
+
+.
+ Using the first two, it surprisingly follows that 
+\begin_inset Formula $I$
+\end_inset
+
+ is a valid Hamilton's principle function.
+ [) Ofcourse, now it's clear from the aforesaid equations that 
+\begin_inset Formula $I$
+\end_inset
+
+ generates canonical transformations which trivializes the motion (
+\begin_inset Formula $K=0$
+\end_inset
+
+, nothing evolves).
+ Here 
+\begin_inset Formula $q_{0}\equiv Q$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{0}\equiv P$
+\end_inset
+
+ (]
+\end_layout
+
+\begin_layout Standard
+In Scheme 1 (Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Introduction"
+
+\end_inset
+
+), the Hamilton Jacobi equation is integrated to solve Hamilton's equation.
+ The converse, viz.
+ solving the Hamilton's equation to solve the Hamilton Jacobi equation,
+ subject to 
+\begin_inset Formula $S(q,t_{0})=S_{0}(q)$
+\end_inset
+
+, can be achieved (it's a ``Cauchy Problem
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A PDE problem with constraints defined on some hyper-surface of the domain
+\end_layout
+
+\end_inset
+
+); this is Scheme 2.
+ 
+\begin_inset Formula $S(q,t_{0})=S_{0}(q)$
+\end_inset
+
+.
+ (after this is not quite clear.
+ Ask Arvind sir)
+\end_layout
+
+\begin_layout Subsection
+The Basic Law of Motion
+\end_layout
+
+\begin_layout Standard
+There's an issue: if a complete solution of the Hamilton-Jacobi equation
+ is not available, then the Jacobi Law can't be used.
+ We assume that 
+\begin_inset Formula $S(q,t)$
+\end_inset
+
+ is known, but the constants are not, viz.
+ 
+\begin_inset Formula $\partial S/\partial\gamma_{i}=\beta_{i}$
+\end_inset
+
+ doesn't help.
+ Recall that 
+\begin_inset Formula $p_{i}=\partial S/\partial q_{i}=\partial L/\partial\dot{q}_{i}$
+\end_inset
+
+.
+ From 
+\begin_inset Formula $L$
+\end_inset
+
+, one can evaluate 
+\begin_inset Formula $p_{i}=p_{i}(q_{i},\dot{q}_{i},t)$
+\end_inset
+
+ and then use 
+\begin_inset Formula $p_{i}=\partial S/\partial\gamma_{i}$
+\end_inset
+
+ to integrate for 
+\begin_inset Formula $q(t)$
+\end_inset
+
+ with 
+\begin_inset Formula $q_{0}=q(0)$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-{Various parts missing}
+Remarks: (1) For consistency, we must impose 
+\begin_inset Formula $p_{0}=(\partial S/\partial q)_{q=q_{0},t=t_{0}}$
+\end_inset
+
+.
+ (2) Even when the complete integral is known, 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $L$
+\end_inset
+
+ is used to specify the initial conditions.
+ (3) Since 
+\begin_inset Formula $p_{i}=\partial S/\partial q_{i}$
+\end_inset
+
+ always holds, it maybe regarded as the basic law of motion.
+\end_layout
+
+\begin_layout Standard
+Illustration (1) [using Scheme 1]: Recall that 
+\begin_inset Formula $p=\nabla S$
+\end_inset
+
+.
+ Assume 
+\begin_inset Formula $L=m\dot{q}^{2}/2-V(q,t)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\implies p=m\dot{q}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ must satisfy 
+\begin_inset Formula $\partial S/\partial t+\nabla S{}^{2}/2m+V=0$
+\end_inset
+
+.
+ For a free particle, we may use 
+\begin_inset Formula $S=P_{i}P_{i}t/2m+P_{i}q_{i}$
+\end_inset
+
+ as a solution, where 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ is some constant.
+ 
+\begin_inset Formula $P=\nabla S=p=m\dot{q}$
+\end_inset
+
+.
+ This integrates to 
+\begin_inset Formula $q=q_{0}+P(t-t_{0})/m$
+\end_inset
+
+.
+ We can also use the action, 
+\begin_inset Formula $S=m(q-q_{0})^{2}/2t$
+\end_inset
+
+ as a solution.
+ 
+\color blue
+[) That can be worked out as follows: Recall that 
+\begin_inset Formula $I=\int_{\gamma}Ldt$
+\end_inset
+
+ .
+ For a free particle, 
+\begin_inset Formula $=\int_{\gamma}(m\dot{q}^{2}/2)dt=\int_{\gamma}(1/2)m(dq/dt)(dq/\cancel{dt})\cancel{dt}$
+\end_inset
+
+.
+ Now to impose 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ as the path, we must put 
+\begin_inset Formula $dq/dt=v$
+\end_inset
+
+ (constant).
+ Thus, 
+\begin_inset Formula $I=mv(q-q_{0})/2=m(q-q_{0})^{2}/2t$
+\end_inset
+
+.
+ It might appear pointless to solve the motion, when we have already evaluated
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ The point is that, given S, how to solve the motion.
+ This was just one way of finding 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ (]
+\color inherit
+ From 
+\begin_inset Formula $p=\nabla S$
+\end_inset
+
+, we get 
+\begin_inset Formula $p=m(q-q_{0})/t$
+\end_inset
+
+; 
+\begin_inset Formula $P=\partial S/\partial Q$
+\end_inset
+
+, with 
+\begin_inset Formula $Q=q_{0}$
+\end_inset
+
+, yields 
+\begin_inset Formula $P=p$
+\end_inset
+
+.
+ Thus we recover 
+\begin_inset Formula $q=q_{0}+P(t-t_{0})/m$
+\end_inset
+
+.
+ Remarks: (1) 
+\begin_inset Formula $S$
+\end_inset
+
+ in the former case, is constant in 
+\begin_inset Formula $q,t$
+\end_inset
+
+ while in the latter, it explicitly depends on 
+\begin_inset Formula $q,t$
+\end_inset
+
+.
+ (2) 
+\begin_inset Formula $S$
+\end_inset
+
+ may not have a constant value along the particle trajectory; eg.
+ 
+\begin_inset Formula $S=m(q-q_{0})^{2}/2t=mv^{2}t^{\cancel{2}}/\cancel{t}$
+\end_inset
+
+ for a free particle.
+ (3) While 
+\begin_inset Formula $S$
+\end_inset
+
+ may not be single valued, physical quantities will be well defined, such
+ as momentum (
+\begin_inset Formula $\nabla S$
+\end_inset
+
+), energy (
+\begin_inset Formula $-\partial S/\partial t$
+\end_inset
+
+) etc.
+ [) Note how we started by saying that 
+\begin_inset Formula $S=S(q,Q,t)$
+\end_inset
+
+ but suddenly, there's 
+\begin_inset Formula $P$
+\end_inset
+
+ in the first definition of 
+\begin_inset Formula $S$
+\end_inset
+
+ but not 
+\begin_inset Formula $Q$
+\end_inset
+
+, though in the second definition, 
+\begin_inset Formula $S=S(q,Q,t)$
+\end_inset
+
+ where 
+\begin_inset Formula $Q=q_{0}$
+\end_inset
+
+.
+ So how is the former a valid 
+\begin_inset Formula $S$
+\end_inset
+
+ (in the sense that how can we use results we derived by assuming 
+\begin_inset Formula $S(q,Q,t)$
+\end_inset
+
+ as opposed to 
+\begin_inset Formula $S(q,P)$
+\end_inset
+
+ (]
+\end_layout
+
+\begin_layout Standard
+[Ask Arvind sir: super confusing] Let us now explore how..
+\end_layout
+
+\begin_layout Standard
+Illustration (2): Consider 
+\begin_inset Formula $S(q,E,t)=W(q,E)-Et$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

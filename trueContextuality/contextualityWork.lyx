@@ -1,0 +1,966 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass revtex4-1
+\options a4paper,british,pra,twocolumn,superscriptaddress,nofootinbib
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Is contextuality a necessary feature of quantum mechanics?
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Affiliation
+Indian Institute of Science Education and Research (IISER), Mohali
+\end_layout
+
+\begin_layout Author Email
+
+ms11003@iisermohali.ac.in, to.AtulArora@gmail.com
+\end_layout
+
+\begin_layout Abstract
+We show that one can violate the KCBS inequality, with a non-contextual
+ deterministic toy-model.
+ Investigation of this results in identification of a new property, we call
+ `non-multiplicativity', which is sufficient to arrive at a violation.
+ Infact, it is suggested that even contextual models are `non-multiplicative'.
+ We then delineate a general `non-multiplicative' construction, which is
+ non-contextual and still manages to explain all the results of quantum
+ mechanics (including the violation), by restricting a known and successful
+ hidden variable formulation of QM.
+ Effectively thus, we show that contextuality is not a necessary feature
+ of quantum mechanics, viz.
+ the violation of the KCBS inequality doesn't entail contextuality.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+There are two tests of hidden variable theories, which have gained popularity
+ in the physics community, Bell's Locality test and Kochen & Specker's Contextua
+lity test.
+ Both were designed to rule out certain classes of theories, and with them,
+ their associated properties.
+ In case of the former, locality is given up, although one still preserves
+ no-signalling.
+ In the case of the latter, it is believed that non-contextuality must be
+ given up.
+ Since the class of theories which are ruled out, satisfy our intuitive
+ understanding of nature (classical properties), their exclusion entails
+ that quantum mechanics has these non-classical features, which can be harnessed
+ as a resource to perform tasks that were otherwise impossible.
+\end_layout
+
+\begin_layout Standard
+The paper is organized as follows.
+ In 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Contextuality-and-Multiplicativi"
+
+\end_inset
+
+ we describe a non-contextual toy-model that violates the KCBS inequality,
+ a representative contextual model and finally explore the implications
+ of the aforesaid, including arriving at a definition of the term `non-multiplic
+ative'.
+ In the following section, we generalize the result by using restricted
+ ideas from Bohmian Mechanics and completing QM appropriately.
+ The toy-model we show is infact a specific case of the generalization.
+ 
+\end_layout
+
+\begin_layout Section
+Contextuality and Multiplicativity
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Contextuality-and-Multiplicativi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We start with stating the famous construction due to Peres and Mermin, where
+ for 
+\begin_inset Formula $\hat{C}_{j}:=\prod_{i}\hat{A}_{ij},\,\hat{R}_{i}:=\prod_{j}\hat{A}_{ij}\,\forall\,i,j\in\{1,2,3\}$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\begin{array}{ccc}
+\hat{A}_{11} & \hat{A}_{12} & \hat{A}_{13}\\
+\hat{A}_{21} & \hat{A}_{22} & \hat{A}_{23}\\
+\hat{A}_{31} & \hat{A}_{32} & \hat{A}_{33}
+\end{array}\right] & = & \left[\begin{array}{ccc}
+\hat{\mathbb{I}}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\mathbb{I}} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\\
+\hat{\sigma}_{y}\otimes\hat{\mathbb{I}} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\\
+\hat{\sigma}_{y}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{z}\otimes\hat{\sigma}_{z}
+\end{array}\right],
+\end{eqnarray*}
+
+\end_inset
+
+one can immediately check (a) 
+\begin_inset Formula $\hat{C}_{3}=-\hat{\mathbb{I}},\,\hat{C}_{j}=\hat{\mathbb{I}}\,(j\neq3),\,\hat{R}_{i}=\hat{\mathbb{I}},\,\forall\,j,i$
+\end_inset
+
+ and that (b) operators along a given row (also along a column) commute.
+ Further, 
+\begin_inset Formula 
+\[
+\hat{\chi}_{\text{KCBS}}=\hat{R}_{1}+\hat{R}_{2}+\hat{R}_{3}+\hat{C}_{1}+\hat{C}_{2}-\hat{C}_{3}=6.\hat{\mathbb{I}}
+\]
+
+\end_inset
+
+which facilitates experimental verification by evaluation of 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{KCBS}}\right\rangle $
+\end_inset
+
+ by measuring 
+\begin_inset Formula $\left\langle \hat{R}_{i}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle \hat{C}_{j}\right\rangle $
+\end_inset
+
+.
+ Now imagine a theory that assigns values to these observables, as given
+ in Mat.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simplest"
+
+\end_inset
+
+, representing a given state, which satisfies all conditions listed in (a),
+ except 
+\begin_inset Formula $\hat{C}_{3}\to1$
+\end_inset
+
+ instead of 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right]\label{eq:simplest}
+\end{equation}
+
+\end_inset
+
+One can check that it is not easy to modify the assigned values, s.t.
+ all constraints are satisfied.
+ In fact it is impossible [put citation].
+ It clearly follows that such simplistic `deterministic' theories, can't
+ explain all predictions of Quantum Mechanics (QM).
+ Explicitly, for the aforesaid 
+\begin_inset Formula 
+\begin{equation}
+\left\langle \hat{\chi}_{\text{KCBS}}\right\rangle \le4,\label{eq:KCBSclassical}
+\end{equation}
+
+\end_inset
+
+and this holds quite generally, for such theories, where the ensemble is
+ taken to be identical copies of the given state.
+\end_layout
+
+\begin_layout Standard
+In the aforesaid simple `deterministic' model, we have made two tacit assumption
+s.
+ First, we assumed that upon `measuring' an observable, the assignment (to
+ the other operators) remains invariant, and therefore the state remains
+ invariant.
+ Second, we assumed, while calculating 
+\begin_inset Formula $\left\langle \hat{\chi}\right\rangle $
+\end_inset
+
+, that the value assigned to 
+\begin_inset Formula $\hat{R}_{i},\,\hat{C}_{i}$
+\end_inset
+
+ is obtained by multiplying the values assigned to it's defining constituent
+ operators.
+ 
+\end_layout
+
+\begin_layout Standard
+Let us view the validity of these from the point of view of quantum mechanics.
+ It is obvious that the first assumption is wrong in general; according
+ to the postulates of QM, the state after measurement (taken to be projective),
+ must be an eigenstate of the observable.
+ The second assumption must be stated more precisely before proceeding.
+ For any 
+\begin_inset Formula $n$
+\end_inset
+
+ compatible operators, 
+\begin_inset Formula $\{\hat{B}_{1},\hat{B}_{2},\dots,\hat{B}_{n}\}$
+\end_inset
+
+, consider 
+\begin_inset Formula $\hat{C}=f(\hat{B}_{1},\hat{B}_{2},\dots,\hat{B}_{n})$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $m_{i}(*)$
+\end_inset
+
+ refer to the value assigned to the operator, or equivalently, the value
+ observed upon measurement of an operator 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+, where 
+\begin_inset Formula $i$
+\end_inset
+
+ parametrizes the sequence of measurements.
+ The second assumption then, is that 
+\begin_inset Formula 
+\begin{equation}
+m_{1}(\hat{C})=f(m_{k_{1}}(\hat{B}_{1}),m_{k_{2}}(\hat{B}_{2}),\dots,m_{k_{n}}(\hat{B}_{n})),\label{eq:seqMult}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{k}:=\{k_{1},k_{2},\dots,k_{n}\}\in\{\{1,2,\dots,n\}+\text{all possible permutations}\}$
+\end_inset
+
+.
+ To see if it is valid in QM, note that one can construct eigenkets 
+\begin_inset Formula $\left|\mathbf{b}=\{b_{1},b_{2},\dots,b_{n}\}\right\rangle $
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $B_{i}\left|\mathbf{b}\right\rangle =b_{i}\left|\mathbf{b}\right\rangle $
+\end_inset
+
+.
+ If the state of the system is given by one of these, then it is trivial
+ to see that the second assumption holds.
+ It can be proven [see appendix] that this assumption holds in general also.
+ It must however be emphasized that, QM doesn't enforce 
+\begin_inset Formula 
+\begin{equation}
+m_{1}(\hat{C})=f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots,m_{1}(\hat{B}_{n}))\label{eq:mult}
+\end{equation}
+
+\end_inset
+
+ in general, since for instance, for the state 
+\begin_inset Formula $\left|11\right\rangle :=\left|1\right\rangle \otimes\left|1\right\rangle $
+\end_inset
+
+ written in the computational basis, 
+\begin_inset Formula $\hat{B}_{1}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}_{2}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}=\hat{B}_{1}\hat{B}_{2}=-\hat{\sigma}_{z}\otimes\hat{\sigma}_{z}$
+\end_inset
+
+, we have 
+\begin_inset Formula $m_{1}(\hat{C})=-1$
+\end_inset
+
+ while 
+\begin_inset Formula $m_{1}(\hat{B}_{1})=\pm1$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{1}(\hat{B}_{2})=\pm1$
+\end_inset
+
+, independently, according to QM, with probability half.
+ Henceforth, a model/theory that satisfies 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:seqMult"
+
+\end_inset
+
+ will be referred to as being 
+\emph on
+sequentially multiplicative
+\emph default
+ and one that satisfies 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:mult"
+
+\end_inset
+
+ will be termed
+\emph on
+ multiplicativ
+\emph default
+e.
+ Note that for the simple `deterministic' model, both sequential multiplicativit
+y and multiplicativity become equivalent, since the state doesn't change
+ upon being measured.
+ 
+\end_layout
+
+\begin_layout Standard
+We construct a `deterministic' toy-model, which yields a consistent assignment
+ and also a violation of the KCBS inequality.
+ The assignments are made by a three step process.
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Initial State: Choose an appropriate initial state 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ (say 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+2.
+ Hidden Variable (HV): Toss a coin and assign 
+\begin_inset Formula $c=+1$
+\end_inset
+
+ for heads, else assign 
+\begin_inset Formula $c=-1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+3.
+ Predictions/Assignments: For an operator 
+\begin_inset Formula $\hat{p}'\in\{\hat{A}_{ij},\hat{R}_{i},\hat{C}_{j}\,(\forall\,i,j)\}$
+\end_inset
+
+ check if 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\hat{p}'\left|\psi\right\rangle =\lambda\left|\psi\right\rangle $
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, then assign 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ as the value.
+ Else, assign 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+So far the model has only predicted the outcomes of measurements.
+ If however, a measurement is made on the system, then although we know
+ the result from the predictions, we must update the state 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ of the system, depending on which observable is measured and arrive at
+ new predictions, using the aforesaid steps.
+ The following final step fills precisely this gap.
+ 
+\begin_inset Newline newline
+\end_inset
+
+4.
+ Update: Say 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ was observed.
+ If 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ is s.t.
+ 
+\begin_inset Formula $\hat{p}\left|\psi\right\rangle =\lambda\left|\psi\right\rangle $
+\end_inset
+
+, then leave the state unchanged.
+ Else, find 
+\begin_inset Formula $\left|p_{\pm}\right\rangle $
+\end_inset
+
+ (eigenkets of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+), s.t.
+ 
+\begin_inset Formula $\hat{p}\left|p_{\pm}\right\rangle =\pm\left|p_{\pm}\right\rangle $
+\end_inset
+
+ and update the state 
+\begin_inset Formula $\left|\psi\right\rangle \to\left|p_{c}\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let us explicitly apply the aforesaid algorithm, to the state 
+\begin_inset Formula $\left|\psi\right\rangle =\left|00\right\rangle $
+\end_inset
+
+.
+ Say we obtained tails, and thus 
+\begin_inset Formula $c=-1$
+\end_inset
+
+.
+ To arrive at the assignments, note that 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ is an eigenket of only 
+\begin_inset Formula $\hat{R}_{i},\hat{C}_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{A}_{33}=\hat{\sigma}_{z}\otimes\hat{\sigma}_{z}$
+\end_inset
+
+.
+ Thus, in the first iteration, all these should be assigned their respective
+ eigenvalues.
+ The remaining operators must be assigned 
+\begin_inset Formula $c$
+\end_inset
+
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:toyModel"
+
+\end_inset
+
+).
+ Two remarks are in order.
+ First, this model is 
+\emph on
+non
+\emph default
+-multiplicative, for 
+\begin_inset Formula $m_{1}(\hat{C}_{3})=1\neq m_{1}(\hat{A}_{13})m_{1}(\hat{A}_{23})m_{1}(\hat{A}_{33})=-1$
+\end_inset
+
+.
+ Second, we must impose sequential multiplicativity as a consistency check
+ of the model, which in particular entails that 
+\begin_inset Formula $m_{1}(\hat{C}_{3})=m_{1}(\hat{A}_{33})m_{2}(\hat{A}_{23})m_{3}(\hat{A}_{13})$
+\end_inset
+
+.
+ To illustrate this, we must choose to measure 
+\begin_inset Formula $\hat{A}_{33}$
+\end_inset
+
+.
+ According to step 4, since 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ is an eigenstate of 
+\begin_inset Formula $\hat{A}_{33}$
+\end_inset
+
+, the final state remains 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{widetext}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c|ccc}
+\text{Iteration} & i=1 & i=2 & i=3\\
+\left|\psi_{\text{init}}\right\rangle  & \left|00\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
+\text{HV/Toss} & c=-1 & c=-1 & c=+1\\
+\\
+\text{Predictions} & m_{1}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{2}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{3}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
++1 & +1 & +1\\
++1 & +1 & -1\\
++1 & +1 & +1
+\end{array}\right]\\
+\text{(Assignments)}\\
+ & m_{1}(\hat{R}_{i}),m_{1}(\hat{C}_{j})=+1\,(j\neq3) & m_{2}(\hat{R}_{i}),m_{2}(\hat{C}_{j})=+1\,(j\neq3) & m_{3}(\hat{R}_{i}),m_{3}(\hat{C}_{j})=+1\,(j\neq3)\\
+ & m_{1}(\hat{C}_{3})=-1 & m_{2}(\hat{C}_{3})=-1 & m_{3}(\hat{C}_{3})=-1\\
+\text{Operator}\\
+\text{Measured} & \hat{A}_{13}=\hat{\sigma}_{z}\otimes\hat{\sigma}_{z};m_{1}(\hat{A}_{13})=+1 & \quad\quad\hat{A}_{23}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y};m_{2}(\hat{A}_{23})=-1\quad\quad & \hat{A}_{33}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x};m_{3}(\hat{A}_{33})=+1\\
+\\
+\left|\psi_{\text{final}}\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}} & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}
+\end{array}\label{eq:toyModel}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{widetext}
+\end_layout
+
+\end_inset
+
+For the next iteration, 
+\begin_inset Formula $i=2$
+\end_inset
+
+, say we again yield 
+\begin_inset Formula $c=-1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ is also unchanged, the assignment remains invariant.
+ For the final step, we choose to measure 
+\begin_inset Formula $\hat{p}=\hat{A}_{23}(=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y})$
+\end_inset
+
+, to proceed with sequentially measuring 
+\begin_inset Formula $\hat{C}_{3}$
+\end_inset
+
+.
+ To simplify calculations, we note 
+\begin_inset Formula 
+\[
+\left|00\right\rangle =\frac{(\left|\tilde{+}\tilde{-}\right\rangle +\left|\tilde{-}\tilde{+}\right\rangle )/\sqrt{2}+(\left|\tilde{+}\tilde{+}\right\rangle +\left|\tilde{-}\tilde{-}\right\rangle )/\sqrt{2}}{\sqrt{2}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\left|\tilde{\pm}\right\rangle =\left|0\right\rangle \pm i\left|1\right\rangle $
+\end_inset
+
+ (eigenkets of 
+\begin_inset Formula $\hat{\sigma}_{y}$
+\end_inset
+
+).
+ Since 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ is manifestly not an eigenket of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+, we must find 
+\begin_inset Formula $\left|p_{-}\right\rangle $
+\end_inset
+
+, since 
+\begin_inset Formula $c=-1$
+\end_inset
+
+.
+ It is immediate that 
+\begin_inset Formula $\left|p_{-}\right\rangle =\left(\left|\tilde{+}\tilde{-}\right\rangle +\left|\tilde{-}\tilde{+}\right\rangle \right)/\sqrt{2}=\left(\left|00\right\rangle +\left|11\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+, which becomes the final state.
+ 
+\begin_inset Newline newline
+\end_inset
+
+For the final iteration, 
+\begin_inset Formula $i=3$
+\end_inset
+
+, say we yield 
+\begin_inset Formula $c=1$
+\end_inset
+
+.
+ So far, we have 
+\begin_inset Formula $m_{1}(\hat{A}_{33})=1$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}(\hat{A}_{23})=-1$
+\end_inset
+
+.
+ We must obtain 
+\begin_inset Formula $m_{3}(\hat{A}_{13})=1$
+\end_inset
+
+, independent of the value of 
+\begin_inset Formula $c$
+\end_inset
+
+, to be consistent.
+ Let's check that.
+ According to step 3, since 
+\begin_inset Formula $\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\left(\left|00\right\rangle +\left|11\right\rangle \right)/\sqrt{2}=1\left(\left|00\right\rangle +\left|11\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{3}(\hat{A}_{13})=1$
+\end_inset
+
+ indeed.
+ As a remark, it maybe emphasised that the 
+\begin_inset Formula $m_{2}(\hat{A}_{33})=m_{3}(\hat{A}_{33})$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}(\hat{A}_{23})=m_{3}(\hat{A}_{23})$
+\end_inset
+
+, which essentially expresses compatibility of these observables, viz.
+ measurement of 
+\begin_inset Formula $\hat{A}_{13}$
+\end_inset
+
+ doesn't affect the result one would obtain by measuring operators compatible
+ to it (granted they have been measured once before).
+\end_layout
+
+\begin_layout Section
+Generalizations
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout Subsection
+Proof of Sequential Multiplicativity
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $m_{i}(\hat{O})$
+\end_inset
+
+ refer to the outcome of measuring an operator 
+\begin_inset Formula $\hat{O}$
+\end_inset
+
+, where 
+\begin_inset Formula $i$
+\end_inset
+
+ parametrizes the sequence of the measurement.
+ Sequential multiplicativity is the statement that 
+\begin_inset Formula $m(\hat{P})=m_{1}(\hat{P}_{1})m_{2}(\hat{P}_{2})=m_{1}(\hat{P}_{2})m_{2}(\hat{P}_{1})$
+\end_inset
+
+.
+ The proof is simple.
+ Consider a set of compatible operators, which are also complete.
+ For simplicity, let's say the set is given by 
+\begin_inset Formula $S=\{\hat{P}_{1},\hat{P}_{2}\}$
+\end_inset
+
+ (not anti-commutation, its a set).
+ Now consider the operator 
+\begin_inset Formula $\hat{P}=\hat{P}_{1}+\hat{P}_{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ be s.t.
+ 
+\begin_inset Formula $\hat{P}\left|\psi\right\rangle =p\left|\psi\right\rangle $
+\end_inset
+
+ but 
+\begin_inset Formula $\nexists$
+\end_inset
+
+ any 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\hat{P}_{i}\left|\psi\right\rangle =\lambda_{i}\left|\psi\right\rangle $
+\end_inset
+
+ (else the result we're trying to prove will be trivial; as 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ is a simultaneous eigenket of 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+, with eigenvalues 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{1}p_{2}$
+\end_inset
+
+).
+ If you're uncomfortable with this `claim' or its relevance, one can use
+ 
+\begin_inset Formula $P_{1}=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{2}=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+ so that 
+\begin_inset Formula $P=\sigma_{z}\otimes\sigma_{z}$
+\end_inset
+
+.
+ Now, the state 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ makes for a non-trivial 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+.
+ Coming to the proof, first we define 
+\begin_inset Formula $\hat{P}_{i}\left|p_{1},p_{2}\right\rangle =p_{i}\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+ note that it suffices for me to show that 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ must be a superposition of only those simultaneous eigenkets 
+\begin_inset Formula $\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}p_{2}=p$
+\end_inset
+
+.
+ This can be proved as follows.
+ Consider 
+\begin_inset Formula 
+\[
+\begin{aligned} & \hat{P}\left|\psi\right\rangle  & = & p\left|\psi\right\rangle \\
+\implies\left\langle p_{1},p_{2}\right|\hat{P}\left|\psi\right\rangle  & =p_{1}p_{2}\left\langle p_{1},p_{2}|\psi\right\rangle  & = & p\left\langle p_{1},p_{2}|\psi\right\rangle .
+\end{aligned}
+\]
+
+\end_inset
+
+It follows immediately, that if 
+\begin_inset Formula $\left\langle p_{1},p_{2}|\psi\right\rangle \neq0$
+\end_inset
+
+, then it entails that 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ contains 
+\begin_inset Formula $\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+ as an eigenket in its superposition, and 
+\begin_inset Formula $p_{1}p_{2}=p$
+\end_inset
+
+.
+ However, if 
+\begin_inset Formula $\left\langle p_{1},p_{2}|\psi\right\rangle =0$
+\end_inset
+
+, then we won't ever see 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ as outcomes, so it is irrelevant.
+ That then completes the proof.
+\begin_inset Newline newline
+\end_inset
+
+This can be readily generalized to any number of operators, even if they're
+ not complete (in which case the remaining operators maybe added to complete
+ the set, but the eigenvalues corresponding to them, don't play any role
+ in the proof, and thus making its extension trivial).
+\end_layout
+
+\end_body
+\end_document

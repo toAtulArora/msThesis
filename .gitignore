@@ -1,3 +1,36 @@
 temp/
 temp2d/
 *.dat
+*~
+
+# Latex ignores
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+
+# Ignore LyX backup and autosave files
+# http://www.lyx.org/
+*.lyx~
+*.lyx#
+*.nav
+*.snm

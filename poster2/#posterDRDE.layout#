@@ -1,0 +1,28 @@
+#  \DeclareLaTeXClass[final,hyperref={pdfpagelabels=false}]{beamer}
+#  \DeclareCategory{Presentations}
+
+Preamble
+\usepackage[orientation=portrait,size=a0,scale=1.1]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
+
+\usetheme{I6pd2} % Use the I6pd2 theme supplied with this template
+
+\usepackage[english]{babel} % English language/hyphenation
+
+\usepackage{amsmath,amsthm,amssymb,latexsym} % For including math equations, theorems, symbols, etc
+
+%\usepackage{times}\usefonttheme{professionalfonts}  % Uncomment to use Times as the main font
+%\usefonttheme[onlymath]{serif} % Uncomment to use a Serif font within math environments
+
+\boldmath % Use bold for everything within the math environment
+
+\usepackage{booktabs} % Top and bottom rules for tables
+
+\graphicspath{{figures/}} % Location of the graphics files
+
+\usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} % A fix for figure numbering
+
+EndPreamble
+
+
+NoStyle block
+NoStyle 

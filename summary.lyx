@@ -126,7 +126,7 @@ The purpose of this document is to be evidence of and support the steps
 \end_layout
 
 \begin_layout Part
-Perfunctory Systematics of Research
+Perfunctory Systematics of Research | Semester 9
 \end_layout
 
 \begin_layout Section
@@ -3231,6 +3231,4565 @@ Sunday | Dec 6
 \begin_layout Itemize
 [misc] Various maintenance tasks: inbox gmail issue, hdd ordering, git repositor
 y issue, updated the log for various days.
+ tel Figured the plan of action.
+ So I must choose between LQG and String Theory.
+ Provisionally I have chosen LQG.
+ I have already started applying to places in Europe keeping this in mind.
+ Now for US also, I can do the same.
+ The only issue is that LQG may not be the best idea.
+ To that end, the strings conference may be the optimal place to figure
+ things.
+ I think thus that I should apply to 3 places that do loop (for US) and
+ then if after talking to some of these people I get more input, perhaps
+ I can apply to 1 or 2 more places.
+ First thing is that I should try to get a TOEFL waiver for these places.
+ I must parallely apply to two places a day in Europe.
+ One in Germany and one in France.
+\begin_inset Newline newline
+\end_inset
+
+The next thing is to revise physics/prepare for TIFR etc.
+ That I think I'll start from tomorrow.
+ Should perhaps spend atleast one hour on typesetting the documentation.
+\end_layout
+
+\begin_layout Section
+Amalgam of PhD applications etc.
+\end_layout
+
+\begin_layout Subsection
+Monday | Dec 7
+\end_layout
+
+\begin_layout Itemize
+[misc] food
+\end_layout
+
+\begin_layout Itemize
+[PhD] worked on PhD applications, finalized US universities
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Dec 8
+\end_layout
+
+\begin_layout Itemize
+[PhD] Maryland application (reco sent) + JEST registration, started preparing
+ for NET(?)
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Dec 9
+\end_layout
+
+\begin_layout Itemize
+[PhD] Preparing for NET (electronics [from HC Verma] + op amp + complex
+ analysis)
+\end_layout
+
+\begin_layout Itemize
+[research/seminar] Jaskaran's talk on contextuality | still not very clear
+ about why QM is contextual.
+\end_layout
+
+\begin_layout Itemize
+[research/summer] PRA arxiv update
+\end_layout
+
+\begin_layout Section
+Inundation of Strings, Loops and NET | Dec 10 - 20
+\end_layout
+
+\begin_layout Section
+An Efficacious Harbinger
+\end_layout
+
+\begin_layout Subsection
+Monday | Dec 21
+\end_layout
+
+\begin_layout Itemize
+[misc/personal] Jelly's birthday, prep + execution
+\end_layout
+
+\begin_layout Subsection
+[travel to Delhi] Tuesday | Dec 22
+\end_layout
+
+\begin_layout Itemize
+[misc] Some family time | some home tasks taken care of
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Dec 23
+\end_layout
+
+\begin_layout Itemize
+[misc] Updated the calendar (partly), the keep and organized otherwise various
+ things, multiple home tasks taken care of
+\end_layout
+
+\begin_layout Itemize
+[PhD] scores sent to Louisiana State University, examined the deadlines
+ of other universities
+\end_layout
+
+\begin_layout Subsection
+Thursday & Friday | Dec 24, 25
+\end_layout
+
+\begin_layout Itemize
+[misc] Updated organization
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Initiated thinking | Realized that I need an optimized operator
+ of the form 
+\begin_inset Formula $Y'=U^{\dagger}YU$
+\end_inset
+
+ so that my commutations are preserved.
+ This doesn't seem all that trivial.
+ The other approach is to construct everything for the variable 
+\begin_inset Formula $\phi$
+\end_inset
+
+ instead of the position 
+\begin_inset Formula $x$
+\end_inset
+
+, where the periodicity is natural and can be harnessed to construct eigenstates
+ quite naturally.
+ To progress along this direction one needs to construct the momentum operator
+ in the polar coordinates.
+ Now we know that 
+\begin_inset Formula $\nabla=\hat{r}\partial/\partial r+\hat{\theta}(1/r)\partial/\partial\theta+\hat{\phi}(1/r\sin\theta)\partial/\partial\phi$
+\end_inset
+
+ and thus one can imagine how to construct the `radial component of the
+ momentum operator'
+\begin_inset Formula $\equiv\hat{p}_{r}$
+\end_inset
+
+.
+ However as it turns out, the more useful quantity (routinely encountered)
+ is the radial part of 
+\begin_inset Formula $\nabla^{2}$
+\end_inset
+
+, where by part I mean the one that can be separated/depends only on 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Why that's an issue is because first of all, one must know what it means
+ to talk about 
+\begin_inset Formula $\hat{p}_{r}$
+\end_inset
+
+ as one can show that 
+\begin_inset Formula $\hat{p}_{r}=\text{symmetrized\{}r^{-1}(-i\hbar\nabla).r\text{\}}$
+\end_inset
+
+ and that itself becomes slightly messy.
+ Then one must know how this will be measured.
+ I already am not very clear about the momentum is measured off of the screen
+ in our earlier work, let alone in polar coordinates.
+ This however doesn't mean it is a dead end.
+ I'll try to explore the first direction first.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One quick calculation one can attempt is to try to swap the position of
+ the following operators (attempt a commutation like behaviour): 
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{i\hat{x}_{\text{mod}}\hat{p}L/L'h}.e^{i\hat{p}L_{2}/h} & = & \left(1+\hat{x}_{mod}\hat{p}L/L'h+\left(\hat{x}_{mod}\hat{p}L/L'h\right)^{2}+\dots\right).e^{i\hat{p}L_{2}/h}=\text{<after some calculation> }\\
+ & = & e^{i\hat{p}L_{2}/h}e^{i(\hat{x}+L_{2})_{\text{mod}}\hat{p}L/L'h}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ is the distance over which the position is modulo over.
+ 
+\end_layout
+
+\begin_layout Itemize
+Next one can try to ask a more relevant question, which is: Does 
+\begin_inset Formula $\exists\,\text{a }U$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $e^{i\hat{p}Lf(\hat{x}_{\text{mod}})/h}=\hat{U}^{\dagger}e^{i\hat{p}L/h}\hat{U}$
+\end_inset
+
+ ? One approach to this is to find the `matrix elements'.
+ This doesn't yield an exact solution.
+ Can see the calculations if you wish.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+[PhD] Europe, sent to three people in France (iGuess)
+\end_layout
+
+\begin_layout Subsection
+Saturday | Dec 26
+\end_layout
+
+\begin_layout Itemize
+[misc] Delayed christmas celebration prep and execution
+\end_layout
+
+\begin_layout Itemize
+[PhD] Europe attempted (partly, iGess: sent to FAU)
+\end_layout
+
+\begin_layout Subsection
+Sunday | Dec 27
+\end_layout
+
+\begin_layout Itemize
+[misc] Unwell, headache
+\end_layout
+
+\begin_layout Itemize
+[PhD] Europe, tried looking for people in Cambridge.
+ Found and sent an email to one retired person (earlier had sent it to some
+ other retired person)
+\end_layout
+
+\begin_layout Section
+Ameliorated by the perquisite  
+\end_layout
+
+\begin_layout Subsection
+Monday, Tuesday | Dec 28, 29 [unwell]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Worked on various aspects of the GHZ test.
+ None of them seem to work fully.
+ Summarized later.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Dec 30
+\end_layout
+
+\begin_layout Itemize
+[misc] Couldn't get the ticket booked (was waitlisted).
+ Booked new tickets (planned) and packed for Amritsar.
+\end_layout
+
+\begin_layout Subsection
+Thursday - Sunday | Dec 31 - Jan 3 [obligatory vacation | was refreshing
+ though]
+\end_layout
+
+\begin_layout Itemize
+[misc] Went to my cousin sister's.
+ Had a great time.
+ Returned on Sunday morning.
+ Got the bike fixed.
+ Fixed the office (CAF).
+ Helped jelly with the visa things.
+ 
+\end_layout
+
+\begin_layout Itemize
+[research/ms] On the way, worked out the minimalistic requirements.
+ I'll find later that I'd made a small mistake and in addition, one can
+ reduce the requirements to obtain a GHZ like +=- paradox.
+\end_layout
+
+\begin_layout Part
+Pontification, prolixity or probity | Semester 10
+\end_layout
+
+\begin_layout Section
+Realizing the quixotic
+\end_layout
+
+\begin_layout Subsection
+Monday | Jan 4 [registration + setup]
+\end_layout
+
+\begin_layout Itemize
+[misc] Spent the day on registration (Prashansa helped a lot, even though
+ she didn't have to).
+ Took Prashansa to the counsellor.
+ Saw the doctor.
+ Setup the room (getting it optimized for work efficiency), done partially.
+\end_layout
+
+\begin_layout Itemize
+[seminar] A Nobel Laureate delivered a lecture.
+ Didn't find it all that interesting.
+ He was talking about how we determined the atomic structure of various
+ things.
+ He tried to be accessible to all, but was neither intuitive nor precise.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Jan 5
+\end_layout
+
+\begin_layout Itemize
+[revision] Gate questions (10 attempted)
+\end_layout
+
+\begin_layout Itemize
+[misc] Schedules updated; 
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Was able to make good progress today.
+ So here's what I did.
+ First of all, consider the same states 
+\begin_inset Formula $\left|\psi_{0}\right\rangle ,\left|\psi_{1}\right\rangle $
+\end_inset
+
+ for 
+\begin_inset Formula $N=8$
+\end_inset
+
+, as those considered in my first paper.
+ Recall that for 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ as defined there, viz.
+ 
+\begin_inset Formula $\hat{Z}=Z(\hat{q}_{\mod2L})$
+\end_inset
+
+, or more precisely as 
+\begin_inset Formula $\hat{Z}=Z(\hat{q})=\text{sgn}(\sin(\hat{q}\pi/L))$
+\end_inset
+
+, we had 
+\begin_inset Formula $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ In addition to this, I define 
+\begin_inset Formula $\hat{X}=e^{-i\hat{p}L/\hbar}$
+\end_inset
+
+ (as opposed to defining it to be hermitian).
+ Now, we know that
+\begin_inset Formula $\left|\psi_{\pm}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ is not an eigenstate of 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+.
+ 
+\color blue
+We infact used expectation values there and were able to show that for high
+ enough 
+\begin_inset Formula $N$
+\end_inset
+
+, everything works out alright.
+ Keeping the operator simple, helps retaining the commutation relations
+ to a reasonable degree and consequently makes it easier to arrive at a
+ violation.
+ Now however, if we construct a more optimized operator, we might just be
+ able to get away with requiring precise commutation relations to hold.
+ 
+\color inherit
+So we optimize the observable 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ to 
+\begin_inset Formula $\hat{X}'\equiv\hat{X}\hat{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{T}\equiv e^{i\hat{p}NLa(\hat{q})/2}$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+a(q)=\begin{cases}
+1 & 2L<q<4L\\
+0 & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+The idea is that you shift certain peaks to the right place, before applying
+ the displacement operator 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+.
+ To illustrate this, consider explicitly 
+\begin_inset Formula $\left|\psi_{0}\right\rangle =\left(\left|\varphi_{-4}\right\rangle +\left|\varphi_{-2}\right\rangle +\left|\varphi_{-1}\right\rangle +\left|\varphi_{-3}\right\rangle \right)/\sqrt{4}$
+\end_inset
+
+.
+ The operation of 
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+ is 
+\begin_inset Formula $\hat{T}\left|\varphi_{4}\right\rangle =\left|\varphi_{-5}\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\hat{T}\left|\varphi_{3}\right\rangle =\left|\varphi_{-6}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{T}\left|\varphi_{n}\right\rangle =\left|\varphi_{n}\right\rangle $
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\{-4,-3,-2,-1,1,2\}$
+\end_inset
+
+.
+ It is now evident that 
+\begin_inset Formula $\hat{X}'=\hat{X}\hat{T}\left|\psi_{0}\right\rangle =\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Note also that 
+\begin_inset Formula $\hat{X}'^{\dagger}\left|\psi_{0}\right\rangle =\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Similarly 
+\begin_inset Formula $\hat{X}'\left|\psi_{1}\right\rangle =\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{X}'^{\dagger}$
+\end_inset
+
+ does the same.
+ So finally, now consider 
+\begin_inset Formula $\left|G\right\rangle \equiv\left(\left|\psi_{0}\psi_{0}\psi_{0}\right\rangle -\left|\psi_{1}\psi_{1}\psi_{1}\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+.
+ With 
+\begin_inset Formula $\hat{A}\equiv\hat{X}'\otimes\hat{Y}'\otimes\hat{Y}'^{\dagger}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{Y}'\equiv i\hat{Z}\hat{X}'$
+\end_inset
+
+, calculations yield 
+\begin_inset Formula $\hat{A}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+.
+ With 
+\begin_inset Formula $\hat{B}\equiv\hat{Y}'^{\dagger}\otimes\hat{X}'\otimes\hat{Y}'$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}\equiv\hat{Y}'\otimes\hat{Y}'^{\dagger}\otimes\hat{X}'$
+\end_inset
+
+ also, by symmetry we get 
+\begin_inset Formula $\hat{B}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $\hat{D}\equiv\hat{A}\hat{B}\hat{C}=\hat{X}'\otimes\hat{Y}'\hat{X}\hat{Y}'^{\dagger}\otimes\hat{X}'$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{E}\equiv\hat{X}'\otimes\hat{X}'\otimes\hat{X}'$
+\end_inset
+
+ yield the paradox.
+ If values were predefined, the value of 
+\begin_inset Formula $\hat{D}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{E}$
+\end_inset
+
+ would return the same answer.
+ However, a simple calculation yields 
+\begin_inset Formula $\hat{D}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+ (this can be seen directly by applying 
+\begin_inset Formula $\hat{A},\,\hat{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+ sequentially on 
+\begin_inset Formula $\left|G\right\rangle $
+\end_inset
+
+ [was figured the next day]), while 
+\begin_inset Formula $\hat{E}\left|G\right\rangle =-\left|G\right\rangle $
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+(well I must've messed up somewhere because the last equality is clearly
+ wrong, but that's the idea).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[issues]
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One needs to construct an experimental setup, viz.
+ figure how to measure the Hermitian versions of 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ etc.
+\end_layout
+
+\begin_layout Itemize
+Perhaps the whole thing is better constructed using Hermitian observables,
+ but then wouldn't the 
+\begin_inset Formula $Y^{\dagger}Y=1$
+\end_inset
+
+ trick fail, causing serious issues?
+\end_layout
+
+\begin_layout Itemize
+I am messing up the sign somewhere.
+ Write this thing properly on TeX.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+[PhD] 
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Jan 6
+\end_layout
+
+\begin_layout Itemize
+[revision] no time
+\end_layout
+
+\begin_layout Itemize
+[research/ms] 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Issues Resolved
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Experimental Setup: Not even clear what measuring 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+ really means.
+\end_layout
+
+\begin_layout Itemize
+As it turns out, even if you construct Hermitian 
+\begin_inset Formula $\hat{X}'\,+\,\text{h.c.}$
+\end_inset
+
+, even then its square works out alright, so long as the subspace is restricted
+ to linear combinations of 
+\begin_inset Formula $\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Thus thinking of 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+ might still have some meaning.
+ However it's not as obvious as the 
+\begin_inset Formula $\cos(pL/\hbar)$
+\end_inset
+
+ and 
+\begin_inset Formula $\exp(ipL/\hbar)$
+\end_inset
+
+ relation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Fixed the inconsistency in the signs I had yesterday.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Writing the thesis:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Finished the subsection 
+\begin_inset Quotes eld
+\end_inset
+
+introduction
+\begin_inset Quotes erd
+\end_inset
+
+ of the 
+\begin_inset Quotes eld
+\end_inset
+
+Hamilton Jacobi
+\begin_inset Quotes erd
+\end_inset
+
+ subsection.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+[PhD] started filling the application for King's College and Oxford.
+\end_layout
+
+\begin_layout Itemize
+[misc] Manu came; had pizza
+\end_layout
+
+\begin_layout Subsection
+Thursday | Jan 7
+\end_layout
+
+\begin_layout Itemize
+[revision] Sleep catchup (post Manu arrival)
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Figured that even 
+\begin_inset Formula $\hat{H}$
+\end_inset
+
+ is not all that trivial to measure.
+ For instance, for a free particle, measuring 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ is enough.
+ Now consider a particle in a harmonic oscillator potential and is in an
+ eigenstate of 
+\begin_inset Formula $\hat{H}$
+\end_inset
+
+.
+ Now ofcourse, the energy of the particle can't be measured by measuring
+ the position and momentum (
+\begin_inset Formula $q,p$
+\end_inset
+
+) unlike in classical mechanics where the very state of the system is defined
+ by 
+\begin_inset Formula $q,p$
+\end_inset
+
+ and once that's known, every function of it is well defined.
+ This is the very first, almost trivial 
+\begin_inset Formula $f(\hat{q},\hat{p})$
+\end_inset
+
+ which can be investigated to understand how one can measure such quantities
+ in general.
+ Talked to Bagla sir and he couldn't help.
+ During the Cosmology and Gravitation class, I figured doing the following
+ may help.
+ (1) Take the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit and see how with 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ both, one gets the same result on the state 
+\begin_inset Formula $\left|G\right\rangle $
+\end_inset
+
+.
+ (2) Consider using expectation values for your result and measure that
+ directly.
+ Write a simulation with just this (for in this case, both constructing
+ the test and making measurements is easy).
+ (3) Define some equivalent sets 
+\begin_inset Formula $\hat{A},\left|\psi\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{A}',\left|\psi'\right\rangle $
+\end_inset
+
+ s.t.
+ the result of measuring 
+\begin_inset Formula $\hat{A},\left|\psi\right\rangle $
+\end_inset
+
+ is equivalent to measuring 
+\begin_inset Formula $\hat{A}',\left|\psi'\right\rangle $
+\end_inset
+
+.
+ Then I came back and got stuck at evaluating 
+\begin_inset Formula $dI$
+\end_inset
+
+ from 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Also talked to Abhishek sir and he didn't know.
+\end_layout
+
+\begin_layout Itemize
+[PhD] Oxford application (mostly done), wrote to Joe Conlon and he responded
+ also (neutrally).
+ 
+\end_layout
+
+\begin_layout Subsection
+Friday | Jan 8
+\end_layout
+
+\begin_layout Itemize
+[PhD] Updated the CV & made minor changes to the Oxford research proposal.
+ Sent it to them.
+ 
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Worked on writing the thesis.
+ Noted some inconsistency in the book Holland.
+\end_layout
+
+\begin_layout Itemize
+[revision] (none)
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | Jan 9 and 10
+\end_layout
+
+\begin_layout Itemize
+[misc] Went with Jelly to North Country; she had to buy things for her Switzerla
+nd interview
+\end_layout
+
+\begin_layout Itemize
+[PhD] US applications, a large chunk done (including searching)
+\end_layout
+
+\begin_layout Section
+Tempestuous Simulacrum: The docile is deleterious
+\end_layout
+
+\begin_layout Subsection
+Monday | Jan 11
+\end_layout
+
+\begin_layout Itemize
+[revision] (pending)
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Talked to Prof.
+ Arvind, made quick progress.
+ He told me that formally, any 
+\begin_inset Quotes eld
+\end_inset
+
+Hermitian
+\begin_inset Quotes erd
+\end_inset
+
+ operator, 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+, can be measured by introducing an apparatus and a measurement apparatus
+ with the following interaction Hamiltonian (for a short time) 
+\begin_inset Formula $\hat{H}=-a\hat{Q}\hat{p}_{y}$
+\end_inset
+
+.
+ However, I realized that the way I was thinking earlier, was infact a little
+ different.
+ I was asking if there exists some interaction so that a measurement of
+ the particle's position yields the value of the observable 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+ at the earlier time? That I doubt is helpful but anyway.
+ Further, I started and finished reading the measurement section of Bohm's
+ second paper.
+ Figured it was precisely the same as what sir was saying.
+\end_layout
+
+\begin_layout Itemize
+[PhD]: Submitted the Illinois application & Brandeis U application filled
+ and submitted (application fee was waived).
+ US applications done.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Jan 12
+\end_layout
+
+\begin_layout Itemize
+[revision] (pending):
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Spent quite some time on figuring how to extend the analysis
+ done for 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+ with a discrete spectrum to that with a continuous spectrum, with 
+\begin_inset Formula $\hat{Q}\left|\psi_{q}\right\rangle =q\left|\psi_{q}\right\rangle $
+\end_inset
+
+.
+ Finally figured I was making a mistake, the state corresponding to 
+\begin_inset Formula $\phi(y+L)$
+\end_inset
+
+ is 
+\begin_inset Formula $\int dy\,\phi(y+L)\left|y\right\rangle $
+\end_inset
+
+, and not 
+\begin_inset Formula $\int dy\,\psi(y+L)\left|y+L\right\rangle $
+\end_inset
+
+ (yes it sounds foolish now).
+ I was able to show that if the 
+\begin_inset Quotes eld
+\end_inset
+
+apparatus
+\begin_inset Quotes erd
+\end_inset
+
+ is initially at position 
+\begin_inset Formula $0$
+\end_inset
+
+, with spread 
+\begin_inset Formula $\delta y$
+\end_inset
+
+, then after measurement, say one obtained 
+\begin_inset Formula $y'$
+\end_inset
+
+.
+ The eigenvalue this will correspond to is 
+\begin_inset Formula $q=(1/ta)(y'\pm2\delta y)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+So this essentially means that 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+ is only required to be Hermitian.
+ Then, once we know the complete set of eigenfunctions, we are through.
+ I therefore tried evaluating the eigenfunctions of 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+.
+ To get some insight, I started with 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ and there itself it got hard.
+ One can write it as 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+ or as functions periodic in the position space, with periodicity 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ The difficulty is making them equivalent.
+ Showing the latter to be complete anyway won't work for I have constructed
+ only two functions (with eigenvalues 
+\begin_inset Formula $\pm1$
+\end_inset
+
+).
+ By the time 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+ is used, even 
+\begin_inset Formula $\left|p\right\rangle $
+\end_inset
+
+ ceases to be an eigenstate and I end up with only the position space constraine
+d functions.
+ So that's a big mess.
+\begin_inset Newline newline
+\end_inset
+
+Also realized that the measurement scheme is also essentially just a displacemen
+t operator.
+\end_layout
+
+\begin_layout Itemize
+[PhD] Europe lookup started in full swing.
+ Making the list.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Jan 13
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Talked to Arvind sir again (yesterday's meeting had gotten
+ cancelled).
+ Kichoo finally talked about randomness certification etc.
+ and it looks rather interesting.
+ I think he'll be able to do something new with it.
+ I wanted to see if contextuality could be used instead.
+ Anyway, coming back to my work, I explained all that I had done yesterday
+ to sir.
+ He said that we don't need the full spectrum.
+ If my state can be expressed a linear combination of the eigenstates I've
+ already found, then I'm good to go.
+ I can skip the `hard' part.
+ He also seemed to have liked the optimization operator 
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+.
+ Infact, I just realized I told him that I'll explain to him the details
+ of the test (perhaps in the next meeting).
+ 
+\begin_inset Newline newline
+\end_inset
+
+Further, I just realized that one can infact 
+\emph on
+measure non-hermitian operators
+\emph default
+ also.
+ The only requirement will be that (a) the eigenvalue for the some states
+ is real and (b) the state being measured is at most a superposition of
+ these states.
+ This is exciting and I must talk to sir and get this verified.
+ Ofcourse the question is then, what happens when you use the same measurement
+ scheme (that of measuring non-hermitian operators) to measure a state that
+ doesn't satisfy (b)? Looks like that it will fail to satisfy Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"o
+\end_layout
+
+\end_inset
+
+dinger's equation (the time evolution will become non-unitary), viz.
+ probability densities won't be conserved.
+ So for now, I must translate this into a simulator problem.
+ I was wondering however, if I should use the two degrees of freedom of
+ the same particle or should I use two 1-d particles? We'll see.
+ Infact, my preliminary feeling is that simulations aren't exactly needed.
+ I may have to plot some functions, if at all.
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Obtained the text.
+ Started reading them.
+ 
+\end_layout
+
+\begin_layout Itemize
+[misc] Updated this document for the past few days.
+ Jelly help.
+ Nostalgia triggering pictures.
+\end_layout
+
+\begin_layout Itemize
+[PhD] (failed)
+\end_layout
+
+\begin_layout Itemize
+[revision] (pending)
+\end_layout
+
+\begin_layout Subsection
+Thursday | Jan 14
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Worked out some more eigenstates (infact arbitrary eigenvalued)
+ of the displacement operator.
+ Figured how to construct the relevant state by a straight forward generalizatio
+n of the GHZ state and my previous work on the Bell Test.
+ I am now confused about whether I should try doing the Bell test first,
+ or if I should try doing the GHZ test.
+ A little exploration reveals that the most interesting (that I can think
+ of) method would be to use the Wigner functions for the operators.
+ In that spirit, the Bell test is almost trivial (applying the unitaries
+ is almost trivial).
+ Thereafter, the wigner functions may be evaluated directly.
+ Infact, this tells me that if there're really trajectories (as described
+ by Bohmian mechanics), then what would be the difference between quantities
+ evaluated as averaged for various bohmian trajectories vs.
+ evaluated using the Wigner function formalism? Why must negative probabilities
+ come into play?
+\begin_inset Newline newline
+\end_inset
+
+However, the point for me at the moment is that I must start writing the
+ simulation.
+ For that I need the broadest (in the sense of what the targets that can
+ be achieved) and the simplest requirements.
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Figured the spider diagrams.
+ Started reading the introduction chapter.
+ It is hard (not always clear) but rather interesting; the fact that things
+ are the way they are.
+\end_layout
+
+\begin_layout Itemize
+[PhD] Reminder list sent
+\end_layout
+
+\begin_layout Subsection
+Friday | Jan 15
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] 2 hour lecture.
+ Before and after studied the introduction chapter.
+ Now using highlighting using Okular extensively.
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Working on a presentation to present my work at Phi@I.
+\end_layout
+
+\begin_layout Itemize
+[PhD] Emails related to PhD etc.
+ sent received 
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | Jan 16, 17
+\end_layout
+
+\begin_layout Itemize
+[PhD] Finalized the europe list; found LARS and applied for it.
+\end_layout
+
+\begin_layout Itemize
+[misc] Gym located and food processing started; fixed the room (standard
+ cleanliness levels)
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Thought about it at various times.
+ What was troubling me was the following: If the GHZ test infact says that
+ (q,p) can't be non-contextually deterministic, then how can BM, where (q,p)
+ are infact non-contextually deterministic, be consistent with it? There
+ are a few things that need to be understood.
+ 
+\begin_inset Newline newline
+\end_inset
+
+First, note that if a Bohmian particle has position 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ and momentum 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+, then the measurement of an `observable' which is a function of 
+\begin_inset Formula $\hat{q}$
+\end_inset
+
+, will infact correspond to the same function, with 
+\begin_inset Formula $\hat{q}$
+\end_inset
+
+ replaced by 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+.
+ Similarly for a function of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ only.
+ But here comes the subtlety, if one measures an observable which is an
+ arbitrary combination of 
+\begin_inset Formula $\hat{q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ , eg.
+ 
+\begin_inset Formula $\hat{q}+\hat{p}$
+\end_inset
+
+ or even 
+\begin_inset Formula $\hat{H}=\hat{p}^{2}+V(\hat{q})$
+\end_inset
+
+, then upon measurement, the value will 
+\emph on
+not
+\emph default
+ be the same function with 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ in place of the operators.
+ I must find out if values of all observables are determined completely
+ by 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and the initial positions of the particle.
+ One quick example that can be thought of is that of a Harmonic oscillator;
+ the particle can have essentially arbitrary 
+\begin_inset Formula $q,p$
+\end_inset
+
+ but will correspond to the same energy, if 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is an energy eigenket to start with.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Second, in the GHZ test, the usual structure is that one measures 
+\begin_inset Formula $A=X\otimes Y\otimes Y$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ (implicitly defined).
+ The contradiction we get essentially hinges on the claim that if 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ have well defined values, then 
+\begin_inset Formula $ABC$
+\end_inset
+
+ should essentially yield a situation identical to measurement of 
+\begin_inset Formula $X\otimes X\otimes X$
+\end_inset
+
+.
+ However that needn't be.
+ Take for example the non-contextually deterministic theory, BM.
+ Within BM, measuring 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ will yield values corresponding to the 
+\begin_inset Formula $q,p$
+\end_inset
+
+ values of the three particles (by corresponding we mean that 
+\begin_inset Formula $\hat{q}\leftrightarrow q,\hat{p}\leftrightarrow p$
+\end_inset
+
+).
+ However, a measurement of 
+\begin_inset Formula $ABC$
+\end_inset
+
+, will not yield a value that directly corresponds to 
+\begin_inset Formula $q,p$
+\end_inset
+
+, viz.
+ it is not a product of values obtained when 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are separately measured.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Thus in essence, we have shown that it is incorrect to conclude from the
+ GHZ argument that determinism (or precisely, a non-contextually deterministic
+ description of nature) can't exist.
+ 
+\begin_inset Newline newline
+\end_inset
+
+There are ofcourse various aspects which still need exploration.
+ (a) One possible approach could be to extend the analysis to full blown
+ tests of contextuality, by first appropriately extending them to phase
+ space, and then identifying how BM explains them.
+ This could either be done in the context of quantum optics (for which BM
+ isn't all that popularly known) or for say, the Mermin type argument (the
+ Mermin square, for two spin half particles).
+ (b) The other direction is to construct an appropriate hidden variable
+ model, that is non-contextually deterministic, but still consistent with
+ the usual GHZ test.
+ The latter should give insight into whether or not the dynamics are essential
+ for the analysis, viz.
+ recall how a direct extension of the BM principle to discretized space
+ gets into trouble (the 
+\begin_inset Formula $\nabla$
+\end_inset
+
+ operator has no analogue); but from the looks of it, a complete analysis
+ of the GHZ phase space test would shed some light on it.
+\begin_inset Newline newline
+\end_inset
+
+[written on and developed these to this form, on Monday]
+\end_layout
+
+\begin_layout Section
+Timorous Tests, Ponderous Progress
+\end_layout
+
+\begin_layout Subsection
+Monday | Jan 18
+\end_layout
+
+\begin_layout Itemize
+[research/ms] I have to now, convert the entire GHZ test into a scheme,
+ where only pure functions of the 
+\begin_inset Formula $p$
+\end_inset
+
+ (or 
+\begin_inset Formula $q$
+\end_inset
+
+) are measured.
+ No mixed functions.
+ This means that the scheme I worked out the other day, is essentially useless
+ for the current purposes.
+ Once that's done, then I must work out what measuring 
+\begin_inset Formula $Y^{\dagger}XY$
+\end_inset
+
+ essentially yields, viz.
+ given 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and 
+\begin_inset Formula $(q_{0},p_{0})$
+\end_inset
+
+ what the measurement outcome should be, deterministically.
+\begin_inset Newline newline
+\end_inset
+
+One could also try to see how the Wigner function and BM's 
+\begin_inset Formula $(q_{0},p_{0})$
+\end_inset
+
+ + 
+\begin_inset Formula $\psi$
+\end_inset
+
+ get related eventually.
+\end_layout
+
+\begin_layout Subsection
+Thursday | Jan 21
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finally discussed things with Arvind sir.
+ Explained to him what I had worked out.
+ The outcome was that (a) I try to extend the Mermin's proof to phase space,
+ (b) Try to simulate the measurement process itself for the GHZ test and
+ (c) glance through the paper sir has provided.
+\begin_inset Newline newline
+\end_inset
+
+It isn't still very clear, how we're so confident that `complicated relation'
+ between 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ of the particle and measurement of arbitrary functions of 
+\begin_inset Formula $\hat{q},\hat{p}$
+\end_inset
+
+ are so easily consistent with QM.
+ Ofcourse, from the calculation, one will get the eigenvalue corresponding
+ to the operator upon measurement, but given 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{0}$
+\end_inset
+
+, precisely which value one obtains, is not a simple exercise to determine.
+ This is where I must use my computational tools.
+ Alternatively, sir suggested I look at this paper where a formulation of
+ QM is presented, wherein 
+\begin_inset Formula $q,p$
+\end_inset
+
+ do infact yield the appropriate answers, viz.
+ position and momenta are treated symmetrically.
+\begin_inset Newline newline
+\end_inset
+
+Also, it would be interesting to see how the classical limit can be obtained,
+ viz.
+ why classically, a measurement of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ yields 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Infact in this sense, perhaps one can see precisely what contextuality
+ would mean for classical mechanics.
+ 
+\begin_inset Newline newline
+\end_inset
+
+I was also able to extend the GHZ setup, to that of contextuality (peres
+ mermin) rather trivially infact.
+ Now the argument becomes even more clear.
+ If one imagines that these variables have pre-defined values, then `ofcourse'
+ 
+\begin_inset Formula $C_{3}=1$
+\end_inset
+
+ and not 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ The flaw again is that determinism or pre-defined values, don't entail
+ that you simply multiply the result of observables.
+ You must multiply the observables and then ask what is the observed value.
+ This readily extends to even the 
+\begin_inset Formula $\left\langle \chi_{KS}\right\rangle $
+\end_inset
+
+, which BM will happily violate.
+ So the claim that 
+\begin_inset Formula $\left\langle \chi_{KS}\right\rangle \le4$
+\end_inset
+
+ for any non-contextual deterministic theory, is wrong; BM is an exception.
+ The reason has been delineated earlier.
+\begin_inset Newline newline
+\end_inset
+
+For my satisfaction though, I'd like to also see how BM is compatible with
+ the no-coloring type of proofs of the KS theorem.
+\begin_inset Newline newline
+\end_inset
+
+In addition, I am unclear about how spins can be handled, as in whether
+ spins can be thought of as having predefined value, in the sense just described.
+ But wait, don't they? Since like 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+ by itself doesn't yield upon measurement 
+\begin_inset Formula $p$
+\end_inset
+
+ (
+\begin_inset Formula $q$
+\end_inset
+
+ maybe it does), similarly, spins also have predefined values, dependent
+ on the 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+ and thus compatible with determinism.
+ I just found a paper titled ``Spin and non-locality in quantum mechanics'',
+ where the spin vector has a pre-defined value.
+ Damn it.
+ Now I feel that the description of nature is not unique after all.
+\begin_inset Newline newline
+\end_inset
+
+Finding the classical limit, seems like the best way to proceed.
+ What would that mean for the KS inequality? What about Bell's inequality?
+ Also, did non-locality have anything specific to contribute to this argument?
+ Was non-locality necessary? These questions still need to be worked out.
+\end_layout
+
+\begin_layout Itemize
+[PhD] Submitted the application for Cambridge
+\end_layout
+
+\begin_layout Subsection
+Friday | Jan 22
+\end_layout
+
+\begin_layout Itemize
+[research/ms] 
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | Jan 23, 24
+\end_layout
+
+\begin_layout Itemize
+[teaching/thermo] Taught these people thermodynamics
+\end_layout
+
+\begin_layout Itemize
+[PhD] applied to Netherlands, Max Planck; wrote for Geneva and Bonn; was
+ working on Notinghum
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Looked at various results that relate contextuality and non-locali
+ty.
+ I realized that while Bell's assumptions about the pre-defined output of
+ local hidden variable theories seemed alright, when one makes the same
+ assumption about contextuality, then the measurement process is completely
+ neglected.
+ Thus, one must show that even classically, such an event can happen.
+ That classically also, 'contextuality' happens, should be either shown
+ or explained why it doesn't.
+ And what better theory than BM to do this, which has a clear classical
+ limit; it becomes newton's laws when 
+\begin_inset Formula $\hbar\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Quandary: A Percipient Fomented, Squelching the reasonable
+\end_layout
+
+\begin_layout Subsection
+Monday | Jan 25
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Trying to work out the details of the classical limit of the
+ measurement process.
+ Quickly realized that it will not be trivial, the interaction Hamiltonian
+ used has a derivative (
+\begin_inset Formula $\nabla$
+\end_inset
+
+) which might cause issues it seems.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | Jan 26 [Holiday | Independence day]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Was thinking that perhaps simulating the Bell's test will
+ help clarify if one can have ...
+ [later: always finish what you start writing]
+\end_layout
+
+\begin_layout Subsection
+Wednesday | Jan 27
+\end_layout
+
+\begin_layout Itemize
+[research/ms] It looks like BM is cheating a little.
+ In the sense that it claims that it has a clear classical limit, in which
+ the Hamilton Jacobi framework is recovered.
+ In this limit, it is said that one needn't worry about measuring the observable
+s as being anything special.
+ The observables will yield the right values.
+ However, for quantum mechanical measurements, the interpretation (or strictly,
+ it's author) suggests we use the effective Hamiltonian 
+\begin_inset Formula $H_{I}=a\hat{p}_{1}\hat{p}_{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $1,2$
+\end_inset
+
+ labelling the system and the auxiliary particle that will measure the momentum,
+ respectively.
+ If one tries to find the classical limit of this measurement process, with
+ the hope that the measurement of 
+\begin_inset Formula $\hat{p}_{1}$
+\end_inset
+
+ will infact yield 
+\begin_inset Formula $p_{1}=\nabla_{1}S$
+\end_inset
+
+, one finds a lot of things getting messed up.
+ First of all, this interaction adds a term to the continuity equation:
+ 
+\begin_inset Formula 
+\[
+\frac{\partial P}{\partial t}+\nabla_{1}\left(P\frac{\nabla_{1}S}{m}\right)+\nabla_{2}\left(P\frac{\nabla_{2}S}{m}\right)+\overbrace{2aR\left[\nabla_{1}R\nabla_{2}S+R\nabla_{1}\nabla_{2}S+\nabla_{2}R\nabla_{1}S\right]}^{\text{Extra Term! | How will}\,P\,\text{satisfy the continuity equation?}}=0
+\]
+
+\end_inset
+
+The interaction also adds a ``quantum potential'' in addition to the expected
+ potential, which doesn't seem to disappear in the large mass limit.
+ 
+\begin_inset Formula 
+\[
+\frac{\partial S}{\partial t}+\frac{(\nabla_{1}S)^{2}}{2m}+\frac{(\nabla_{2}S)^{2}}{2m}+\overbrace{a\nabla_{1}S\nabla_{2}S}^{\text{expected part}}-\overbrace{a\hbar^{2}\frac{\nabla_{1}\nabla_{2}R}{R}}^{\text{\text{quantum part}}}-\underbrace{\frac{\hbar}{2mR}(\nabla_{1}^{2}R+\nabla_{2}^{2}R)}_{\text{usual quantum potential}}=0
+\]
+
+\end_inset
+
+Thus, BM can't do both, have a clear classical limit and be unable to explain
+ the measurement process's classical limit.
+ Ofcourse all of this is happening primarily because in the usual derivation,
+ the author regarded 
+\begin_inset Formula $V=V(q_{1},q_{2})$
+\end_inset
+
+ and not that of 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+.
+ However, this is very unsatisfactory of a theory that in the classical
+ limit, things cease to make sense.
+ One can yet, see that with 
+\begin_inset Formula $\hbar\to0$
+\end_inset
+
+, the quantum potential and the quantum part of the interaction, both disappear.
+ However, the continuity equation is not recovered still.
+ I may have made some calculation mistakes, which I can check later, but
+ at the moment, I must be able to make sense of the notion of measurement
+ in the classical setting, even if this particular method needs to be abandoned;
+ there must however be cogent reasons for doing so.
+\begin_inset Newline newline
+\end_inset
+
+Further, it is interesting to note that there're velocity dependent forces
+ (non-dicipative) such as Corioli's force that should perhaps result in
+ a momentum dependent potential.
+ In this case, it would be interesting to see how BM trajectories behave.
+\begin_inset Newline newline
+\end_inset
+
+Infact, what about galelian invariance? How does that come in the picture
+ in BM? Looks like that'll be fine; one only needs to change 
+\begin_inset Formula $x\to x-vt$
+\end_inset
+
+ where 
+\begin_inset Formula $v$
+\end_inset
+
+ is just a constant.
+ Let's anyway see.
+\end_layout
+
+\begin_layout Subsection
+Thursday | Jan 28
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Started reading a paper by Roy-Singh on symmetric treatment
+ of position and momentum, in a causal qauntum theory.
+ They made a more real bohm theory.
+ Spent some time figuring the meaning of the following puzzle: (The 
+\begin_inset Formula $\partial\dot{x}/\partial x=0$
+\end_inset
+
+ or 
+\begin_inset Formula $\neq0$
+\end_inset
+
+) and figured the continuity equation more carefully and how its different
+ from Louivelle's equation.
+ The paper took some time to seep in, but was interesting.
+\end_layout
+
+\begin_layout Subsection
+Friday | Jan 29
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Today I had an interesting thought.
+ While I was convinced that there must be something wrong with the following
+ argument, the argument seemed to be sound.
+ The argument would lead to the conclusion that one can communicate faster
+ than light, if Bohmian Mechanics is right.
+ So the idea of BM is that since we don't know the initial position of the
+ particles precisely, we can't quite make predictions stronger than CM.
+ However, consider this.
+ 
+\begin_inset Newline newline
+\end_inset
+
+There are two particles, one with person A, and the other with person B.
+ Now both measure the position of their particles.
+ Thus the positions are precisely known.
+ Next, they allow their particles to evolve under a Hamiltonian (interaction)
+ such that they become entangled.
+ Suppose at time 
+\begin_inset Formula $t$
+\end_inset
+
+, the particles are entangled.
+ Now from the de-Broglie theory, both can predict the locations of their
+ particles at 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Now comes the interesting part.
+ The protocol they follow, is as follows.
+ Say A uses this setup, only to receive signals.
+ If B wants to send a signal to A, all that he needs to do, is to disturb
+ his particle at 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ This would cause some change in, either the wavefunction or the position,
+ or both, of the particle, compared to if B had not caused any disturbance.
+ Now B measures her particle's position at 
+\begin_inset Formula $t+\epsilon$
+\end_inset
+
+ and gets the value 
+\begin_inset Formula $x_{B}$
+\end_inset
+
+.
+ She knows what position her particle should've been at, if B didn't do
+ anything, call this position 
+\begin_inset Formula $x_{B}^{(0)}$
+\end_inset
+
+.
+ If now 
+\begin_inset Formula $x_{B}\neq x_{B}^{(0)}$
+\end_inset
+
+, then she knows B sent a signal.
+ If 
+\begin_inset Formula $x_{B}=x_{B}^{(0)}$
+\end_inset
+
+, then she knows nothing was sent.
+ Since the equations are non-local, this interaction is instantaneous, and
+ in principle faster than speed of light.
+\begin_inset Newline newline
+\end_inset
+
+Ofcourse, one can fill in the details, which is what I almost started doing,
+ but finding the fault in the argument is what was pivotal.
+ It turns out, the fault was rather straight forward, although a little
+ subtle.
+ The idea is that regardless of how precise the position measurement is,
+ its uncertainty will spread with the wavefunction, thereby rendering any
+ prediction useless.
+ Thus, in this light, chaos restores locality.
+ This is actually not too hard to see.
+ Imagine you have an uncertainty 
+\begin_inset Formula $\delta x$
+\end_inset
+
+, when you measured the position and got the value 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Now we can imagine a gaussian associated with this, as the wavefunction,
+ after collapse.
+ Since the de-Broglie Bohm theory ensures that the probability distribution
+ 
+\begin_inset Formula $\left|\psi\right|^{2}$
+\end_inset
+
+ is preserved by the dynamics of the particles, as 
+\begin_inset Formula $\psi$
+\end_inset
+
+ evolves, 
+\begin_inset Formula $\delta x$
+\end_inset
+
+ will increase (in case of free evolution), effectively destroying 'position
+ information'.
+ The idea can only be harnessed, if one can somehow decouple the uncertainty
+ in 
+\begin_inset Formula $x$
+\end_inset
+
+ from the wavefunction.
+ One possibility I considered was that of very strong ineractions, where
+ the wavefunction changes dramatically, but 
+\begin_inset Formula $\nabla S$
+\end_inset
+
+ doesn't, so that 
+\begin_inset Formula $\dot{q}$
+\end_inset
+
+ is small, and thus 
+\begin_inset Formula $\delta q$
+\end_inset
+
+ doesn't change much.
+ This idea, I don't suppose will work but can be tried.
+\begin_inset Newline newline
+\end_inset
+
+Another thing one might want to work out, is how a delta function in position
+ evolves, according to bohmian mechanics.
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | Jan 30, 31
+\end_layout
+
+\begin_layout Itemize
+[PhD] Had a gate exam, wasn't as hard but as I wasn't prepared, not so great.
+\end_layout
+
+\begin_layout Itemize
+[teaching/Thermo] Presented the first chapter in reasonable detail, tried
+ to make things as clear.
+ Made the attendance + feedback sheet.
+\end_layout
+
+\begin_layout Section
+Still myopic? An Epiphany and the apocryphal BM.
+\end_layout
+
+\begin_layout Subsection
+Monday | February 1[Unwell]
+\end_layout
+
+\begin_layout Itemize
+[PhD] Applied to Nottingham and applied for the scholarship for Edinburgh
+\end_layout
+
+\begin_layout Itemize
+[misc.] Shwetha got through MIT!!
+\end_layout
+
+\begin_layout Subsection
+Tuesday | February 2 
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Today was rather interesting.
+ I read through the paper by Roy and Singh, which talked about a symmetric
+ treatment of position and momentum in a causal theory of QM.
+ I even started reading the sequal where they show how this maybe extended
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+ particles.
+ I haven't completely read it.
+ I have the following questions though.
+ First of all, since 
+\begin_inset Formula $q,p$
+\end_inset
+
+ are now precisely what they'll turn out to be if measured, then that makes
+ a lot of the things I was working on rather simple.
+ I can now go ahead and try to answer my question, viz.
+ what happens to contextuality in the classical limit? I ask this for it
+ looks rather binary to me, unlike the uncertainty principles.
+ Next I can ask, what meaning does parity have, in this new causal mechanics.
+ I feel it would be now great to attempt the GHZ test and the Peres Mermin
+ test.
+ Another thing that surprises me is that how can the probability 
+\begin_inset Formula $\left|\psi\right|^{2}$
+\end_inset
+
+ be conserved by the particles, if they don't follow the de-broglie equation,
+ which was just the probability current? I would like to simulate both and
+ see how they differ.
+ Ofcourse, various details of the theory need to be worked out, for the
+ functions required, don't seem so straight forward for being numerically
+ solved.
+ I also think that using the optimized variables I had defined, to further
+ extend the Bell test would be rather interesting.
+ It is worth noting that the issue with the classical limit of measuring
+ momentum disappears here, as the question doesn't arise, although I would
+ like to see the same happen with BM.
+\begin_inset Newline newline
+\end_inset
+
+On the larger scale, until the QM & BM stage, I was convinced that BM is
+ perhaps a more detailed description, which when averaged, yields the right
+ QM description.
+ However, I am now confused again.
+ With the RS (Roy Singh) description, I am unclear about which description
+ is correct, or to be precise, I am unclear about the notion that nature
+ has a unique description.
+ Which seems to suggest that we have hit a stage where in the accuracy of
+ our description of nature, can only be tested to a certain level (and its
+ not about lack of technology), beyond which, atleast at the moment, it
+ appears it is impossible to tell which is right.
+ Looks like a rather important lesson for Quantum Gravity.
+\begin_inset Newline newline
+\end_inset
+
+Another thing I thought of, was that of constructing a test which didn't
+ have the shortcomings of the Bell & Contextuality test, wherein the possibility
+ of change happening due to measurements, is not considered.
+ This earlier was rather important because of two reasons.
+ (1) In BM itself, the value of 
+\begin_inset Formula $p$
+\end_inset
+
+ depends on the measurement but more importantly (2) that measuring 
+\begin_inset Formula $A$
+\end_inset
+
+ and getting a value 
+\begin_inset Formula $a$
+\end_inset
+
+, and similarly for 
+\begin_inset Formula $B$
+\end_inset
+
+ getting a value 
+\begin_inset Formula $b$
+\end_inset
+
+ doesn't entail that measuring 
+\begin_inset Formula $AB$
+\end_inset
+
+ would yield the value 
+\begin_inset Formula $ab$
+\end_inset
+
+.
+ The idea I was raising was that while Bell's test is robust under allowing
+ `measurements' to modify values, tests of Contextuality are not.
+\begin_inset Newline newline
+\end_inset
+
+Ok so something is still wrong.
+ I thought somebody had proven that one can't have all possible sets of
+ commuting variables, have a probability distribution, due to `contextuality'.
+ But if what I understood is right, then according to BM, all outcomes are
+ deterministic.
+ So where's the catch? BM just sods it off by saying that the initial conditions
+ include the initial position/momentum of the particle and therefore it
+ is not included the type of theories considered by `contextuality' like
+ proofs.
+ I then ask, that in the RS theory, clearly momentum doesn't require anymore
+ knowledgeof the particle, than does a position measurement (both of them
+ don't that is).
+ Thus, it is natural to ask, what properties of the system, can be assumed
+ to have a value, independent of measurement (I don't mean lack of determinism,
+ I mean it doesn't depend on the initial conditions of the apparatus)? Can
+ we construct a theory, wherein all observables have well defined values,
+ regardless? I know it won't conflict with, atleast the Peres Mermin type
+ arguments, simply because there we run into the 
+\begin_inset Formula $AB$
+\end_inset
+
+ type of confusion.
+ Antithetically though, the RS paper seemed to claim that such a description
+ may not be possible.
+\begin_inset Newline newline
+\end_inset
+
+One more question that can be addressed is, how to construct an `almost'
+ 
+\begin_inset Formula $SU(N)$
+\end_inset
+
+ algebra, out of 
+\begin_inset Formula $p,q$
+\end_inset
+
+.
+ We have already shown how to construct the 
+\begin_inset Formula $SU(2)$
+\end_inset
+
+ structure (which was also already known).
+ This is interesting, for then one can use contextuality in a single particle.
+ This would then strongly challenge the view (proof?) that non-locality
+ is a special case of contextuality.
+ If I can simply construct a contextuality test in phase space, using a
+ single particle, then I think I'd be done.
+ But interestingly, I now recall, Ali had done something similar.
+ He used, instead of displacement operators in one direction and the other
+ direction specifically, a combination of displacements in the two directions
+ and used the geometric phase to his advantage.
+ So even though his operators were those used for quantum optics (for quadrature
+) and not quite position and momentum, the analogues to exist.
+ Which means that at once, it can be shown that contextuality and non-locality
+ are different.
+\begin_inset Newline newline
+\end_inset
+
+Now, non-locality as we showed earlier, can be shown to disappear (atleast
+ partly), using chaos.
+ However, how does one show Bell like non-locality? Or if one can show why
+ we must have a 
+\begin_inset Formula $2\sqrt{2}$
+\end_inset
+
+ as maximum violation.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | February 3
+\end_layout
+
+\begin_layout Itemize
+[research/ms] I realized today that the contextuality test is constructed
+ in a slightly more interesting way.
+ They don't just say that 
+\begin_inset Formula $AB\to ab$
+\end_inset
+
+ if 
+\begin_inset Formula $A\to a$
+\end_inset
+
+ and 
+\begin_inset Formula $B\to b$
+\end_inset
+
+.
+ They say that if 
+\begin_inset Formula $[A,B]=0$
+\end_inset
+
+, then 
+\begin_inset Formula $f(A,B)\to f(a,b)$
+\end_inset
+
+ if 
+\begin_inset Formula $A\to a$
+\end_inset
+
+ and 
+\begin_inset Formula $B\to b$
+\end_inset
+
+.
+ So I basically wanted to go against this.
+ Obviously, if one starts with a system in the state 
+\begin_inset Formula $\left|a,b\right\rangle $
+\end_inset
+
+, then it will follow.
+ However, it is possible to find an eigenstate of 
+\begin_inset Formula $AB$
+\end_inset
+
+, which is neither an eigenstate of 
+\begin_inset Formula $A$
+\end_inset
+
+ nor an eigenstate of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ This calculation was done (fine, using online mathematica like stuff) on
+ 
+\begin_inset Formula $A=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $AB=-\sigma_{z}\otimes\sigma_{z}$
+\end_inset
+
+.
+ Obviously, 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ is not an eigenstate of 
+\begin_inset Formula $A$
+\end_inset
+
+ (nor of 
+\begin_inset Formula $B$
+\end_inset
+
+).
+ Thus measuring 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ will always correspond to the same value, 
+\begin_inset Formula $1$
+\end_inset
+
+, however my theory can assign 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ to 
+\begin_inset Formula $\pm$
+\end_inset
+
+.
+ Thereby violating the condition that 
+\begin_inset Formula $AB\to ab$
+\end_inset
+
+.
+ Ofcourse these guys don't even consider issues related to disturbing the
+ system after measurement, but that maybe partly justified as all 
+\begin_inset Formula $A,B,AB$
+\end_inset
+
+ commute.
+ This was an interesting realization and result, as far as my understanding
+ is concerned.
+ TODO: write the details.
+\end_layout
+
+\begin_layout Itemize
+[misc] Got shortlisted for the TIFR interview.
+\end_layout
+
+\begin_layout Subsection
+Thursday | February 4
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Missed a meeting with sir.
+ Explained all that I had thought of, to Bhati.
+\end_layout
+
+\begin_layout Subsection
+Friday | February 5
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finally after a lot of thinking, I figured the best thing
+ to do, is to `correct' the contextuality test.
+ This should be the focus for a few weeks and then whatever it is that I
+ am able to find, I report.
+\end_layout
+
+\begin_layout Itemize
+[teaching/thermo] Studied the second chapter from Callen and looked at all
+ the tutorial problems.
+\end_layout
+
+\begin_layout Subsection
+Saturday | February 6
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Started writing the ideas so far, into a draft, for self clarity
+ and ease of communication.
+\end_layout
+
+\begin_layout Itemize
+[teaching/thermo] Had a good session, as in people mostly rated it 5/5.
+\end_layout
+
+\begin_layout Subsection
+Sunday | February 7
+\end_layout
+
+\begin_layout Itemize
+[research/ms] One possibility is to construct a test (to test memory, which
+ is `required' for any contextual theory) where, alright.
+ First imagine that we have commuting observables given by 
+\begin_inset Formula $[A_{ij},A_{ik}]=0$
+\end_inset
+
+ and 
+\begin_inset Formula $[A_{ji},A_{ki}]=0$
+\end_inset
+
+.
+ So for a non-invasive system that remembers what I measured before, I measure
+ these in the said order 
+\begin_inset Formula $A_{11},\,A_{12},\,A_{13}$
+\end_inset
+
+ and then take another identical copy, measure 
+\begin_inset Formula $A_{33},A_{23},A_{13}$
+\end_inset
+
+ and compare the value of 
+\begin_inset Formula $A_{13}$
+\end_inset
+
+.
+ If the value of 
+\begin_inset Formula $A_{13}$
+\end_inset
+
+ is different, then I know that my non-invasive system is contextual.
+ Note that non-invasiveness is important, else we can't say if the system
+ is contextual or if post measurement, the system obtains a new assignment.
+ It will be more tricky to construct such tests for invasive systems.
+\begin_inset Newline newline
+\end_inset
+
+Ofcourse one can generalize this to finding if assignment of 
+\begin_inset Formula $A_{ij}$
+\end_inset
+
+ is contextual by measuring it in the two different contexts, and to varying
+ amounts.
+\begin_inset Newline newline
+\end_inset
+
+To find values which don't have any context, we may choose to measure along
+ parallel diagonals.
+\begin_inset Newline newline
+\end_inset
+
+To get some handle on non-invasive systems, let's imagine that if say a
+ measurement is 
+\emph on
+unfaithful
+\emph default
+, (viz.
+ if a repeated measurement of some observable 
+\begin_inset Formula $A_{11}$
+\end_inset
+
+, on identically prepared system, yields different values, with certain
+ probabilities) then we can imagine certain hidden variables, which are
+ not in our control, are causing the variance.
+ As an approximation, we assume that whenever these measurements yield the
+ same result, the system has the same underlying hidden variables.
+ It may happen that after measuring one 
+\emph on
+unfaithful
+\emph default
+ operator on two systems, we find the hidden variables are approximately
+ the same, then upon subsequent measurement of the next 
+\emph on
+unfaithful
+\emph default
+ operator, one might discover that the value obtained for the two systems
+ is different.
+ In this case, one learns that the system didn't infact have the same hidden
+ variables.
+ If one does obtain the same value, then again one continues to assume that
+ the underlying hidden variables are the same.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This construction maybe completely irrelevant though, since we would like
+ to compare systems with identical hidden variables to start with, and then
+ make 
+\emph on
+different
+\emph default
+ measurements.
+\begin_inset Newline newline
+\end_inset
+
+To make some progress, I can imagine a black box, which takes in two states,
+ and tells me if they are identical (including the hidden variables).
+ I don't still learn what those hidden variables are, just that two systems
+ are identical.
+ (TODO: ensure this is correct).
+ Ofcourse, in the final test, I don't want invokation to any such box, but
+ to start, let's see if I can proceed assuming such a box exists.
+\begin_inset Newline newline
+\end_inset
+
+It turns out, there're various smaller, more tractable issues that need
+ resolution.
+ (a) Consider a theory that assigns values to the peres mermin observables.
+ Now upon each measurement, 
+\begin_inset Formula $A_{33}$
+\end_inset
+
+ is assigned a new value (
+\begin_inset Formula $1\to-1$
+\end_inset
+
+ and 
+\begin_inset Formula $-1\to1$
+\end_inset
+
+).
+ | Now is (a) contextual? Is it multiplicative? [Our target is to construct
+ by hand, a non-contextual hidden variable theory, that can violate the
+ KCBS inequality.] (a) is clearly not multiplicative.
+ If I measure 
+\begin_inset Formula $A_{11}A_{33}$
+\end_inset
+
+ in a single shot, I will get an answer which will be different from measuring
+ 
+\begin_inset Formula $A_{11}$
+\end_inset
+
+ and then measuring 
+\begin_inset Formula $A_{33}$
+\end_inset
+
+ and taking the product 
+\begin_inset Formula $a_{11}a_{33}$
+\end_inset
+
+.
+ Infact, my theory doesn't explicitly tell me the assignment for 
+\begin_inset Formula $A_{11}A_{33}$
+\end_inset
+
+.
+ [What happened to measuring compatible observables together? What role
+ does that play? Will contextuality handle that aspect?]
+\begin_inset Newline newline
+\end_inset
+
+One approach I can follow is, to take the most obvious, non-contextual multiplic
+ative hidden variable assignment and then make a small change in that (like
+ I just did).
+ Then investigate which property has changed, among non-contextuality and
+ multiplicativity.
+ Note that in doing so, definitions of contextuality and multiplicativity
+ will need to be refined.
+ So start with some definitions, and as you refine, show why the alternatives
+ don't make enough sense (or how they trivialize things).
+ Proceed iteratively, to an assignment, that is non-contextual and yet violates
+ the KCBS inequality.
+ If you're able to retain multiplicativity, great.
+ If not, that's also alright.
+\begin_inset Newline newline
+\end_inset
+
+Also, one must add a boolean property, 
+\emph on
+efficacy
+\emph default
+.
+ This would be true, if the model is s.t.
+ sequential measurement of commuting observables, behave as faithful observables
+, viz.
+ their values don't change.
+\begin_inset Newline newline
+\end_inset
+
+I infact realized, that one might think that multiplicativity and commutativity
+ are the same thing.
+ But surprisingly, this is not so.
+ It looks like, in our analysis, we'll end up showing that a violation of
+ the KCBS inequality implies that nature is either contextual, or non-multiplica
+tive or both.
+ From the perspective of BM, nature is non-contextual, but multiplicative.
+ Perhaps in other HV models of QM, nature can be made multplicative but
+ contextual.
+ However, we can't have a HV model that is non-contextual and multiplicative,
+ which consistently describes nature.
+\begin_inset Newline newline
+\end_inset
+
+The outstanding challenge now is, first of all, write all of these things
+ systematically with proper examples constructed (as suggested in the approach
+ above).
+ And second, try to construct a new test, which can distinguish between
+ multiplicativity and contextuality.
+\begin_inset Newline newline
+\end_inset
+
+I have a feeling that all of this has something to do with the maximal set
+ of commuting operators.
+ This property is rather strange.
+\end_layout
+
+\begin_layout Section
+Snide Analysis; Making contextuality flippant
+\end_layout
+
+\begin_layout Subsection
+Monday | February 8 [exam]
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Had Bag's exam today.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | February 9
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Figured two interesting things today.
+ First, one can start with assuming that theories are non-invasive, which
+ means that they admit measurement schemes which are non-invasive; viz.
+ measurements can be made without disturbing the system.
+ With this, one can construct two sets of theories.
+ Each has only one non-classical feature, one is contextual and the other
+ non-multiplicative.
+ With these, one can construct the non-imaginative, but standard (that's
+ why non-imaginative) Peres Mermin situation.
+ Describe the two variants of the KCBS test.
+ Variant one will be violated by both, contextual and non-multiplicative
+ theories.
+ However, variant two will be violated only by the contextual theory.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The other interesting thing I figured, was that while a measurement of 
+\begin_inset Formula $\hat{A}+\hat{B}$
+\end_inset
+
+ doesn't mean that the result will be 
+\begin_inset Formula $a+b$
+\end_inset
+
+, (where 
+\begin_inset Formula $a$
+\end_inset
+
+ is the value obtained upon measurement of 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ separately, and 
+\begin_inset Formula $b$
+\end_inset
+
+ is that of 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+), however, according to QM, 
+\begin_inset Formula $\left\langle \hat{A}+\hat{B}\right\rangle =\left\langle \hat{A}\right\rangle +\left\langle \hat{B}\right\rangle $
+\end_inset
+
+.
+ Thus, on an average, measurement of 
+\begin_inset Formula $\hat{A}+\hat{B}$
+\end_inset
+
+ will be the same as measuring 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+ separately, average separately, and add.
+ Note how the experiments are entirely different.
+ This may prove pivotal in two ways.
+ First, this shows how QM distinguishes between addition and multiplication
+ of observables, quite explicitly.
+ Second, this will help in extending the aforesaid scenario, even when we
+ give up non-invasiveness.
+ Then we will be able to show if QM is truly contextual or not.
+ Ofcourse, one also needs to see this in the light of the assumption that
+ 
+\begin_inset Formula $[\hat{A},\hat{B}]=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Further, I need to see if the 
+\emph on
+multiplicity
+\emph default
+ argument holds for addition also, viz.
+ for 
+\begin_inset Formula $[\hat{A},\hat{B}]=0$
+\end_inset
+
+, if 
+\begin_inset Formula $\hat{A}\to a$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}\to b$
+\end_inset
+
+, then does require 
+\begin_inset Formula $\hat{A}+\hat{B}\to a+b$
+\end_inset
+
+? This is certainly required on an average, viz.
+ 
+\begin_inset Formula $\left\langle \hat{A}+\hat{B}\right\rangle =\left\langle \hat{A}\right\rangle +\left\langle \hat{B}\right\rangle $
+\end_inset
+
+, unlike multiplication, 
+\begin_inset Formula $\left\langle \hat{A}\hat{B}\right\rangle \neq\left\langle \hat{A}\right\rangle \left\langle \hat{B}\right\rangle $
+\end_inset
+
+.
+ The commutativity argument doesn't figure here, since we're talking about
+ compatible observables.
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] Tried to do some questions, revised some bit of the keppler problem.
+ Perhaps remembering the solution will help (
+\begin_inset Formula $r(\theta)$
+\end_inset
+
+ for a given 
+\begin_inset Formula $U$
+\end_inset
+
+ and various initial conditions)
+\end_layout
+
+\begin_layout Subsection
+Wednesday | February 10
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finished writing the main ideas in the draft.
+ They look interesting.
+ So the final argument goes as follows.
+ A multiplicative theory will yield 
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle =\left\langle \chi_{2}\right\rangle $
+\end_inset
+
+.
+ For simplistic `deterministic' theories, 
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle =\left\langle \chi_{2}\right\rangle \le4$
+\end_inset
+
+.
+ A theory that violates the KCBS but not 
+\begin_inset Formula $\chi_{2}$
+\end_inset
+
+, is certainly non-classical in some way, but must be non-multiplicative.
+ As we have demonstrated (to do), for QM, 
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle \ne\left\langle \chi_{2}\right\rangle $
+\end_inset
+
+ in general, thus predictions of QM can't be explained by any theory that
+ is multiplicative.
+ More specifically, we have ruled out contextual theories, which are multiplicat
+ive, as candidates for describing the quantum world.
+ These theories are usually believed to be the appropriate alternative candidate
+s to simplistic `deterministic' theories.
+ 
+\emph on
+In fact, one can remove contextuality completely from the picture;
+\emph default
+ there exist formulations of quantum mechanics in terms of hidden variables,
+ which are non-contextual and non-multiplicative.
+ They are consistent with all predictions of QM, including violation of
+ the KCBS inequality.
+\begin_inset Newline newline
+\end_inset
+
+I need to work on the following.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(1) Not that the progress so far is particularly depressing, but it would
+ be great if I could somehow construct a true test of contextuality.
+ Also, I would imagine that one can construct a better test of multiplicativity.
+ I think I should try to focus on this independent of contextuality.
+ On specific states, it is easy to show.
+ I must aim at constructing a state independent test.
+ But as usual, let me start with state dependent ones and see what progress
+ I can make.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(2) I should either show this analytically, or numerically, that 
+\begin_inset Formula $\left\langle \chi_{\text{KCBS}}\right\rangle \neq\left\langle \chi_{2}\right\rangle $
+\end_inset
+
+.
+ Infact, if I can show this for even one state, it is enough to show that
+ QM is not multiplicative.
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST + Misc] Glanced through a few questions; nothing that serious;
+ got an interview call from ICTS also.
+\end_layout
+
+\begin_layout Subsection
+Thursday | February 11
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Constructed an incorrect `proof' of contextuality in 2 dimensions!
+ Was convinced it is correct to start with and then found the flaw.
+ Started working on a test of multiplicativity, independent of that of contextua
+lity.
+ Initially I felt I was just trying to come up with some operator identity
+ that numbers won't satisfy.
+ This again became an orthodox contextuality like test.
+ I realized later that the test for multiplicativity is actually quite different
+ in spirit.
+ So I started with constructing a state dependent test.
+ In general, one can write the simplest test as follows.
+ Consider two observables 
+\begin_inset Formula $A,\,B$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $[A,B]=0$
+\end_inset
+
+.
+ For a multiplicative theory, 
+\begin_inset Formula $m(AB)-m(A)m(B)=0$
+\end_inset
+
+.
+ This also entails that 
+\begin_inset Formula $\left\langle m(AB)\right\rangle -\left\langle m(A)m(B)\right\rangle =0$
+\end_inset
+
+.
+ If I can show that there exists some state for which 
+\begin_inset Formula $\left\langle m_{1}(A)m_{2}(B)\right\rangle -\left\langle m(AB)\right\rangle \neq0$
+\end_inset
+
+, then I'm through.
+ Ofcourse, it is also possible that on an average, the equality holds, but
+ there exist special events where it is violated.
+ One can consider those, but a more robust and experiment friendly method
+ would be to find some averaged expression.
+\begin_inset Newline newline
+\end_inset
+
+Some possible directions for explicit examples include: Choose 
+\begin_inset Formula $a,b$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $e^{i\hat{p}a}e^{i\hat{q}b}=e^{i\hat{q}b}e^{i\hat{p}a}$
+\end_inset
+
+, basically so that for 
+\begin_inset Formula $\hat{A}=e^{i\hat{p}a}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}=e^{i\hat{q}b}$
+\end_inset
+
+, 
+\begin_inset Formula $[\hat{A},\hat{B}]=0$
+\end_inset
+
+.
+ Now, one needs to cook up the right state to see if a violation can be
+ arrived at.
+ Further, one can use the 
+\begin_inset Formula $\left|11\right\rangle $
+\end_inset
+
+ state, with 
+\begin_inset Formula $A=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+.
+ This would be a 2 qubit example.
+ Finally, for a two qubit case, perhaps using 
+\begin_inset Formula $P_{1}=\left|0\right\rangle \left\langle 0\right|$
+\end_inset
+
+, and 
+\begin_inset Formula $P_{2}=\left|1\right\rangle \left\langle 1\right|$
+\end_inset
+
+ on a superposition 
+\begin_inset Formula $(\left|0\right\rangle +\left|1\right\rangle )/\sqrt{2}$
+\end_inset
+
+ would make most sense.
+ 
+\begin_inset Newline newline
+\end_inset
+
+I also thought of how this maybe extended to addition.
+ For instance, measurement of 
+\begin_inset Formula $O=A+B$
+\end_inset
+
+, will always be s.t.
+ 
+\begin_inset Formula $\left\langle O\right\rangle =\left\langle A\right\rangle +\left\langle B\right\rangle $
+\end_inset
+
+, according to QM.
+ According to a multiplicative theory, 
+\begin_inset Formula $m(O)=m_{1}(A)+m_{2}(B)$
+\end_inset
+
+, where the order is not important.
+ Upon averaging, we will get 
+\begin_inset Formula $\left\langle m(O)\right\rangle =\left\langle m(A)+m(B)\right\rangle =\left\langle m(A)\right\rangle +\left\langle m(B)\right\rangle $
+\end_inset
+
+.
+ Consequently, I will see no violation, on an average.
+ A suggested modification is to define 
+\begin_inset Formula $C:=AB$
+\end_inset
+
+, so that 
+\begin_inset Formula $O=CB^{-1}+A^{-1}C$
+\end_inset
+
+.
+ Now perhaps a sequential can be done on the latter two and a violation
+ arrived at.
+ This however, seems to not be as neat as I'd like (even if it works that
+ is).
+\begin_inset Newline newline
+\end_inset
+
+[research/ms feedback] Kishor and Bhati both looked at the paper and couldn't
+ quite find any major mistake (kichoo found a typo though).
+\end_layout
+
+\begin_layout Itemize
+[PhD/misc] prepared for JEST in the morning, booked flight tickets for TIFR
+ etc.
+\end_layout
+
+\begin_layout Subsection
+Friday | February 12
+\end_layout
+
+\begin_layout Itemize
+[research/ms] New word for multiplicative.
+ Absolutely compatible; observables maybe compatible, but can't be absolutely
+ compatible; weakly compatible := ! absolutely compatible.
+ Inert measure, Multimeasure (veto), progressively measurable, completely
+ compatible, incompletely compatible, partially compatible.
+ A theory in which all compatible observables are completely compatible,
+ is itself called completely compatible.
+ A theory in which even one compatible observable is not completely compatible,
+ is called partially compatible.
+ Any theory that is not completely compatible, is equivalent to being partially
+ compatible.
+\begin_inset Newline newline
+\end_inset
+
+Also thought about and realised why I wanted a different test of multiplicativit
+y and why the 
+\begin_inset Formula $\chi_{2}$
+\end_inset
+
+ test was useful.
+ The 
+\begin_inset Formula $\chi_{2}$
+\end_inset
+
+ test was useful, because it worked very well with the theories I was discussing
+ (the two extremes).
+ Now I want a test that is violated by QM.
+ For that I want it to be as simple as possible.
+\end_layout
+
+\begin_layout Itemize
+[PhD/misc] Booked the last flight ticket for coming home from ICTS.
+\end_layout
+
+\begin_layout Itemize
+[misc/seminar] Bhati's talk on some sort of reduction model.
+ Couldn't understand things in too much detail, but that's ok.
+\end_layout
+
+\begin_layout Itemize
+[misc] Got things printed for tomorrow's session
+\end_layout
+
+\begin_layout Subsection
+Saturday and Sunday | February 13 & 14
+\end_layout
+
+\begin_layout Itemize
+[teaching/Thermo] Went reasonably well.
+ Still don't know how to solve that last question (that dropped the problem
+ solving rating):
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] made some progress (almost finished the sample questions)
+\end_layout
+
+\begin_layout Section
+Incumbent on the wise, to be Inimical to speculation
+\end_layout
+
+\begin_layout Subsection
+Monday | February 15
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Updating the summary document.
+ I am now trying to explicitly construct an explicit test for multiplicativity
+ in 4 dimensions.
+ Some useful commands include going to Wolfram Alpha and then 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Eigenvectors[ {{0,0,0,-i},{0,0,-i,0},{0,i,0,0},{i,0,0,0}} ]
+\end_layout
+
+\begin_layout Plain Layout
+
+Eigenvectors[ {{0,0,0,-i},{0,0,i,0},{0,-i,0,0},{i,0,0,0}} ]
+\end_layout
+
+\end_inset
+
+What can be said about non-locality, it's relation to contextuality; what
+ about Bell's test? Does that have anything to do with multiplicativity?
+ What about all the beautiful properties such as monogamy associated with
+ the Bell test and Contextuality? Where do these things stand in this new
+ perspective? I have a feeling that something rather interesting is in store
+ for us.
+\begin_inset Newline newline
+\end_inset
+
+After trying to construct an explicit test for multiplicativity, I realized
+ that QM doesn't infact violate it.
+ In essence, consider 
+\begin_inset Formula $A=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $B=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+.
+ Now one can verify that 
+\begin_inset Formula $\left|[++]\right\rangle =(-i\left|00\right\rangle +\left|11\right\rangle )/\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|[+-]\right\rangle =(-i\left|01\right\rangle +\left|10\right\rangle )/\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|[-+]\right\rangle =(i\left|01\right\rangle +\left|10\right\rangle )/\sqrt{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|[--]\right\rangle =(i\left|00\right\rangle +\left|11\right\rangle )/\sqrt{2}$
+\end_inset
+
+ are eigenkets of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $\pm,\pm$
+\end_inset
+
+ as used in the nomenclature.
+ Now for the state, 
+\begin_inset Formula $\left|\psi\right\rangle =\left|11\right\rangle $
+\end_inset
+
+, we know that a measurement of 
+\begin_inset Formula $AB=\sigma_{z}\otimes\sigma_{z}$
+\end_inset
+
+ would yield the value 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ Infact, 
+\begin_inset Formula $AB\left|11\right\rangle =\left|11\right\rangle $
+\end_inset
+
+.
+ However, since 
+\begin_inset Formula $\left|11\right\rangle $
+\end_inset
+
+ is neither an eigenket of 
+\begin_inset Formula $A$
+\end_inset
+
+, nor an eigenket of 
+\begin_inset Formula $B$
+\end_inset
+
+, a measurement of either will collapse the state to some other state.
+ A measurement of 
+\begin_inset Formula $AB$
+\end_inset
+
+ would leave the state invariant.
+ This seemed to suggest that perhaps, this setup can be used to establish
+ non-multiplicativity of QM.
+ That isn't however the case.
+ This is so because 
+\begin_inset Formula $\left|11\right\rangle =(\left|[++]\right\rangle +\left|[--]\right\rangle )/\sqrt{2}$
+\end_inset
+
+.
+ Now if 
+\begin_inset Formula $AB$
+\end_inset
+
+ is measured, we're guaranteed to get 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ However, if we measure 
+\begin_inset Formula $A$
+\end_inset
+
+ first, then we'd get either 
+\begin_inset Formula $+1$
+\end_inset
+
+ or 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Say we got 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ The state would be 
+\begin_inset Formula $\left|[++]\right\rangle $
+\end_inset
+
+ and thus measuring 
+\begin_inset Formula $B$
+\end_inset
+
+ would always yield 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ Similarly, a measurement for 
+\begin_inset Formula $-1$
+\end_inset
+
+ and similarly for measuring 
+\begin_inset Formula $B$
+\end_inset
+
+ first.
+ Thus, even though the physical situations are completely different, 
+\begin_inset Formula $m(AB)=m(A)m(B)$
+\end_inset
+
+.
+ This completely undermines the argument I was trying to build against contextua
+lity.
+ Looks like QM is afterall multiplicative, although I haven't exactly proven
+ this.
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] did some more questions (was thinking about this 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ vs writing the KE using 
+\begin_inset Formula $\nabla^{2}$
+\end_inset
+
+.
+ Should revise sakurai.)
+\end_layout
+
+\begin_layout Subsection
+Tuesday | February 16
+\end_layout
+
+\begin_layout Itemize
+[research/ms] There're atleast two interesting directions to pursue at this
+ stage.
+ One is that I try to see what exactly happens for 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $[A,B]=0$
+\end_inset
+
+ and 
+\begin_inset Formula $[A,C]=0$
+\end_inset
+
+ but 
+\begin_inset Formula $[B,C]\neq0$
+\end_inset
+
+.
+ The other is that I try to construct the simulator for BM and see precisely
+ how these values change upon being measured.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The latter will take quite some time and be useful as a tool in general.
+ I also realized that if one is allowed to update values, then one can violate
+ the KCBS inequality, without caring for which compatible observable was
+ measured before/with.
+ So then in my old notation, non-multiplicativity will arise in the sense
+ that 
+\begin_inset Formula $m_{1}(A)m_{1}(B)\neq m(AB)$
+\end_inset
+
+ in general.
+ However, 
+\begin_inset Formula $m_{1}(A)m_{2}(B)=m(AB)$
+\end_inset
+
+.
+ This I suspect will also hold for BM.
+ 
+\begin_inset Newline newline
+\end_inset
+
+From tomorrow, I will start working on the simulator.
+ I want that table.
+ Then I'll construct the theory.
+ Should have `experimental' results before attempting construction of a
+ theory (don't have very solid principles guiding my theory now do I?).
+\begin_inset Newline newline
+\end_inset
+
+For the moment, consider the situation where we start with 
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+ and we measure 
+\begin_inset Formula $A_{33}$
+\end_inset
+
+.
+ The system will yield the value 
+\begin_inset Formula $m_{1}(A_{33})=1$
+\end_inset
+
+.
+ Now the system checks if it is consistent with 
+\begin_inset Formula $C_{3}=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{3}=1$
+\end_inset
+
+, corresponding ofcourse to 
+\begin_inset Formula $A_{33}$
+\end_inset
+
+.
+ It updates the values to be consistent, say to 
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & -1\\
+1 & 1 & 1
+\end{array}\right].
+\]
+
+\end_inset
+
+Now if I measure say 
+\begin_inset Formula $A_{23}$
+\end_inset
+
+, I will get 
+\begin_inset Formula $m_{2}(A_{23})=-1$
+\end_inset
+
+.
+ The system checks if 
+\begin_inset Formula $C_{3}=-1$
+\end_inset
+
+, which is true and if 
+\begin_inset Formula $R_{2}=1$
+\end_inset
+
+, which isn't, and thus, updates the system state to 
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+1 & 1 & 1\\
+-1 & -1 & -1\\
+1 & 1 & 1
+\end{array}\right].
+\]
+
+\end_inset
+
+Finally, if 
+\begin_inset Formula $A_{13}$
+\end_inset
+
+ is measured, I get 
+\begin_inset Formula $m_{3}(A_{13})=1$
+\end_inset
+
+.
+ The requirements 
+\begin_inset Formula $C_{3}=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{1}=1$
+\end_inset
+
+ are satisfied, so no changes are required.
+ Ofcourse, 
+\begin_inset Formula $m_{1}(A_{33})m_{2}(A_{23})m_{3}(A_{13})=-1$
+\end_inset
+
+ as required.
+ Note that in principle, 
+\begin_inset Formula $m_{1}(A_{33})m_{1}(A_{23})m_{1}(A_{13})=1\neq-1$
+\end_inset
+
+.
+ Thus the theory is not `counterfactually multiplicative' but is `sequentially
+ multiplicative'.
+ *Since the former can't quite be `tested', we must conclude that Bohmian
+ Mechanics is atmost as speculative, as is contextuality.* 
+\begin_inset Newline newline
+\end_inset
+
+It is also true, that the memory model was not `counterfactually multiplicative'
+ but was `sequentially multiplicative'.
+ The point is that beyond this stage, since both models require the possibility
+ of updating the internal state after a measurement is made, it is simpler
+ to just update all commuting variables, rather than making the model `contextua
+l'.
+ Contextuality in this light, is not a necessity, but merely a possibility.
+\begin_inset Newline newline
+\end_inset
+
+Further, one can almost show that QM is multiplicative.
+ Consider two operators 
+\begin_inset Formula $\hat{A}=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+.
+ Let us assume that 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $AB\left|\psi\right\rangle =\lambda\left|\psi\right\rangle $
+\end_inset
+
+.
+ For simplicity, assume that 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+.
+ We now show that the most general 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ can be written as a superposition of those simultaneous eigenkets of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, that satisfy 
+\begin_inset Formula $ab=\lambda=1$
+\end_inset
+
+.
+ Let us start with 
+\begin_inset Formula $\left|\psi\right\rangle =\alpha\left|[00]\right\rangle +\beta\left|[01]\right\rangle +\gamma\left|[10]\right\rangle +\delta\left|[11]\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $\left|[**]\right\rangle $
+\end_inset
+
+ represent eigenkets of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+; 
+\begin_inset Formula $A\left|[01]\right\rangle =\left|[01]\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $B\left|[10]\right\rangle =1\left|[10]\right\rangle $
+\end_inset
+
+ for example.
+ Now 
+\begin_inset Formula $\hat{A}\left|\psi\right\rangle =\alpha\left|[00]\right\rangle +\beta\left|[01]\right\rangle -\gamma\left|[10]\right\rangle -\delta\left|[11]\right\rangle $
+\end_inset
+
+, and 
+\begin_inset Formula $\hat{B}\hat{A}\left|\psi\right\rangle =\alpha\left|[00]\right\rangle -\beta\left|[01]\right\rangle -\gamma\left|[10]\right\rangle +\delta\left|[11]\right\rangle $
+\end_inset
+
+.
+ Comparing this to 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+, we get 
+\begin_inset Formula $\alpha=\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta=-\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\dots$
+\end_inset
+
+.
+ Consequently, 
+\begin_inset Formula $\beta,\gamma=0$
+\end_inset
+
+.
+ This proves that the most general 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ can be written as a superposition of kets s.t.
+ 
+\begin_inset Formula $ab=1$
+\end_inset
+
+.
+ Multiplicativity directly follows from this, as any measurement of 
+\begin_inset Formula $A$
+\end_inset
+
+ or 
+\begin_inset Formula $B$
+\end_inset
+
+ individually, will collapse the state into one of the simultaneous eigenkets
+ (or their superposition, depending on the degenerecy).
+ 
+\begin_inset Newline newline
+\end_inset
+
+For the most general proof though, some arguments are missing, which are
+ being worked on.
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] Revised the black body radiation part from Kardar, looked at
+ the rigid rotor and finally, worked out some simple problem about kinematics.
+ Also looked at some more 1 mark questions; recalled the radioactive decay
+ law.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | February 17
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Wrote down the progress I made yesterday.
+ This I had thought of in the past few days and had confused myself over
+ it.
+ If say 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ are s.t.
+ they commute, and 
+\begin_inset Formula $ABC=1$
+\end_inset
+
+, like the PM setup, then in the measurement process, wouldn't 
+\begin_inset Formula $e^{i\hat{A}\hat{B}\hat{C}.\hat{p}_{2}}=e^{-i\hat{p}_{2}}=e^{i\hat{A}\hat{p}_{2}}e^{i\hat{B}\hat{p}_{2}}e^{i\hat{C}\hat{p}_{2}}$
+\end_inset
+
+.
+ Working now on figuring out how to write the simulator.
+ I think it will be more clear if I implement the `theoretical measurement'
+ scheme, as opposed to working on the magnetic field gradient based approach.
+ 
+\begin_inset Newline newline
+\end_inset
+
+It looks like it maybe worth studying Page 158, Spins of Bohmian Mechanics
+ by Detlef.
+ Understood how in BM, one can't ascribe spin to a particle.
+ The argument is simple but it entails that given identical initial conditions
+ (including the hidden variable, viz position), the outcome of a measurement
+ is not fixed.
+ One must also feed the experimental setup.
+ For example, if one reverses the magnetic field gradient, the spin of the
+ particle would turn out to be 
+\begin_inset Formula $-1/2$
+\end_inset
+
+ instead of 
+\begin_inset Formula $+1/2$
+\end_inset
+
+ for the exact same initial condition.
+ See the book for details.
+\begin_inset Newline newline
+\end_inset
+
+The interesting part for my work was that one can use simple arguments,
+ like the ones used in the book, to measure 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{y}$
+\end_inset
+
+.
+ Measuring 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ however is a little complicated.
+ Either one must turn the particle (which complicates the shape of the gaussian
+ packet, viz.
+ it must be analyzed carefully) or think of the particle beam splitting,
+ along its very direction of propagation; neither are neat.
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] Some relativity questions, solved that black body radiation question,
+ and did certain other questions
+\end_layout
+
+\begin_layout Subsection
+Thursday | February 18
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Took an interesting step forward today.
+ Extended the GHZ test itself, to a full blown test of contextuality.
+ The details, I'll type later, but see [
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "ghzContextuality"
+
+\end_inset
+
+] for a glimpse.
+ The advantage is that I need only measure 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{y}$
+\end_inset
+
+ (no 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+), so that simplifies things a lot.
+ In addition, it looks like we (fine I) were (was) spot on about the kind
+ of theories.
+ We will now be able to show how BM is `onotologically non-multiplicative'
+ but non-contextual.
+ However, it is `sequentially multiplicative', as required by QM (which
+ we proved a few days ago).
+ So in essence, we would've clarified that while `ontologial multiplicativity'
+ is as much a philosophical speculation (since it can't be tested at present)
+ as is contextuality.
+ Confusing different measurement settings that yield different answers for
+ the same initial conditions, doesn't explain `contextuality'.
+ 
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] did an interesting mechanics question, revised some stat mech
+ for a question, some probability etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/P_20160218_150002.jpg
+	lyxscale 20
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GHZ to contextuality
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ghzContextuality"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/P_20160217_122206.jpg
+	lyxscale 10
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+trying to prove QM is sequentially multiplicative
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Friday | February 19
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Thought about how one can even do generalized measurements,
+ and yield analytic results by assuming that the measuring particle is at
+ a particular location.
+ The idea is infact quite simple.
+ The wavefunction of the measuring particle gets split, depending the state
+ of the `system'.
+ After splitting of this wavefunction, in which constituent `wavefunction'
+ the measuring particle will sit, will depend, by the same token as the
+ Stern Gerlach analysis, on the initial position of the measuring particle.
+ Effectively then, if the measuring particle is assumed to be at the top
+ most position, it would follow that the eigenstate (of the observable that
+ we intend to measure) with the most negative eigenvalue, will be the outcome.
+\begin_inset Newline newline
+\end_inset
+
+This did however, get me thinking about how exactly the `collapse' is explained
+ in BM.
+ (This was thought of while having lunch, bathing etc.
+ Not exactly while in the office)
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] did the usual 5 questions
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | February 20 & 21
+\end_layout
+
+\begin_layout Itemize
+[teaching/Thermo] Did a part of the 3rd chapter.
+ 
+\end_layout
+
+\begin_layout Itemize
+[PhD/JEST] Had the primary focus on it.
+ The exam happened.
+ Didn't do too many questions; tried to be very accurate.
+\end_layout
+
+\begin_layout Itemize
+[misc] Had fun at Decathlon (North country mall).
+ 
+\end_layout
+
+\begin_layout Section
+Prosaically Bromide or Appositely Novel?
+\end_layout
+
+\begin_layout Subsection
+Monday | February 22
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Updated records for the past couple of days.
+ Took longer than expected.
+ Just started work on calculating the assignments using BM, without simulations.
+ It turns out that this is harder than I expected.
+\end_layout
+
+\begin_layout Itemize
+[misc] Worked on organizing various things; figured how to do various things
+\end_layout
+
+\begin_layout Subsection
+Tuesday | February 23
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Worked out the BM analysis for the GHZ extension.
+ Was running into issues with simultaneous measurements with the GHZ analysis.
+ Sequential analysis was however working as expected, although I can't be
+ too sure.
+\end_layout
+
+\begin_layout Itemize
+[PhD/interview] Started reading Peskin, the first few pages (ones I never
+ read during the course!) It was interesting to know that `naturally' vectors
+ are 
+\begin_inset Formula $x^{\mu}=(x^{0},\vec{x})$
+\end_inset
+
+ while `naturally' derivatives go, 
+\begin_inset Formula $\partial_{\mu}=\partial/\partial x^{\mu}=(\partial/\partial x^{0},\vec{\nabla})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | February 24
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Realized that in the multiparticle case, the technique will
+ be an issue.
+ I am not entirely sure what's wrong with the argument, but a simple extension
+ is clearly wrong.
+ The velocities will depend on the position of other particles also, which
+ I'm ignoring, if I use the single particle method.
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Working out various details from the lecture notes.
+ Also realized that, what I had interestingly, naively written as 
+\begin_inset Formula $R=ar\to V=\dot{a}r+a\cancelto{v}{\dot{r}}$
+\end_inset
+
+ was infact correct, if one looks at it from the `total derivative' perspective,
+ as given in Arris.
+\end_layout
+
+\begin_layout Subsection
+Thursday | February 25
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Met with Arvind sir.
+ He suggested I try constructing an explicit model that resolves the issue.
+ I realized that there's a lot that needs to be added to the draft.
+ I will attempt doing that soon enough.
+ It was concluded that we arrive at an explicit assignment using BM, s.t.
+ the theory is non-multiplicative ('ontologically') but is sequentially
+ multiplicative; in addition the theory is non-contextual and finally combine
+ all previous ideas to show that contextuality is speculative and that any
+ true demonstration of contextuality, will render BM false.
+\begin_inset Newline newline
+\end_inset
+
+After thinking about how to find answers without simulating, I finally realized
+ that one can simply plot the full 
+\begin_inset Formula $\psi$
+\end_inset
+
+ in configuration space and then impose the idea that if 
+\begin_inset Formula $\left|\psi\right|^{2}$
+\end_inset
+
+ describes the distribution of the particles, at some initial time 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, then 
+\begin_inset Formula $\left|\psi\right|^{2}$
+\end_inset
+
+ will do so, for all 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ For instance, consider the ..
+ [todo: write this]
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] spent a lot of time, finishing the portions that had
+ been covered last week.
+ Also glanced through what was covered this semester.
+\end_layout
+
+\begin_layout Subsection
+Friday | February 26
+\end_layout
+
+\begin_layout Itemize
+[research/ms] explained the BM analysis to prashansa.
+ Realized how for even two dimensions, one is expected to get a circle (in
+ between I confused it to be a square!)
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Preparation spilt to Friday also.
+ Had the weekly test.
+ Went well.
+ The class was about random walks.
+ That was also interesting.
+\end_layout
+
+\begin_layout Itemize
+[PhD] did various tasks associated with it.
+\end_layout
+
+\begin_layout Section
+Hiatus | Interviews, irascible or euphoric?
+\end_layout
+
+\begin_layout Subsection
+February 28 - March 8 [PhD/interview]
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Figured how to prove sequential multiplicativity in QM.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $m_{i}(\hat{O})$
+\end_inset
+
+ refer to the outcome of measuring an operator 
+\begin_inset Formula $\hat{O}$
+\end_inset
+
+, where 
+\begin_inset Formula $i$
+\end_inset
+
+ parametrizes the sequence of the measurement.
+ Sequential multiplicativity is the statement that 
+\begin_inset Formula $m(\hat{P})=m_{1}(\hat{P}_{1})m_{2}(\hat{P}_{2})=m_{1}(\hat{P}_{2})m_{2}(\hat{P}_{1})$
+\end_inset
+
+.
+ The proof is simple.
+ Consider a set of compatible operators, which are also complete.
+ For simplicity, let's say the set is given by 
+\begin_inset Formula $S=\{\hat{P}_{1},\hat{P}_{2}\}$
+\end_inset
+
+ (not anti-commutation, its a set).
+ Now consider the operator 
+\begin_inset Formula $\hat{P}=\hat{P}_{1}+\hat{P}_{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ be s.t.
+ 
+\begin_inset Formula $\hat{P}\left|\psi\right\rangle =p\left|\psi\right\rangle $
+\end_inset
+
+ but 
+\begin_inset Formula $\nexists$
+\end_inset
+
+ any 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\hat{P}_{i}\left|\psi\right\rangle =\lambda_{i}\left|\psi\right\rangle $
+\end_inset
+
+ (else the result we're trying to prove will be trivial; as 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ is a simultaneous eigenket of 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+, with eigenvalues 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{1}p_{2}$
+\end_inset
+
+).
+ If you're uncomfortable with this `claim' or its relevance, one can use
+ 
+\begin_inset Formula $P_{1}=\sigma_{x}\otimes\sigma_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $P_{2}=\sigma_{y}\otimes\sigma_{x}$
+\end_inset
+
+ so that 
+\begin_inset Formula $P=\sigma_{z}\otimes\sigma_{z}$
+\end_inset
+
+.
+ Now, the state 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+ makes for a non-trivial 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+.
+ Coming to the proof, first we define 
+\begin_inset Formula $\hat{P}_{i}\left|p_{1},p_{2}\right\rangle =p_{i}\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+note that it suffices for me to show that 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ must be a superposition of only those simultaneous eigenkets 
+\begin_inset Formula $\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}p_{2}=p$
+\end_inset
+
+.
+ This can be proved as follows.
+ Consider 
+\begin_inset Formula 
+\[
+\begin{aligned} & \hat{P}\left|\psi\right\rangle  & = & p\left|\psi\right\rangle \\
+\implies\left\langle p_{1},p_{2}\right|\hat{P}\left|\psi\right\rangle  & =p_{1}p_{2}\left\langle p_{1},p_{2}|\psi\right\rangle  & = & p\left\langle p_{1},p_{2}|\psi\right\rangle .
+\end{aligned}
+\]
+
+\end_inset
+
+It follows immediately, that if 
+\begin_inset Formula $\left\langle p_{1},p_{2}|\psi\right\rangle \neq0$
+\end_inset
+
+, then it entails that 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ contains 
+\begin_inset Formula $\left|p_{1},p_{2}\right\rangle $
+\end_inset
+
+ as an eigenket in its superposition, and 
+\begin_inset Formula $p_{1}p_{2}=p$
+\end_inset
+
+.
+ However, if 
+\begin_inset Formula $\left\langle p_{1},p_{2}|\psi\right\rangle =0$
+\end_inset
+
+, then we won't ever see 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ as outcomes, so it is irrelevant.
+ That then completes the proof.
+\begin_inset Newline newline
+\end_inset
+
+This can be readily generalized to any number of operators, even if they're
+ not complete (in which case the remaining operators maybe added to complete
+ the set, but the eigenvalues corresponding to them, don't play any role
+ in the proof, and thus making its extension trivial).
+\end_layout
+
+\begin_layout Section
+Surfeit of Irking issues, still not irresolute
+\end_layout
+
+\begin_layout Subsection
+Monday - Wednesday | March 14-16
+\end_layout
+
+\begin_layout Itemize
+Worked primarily for Bag's Cosmology course.
+ Learnt a lot.
+ It was a lot of fun as well!
+\end_layout
+
+\begin_layout Subsection
+Thursday | March 17
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Today figured the final piece of the puzzle.
+ I started with trying to arrive at precise assignments using the 
+\begin_inset Formula $e^{ia\hat{O}\otimes\hat{p}}$
+\end_inset
+
+ type of hamiltonian.
+ It was taking a lot of effort.
+ Finally realized that I can just abstract out the Bohmain Mechanics by
+ using a coin toss for making assignments in case the system is not in the
+ eigenstate.
+ [todo: add details, board clips etc.] Got a chance to talk to Arvind sir
+ also, for a few minutes only though, but was able to convey the idea to
+ him, atleast partially.
+ Explained it to Kishor and he seemed to have been convinced (atleast distracted
+ly) about the accuracy (but I could still be wrong).
+\end_layout
+
+\begin_layout Itemize
+[misc] Project E started.
+\end_layout
+
+\begin_layout Subsection
+Friday | March 18
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Wrote the proof of sequential multiplicativity, finally and
+ worked on updating various aspects of this report.
+\end_layout
+
+\begin_layout Itemize
+[misc] Project E ended, qualified JEST (
+\begin_inset Formula $\approx$
+\end_inset
+
+400) and JRF-NET (89).
+\end_layout
+
+\begin_layout Subsection
+Saturday | March 19
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Started working on the draft seriously.
+ Made various realizations about how to phrase multiplicativity etc.
+ Explained the whole thing to bhati and it seemed to have made enough sense
+ to him.
+\end_layout
+
+\begin_layout Itemize
+[misc] Also qualified GATE (
+\begin_inset Formula $\approx$
+\end_inset
+
+400)
+\end_layout
+
+\begin_layout Subsection
+Sunday | March 20
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Completed writing the draft to a minimalistic level.
+ Now I must discuss with arvind sir precisely how to proceed.
+ Hopefully will see him tomorrow.
+\begin_inset Newline newline
+\end_inset
+
+Found some templates for the poster.
+ Must discuss it with Kishor and Bhati.
+\begin_inset Newline newline
+\end_inset
+
+Was also trying to figure if one could downgrade positions instead of upgrading
+ spins.
+ The idea is intrinsically faulty, for then the measuring particle's position
+ would also stop making sense.
+\end_layout
+
+\begin_layout Section
+An inkling of vehemence
+\end_layout
+
+\begin_layout Subsection
+Monday | March 21
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Finalized the poster template.
+ Wrote down the list of things I have done for the Thesis.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | March 22
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Discussed the developments so far with Prof.
+ Arvind.
+ He seemed perplexed about the contextual assignment of values.
+ Did seem finally convinced.
+ However, towards the end he made a remark that we shouldn't start with
+ 
+\begin_inset Formula $\begin{array}{ccc}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{array}$
+\end_inset
+
+.
+ This I should clarify with him, that this assignment is necessary for predictin
+g values for the first time and hence not optional.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The 
+\emph on
+first interesting
+\emph default
+ thing that sir had pointed out, in context of multiplicativity, was that
+ one can measure a super operator 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ that can, in a single shot, measure all `compatible' operators.
+ His point was that then I know the values all these operators had, and
+ thus the assignment must be consistent, even `ontologically'.
+ However, that isn't true.
+ We can show this by the following simple example.
+ Consider the state 
+\begin_inset Formula $\left|\psi\right\rangle =\left(\left|000\right\rangle +\left|011\right\rangle +\left|101\right\rangle +\left|110\right\rangle \right)/2$
+\end_inset
+
+.
+ Let the computational basis be written as 
+\begin_inset Formula $\left|i\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $i$
+\end_inset
+
+ is the decimal of the binary equivalent.
+ Let 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ be a super operator, given by 
+\begin_inset Formula $\hat{S}=i\left|i\right\rangle \left\langle i\right|$
+\end_inset
+
+, which is just a diagonal matrix.
+ Now a measurement of 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ will yield either 0, 3, 5 or 6.
+ Now consider the operators 
+\begin_inset Formula $\hat{B}_{1}=\mathbb{I}\otimes\mathbb{I}\otimes\hat{\sigma}_{z},\,\hat{B}_{2}=\mathbb{I}\otimes\hat{\sigma}_{z}\otimes\mathbb{I}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}_{3}=\hat{\sigma}_{z}\otimes\mathbb{I}\otimes\mathbb{I}$
+\end_inset
+
+.
+ In this example, 
+\begin_inset Formula $\hat{C}=\hat{B}_{1}\hat{B}_{2}\hat{B}_{3}$
+\end_inset
+
+.
+ Now if I measure 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+, I will always get a +1, and the state will never collapse.
+ However, if I measure 
+\begin_inset Formula $\hat{B}_{i}$
+\end_inset
+
+, I may get a 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ independently.
+ A measurement of 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ will yield one of the values as stated, which would uniquely determine
+ the values one gets for 
+\begin_inset Formula $\hat{B}_{i}$
+\end_inset
+
+ 
+\emph on
+after
+\emph default
+ 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ has been measured, viz.
+ if 
+\begin_inset Formula $\hat{B}_{i}$
+\end_inset
+
+ are measured thereafter, they will agree with the values one would deduce
+ from the outcome of measuring 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+.
+ We can't (atleast in no way conceivable presently) contradict (because
+ QM is silent on that note) non-multiplicativity.
+ I know this needs to be written properly, but the idea is roughly there.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The 
+\emph on
+second interesting
+\emph default
+ thing that was raised, was whether the statistics of QM can be matched,
+ for all states 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+.
+ I was under the impression that the said algorithm will work, but it won't.
+ Consider 
+\begin_inset Formula $\left|\psi\right\rangle =\cos\theta\left|00\right\rangle +\sin\theta\left|11\right\rangle $
+\end_inset
+
+.
+ Obviously a measurement of 
+\begin_inset Formula $\sigma_{z}\otimes\sigma_{z}$
+\end_inset
+
+ using the coin toss model will fail to get the right statistics.
+\begin_inset Newline newline
+\end_inset
+
+Other than this, Jaskaran didn't seem convinced of the accuracy of the model.
+ He said that the assignments should be state independent, because contextuality
+ is a statement about observables, and is state independent (he didn't want
+ to bring in state dependence).
+ That was one.
+ He felt that the model is a sort of simulation of PM situation only and
+ wasn't anything different or new.
+ He suggested I look at `Contextuality for preparations, tranformations
+ and measurements' by Robert Spekkers.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | March 23
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Figured how to fix the statistics in general, again motivated
+ by Bohmian Mechanics.
+ One could start with choosing a random number 
+\begin_inset Formula $c\in[0,1]$
+\end_inset
+
+ (uniformly random).
+ Then one finds 
+\begin_inset Formula $P_{-}=\left|\left\langle p_{-}|\psi\right\rangle \right|^{2}$
+\end_inset
+
+ and then assigns 
+\begin_inset Formula $-1$
+\end_inset
+
+ if 
+\begin_inset Formula $c<P_{-}$
+\end_inset
+
+, else 
+\begin_inset Formula $+1$
+\end_inset
+
+ is assigned.
+\begin_inset Newline newline
+\end_inset
+
+Further, Jaskaran claims to have found a mistake with my argument.
+ Will listen to it, when he's available.
+\end_layout
+
+\begin_layout Subsection
+Thursday | March 24
+\end_layout
+
+\begin_layout Itemize
+[research/ms] I found this 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://journals.aps.org/pra/abstract/10.1103/PhysRevA.79.012102}
+\end_layout
+
+\end_inset
+
+ today.
+ Title of the paper: ``Quantum contextuality in the Mermin-Peres square:
+ A hidden-variable perspective
+\begin_inset Quotes erd
+\end_inset
+
+ and here's a quote from the abstract: ``...To prove that such a description
+ is possible, an explicit and, in this sense, noncontextual hidden-variable
+ model is constructed, which reproduces all quantum theoretic predictions
+ for the Mermin-Peres square...
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Now I can't find this on arxiv and therefore can't be certain how different
+ it is from my work, but anyway.
+ In addition there're discussions 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://arxiv.org/pdf/1012.3052.pdf}
+\end_layout
+
+\end_inset
+
+ on how contextuality can't really be proven experimentally.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Other than this, spent most of my time, on trying to write the poster.
+ Some of the results include 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:researchFlow"
+
+\end_inset
+
+.
+ The rough points of the draft have already been made.
+\begin_inset Newline newline
+\end_inset
+
+Finally, I also figured how one can `complete' quantum mechanics using just
+ a single hidden variable and make each operator have a predictable value.
+ This sounds particularly interesting in the light of contextuality tests
+ etc.
+ In addition, I realized one can quickly show how values assigned to operators,
+ may still depend on how they're measured; viz.
+ the stern gerlach and direct value assigned to the operator can be shown
+ to be different, effectively saying that one can't associate spin with
+ a particle.
+ However, that doesn't give rise to any inconsistency, since the theory
+ is non-multiplicative.
+ In addition to this, it also appears that one maybe able to turn the argument
+ around and show that one can't associate even positions with particles.
+ Now that would be seriously interesting and against BM.
+ Perhaps then, it would remain how to construct an appropriate Hamiltonian,
+ given an observable 
+\begin_inset Formula $O$
+\end_inset
+
+, so that 
+\begin_inset Formula $O$
+\end_inset
+
+ can be measured using 
+\begin_inset Formula $O'$
+\end_inset
+
+, some other observable.
+ One can also compare trajectories.
+ I also seem to remember RS conjecturing the maximal completeness of their
+ theory.
+ Perhaps this theory is effectively doing that.
+ But a little though reveals that in this sense, even BM is maximally complete.
+ So I'm guessing I remember the conjecture wrong.
+ It also seems that one can show, within this simplistic framework, how
+ non-locality and contextuality are related.
+\begin_inset Newline newline
+\end_inset
+
+In hindsight, it appears to me that even RS were doing something mysteriously
+ similar.
+ My idea was simply to construct a cumulative probability distribution,
+ by ordering the the outcomes based on eigenvalues (of whichever operator)
+ and then using this single hidden variable to identify which event will
+ happen.
+ This is guaranteed to work because cumulatives are monotonic and increasing.
+ It also has traces of this problem I thought about a long time ago in Bag's
+ course, where I had to convert a uniform random distribution into an arbitrary
+ random distribution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename poster2/figures/flow.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Research Flow
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:researchFlow"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Friday | March 25
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Various interesting ideas were discussed today.
+ Let me start with the one that I had figured yesterday, or atleast appreciated
+ properly enough then.
+ We want to create a minimalistic hidden variable theory, in which only
+ one hidden variable is assumed, and the outcomes of all experiments are
+ predicted in the simplest conceivable way.
+ Here it is.
+\begin_inset Newline newline
+\end_inset
+
+1.
+ Initial: You're given 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+; Choose a 
+\begin_inset Formula $c\in(0,1)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ Assignment/Prediction: Given an operator 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+, find its eigenkets 
+\begin_inset Formula $\left|a\right\rangle $
+\end_inset
+
+ and note that 
+\begin_inset Formula $\left|\psi\right\rangle =\sum_{a}\left\langle a|\psi\right\rangle \left|a\right\rangle $
+\end_inset
+
+.
+ Define 
+\begin_inset Formula $c_{a}=\sum_{a'=a_{min}}^{a}\left\langle a'|\psi\right\rangle $
+\end_inset
+
+.
+ The value assigned to 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ is 
+\begin_inset Formula $a$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ is the smallest eigenvalue, for which 
+\begin_inset Formula $c\le c_{a}$
+\end_inset
+
+.
+ (for example, for 
+\begin_inset Formula $\sigma_{x}=A$
+\end_inset
+
+, 
+\begin_inset Formula $\cos\theta\left|0\right\rangle +\sin\theta\left|1\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{x}$
+\end_inset
+
+ is assigned 0, if 
+\begin_inset Formula $c\le\cos^{2}\theta$
+\end_inset
+
+) 
+\begin_inset Newline newline
+\end_inset
+
+3.
+ After measuring, choose a new 
+\begin_inset Formula $c$
+\end_inset
+
+ and update 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ using the measurement postulate of QM, consistently with the value assigned
+ in step 2.
+\begin_inset Newline newline
+\end_inset
+
+This has various interesting consequences (there's also an issue with the
+ value of the spin operator and stern gerlach based value deduction etc.)
+ It is especially interesting to note that this has to be non-multiplicative
+ and peculiarities associated with it.
+\begin_inset Newline newline
+\end_inset
+
+The next interesting thing which was discussed, was observed and raised
+ by Bhati.
+ He proposed an interesting test to distinguish QM from BM.
+ The essence of the idea was that one asks, what are the bounds in time,
+ given for photons to arrive, at a given area (say the minima band) on the
+ screen.
+ He said that since according to BM, only a small set of trajectories (very
+ close) should arrive at the screen, their time must be bounded; whereas
+ according to the path integral picture, he claimed that this time is not
+ bounded.
+ This was eventually resolved by using the probability distribution 
+\begin_inset Formula $\psi(q_{1},q_{2},t)$
+\end_inset
+
+ at the initial and final time to note that we will have an arc like set
+ of dots (in the contour plot of 
+\begin_inset Formula $\psi$
+\end_inset
+
+, for a later time) and perhaps the Gaussian in it make the time unbounded.
+ So that was sorted.
+ Interesting questions were raised about how to calculate the time corresponding
+ to a path that the electron takes and about the time difference between
+ the rays that interfere and their repercussion on single photon experiments.
+\begin_inset Newline newline
+\end_inset
+
+Finally, Jaskaran downloaded the paper for me.
+ It turns out that the paper has a much more elaborate discussion and mine
+ seems much more simple and straight forward.
+ Also, he told me the issue with my construction; in a line, he said that
+ it doesn't yield a joint probability distribution, which he demands mustn't
+ change after measurement.
+\end_layout
+
+\begin_layout Itemize
+[misc] Cleaned the room (including the balcony finally).
+\end_layout
+
+\begin_layout Subsection
+Saturday | March 26
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Recorded the discussion we had yesterday.
+ Made more progress on the poster.
+ Added most of the relevant content.
+ Also learnt from Mermin's book, that he has infact `postulated' something
+ similar to multiplicativity and effectively said that if a theory is both
+ multiplicative and non-contextual, then it can't be consistent with QM.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Updated the calendar, sorted my emails etc.
 \end_layout
 
 \begin_layout Part
@@ -3246,7 +7805,7 @@ Definition
 \end_layout
 
 \begin_layout Standard
-The following has been taken from an email written to Ali Assadian.
+The following has been taken from an email written to Ali Asadian.
 \end_layout
 
 \begin_layout Subsubsection*

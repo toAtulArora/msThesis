@@ -1,0 +1,4 @@
+pdflatex presentationPhiAtI
+bibtex presentationPhiAtI
+pdflatex presentationPhiAtI
+pdflatex presentationPhiAtI
