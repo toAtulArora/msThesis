@@ -2472,7 +2472,7 @@ Talked to sudeshna ma'am.
 \begin_layout Itemize
 Talked to Abhishek sir and realized that I wasn't really using RK4.
  I had made a mistake in understanding how to implement.
- Affter the discussion figured that, fixed it and it started working! The
+ After the discussion figured that, fixed it and it started working! The
  mistake was that I was using different 
 \begin_inset Formula $x$
 \end_inset
@@ -7783,11 +7783,363 @@ Saturday | March 26
 [research/ms] Recorded the discussion we had yesterday.
  Made more progress on the poster.
  Added most of the relevant content.
- Also learnt from Mermin's book, that he has infact `postulated' that 
+ Also learnt from Mermin's book, that he has infact `postulated' something
+ similar to multiplicativity and effectively said that if a theory is both
+ multiplicative and non-contextual, then it can't be consistent with QM.
 \end_layout
 
 \begin_layout Itemize
 [misc.] Updated the calendar, sorted my emails etc.
+\end_layout
+
+\begin_layout Subsection
+Sunday | March 27
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Completed the poster (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:poster2"
+
+\end_inset
+
+)! Started working on the thesis.
+ Found a very good LyX template.
+ Here 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{https://github.com/kks32/PhDThesisLyX}
+\end_layout
+
+\end_inset
+
+.
+ Also realized that BM trajectories could effectively be evaluated using
+ my 
+\begin_inset Formula $c$
+\end_inset
+
+-variable theory! That means my BM simulator could be made extremely simple
+ and efficient!
+\end_layout
+
+\begin_layout Itemize
+[misc] Got yoyo some junk food to celebrate her offer!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename poster2/release/poster2ms11003.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Poster Final Series
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:poster2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Forlorn or Repletion
+\end_layout
+
+\begin_layout Subsection
+Monday | March 28
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Recall the conjecture that BM trajectories could effectively
+ be evaluated using my 
+\begin_inset Formula $c$
+\end_inset
+
+-variable theory.
+ The proof of it should hinge on the fact that according to BM, the distribution
+ of the particles preserves the 
+\begin_inset Formula $\left|\psi\right|^{2}$
+\end_inset
+
+ distribution.
+ Also, I realized one can show that there're effectively infinite hidden
+ variable theories and there're very few constraints on how one must construct
+ them.
+\end_layout
+
+\begin_layout Itemize
+[course/Cosmology] Talked to bag, he gave me some hints on how to proceed.
+ Let's see where I can go from here.
+ My first attempt is to try to derive the result myself.
+ Second would be to try reading Kaiser's paper.
+ Let's see.
+\end_layout
+
+\begin_layout Subsection
+Tuesday | March 29
+\end_layout
+
+\begin_layout Itemize
+[course/Cosmology] Term paper; working on figuring the jacobian issue.
+ Interestingly, figured that one needn't have to evaluate the jacobian explicitl
+y.
+ Doing the radial part only also (in principle the other method should also
+ but anyway) gives you correct answers.
+ Talked to Bag about the next step, that requires fourier transforms.
+ He explained to me the overall picture.
+ The fourier transforms I tried, no luck.
+ Went to see Bag again and he told me to take a single mode (without sum).
+ That I came back and tried; did various wrong things, without much luck.
+ Figured finally what was wrong and got an answer.
+ The answer won't match though :(
+\end_layout
+
+\begin_layout Subsection
+Wednesday | March 30
+\end_layout
+
+\begin_layout Itemize
+[course/Cosmology] Term paper; everything looked reasonable, couldn't figure
+ what I was doing wrong.
+ Finally figured it (upto a sign), while waiting for Bagla sir outside his
+ office; I was making an assumption which wasn't required.
+ That fixed things.
+ Made some polar plots also.
+ Was confused though, about 
+\begin_inset Formula $\hat{r}.\hat{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Kishor gave a QCQI talk.
+ Couldn't understand the example.
+ It was suggested he'll explain next time.
+ I was also a little confused about the theorem about how if one assumes
+ at best a pre-shared algorithm and no-signalling, one can show that all
+ corelations will arise from local hidden variables.
+\end_layout
+
+\begin_layout Subsection
+Thursday | March 31
+\end_layout
+
+\begin_layout Itemize
+[course/Cosmology] Updated the term paper, after discussing the doubts with
+ Bagla sir; Also worked while watching the match, it was fun.
+ Also completed the presentation (by stripping the extra words off of the
+ term paper).
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Met with Arvind sir.
+ Explained 1.
+ Contextuality vs Multiplicativity (clear) + c-model, 2.
+ Bohmian Trajectory using c-model and 3.
+ Symmetrization of operators instead of states.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Arvind Sir told me to not do string theory in essence.
+ Got choco stuff for Srijit and Shumo :) 
+\end_layout
+
+\begin_layout Subsection
+Friday | April 1
+\end_layout
+
+\begin_layout Itemize
+[course/Cosmology] Gave the presentation; Finished the term paper and submitted
+ it also.
+ 
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Met with Abhishek sir, tried explaining the BM trajectory
+ and c-model trajectory.
+ Need to think more about it.
+ 
+\end_layout
+
+\begin_layout Itemize
+[misc.] Jaskaran had a small doubt: The question was that after applying
+ an projector 
+\begin_inset Formula $P$
+\end_inset
+
+, the state should be 
+\begin_inset Formula $\text{Tr}_{A}(P^{\dagger}(\rho_{S}\otimes\rho_{A})P)$
+\end_inset
+
+ and not 
+\begin_inset Formula $\text{Tr}_{A}((\rho_{S}\otimes\rho_{A})P)$
+\end_inset
+
+ as is the case for finding the expectation from 
+\begin_inset Formula $\text{Tr}(\rho_{S}\otimes\rho_{A}P)$
+\end_inset
+
+.
+ The difficulty ofcourse was figured and resolved by deriving all the relevant
+ quantities.
+\end_layout
+
+\begin_layout Itemize
+[teaching/Thermodynamics] Studied chapter 5 from Callen's book.
+ Looked at the notions of quasi static and reversible more carefully.
+ Also looked at the maximum work theorem (saying that the max work that
+ can be delivered, must come from a reversible path).
+\end_layout
+
+\begin_layout Subsection
+Saturday | April 2
+\end_layout
+
+\begin_layout Itemize
+[teaching/Thermodynamics] Taught.
+ Went well.
+\end_layout
+
+\begin_layout Itemize
+[research/ms] I just realized that using my c-ingle variable theory, I can
+ perhaps check how my own Bell's inequality (extended to q,p) gets violated!
+ That ought to be fun!
+\end_layout
+
+\begin_layout Subsection
+Sunday | April 3
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Started working on the physics contents of the thesis, chapter
+ 1 in progress.
+\end_layout
+
+\begin_layout Itemize
+[misc] Had the farewell party today, didn't attend.
+ Was working on the thesis.
+ Went to Elante to be safe, had a mojito (without knowing it has alcohol
+ in general, and still don't if it was virgin)
+\end_layout
+
+\begin_layout Section
+Importune but not irrevocable; respite fruitful
+\end_layout
+
+\begin_layout Subsection
+Monday | April 4
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Heavy: Working on writing the thesis, working on chapter 1.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Running, no gym | Fixed Prashansa's charger (soldered etc.)
+\end_layout
+
+\begin_layout Subsection
+Tuesday | April 5
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Heavy: Broke down the contents into chapters (made an index
+ basically), completed chapter 1 and sent it to sir.
+ Started work on chapter 2.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Shoulders.
+\end_layout
+
+\begin_layout Subsection
+Wednesday | April 6
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Heavy: Spent the entire day on chapter 2 (this is so far the
+ longest chapter).
+ (iGuess) Thought about taking the derivative of 
+\begin_inset Formula $x$
+\end_inset
+
+ for the 
+\begin_inset Formula $c$
+\end_inset
+
+-ingle variable theory.
+\end_layout
+
+\begin_layout Itemize
+[misc.] Kichoo continued the talk: was very interesting, finally was also
+ able to figure how the inequalities are constructed.
+\end_layout
+
+\begin_layout Subsection
+Thursday | April 7
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Heavy: Chapter 3 almost completed (some simple parts missing)
+\end_layout
+
+\begin_layout Itemize
+[misc.] Biscep (manu didn't come), went to ask for the GPS's marksheet, Deepika
+ ma'am was on leave, the guy said he needs the picture
+\end_layout
+
+\begin_layout Subsection
+Friday | April 8
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Surprise! Figured finally how to prove that the 
+\begin_inset Formula $c$
+\end_inset
+
+ variable theory's trajectory, is the same as that of Bohm's!
+\end_layout
+
+\begin_layout Itemize
+[misc.] Posted the warranty, went for GPS's marksheet, Deepika ma'am told
+ the guy she had given it to him in a flash drive, the guy said come back
+ at 5, and it should be done.
 \end_layout
 
 \begin_layout Part

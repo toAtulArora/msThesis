@@ -1,0 +1,169 @@
+\message{ !name(bohmianMech.tex)}% fancytikzposter.tex, version 2.1
+% Original template created by Elena Botoeva [botoeva@inf.unibz.it], June 2012
+% 
+% This file is distributed under the Creative Commons Attribution-NonCommercial 2.0
+% Generic (CC BY-NC 2.0) license
+% http://creativecommons.org/licenses/by-nc/2.0/ 
+
+
+\documentclass{a0poster}
+
+\usepackage{fancytikzposter} 
+
+
+%%%%%%%%%%%%%%%CUSTOM HEADER
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\usepackage{braket}
+\newcommand{\mean}[1]{\langle #1 \rangle}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 0pt minus 0pt}{0pt plus 0pt minus 0pt}
+\usepackage{graphicx}
+\bibliographystyle{plain} %apsrev4-1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%% --------- Change here if you want ---------- %%%%%
+%% margin for the geometry package, must be changed before using the geometry package
+%% default value is 4cm
+\setmargin{0.8}
+
+%% the space between the blocks
+%% default value is 2cm
+\setblockspacing{0.45}
+
+%% the height of the title stripe in block nodes, decrease it to save space
+%% default value is 3cm
+% \setblocktitleheight{3}
+
+%% the number of columns in the poster, possible values 2,3
+%% default value is 2
+\setcolumnnumber{3}
+
+%% the space between two or more groups of authors from different institutions
+%% used in \maketitle
+% \setinstituteshift{10}
+
+%% which template to use
+%% N1 simple, standard look, with a colored background and gray boxes
+%% N2 board with nodes
+%% N3 another standard look
+%% N4 envelope-like look
+%% N5 with a wave-like head, original idea taken from
+%%%% http://fc09.deviantart.net/fs71/f/2010/322/1/1/scientific_poster_by_nabuy-d333ria.jpg
+\usetemplate{2}
+
+%% components of the templates
+%% (the maximal possible numbers are mentioned as the parameters)
+% \usecolortemplate{4}
+% \usebackgroundtemplate{5}
+% \usetitletemplate{2}
+% \useblocknodetemplate{5}
+% \useplainblocktemplate{4}
+% \useinnerblocktemplate{2}
+
+
+%% the height of the head drawing on top 
+%% applicable to templates N3, 4 and 5
+% \setheaddrawingheight{14}
+
+
+%% change the basic colors
+%\definecolor{myblue}{HTML}{008888} 
+%\setfirstcolor{myblue}% default 116699
+%\setsecondcolor{gray!80!}% default CCCCCC
+%\setthirdcolor{red!80!black}% default 991111
+
+%% change the more specific colors
+% \setbackgrounddarkcolor{colorone!70!black}
+% \setbackgroundlightcolor{colorone!70!}
+% \settitletextcolor{textcolor}
+% \settitlefillcolor{white}
+% \settitledrawcolor{colortwo}
+% \setblocktextcolor{textcolor}
+% \setblockfillcolor{white}
+% \setblocktitletextcolor{colorone}
+% \setblocktitlefillcolor{colortwo} %the color of the border
+% \setplainblocktextcolor{textcolor}
+% \setplainblockfillcolor{colorthree!40!}
+% \setplainblocktitletextcolor{textcolor}
+% \setplainblocktitlefillcolor{colorthree!60!}
+% \setinnerblocktextcolor{textcolor}
+% \setinnerblockfillcolor{white}
+% \setinnerblocktitletextcolor{white}
+% \setinnerblocktitlefillcolor{colorthree}
+
+
+
+
+%%% size of the document and the margins
+%% A0
+% \usepackage[margin=\margin cm, paperwidth=118.9cm, paperheight=84.1cm]{geometry} 
+\usepackage[margin=\margin cm, paperwidth=84.1cm, paperheight=118.9cm]{geometry}
+%% B1
+% \usepackage[margin=\margin cm, paperwidth=70cm, paperheight=100cm]{geometry}
+
+
+
+%% changing the fonts
+\usepackage{cmbright}
+%\usepackage[default]{cantarell}
+%\usepackage{avant}
+%\usepackage[math]{iwona}
+\usepackage[math]{kurier}
+\usepackage[T1]{fontenc}
+
+
+%% add your packages here
+\usepackage{hyperref}
+
+
+
+
+
+\title{Bohmian Mechanics and Contextuality in (q,p)}
+\author{A. S. Arora\\
+  Supervisor: Prof. Arvind; QCQI Group, IISER Mohali, India %\\
+  % \texttt{ms11003@iisermohali.ac.in}
+}
+
+
+\begin{document}
+
+\message{ !name(bohmianMech.tex) !offset(68) }
+    \section*{Formalism}
+    According to Bohm's original formulation of BM, a particle is associated with (1) a position and momentum $(q,p)$, precisely and continuously defined \& (2) a wave ($\psi$). For their description, the following are assumed:
+    \begin{itemize}
+    \item The $\psi$-field satisfies the Schr\"odinger equation.
+    \item The particle momentum is restricted to $mv=p=\nabla S=\hbar \Im(\nabla \psi/\psi) $, where $\psi=Re^{iS/\hbar}$ and $\Im$ is the imaginary part.
+    \item In practice, we don't control/predict precise locations of the particle; instead we have a statistical ensemble with probability densities $\rho(q)=|\psi(q)|^2$.
+    \end{itemize}
+
+    \vspace{0.5 mm}
+    Comments:
+
+    (1) Note that the observers play no fundamental role in the formalism. If $\hbar = 0$ then we recover the classical Hamilton-Jacobi equation. Unlike QM, BM has a clear classical limit. 
+
+    (2) These are readily generalized for $N$ particles. Non locality in that case becomes explicit; $p_i=\nabla_iS(q_1,q_2,\dots,q_N)$ viz. momentum of the $i^{th}$ particle depends on the instantaneous positions of all particles.
+
+    (3) Extension to spins: In BM, the particle only has $(q,p)$. The spin is associated only with the wave-function. For a spinor, say $\Psi \equiv (\psi_+,\psi_-)^T$, the generalization is that $mv=\hbar \Im ( (\Psi,\nabla \Psi)/(\Psi,\Psi))$ where $(.,.)$ represents inner product in the spin space $\mathbb C ^2$.
+ }
+
+  % }
+
+ \startsecondcolumn 
+
+ % \blocknode
+ % {}
+ % {
+
+ \blocknode
+ {Determinism}
+ {
+\message{ !name(bohmianMech.tex) !offset(561) }
+
+\end{document}
+
+
+
+

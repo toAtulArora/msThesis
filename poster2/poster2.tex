@@ -71,9 +71,9 @@
 %	FOOTER TEXT
 % ----------------------------------------------------------------------------------------
 
-\newcommand{\leftfoot}{}  %http://www.LaTeXTemplates.com} % Left footer text
+\newcommand{\leftfoot}{April 9, 2016}  %http://www.LaTeXTemplates.com} % Left footer text
 
-\newcommand{\rightfoot}{} %john@smith.com} % Right footer text
+\newcommand{\rightfoot}{MS11003} %john@smith.com} % Right footer text
 
 % ----------------------------------------------------------------------------------------
 
@@ -114,13 +114,13 @@
 
             \item Comment: Bell's inequality requires entanglement in some form, to prove Einstein's notion of locality incorrect. Recently, another peculiar feature of QM has been identified, namely contextuality. 
 
-            \item Impl Defn: \emph{Context} $\equiv$ If $[\hat A,\hat B]=0$ and $[A,C]=0$ but $[B,C]\neq 0$, then possible contexts are {A}, {A and B} or {A and C} \cite{peresBook}.
+            \item Impl Defn: \emph{Context} $\equiv$ If $[\hat A,\hat B]=0$ and $[\hat A,\hat C]=0$ but $[\hat B,\hat C]\neq 0$, then possible contexts are {$\hat A$}, {$\hat A$ and $\hat B$} or {$\hat A$ and $\hat C$} \cite{peresBook}.
 
             \item Defn: \emph{Non-contextual} $\equiv$ Value an operator takes, depends only on the state (including `hidden variables') and the choice of the operator $A$ (not it's context) \cite{peresBook}.
 
             \item Defn: \emph{Contextual} $\equiv$ Value an operator takes, depends on it's context \cite{peresBook}.
 
-            \item Comment: This notion arises, atleast in certain explicit constructions, where one is unable to assign values to operators, consistent with predictions of QM.
+            \item Comment: This notion arises, at least in certain explicit constructions, where one is unable to assign values to operators, consistent with predictions of QM.
 
             \item Aim: Understand how a deterministic theory can be consistent with the notion of contextuality.
 
@@ -171,7 +171,7 @@
       % ----------------------------------------------------------------------------------------
 
       \begin{block}{Early Acknowledgments}
-        I thank Prof. Arvind, for facilitating the completion of this project, by providing necessary resources and guidance. Discussions with Mr. Rajendra Bhati and Mr. Kishor Bharti have been particularly efficacious. Jaskaran Singh has also provided valuable inputs. The KVPY programme, DST, and IISER Mohali are duly acknowledged for providing financial, infrastructural and research education support.
+        I thank Prof. Arvind, for facilitating the completion of this project, by providing necessary resources and guidance. Discussions with QCQI group members, specifically Rajendra Bhati and Kishor Bharti have been particularly efficacious. Jaskaran Singh has also provided valuable inputs. The KVPY programme, DST, and IISER Mohali are duly acknowledged for providing financial, infrastructural and research education support.
       \end{block}
 
       \setbeamercolor{block title}{fg=taorange,bg=ta2gray}
@@ -199,7 +199,7 @@
               
             \item Defn: \emph{Multiplicativity} $\equiv$ For compatible operators $\hat{B_i}$, a model is multiplicative iff 
               \begin{align} f(m_1(\hat{B}_1),m_1(\hat{B}_2),&\dots,m_1(\hat{B}_n)) = \\
-                                                            &m_1(f(\hat{B}_1,\hat{B}_2,\dots,\hat{B}_n),
+                                                            &m_1(f(\hat{B}_1,\hat{B}_2,\dots,\hat{B}_n)),
               \end{align}
               where $m_j(\hat *)$ represents the assigned value of the operator, and $j$ encodes the sequence of measurement. Note that this is an ontological statement and can't be experimentally tested.
 
@@ -233,11 +233,11 @@
             \begin{itemize}
             \item Simplified Proof: Consider the following operators. 
               \[
-              A_{ij} \doteq \left[
+              \hat A_{ij} \doteq \left[
                 \begin{array}{ccc}
-                  \sigma_z\otimes \mathbb I &  \mathbb I \otimes \sigma_z & \sigma_z\otimes \sigma_ z \\
-                  \mathbb I \otimes \sigma_x &  \sigma_x \otimes \mathbb I & \sigma_x\otimes \sigma_x \\
-                  \sigma_z \otimes \sigma_x &  \sigma_x \otimes \sigma_z & \sigma_y\otimes \sigma_y
+                  \hat \sigma_z\otimes \mathbb {\hat I} &  \mathbb {\hat I} \otimes \hat \sigma_z & \hat \sigma_z\otimes \hat \sigma_ z \\
+                  \mathbb {\hat I} \otimes \hat \sigma_x &  \hat \sigma_x \otimes \mathbb {\hat I} & \hat \sigma_x\otimes \hat \sigma_x \\
+                  \hat \sigma_z \otimes \hat \sigma_x &  \hat \sigma_x \otimes \hat \sigma_z & \hat \sigma_y\otimes \hat \sigma_y
                 \end{array} \right]
               \]
 
@@ -245,20 +245,20 @@
               Note that operators along a given row (column) commute. 
               
               \begin{align}
-                R_i\equiv \prod_j A_{ij} & = \mathbb{I} \\
-                C_j\equiv \prod_i A_{ij} & = 
+                \hat R_i\equiv \prod_j \hat A_{ij} & = \mathbb{I} \\
+                \hat C_j\equiv \prod_i \hat A_{ij} & = 
                                            \begin{cases} 
-                                             +\mathbb{I} &  (j\neq 3)\\
-                                             -\mathbb{I} &  (j=3)
+                                             +\mathbb{\hat I} &  (j\neq 3)\\
+                                             -\mathbb{\hat I} &  (j=3)
                                            \end{cases} 
               \end{align}
-              It entails that $\prod_{k=1,2,3}R_kC_k= -\mathbb{I}$, whereas non-contextual models would yield +1.
+              It entails that $\prod_{k=1,2,3}\hat R_k \hat C_k= -\mathbb{\hat I}$, whereas non-contextual models would yield +1.
 
               NB: We also assumed multiplicativity. 
 
-              To facilitate experimental validation, it has been shown that non-contextual models satisfy Eq. \ref{eq:pm}, while QM yields $\mean{\chi_{PM}}=6$.
+              To facilitate experimental validation, it has been shown that non-contextual models satisfy Eq. \ref{eq:pm}, while QM yields $\mean{\hat \chi_{PM}}=6$.
               \begin{equation}
-                \mean{\chi_{PM}} = \mean{R_1} + \mean{R_2} + \mean{R_3} + \mean{C_1} + \mean{C_2} - \mean{C_3} \le 4
+                \mean{\hat \chi_{PM}} = \mean{\hat R_1} + \mean{\hat R_2} + \mean{\hat R_3} + \mean{\hat C_1} + \mean{\hat C_2} - \mean{\hat C_3} \le 4
                 \label{eq:pm}
               \end{equation}
 
@@ -382,7 +382,7 @@
                 \end{array}
                 \]
 
-                Result: $m_1(C_3)=-1$ as required.
+                Result: $m_1(\hat C_3)=-1$ as required.
               \end{itemize}
           \end{block}
 
@@ -419,25 +419,25 @@
               \begin{itemize}
               \item The properties `multiplicativity' and `sequential multiplicativity' were identified, defined and proven where they hold.
               \item Demonstrated that `non-multiplicativity' is an alternative to `contextuality', by constructing a `non-contextual' theory, consistent with QM predictions.
-              \item Proposed a Minimalistic HV theory; simplifies predictions.
+              \item Proposed a Minimalist HV theory; simplifies predictions.
               \end{itemize}}
             \item Tests of Determinism and Contextuality
               {\tiny
               \begin{itemize}
-                \item Optimized phase-space GHZ
+                \item Optimised phase-space GHZ
                 \item GHZ extension to a test of contextuality
                 \item PM extension to phase space (independently re-discovered)
               \end{itemize}}
             \item Measurements in Bohmain Mechanics
               {\tiny
               \begin{itemize}
-                \item Generalized the Hamiltonian based measurement scheme to continuous variables
+                \item Generalised the Hamiltonian based measurement scheme to continuous variables
                 \item Analytic/graphical solution to measuring entangled spins using SG
                 \item Analytic/graphical proof of consistency of position measurements
                 \item Alternative proof of spins can't be associated with particles, only with wavefunctions
               \end{itemize}}
             \end{itemize}
-            Bohmian Mechanics, being a deterministic and precise theory, has been successfully used to probe fundamental concepts in Quantum Mechanics and has radically clarified them (to the author atleast).
+            Bohmian Mechanics, being a deterministic and precise theory, has been successfully used to probe fundamental concepts in Quantum Mechanics and has radically clarified them (to the author at least).
 
           \end{block}
 
@@ -464,57 +464,6 @@
     \end{column}
 
 
-  %   \begin{column}{.48\textwidth}\end{column} % The Second column
-
-  %   \begin{column}{.005\textwidth}\end{column} % Empty spacer column
-  %   \begin{column}{.48\textwidth}
-
-  %     % ----------------------------------------------------------------------------------------
-  %     % CONCLUSION
-  %     % ----------------------------------------------------------------------------------------
-
-  %     \begin{block}{Conclusion}
-  %     \end{block}
-
-  %     % ----------------------------------------------------------------------------------------
-  %     % REFERENCES
-  %     % ----------------------------------------------------------------------------------------
-
-  %     \begin{block}{References}
-        
-  %       \nocite{*} % Insert publications even if they are not cited in the poster
-  %       \small{\bibliographystyle{unsrt} \bibliography{sample}}
-
-  %     \end{block}
-
-  %     % ----------------------------------------------------------------------------------------
-  %     % ACKNOWLEDGEMENTS
-  %     % ----------------------------------------------------------------------------------------
-
-  %     \begin{block}{Acknowledgments}
-  %     \end{block}
-
-  %     % ----------------------------------------------------------------------------------------
-  %     % CONTACT INFORMATION
-  %     % ----------------------------------------------------------------------------------------
-
-  %     \setbeamercolor{block
-  %       title}{fg=black,bg=orange!70} % Change the block title color
-
-  %     \begin{block}{Contact Information}
-
-  %       \begin{itemize}
-  %         % \item Web:      \href{http://www.university.edu/smithlab}{http://www.university.edu/smithlab}
-  %       \item Email: \href{mailto:ms11003@iisermohali.ac.in}{ms11003@iisermohali.ac.in}
-  %       \item Email: \href{mailto:to.AtulArora@gmail.com}{to.AtulArora@gmail.com}
-  %       \item Phone: +91 8699 413350
-  %       \end{itemize}
-
-  %     \end{block}
-
-  %     % ----------------------------------------------------------------------------------------
-
-  %   \end{column} % End of the second column
 
     \begin{column}{.015\textwidth}\end{column} % Empty spacer column
 
