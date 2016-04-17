@@ -95,7 +95,8 @@ on arises, even though the results are deterministic, given all initial
  And we also know that BM, atleast on the face of it, is non-contextual,
  viz.
  the value obtained upon the measurement of an operator, depends only on
- the state (+ hidden variables) and the operator.
+ the state (+ hidden variables) and the operator, granted we fix our measurement
+ scheme.
  It is therefore not clear how BM is contextual, which is a notion we're
  forced to accept from the PM test.
  Further, since BM is claimed to reproduce all results of QM, does it entail
@@ -109,7 +110,7 @@ We also found in the previous chapter, that in BM, there's no fundamental
  the measurement process, just as the outcome of a spin measurement using
  an SG setup (as was discussed in the first chapter).
  Therefore in what follows, attempts will be made at tackling the problem
- from whichever method appears more accessible.
+ from whichever method, (between phase space and spins) appears more accessible.
  
 \end_layout
 
@@ -130,7 +131,14 @@ We have already seen that GHZ test is a test of determinism, of whether
 \end_layout
 
 \begin_layout Subsection
-GHZ escalated to Contextuality
+GHZ escalated to Contextuality 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:GHZ-to-contextuality"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -141,15 +149,15 @@ Here, we present a successful attempt at converting the GHZ test, into a
 \end_inset
 
 , 
-\begin_inset Formula $\hat{B}\equiv\sigma_{y}\otimes\sigma_{x}\otimes\sigma_{y}$
+\begin_inset Formula $\hat{B}\equiv\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}$
 \end_inset
 
 , 
-\begin_inset Formula $\hat{C}\equiv\sigma_{y}\otimes\sigma_{y}\otimes\sigma_{x}$
+\begin_inset Formula $\hat{C}\equiv\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}$
 \end_inset
 
  and 
-\begin_inset Formula $\hat{D}=\sigma_{x}\otimes\sigma_{x}\otimes\sigma_{x}$
+\begin_inset Formula $\hat{D}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}$
 \end_inset
 
 , and 
@@ -161,10 +169,10 @@ Here, we present a successful attempt at converting the GHZ test, into a
 \begin_inset Formula 
 \[
 \hat{H}_{ij}\doteq\left[\begin{array}{ccc}
-\sigma_{x}\otimes\mathbb{I}\otimes\mathbb{I}^{(a)} & \mathbb{I}\otimes\sigma_{y}\otimes\mathbb{I}^{(2)} & \mathbb{I}\otimes\mathbb{I}\otimes\sigma_{y}^{(3)}\\
-\sigma_{y}\otimes\mathbb{I}\otimes\mathbb{I}^{(1)} & \mathbb{I}\otimes\sigma_{x}\otimes\mathbb{I}^{(b)} & \mathbb{I}\otimes\mathbb{I}\otimes\sigma_{y}^{(3)}\\
-\sigma_{y}\otimes\mathbb{I}\otimes\mathbb{I}^{(1)} & \mathbb{I}\otimes\sigma_{y}\otimes\mathbb{I}^{(2)} & \mathbb{I}\otimes\mathbb{I}\otimes\sigma_{x}^{(c)}\\
-\sigma_{x}\otimes\mathbb{I}\otimes\mathbb{I}^{(a)} & \mathbb{I}\otimes\sigma_{x}\otimes\mathbb{I}^{(b)} & \mathbb{I}\otimes\mathbb{I}\otimes\sigma_{x}^{(c)}
+\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}\otimes\hat{\mathbb{I}}^{(a)} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y}\otimes\hat{\mathbb{I}}^{(2)} & \mathbb{\hat{I}}\otimes\mathbb{\hat{I}}\otimes\hat{\sigma}_{y}^{(3)}\\
+\hat{\sigma}_{y}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(1)} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}^{(b)} & \mathbb{\hat{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{y}^{(3)}\\
+\hat{\sigma}_{y}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(1)} & \mathbb{\hat{I}}\otimes\hat{\sigma}_{y}\otimes\hat{\mathbb{I}}^{(2)} & \mathbb{\hat{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{x}^{(c)}\\
+\hat{\sigma}_{x}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(a)} & \mathbb{\hat{I}}\otimes\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}^{(b)} & \hat{\mathbb{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{x}^{(c)}
 \end{array}\right]
 \]
 
@@ -172,19 +180,19 @@ Here, we present a successful attempt at converting the GHZ test, into a
 
 and note that (a) the product of these operators along each row, yields
  
-\begin_inset Formula $A$
+\begin_inset Formula $\hat{A}$
 \end_inset
 
- 
-\begin_inset Formula $B$
+, 
+\begin_inset Formula $\hat{B}$
 \end_inset
 
- 
-\begin_inset Formula $C$
+, 
+\begin_inset Formula $\hat{C}$
 \end_inset
 
  and 
-\begin_inset Formula $D$
+\begin_inset Formula $\hat{D}$
 \end_inset
 
  respectively, (b) operators along any row, commute and (c) the superscript
@@ -207,7 +215,14 @@ We will now try to assign values to
 \end_inset
 
 .
- We know (see Section [??]) that according to QM, for the GHZ state, 
+ We know (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Determinism-The-GHZ"
+
+\end_inset
+
+) that according to QM, for the GHZ state, 
 \begin_inset Formula $\left|\chi_{G}\right\rangle $
 \end_inset
 
@@ -322,7 +337,14 @@ d, even though, effectively it is still the same GHZ test.
 \end_layout
 
 \begin_layout Subsection
-Peres Mermin escalated to Continuous Variables
+Peres Mermin escalated to Continuous Variables 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Peres-Mermin-phaseSpace"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -331,35 +353,42 @@ The Peres Mermin situation can be, quite simply, extended to continuous
  setup in the simulation requires implementation of spins and appropriate
  magnetic field effects, and that can be surpassed with this construction.
  To this end, the following extension was worked out (but this result was
- already known).
+ already known 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "contextualityPhaseSpace"
+
+\end_inset
+
+).
  For any unitary operators 
-\begin_inset Formula $X$
+\begin_inset Formula $\hat{X}$
 \end_inset
 
  and 
-\begin_inset Formula $Y$
+\begin_inset Formula $\hat{Y}$
 \end_inset
 
 , s.t.
  
-\begin_inset Formula $\{X,Y\}=0$
+\begin_inset Formula $\{\hat{X},\hat{Y}\}=0$
 \end_inset
 
  and so is 
-\begin_inset Formula $\{X,Y^{\dagger}\}=0$
+\begin_inset Formula $\{\hat{X},\hat{Y}^{\dagger}\}=0$
 \end_inset
 
 , if we define 
-\begin_inset Formula $Z=iYX$
+\begin_inset Formula $\hat{Z}=i\hat{Y}\hat{X}$
 \end_inset
 
 , then 
 \begin_inset Formula 
 \[
 \begin{array}{ccc}
-X\otimes\mathbb{I} & \mathbb{I}\otimes X & X^{\dagger}\otimes X^{\dagger}\\
-\mathbb{I}\otimes Y & Y\otimes\mathbb{I} & Y^{\dagger}\otimes Y^{\dagger}\\
-X^{\dagger}\otimes Y^{\dagger} & Y^{\dagger}\otimes X^{\dagger} & Z\otimes Z
+\hat{X}\otimes\hat{\mathbb{I}} & \hat{\mathbb{I}}\otimes\hat{X} & \hat{X}^{\dagger}\otimes\hat{X}^{\dagger}\\
+\hat{\mathbb{I}}\otimes\hat{Y} & \hat{Y}\otimes\hat{\mathbb{I}} & \hat{Y}^{\dagger}\otimes\hat{Y}^{\dagger}\\
+\hat{X}^{\dagger}\otimes\hat{Y}^{\dagger} & \hat{Y}^{\dagger}\otimes\hat{X}^{\dagger} & \hat{Z}\otimes\hat{Z}
 \end{array}
 \]
 
@@ -367,11 +396,11 @@ X^{\dagger}\otimes Y^{\dagger} & Y^{\dagger}\otimes X^{\dagger} & Z\otimes Z
 
 would yield the PM situation.
  To check this, note that the product along any row, is 
-\begin_inset Formula $\mathbb{I}$
+\begin_inset Formula $\hat{\mathbb{I}}$
 \end_inset
 
  and it is also so for each column, except for the third, which is 
-\begin_inset Formula $-\mathbb{I}$
+\begin_inset Formula $-\hat{\mathbb{I}}$
 \end_inset
 
 , precisely the same as the PM situation.
@@ -420,21 +449,28 @@ Measurements have already been discussed at length in the previous chapters,
 \end_layout
 
 \begin_layout Subsection
-Stern Gerlach based measurements
+Stern Gerlach based measurements 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BM-entangled-Stern-Gerlach"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Since we have already discussed how to analyse a Stern Gerlach based measurement
  for a single particle, let us try to explore how to analyse this for 
-\begin_inset Formula $\left|\chi\right\rangle =\left|00\right\rangle +\left|11\right\rangle /\sqrt{2}$
+\begin_inset Formula $\left|\chi\right\rangle =\left|++\right\rangle +\left|--\right\rangle /\sqrt{2}$
 \end_inset
 
 , where for instance 
-\begin_inset Formula $\left|00\right\rangle =\left|0\right\rangle _{1}\otimes\left|0\right\rangle _{2}$
+\begin_inset Formula $\left|++\right\rangle =\left|+\right\rangle _{1}\otimes\left|+\right\rangle _{2}$
 \end_inset
 
  (1 and 2 label the particle), and 
-\begin_inset Formula $\hat{\sigma}_{z}\otimes\hat{\sigma}_{z}$
+\begin_inset Formula $\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}$
 \end_inset
 
  is the observable of interest.
@@ -446,11 +482,11 @@ reference "sec:Bohm's-Theory,-Bohmian"
 \end_inset
 
 , we have 
-\begin_inset Formula $\sqrt{2}\left|\Psi_{S}\right\rangle =\left|\psi\psi\right\rangle \otimes\left[\left|00\right\rangle +\left|11\right\rangle \right]$
+\begin_inset Formula $\sqrt{2}\left|\Psi_{S}\right\rangle =\left|\psi,\psi\right\rangle \otimes\left[\left|++\right\rangle +\left|--\right\rangle \right]$
 \end_inset
 
  initially and after the interaction, 
-\begin_inset Formula $\sqrt{2}\left|\Psi_{S}(t)\right\rangle =\left|\psi_{at},\psi_{at}\right\rangle \otimes\left|00\right\rangle +\left|\psi_{-at},\psi_{-at}\right\rangle \otimes\left|11\right\rangle $
+\begin_inset Formula $\sqrt{2}\left|\Psi_{S}(t)\right\rangle =\left|\psi_{at},\psi_{at}\right\rangle \otimes\left|++\right\rangle +\left|\psi_{-at},\psi_{-at}\right\rangle \otimes\left|--\right\rangle $
 \end_inset
 
 , where 
@@ -487,13 +523,185 @@ reference "sec:Bohm's-Theory,-Bohmian"
 
 .
  Initially, 
-\begin_inset Formula $P=\left|\left\langle q_{1},q_{2}|\psi\psi\right\rangle \right|^{2}$
+\begin_inset Formula $P=\left|\left\langle q_{1},q_{2}|\psi,\psi\right\rangle \right|^{2}$
 \end_inset
 
  which would yield circles in a contour plot (showing say 70% probability
- enclosed within), see Fig.
- [??].
- After the interaction, 
+ enclosed within), see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:sgMeas-Initial-State"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/initial.png
+	lyxscale 40
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Initial State 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sgMeas-Initial-State"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/finalEntangled.png
+	lyxscale 40
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+For 
+\begin_inset Formula $\sqrt{2}\left|\chi\right\rangle =\left|00\right\rangle +\left|11\right\rangle $
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sgMeas-Entangled"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/final.png
+	lyxscale 40
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+For 
+\begin_inset Formula $\left|\chi\right\rangle =\left|++\right\rangle $
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sgMeas-++"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicative contour plots for 
+\begin_inset Formula $\left|\left\langle q_{1},q_{2}|\Psi_{S}\right\rangle \right|^{2}$
+\end_inset
+
+, illustrating spin measurement of 2 particles, using the Stern Gerlach
+ setup.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+After the interaction, 
 \begin_inset Formula $2P(q_{1},q_{2})=\left|\left\langle q_{1},q_{2}|\psi_{at},\psi_{at}\right\rangle \right|^{2}+\left|\left\langle q_{1},q_{2}|\psi_{-at},\psi_{-at}\right\rangle \right|^{2}$
 \end_inset
 
@@ -505,18 +713,23 @@ reference "sec:Bohm's-Theory,-Bohmian"
 \begin_inset Formula $(-at,-at)$
 \end_inset
 
-, see Fig.
- [??].
+, see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:sgMeas-Entangled"
+
+\end_inset
+
+.
  From the symmetry of the problem, and from the fact that velocities are
  single valued, we can deduce that if the particle positions were represented
  by a point inside area 
 \begin_inset Formula $I$
 \end_inset
 
- (see Fig.
- [??]), then the result would be a spin up, viz.
+, then the result would be a spin up, viz.
  
-\begin_inset Formula $\left|0\right\rangle $
+\begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
  for both, while for the other case, the result would be spin down for both.
@@ -528,7 +741,7 @@ d, consistent with
 .
  Although it is obvious, it is instructive to see how this would work for
  
-\begin_inset Formula $\left|\chi\right\rangle =\left|00\right\rangle $
+\begin_inset Formula $\left|\chi\right\rangle =\left|++\right\rangle $
 \end_inset
 
  for instance.
@@ -536,10 +749,16 @@ d, consistent with
 \begin_inset Formula $P$
 \end_inset
 
- is identical to that shown in Fig.
- [??].
+ is identical to that shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:sgMeas-Initial-State"
+
+\end_inset
+
+.
  However, since after the interaction, 
-\begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =\left|\psi_{at},\psi_{at}\right\rangle \otimes\left|00\right\rangle $
+\begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =\left|\psi_{at},\psi_{at}\right\rangle \otimes\left|++\right\rangle $
 \end_inset
 
 , we see that 
@@ -548,6 +767,13 @@ d, consistent with
 
 , which is just a Gaussian centred at 
 \begin_inset Formula $(at,at)$
+\end_inset
+
+, as shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:sgMeas-++"
+
 \end_inset
 
 .
@@ -573,6 +799,13 @@ It is straight forward to extend this analysis to the GHZ situation, with
 
 \begin_layout Subsection
 Hamiltonian Approach
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BM-Hamiltonian-Approach-Spins"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -645,6 +878,8 @@ reference "sec:Bohm's-Theory,-Bohmian"
 
 .
  The results therefore, follow from our older discussions.
+ Note that one can use this analysis as an alternative to show that spins
+ can't be associated with a particle, effectively using the same arguments.
  However, to stress the difference, note that in the SG case, the position
  of the particle of interest itself determined whether the measurement would
  yield spin up or spin down.
@@ -739,7 +974,7 @@ Let the spin state, now be
  with certainty.
  Obtaining this conclusion from the SG formalism would've been much harder.
  Let us attempt something non-trivial; let us measure 
-\begin_inset Formula $\hat{\sigma}_{x}\otimes\mathbb{I}\otimes\mathbb{I}$
+\begin_inset Formula $\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}\otimes\hat{\mathbb{I}}$
 \end_inset
 
 .
@@ -845,7 +1080,14 @@ y.
 \end_layout
 
 \begin_layout Subsection
-BM explanation of Peres Mermin
+BM explanation of Peres Mermin 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BM-consistent-PM"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -996,7 +1238,7 @@ It is obvious that this assignment, if we assume (2), will fail to be consistent
 \end_layout
 
 \begin_layout Section
-Conclusion
+Remarks
 \end_layout
 
 \begin_layout Standard
@@ -1007,7 +1249,16 @@ It was realized that the GHZ determinism test is not satisfactorily explained
  Consequently, tools required to find an explicit assignment for the PM
  situation were sharpened and from the assignment, it was found that a non-conte
 xtual theory doesn't contradict QM, viz.
- contextuality is not necessary.
+ contextuality is not necessary feature of QM.
+ Although it was later found that this is known in the literature 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NoContextuality"
+
+\end_inset
+
+, the construction vastly differs.
+ Our construction is considerably simpler.
 \end_layout
 
 \begin_layout Standard

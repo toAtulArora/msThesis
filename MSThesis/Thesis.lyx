@@ -17,7 +17,7 @@
 %% License: MIT License (c) 2014 Krishna Kumar                                %%
 %% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{hyperref}
 
 \title{Contextuality in a Deterministic Quantum Theory}
 \author{Atul Singh Arora}
@@ -482,7 +482,16 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 \begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -613,7 +622,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "References/references"
-options "plainnat"
+options "revcompchem"
 
 \end_inset
 
@@ -621,6 +630,11 @@ options "plainnat"
 \end_layout
 
 \begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \start_of_appendix
 \begin_inset CommandInset include
 LatexCommand include
@@ -631,10 +645,15 @@ filename "Appendix1/Appendix1.lyx"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Appendix2/Appendix2.lyx"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

@@ -90,12 +90,19 @@ A course in Quantum Mechanics (QM) typically leaves the reader with a fuzzy
 \begin_inset Newline newline
 \end_inset
 
-Einstein showed that if one makes reasonable assumptions about nature (apparentl
-y these were in spirit with his relativity theories), then QM must be incomplete.
+Einstein showed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EinsteinEPR"
+
+\end_inset
+
+ that if one makes reasonable assumptions about nature (in the spirit of
+ his relativity theories), then QM must be incomplete.
  By incompleteness, he meant that the results of certain experiments should
  be predictable precisely, but QM fails at doing this.
  Thus he concluded that, QM must be treated as an intermediate theory and
- that a more complete description of nature should be possible.
+ that a more complete description of nature should be sought.
  We will come back to this discussion.
  
 \begin_inset Newline newline
@@ -106,50 +113,137 @@ Bohm challenged this view by realizing that one can't experimentally refute
  His argument was that if for instance, the predictions of QM fail to match
  with experiments, then one can always add appropriate terms in the Hamiltonian
  until the difficulty is resolved.
- He was already anticipating the modern form of particle physics, where
- to accurately account for interactions between particles, one can postulate
+ He was already anticipating the modern form of particle physics.
+ To accurately account for interactions between particles, one can postulate
  new force mediating particles, which was also done in the history of the
- subject, but can't refute the interpretation due to inaccuracy in predictions.
+ subject.
+ However, one can't refute the interpretation on grounds of inaccuracy in
+ predictions.
  He therefore, aimed at, and succeeded at constructing a complete quantum
- theory, now known as Bohmian Mechanics (BM), existence of which, would
- show that we are not justified at believing the interpretation, simply
- because there exist other alternatives.
+ theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm1"
+
+\end_inset
+
+, now known as Bohmian Mechanics (BM)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Historically, Louis de Broglie had proposed a similar construction, but
+ abandoned the idea soon after.
+ Bohm established it to be a consistent theory.
+\end_layout
+
+\end_inset
+
+.
+ Its existence showed that we are not justified at believing the interpretation,
+ simply because there exists at least one alternative.
 \end_layout
 
 \begin_layout Standard
-Returning to Einstein, as will be described in more detail, Bell was able
- to construct a physical situation, that would test the very requirements
- Einstein imposed on a complete quantum theory; he was able to show that
- according to predictions of QM, such a complete description is impossible.
- This was verified experimentally (and was confirmed to be true, without
- any possible loop-holes, only recently in 2015).
+Returning to Einstein, 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+as will be described in more detail
+\end_layout
+
+\end_inset
+
+Bell was able to construct a physical situation, that would test the very
+ requirements Einstein imposed on a complete quantum theory; he was able
+ to show that according to predictions of QM, 
+\emph on
+such
+\emph default
+ a complete description is impossible.
+ This was verified experimentally 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellExp72,BellExpAspect81"
+
+\end_inset
+
+ (and was confirmed to be true, without any possible loop-holes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellExpHensen2015"
+
+\end_inset
+
+, only in 2015).
 \begin_inset Newline newline
 \end_inset
 
-It might appear that Bell's test shows that QM is inconsistent with BM,
- but upon looking at the details, one can be convinced, that this is not
- the case.
- Infact, Bell was among the first few to popularize BM.
- 
+It might appear that Bell's test shows that QM is inconsistent with BM.
+ Upon looking at the details however, one can be convinced, that this is
+ not the case.
+ Infact, Bell was among the first few to popularize BM 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellSpeakable"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 The discussion so far, is well known in the literature.
  However, certain developments which followed the said work of Bohm, again
- lead to apparent inconsistencies between BM and QM, which hadn't been satisfact
-orily addressed in the literature.
- These are the subject of the thesis.
+ lead to apparent inconsistencies between BM and QM.
+ These had not been satisfactorily addressed in the literature and have
+ become the subject of this thesis.
  
 \begin_inset Newline newline
 \end_inset
 
-For the sake of completeness, we merely name these, for one must look at
- the details, to be able to appreciate them.
- Greenberger, Horne and Zeilinger (GHZ), constructed a test that apparently
- showed determinism, the notion that observables have pre-defined values,
- can't exist.
- Developments due to Gleason, Bell himself, Kochen, Specker, Peres and Mermin,
- showed that the value an operator takes, must depend on the context in
+For the sake of completeness, we merely name these.
+ One must look at the details, to be able to appreciate them.
+ Greenberger, Horne and Zeilinger (GHZ), constructed a test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZ"
+
+\end_inset
+
+ that apparently showed determinism can't exist, i.e.
+ the notion that observables have pre-defined values is inconsistent with
+ QM.
+ Developments due to Gleason 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gleason"
+
+\end_inset
+
+, Bell himself 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellOnHiddenVariables"
+
+\end_inset
+
+, Kochen, Specker 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KochenSpecker"
+
+\end_inset
+
+, Peres and Mermin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peres,Mermin"
+
+\end_inset
+
+, showed that the value an operator takes, must depend on the context in
  which it is measured; context here refers to the complete set of compatible
  operators.
 \begin_inset Newline newline
@@ -229,7 +323,7 @@ The EPR argument requires an entangled state, over two particles, which
  was originally written as 
 \begin_inset Formula 
 \[
-\psi(x_{1},x_{2})=\int e^{-i(x_{1}-x_{2}+x_{0})p/\hbar}dp=\delta(x_{1}-x_{2}+x_{0}).
+\psi(q_{1},q_{2})=\int e^{-i(q_{1}-q_{2}+q_{0})p/\hbar}dp=\delta(q_{1}-q_{2}+q_{0}).
 \]
 
 \end_inset
@@ -237,24 +331,31 @@ The EPR argument requires an entangled state, over two particles, which
 In the modern notation, one can write this as 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\psi\right\rangle  & = & \int\delta(x_{1}-x_{2}+x_{0})dx_{1}dx_{2}\left|x_{1}\right\rangle _{1}\left|x_{2}\right\rangle _{2}\\
- & = & \int\left|x\right\rangle _{1}\left|x+x_{0}\right\rangle _{2}dx.
+\left|\psi\right\rangle  & = & \int\delta(q_{1}-q_{2}+q_{0})dq_{1}dq_{2}\left|q_{1}\right\rangle _{A}\left|q_{2}\right\rangle _{B}\\
+ & = & \int\left|q\right\rangle _{A}\left|q+q_{0}\right\rangle _{B}dq.
 \end{eqnarray*}
 
 \end_inset
 
-Similarly, one can write 
+Similarly, one can write the same state as 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\psi\right\rangle  & = & \int e^{-i(x_{1}-x_{2})p/\hbar}dpdx_{1}dx_{2}\left|x_{1}\right\rangle _{1}\left|x_{2}\right\rangle _{2}\\
- & = & \int e^{-ix_{1}p/\hbar}\left|x_{1}\right\rangle _{1}dx_{1}e^{ix_{2}p/\hbar}\left|x_{2}\right\rangle _{2}dx_{2}dp\\
- & = & \int\left|p\right\rangle _{1}\left|-p\right\rangle _{2}dp.
+\left|\psi\right\rangle  & = & \int e^{-i(q_{1}-q_{2})p/\hbar}dpdq_{1}dq_{2}\left|q_{1}\right\rangle _{A}\left|q_{2}\right\rangle _{B}\\
+ & = & \int e^{-iq_{1}p/\hbar}\left|q_{1}\right\rangle _{A}dq_{1}e^{iq_{2}p/\hbar}\left|q_{2}\right\rangle _{B}dq_{2}dp\\
+ & = & \int\left|p\right\rangle _{A}\left|-p\right\rangle _{B}dp.
 \end{eqnarray*}
 
 \end_inset
 
-where the first ket is that of the first particle, and second that of the
- second.
+where 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ label the particles.
  An attempt to reproduce the precise argument, will not be made.
  Instead, we satisfy ourselves with the following simplified argument.
  We assume the principle of locality holds, which is to say that if two
@@ -267,51 +368,53 @@ where the first ket is that of the first particle, and second that of the
 
 .
  Now if the momentum of particle 
-\begin_inset Formula $2$
+\begin_inset Formula $B$
 \end_inset
 
  is measured by observer 
-\begin_inset Formula $2$
+\begin_inset Formula $B$
 \end_inset
 
 , then observer 
-\begin_inset Formula $2$
+\begin_inset Formula $B$
 \end_inset
 
 , according to QM, will be able to predict the momentum of particle 
-\begin_inset Formula $1$
+\begin_inset Formula $A$
 \end_inset
 
 .
  Similarly, if the position of particle 
-\begin_inset Formula $2$
+\begin_inset Formula $B$
 \end_inset
 
  is measured, then observer 
-\begin_inset Formula $2$
+\begin_inset Formula $B$
 \end_inset
 
  can predict the position of particle 
-\begin_inset Formula $1$
+\begin_inset Formula $A$
 \end_inset
 
 .
- However, since the choice made by observer 
-\begin_inset Formula $2$
+ Further, note that the choice made by observer 
+\begin_inset Formula $B$
 \end_inset
 
 , can't influence particle 
-\begin_inset Formula $1$
+\begin_inset Formula $A$
 \end_inset
 
- (by the assumption of locality), it follows that particle 
-\begin_inset Formula $1$
+, by the assumption of locality.
+ It therefore follows that particle 
+\begin_inset Formula $A$
 \end_inset
 
  had both it's position and momentum well defined, without being measured.
- Since QM fails to yield the answer with precision, whereas as we have shown,
- the answer was precise, we are forced to conclude that QM is not a complete
- description of nature.
+ QM fails to yield the answer with precision, whereas as we have shown,
+ the answer was precise.
+ Thus, we are forced to conclude that QM is not a complete description of
+ nature.
 \end_layout
 
 \begin_layout Standard
@@ -319,11 +422,25 @@ Einstein ended his paper with this remark: ``While we have thus shown that
  the wave function does not provide a complete description of the physical
  reality, we left open the question of whether or not such a description
  exists.
- We believe, however, that such a theory is possible.''
+ We believe, however, that such a theory is possible.'' 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EinsteinEPR"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Bell's Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Bell's-Theorem"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -418,8 +535,24 @@ Consider now, the state
 \begin_inset Formula $\hat{\sigma}_{x,y,z}$
 \end_inset
 
- are the Pauli matrices.
- Let 
+ are the Pauli matrices, given in the z-basis as 
+\begin_inset Formula 
+\[
+\hat{\sigma}_{x}\doteq\left[\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right],\,\hat{\sigma}_{y}\doteq\left[\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right],\,\hat{\sigma}_{z}\doteq\left[\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right].
+\]
+
+\end_inset
+
+Let 
 \begin_inset Formula $\hat{a}_{1}=\hat{\sigma}_{z}$
 \end_inset
 
@@ -459,7 +592,14 @@ local
  use QM to send signals instantaneously (superluminal communication is not
  possible).
  This is known as the no-signalling theorem and can be proven by showing
- that marginals in QM, don't depend on the system which is traced out (TODO).
+ that marginals in QM, don't depend on the system which is traced out 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NielsenChuang"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -474,7 +614,14 @@ name "sec:Bohm's-Theory,-Bohmian"
 \end_layout
 
 \begin_layout Standard
-Bohm gave a precise, but non-local description of quantum phenomena.
+Bohm gave a precise 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm1"
+
+\end_inset
+
+, but non-local description of quantum phenomena.
  Let us start with non-interacting particles.
  A particle is associated with (1) a position, 
 \begin_inset Formula $q$
@@ -530,13 +677,79 @@ The astute reader would've noticed that
  consequence of this formulation.
  In the Orthodox Copenhagen interpretation, the double slit experiment is
  a source of mystery and the which slit question, that of confusion.
- In BM, since trajectories are well defined, one observes (TODO: add image)
- that the particle goes through precisely one slit and then later, forms
+ In BM, since trajectories are well defined, one observes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Experimentally-observed-average"
+
+\end_inset
+
+) that the particle goes through precisely one slit and then later, forms
  the interference pattern.
- The wavefunction goes through both slits, and interferes to create the
- pattern.
- If one of the slits is blocked, then as expected, since the wavefunction
- can't interfere, the pattern is lost.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/singlePhotonTrajectory.jpg
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimentally observed average single-photon trajectories.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In the case of single-particle quantum mechanics, the trajectories measured
+ in this fashion reproduce those predicted in the Bohm–de Broglie interpretation
+ of quantum mechanics
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kocsis1170"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Experimentally-observed-average"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The wavefunction goes through both slits, and interferes to create the pattern.
+ If one of the slits is blocked, then since the wavefunction can't interfere,
+ the pattern is lost as expected.
  We haven't spoken about measuring the particle yet, but if one notes that
  to measure the particle, the potential at one of the slits must be changed,
  then it is immediate that the interference pattern will be effected, since
@@ -567,10 +780,9 @@ For
 \end_layout
 
 \begin_layout Standard
-(TODO: change the x axis to z, and change explicit reference to x,y,z in
- favour of q_x, q_y, q_z etc.) As a final remark, it must be added that spins
- can also be included in BM, however, a particle is not associated with
- a specific spin, only it's wavefunction is.
+As a final remark, it must be added that spins can also be included in BM,
+ however, a particle is not associated with a specific spin, only it's wavefunct
+ion is.
  For a spinor, say 
 \begin_inset Formula $\psi\equiv(\psi_{+},\psi_{-})^{T}$
 \end_inset
@@ -605,35 +817,40 @@ For
 
 , and it's initial wavefunction, given by a Gaussian centred at the origin,
  say 
-\begin_inset Formula $\psi(x)=(1/\sqrt{2\pi}\sigma)e^{-x^{2}/2\sigma^{2}}$
+\begin_inset Formula $\psi(q_{x})=(1/\sqrt{2\pi}\sigma)e^{-q_{x}^{2}/2\sigma^{2}}$
 \end_inset
 
 , viz.
  
-\begin_inset Formula $\left|\psi\right\rangle =\int dx\psi(x)\left|x\right\rangle $
+\begin_inset Formula $\left|\psi\right\rangle =\int dq\psi(q)\left|q\right\rangle $
 \end_inset
 
 .
  It's spin state is given by 
-\begin_inset Formula $\left|\chi\right\rangle =\left(\left|0\right\rangle +\left|1\right\rangle \right)/\sqrt{2}$
+\begin_inset Formula $\left|\chi\right\rangle =\left(\left|+\right\rangle +\left|-\right\rangle \right)/\sqrt{2}$
 \end_inset
 
 , where 
-\begin_inset Formula $\left|0\right\rangle $
+\begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $\left|1\right\rangle $
+\begin_inset Formula $\left|-\right\rangle $
 \end_inset
 
- represent computational basis.
+ are s.t.
+ 
+\begin_inset Formula $\sigma_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $
+\end_inset
+
+.
  Along the 
 \begin_inset Formula $z$
 \end_inset
 
 -axis, a strong heterogeneous magnetic field is present, whose action maybe
  captured by 
-\begin_inset Formula $H_{\text{int}}=a\hat{p}_{x}\otimes\hat{\sigma}_{z}$
+\begin_inset Formula $H_{\text{int}}=a\hat{p}_{x}\otimes\hat{\sigma}_{x}$
 \end_inset
 
  where 
@@ -647,7 +864,7 @@ For
 \end_inset
 
  is large enough to neglect effects of free-evolution, we have 
-\begin_inset Formula $\hat{U}(t)=e^{-ia\hat{p}_{x}\otimes\hat{\sigma}_{z}t/\hbar}$
+\begin_inset Formula $\hat{U}(t)=e^{-ia\hat{p}_{x}\otimes\hat{\sigma}_{x}t/\hbar}$
 \end_inset
 
 .
@@ -659,19 +876,19 @@ For
 \begin_inset Formula 
 \begin{eqnarray*}
 \left|\Psi(t)\right\rangle  & = & \hat{U}(t)\left|\Psi\right\rangle \\
- & = & \frac{e^{-ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|0\right\rangle +e^{ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|1\right\rangle }{\sqrt{2}}\\
- & = & \frac{\left|\psi_{at}\right\rangle \otimes\left|0\right\rangle +\left|\psi_{-at}\right\rangle \otimes\left|1\right\rangle }{\sqrt{2}}
+ & = & \frac{e^{-ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|+\right\rangle +e^{ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|-\right\rangle }{\sqrt{2}}\\
+ & = & \frac{\left|\psi_{at}\right\rangle \otimes\left|+\right\rangle +\left|\psi_{-at}\right\rangle \otimes\left|-\right\rangle }{\sqrt{2}}
 \end{eqnarray*}
 
 \end_inset
 
 where 
-\begin_inset Formula $\left|\psi_{x_{0}}\right\rangle \equiv\int dx\psi(x-x_{0})\left|x\right\rangle $
+\begin_inset Formula $\left|\psi_{q_{x0}}\right\rangle \equiv\int dq\psi(q_{x}-q_{x0})\left|q_{x}\right\rangle $
 \end_inset
 
 , viz.
  a Gaussian wavepacket centered at 
-\begin_inset Formula $x_{0}$
+\begin_inset Formula $q_{x0}$
 \end_inset
 
 .
@@ -680,47 +897,118 @@ where
 \end_inset
 
 , as a function of 
-\begin_inset Formula $z$
+\begin_inset Formula $q_{z}$
 \end_inset
 
 , using 
-\begin_inset Formula $z=v_{z}t$
+\begin_inset Formula $q_{z}=v_{z}t$
 \end_inset
 
-, schematically as shown in the figure (TODO: put the figure), where regions
- enclosing, say 
+, schematically as shown in the figure 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Vectors/sg.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contour plot of 
+\begin_inset Formula $\left|\Psi(q_{x},t)\right|^{2}$
+\end_inset
+
+ plotted for various 
+\begin_inset Formula $t=q_{z}/v_{z}$
+\end_inset
+
+, illustrating a Stern-Gerlach measurement.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contour-plot-of-Psi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+(see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contour-plot-of-Psi"
+
+\end_inset
+
+), where regions enclosing, say 
 \begin_inset Formula $70\%$
 \end_inset
 
  of 
-\begin_inset Formula $\left|\Psi\right|^{2}$
+\begin_inset Formula $\left|\Psi(q_{x})\right|^{2}$
 \end_inset
 
- have been outlined.
+ have been outlined
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that 
+\begin_inset Formula $\left|\Psi\right|^{2}=\left\langle \Psi|q_{x}\right\rangle \left\langle q_{x}|\Psi\right\rangle $
+\end_inset
+
+, where the spins are essentially traced over by the said expression
+\end_layout
+
+\end_inset
+
+.
  So far, according to QM, if we measure the position of the particle, then
  (given 
 \begin_inset Formula $\sigma\ll at$
 \end_inset
 
 ), obtaining the particle near 
-\begin_inset Formula $x=at$
+\begin_inset Formula $q_{x}=at$
 \end_inset
 
-, is as probably as finding it near 
-\begin_inset Formula $x=-at$
+, is as probable as finding it near 
+\begin_inset Formula $q_{x}=-at$
 \end_inset
 
 .
  QM doesn't make a deterministic prediction at this stage.
  According to BM, if in addition to the wavefunction, we assume that the
  particle was initially at some 
-\begin_inset Formula $x>0$
+\begin_inset Formula $q_{x}>0$
 \end_inset
 
 , then we can predict precisely where the particle will turn up.
  Infact, one can accomplish this with essentially no calculation.
  Since 
-\begin_inset Formula $\dot{x}=\nabla S/m$
+\begin_inset Formula $\dot{q}_{x}=\nabla S/m$
 \end_inset
 
 , a single valued function, it follows that trajectories of particles won't
@@ -734,25 +1022,25 @@ where
 
 .
  Consequently, a particle that starts with 
-\begin_inset Formula $x>0$
+\begin_inset Formula $q_{x}>0$
 \end_inset
 
 , must follow the `up' trajectory, else by symmetry, the trajectories will
  have to intersect.
  We conclude therefore, that if 
-\begin_inset Formula $x>0$
+\begin_inset Formula $q_{x}>0$
 \end_inset
 
  initially, the particle has spin 
-\begin_inset Formula $\left|0\right\rangle $
+\begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
  and if 
-\begin_inset Formula $x<0,$
+\begin_inset Formula $q_{x}<0,$
 \end_inset
 
  the spin must be 
-\begin_inset Formula $\left|1\right\rangle $
+\begin_inset Formula $\left|-\right\rangle $
 \end_inset
 
 .
@@ -765,26 +1053,33 @@ where
 
 , which practically amounts to reversing the heterogeneity of the magnet,
  then 
-\begin_inset Formula $\sqrt{2}\left|\Psi(t)\right\rangle =\left|\psi_{-at}\right\rangle \otimes\left|0\right\rangle +\left|\psi_{at}\right\rangle \otimes\left|1\right\rangle $
+\begin_inset Formula $\sqrt{2}\left|\Psi(t)\right\rangle =\left|\psi_{-at}\right\rangle \otimes\left|+\right\rangle +\left|\psi_{at}\right\rangle \otimes\left|-\right\rangle $
 \end_inset
 
 .
  Again, if 
-\begin_inset Formula $x>0$
+\begin_inset Formula $q_{x}>0$
 \end_inset
 
  initially for a particle, it will follow the `up' trajectory.
  However, now this corresponds to spin 
-\begin_inset Formula $\left|1\right\rangle $
+\begin_inset Formula $\left|-\right\rangle $
 \end_inset
 
 , as opposed spin 
-\begin_inset Formula $\left|0\right\rangle $
+\begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
 .
  We have thus demonstrated that we can't associate spin uniquely to a particle,
- and that it must only be associated with the wavefunction.
+ and that it must only be associated with the wavefunction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Detlef"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -795,17 +1090,38 @@ As an aside, it may be added that BM is known for removing the fundamental
  particles as well defined, and then explaining the `collapse' of wavefunction,
  by means of the particle's interaction with those in the environment, which
  entails that the `collapsed wavefunction' serves as an effective wavefunction,
- which can be used to describe the motion of the particle henceforth.
+ which can be used to describe the motion of the particle henceforth 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm2,Detlef"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Determinism: The GHZ test
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Determinism-The-GHZ"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-One drawback of Bell's test, was that it's statistical nature.
- The GHZ test, takes this a step further and shows that one can't even conceive
- of having pre-defined values.
+One drawback of Bell's test, was that it's statistical in nature.
+ The GHZ test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZ"
+
+\end_inset
+
+, takes this a step further and shows that one can't even conceive of having
+ pre-defined values.
  The construction requires three observers with one particles each.
  Each observer can measure two properties, 
 \begin_inset Formula $X$
@@ -952,15 +1268,41 @@ s appear twice for each particle, and
 \end_inset
 
  had predefined values, must be incorrect.
+ One could object that 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are complementary properties (correspond to non-commuting operators) and
+ therefore it doesn't make sense to assign values to these operators and
+ treat them like numbers.
+ This objection is addressed by the contextuality tests.
 \end_layout
 
 \begin_layout Section
 Contextuality: The Peres Mermin test
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Contextuality:-The-Peres"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 There've been various developments, of which the simplest, with effectively
- the same consequence, is discussed: the Peres Mermin test.
+ the same consequence, is discussed: the Peres Mermin test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peres,Mermin"
+
+\end_inset
+
+.
  In this test also, we will show that pre-defined values can't exist, but
  in addition, also define the notion of contextuality.
  Consider the following set of operators 
@@ -1067,14 +1409,20 @@ ion relation,
  assignments must be even.
  We have arrived at a contradiction and therefore we conclude that our assumptio
 n that operators have predefined values, must be wrong.
- Note that unlike the GHZ test, the Peres Mermin test is state independent.
+ Note that unlike the GHZ test, the Peres Mermin test is (a) state independent
+ (no specific 
+\begin_inset Formula $\left|\chi\right\rangle $
+\end_inset
+
+ is needed for a violation) and (b) here, values of only commuting observables
+ are multiplied.
 \end_layout
 
 \begin_layout Standard
 We are now in a position to discuss the notion of contextuality.
  We begin with defining a non-contextual assignment to be one, where the
  assignment depends only on the state (
-\begin_inset Formula $\left|\psi\right\rangle $
+\begin_inset Formula $\left|\chi\right\rangle $
 \end_inset
 
  + hidden variables, if any) and the operator to which the assignment is
@@ -1111,7 +1459,21 @@ We are now in a position to discuss the notion of contextuality.
 .
  If this doesn't appear entirely unsatisfactory, then you're on the right
  track and are encouraged to read the more detailed description given in
- Section [??].
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:An-Alternative-to-Contextuality"
+
+\end_inset
+
+ (more specifically, Subsection 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Contextual,-Memory-Model"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body

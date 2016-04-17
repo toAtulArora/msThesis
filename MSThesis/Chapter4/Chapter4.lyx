@@ -72,6 +72,13 @@
 
 \begin_layout Chapter
 An Alternative to Contextuality
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:An-Alternative-to-Contextuality"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -101,7 +108,14 @@ y and its versions.
 \end_layout
 
 \begin_layout Section
-Multiplicativity
+Multiplicativity 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Multiplicativity"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -306,18 +320,6 @@ QM weakly enforces sequentially multiplicative
 QM doesn't enforce multiplicativity
 \emph default
 .
-\begin_inset Newline newline
-\end_inset
-
-TODO: Notation fix; 
-\begin_inset Formula $\psi$
-\end_inset
-
- is for continuous, the discrete is 
-\begin_inset Formula $\chi$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -509,6 +511,13 @@ We aim to distinguish the notion of contextuality and multiplicativity by
 
 \begin_layout Subsection
 Contextual, Memory Model
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Contextual,-Memory-Model"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -634,7 +643,14 @@ The reader can convince her(him)self that the assignments are indeed consistent,
 \end_layout
 
 \begin_layout Subsection
-Non-Contextual, Toy Model
+Non-Contextual, Toy Model 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Non-Contextual-Toy-Model"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1074,7 +1090,14 @@ In this section, we present two arguably, simplest HV theories, one of which
 \end_layout
 
 \begin_layout Subsection
-Discretely C-ingle Theory
+Discretely C-ingle Theory 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Discretely-C-ingle-Theory"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1197,7 +1220,7 @@ We can clearly see that the assignment is non-contextual, since given an
 \end_layout
 
 \begin_layout Subsection
-Continuously C-ingle Theory
+Continuously C-ingle Theory | Preliminary
 \end_layout
 
 \begin_layout Standard
@@ -1205,11 +1228,8 @@ The state of the system is
 \begin_inset Formula $\left|\psi\right\rangle $
 \end_inset
 
-, defined on a continuous Hilbert space (
-\begin_inset Formula $q,p$
-\end_inset
-
- only) and we wish to assign a value to an arbitrary operator 
+, defined for a single spin-less particle, and we wish to assign a value
+ to an arbitrary operator 
 \begin_inset Formula 
 \[
 \hat{A}=\int_{a_{\text{min}}}^{a_{\text{max}}}daa\left|a\right\rangle \left\langle a\right|.
@@ -1277,11 +1297,53 @@ The continuous variable version has some exclusive interesting features.
 
  (the position), one can predict the trajectory of a particle.
  This is quite intuitive to observe graphically.
- (TODO: make the graph)Say 
+ Say 
 \begin_inset Formula $c$
 \end_inset
 
- had a value as shown in the graph and the initial state is given by a gaussian.
+ had a value as shown in the graph (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Illustration-of-cingle"
+
+\end_inset
+
+) 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Vector/cingle.pdf
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Illustration of the underlying principle of the continuously c-ingle model
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Illustration-of-cingle"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+and the initial state is given by a gaussian.
  Now the cumulative of this can be quickly constructed, and where the 
 \begin_inset Formula $c$
 \end_inset
@@ -1299,9 +1361,22 @@ The continuous variable version has some exclusive interesting features.
 \end_inset
 
 .
- Reasoning similar to the previous subsection entails (NOT TRUE) that this
- theory is also non-multiplicative and non-contextual.
- [TODO: write this section properly; the main idea is that to be consistent
+ Reasoning similar to the previous subsection entails that this theory is
+ also non-multiplicative and non-contextual.
+ However, one needs more analysis to extend this to multiple particles.
+ Once that is accomplished, one must show that measuring the observables
+ using the Hamiltonian approach, would yield consistent results, with that
+ obtained by the postulates of the theory.
+ To show then that the theory is non-contextual, one would be required to
+ show that all concievable measurement schemes would produce the same result,
+ else, like BM, this theory wouldn't be able to predict the values of operators
+ with only the state and hidden variable information.
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+[TODO: write this section properly; the main idea is that to be consistent
  with the method of measuring arbitrary observables, by position measurements,
  one can't assign values in the aforesaid way.
  This way, you end up with two assignments for the same observable and have
@@ -1314,10 +1389,12 @@ The continuous variable version has some exclusive interesting features.
  ]
 \end_layout
 
-\begin_layout Standard
-This theory effectively overcomes all the challenges we had for testing
- the continuous variable extensions of the GHZ and contextuality tests.
- Predictions of observables is straight forward.
+\end_inset
+
+Once extended appropriately, this theory would effectively overcome all
+ the challenges we had for testing the continuous variable extensions of
+ the GHZ and contextuality tests.
+ Predictions of observables will be straight forward.
  To obtain values from BM, one had to do a detailed analysis, for RS, evaluating
  values of observables other than 
 \begin_inset Formula $q$
@@ -1332,7 +1409,10 @@ This theory effectively overcomes all the challenges we had for testing
 \end_inset
 
  is hard) was hard.
- We had this hunch however, that the trajectory so obtained, must be identical
+\end_layout
+
+\begin_layout Standard
+We had this hunch however, that the trajectory so obtained, must be identical
  to that of Bohmian trajectories.
  This infact turns out to be so.
  Let us take a moment to prove this, for using the same method, one can
@@ -1492,10 +1572,238 @@ An equation similarly for
 \end_inset
 
  can be obtained and an appropriate dynamics can perhaps then be constructed.
+ It maybe mentioned as a remark that, quite independent of it's motivation,
+ this scheme can be used to compute Bohmian trajectories, in a much more
+ efficient way, as is apparent by comparing the resources required between
+ computing an integral and the steps listed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Bohm's-Theory,-Bohmian"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
-Conclusion
+The Verdict: Contextuality vs.
+ Non-Multiplicativity
+\end_layout
+
+\begin_layout Standard
+We have already constructed an explicit non-contextual model, which is consisten
+t with QM.
+ This model we knew had to be non-multiplicative.
+ We will see how non-multiplicativity gives rise to what one might confuse
+ to mean contextuality.
+ 
+\end_layout
+
+\begin_layout Standard
+The approach is to take some compatible observables, and to construct a
+ `super-operator', a measurement of which can yield the values of all of
+ these compatible observables in a single measurement.
+ We would see then, that the in-principle measurement outcome of observing
+ these compatible operators, would not be consistent.
+ Now this one might treat as contextuality, but according to the definition
+ in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Peres-Mermin-Revisited"
+
+\end_inset
+
+, we note that this is non-multiplicativity, as per 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Multiplicativity"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let us construct an explicit situation and make more precise statements.
+ Borrowing the notation from 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Multiplicativity"
+
+\end_inset
+
+, imagine 
+\begin_inset Formula 
+\[
+\hat{B}_{1}=\hat{\sigma}_{z}\otimes\hat{\mathbb{I}}=\left|00\right\rangle \left\langle 00\right|+\left|01\right\rangle \left\langle 01\right|-\left[\left|10\right\rangle \left\langle 10\right|+\left|11\right\rangle \left\langle 11\right|\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{B}_{2}=\hat{\mathbb{I}}\otimes\hat{\sigma}_{z}=\left|10\right\rangle \left\langle 10\right|+\left|11\right\rangle \left\langle 11\right|-\left[\left|00\right\rangle \left\langle 00\right|+\left|01\right\rangle \left\langle 01\right|\right],
+\]
+
+\end_inset
+
+while we define 
+\begin_inset Formula 
+\[
+\hat{C}=f(\{\hat{B}_{i}\})=0.\left|00\right\rangle \left\langle 00\right|+1.\left|01\right\rangle \left\langle 01\right|+2.\left|10\right\rangle \left\langle 10\right|+3.\left|11\right\rangle \left\langle 11\right|
+\]
+
+\end_inset
+
+which maybe viewed as a function of 
+\begin_inset Formula $\hat{B}_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}_{2}$
+\end_inset
+
+ and other operators 
+\begin_inset Formula $\hat{B}_{i}$
+\end_inset
+
+ which are constructed to obtain a maximally commuting set.
+ A measurement of 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+, will collapse the state into one of the states which are simultaneous
+ eignkets of 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+, which means that from the observed value of 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+, one can deduce the values of 
+\begin_inset Formula $\hat{B}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{B}_{2}$
+\end_inset
+
+.
+ Now consider 
+\begin_inset Formula $\sqrt{2}\left|\chi\right\rangle =\left|10\right\rangle +\left|01\right\rangle $
+\end_inset
+
+, for which 
+\begin_inset Formula $m_{1}(\hat{B}_{1})=1$
+\end_inset
+
+, and 
+\begin_inset Formula $m_{1}(\hat{B}_{2})=1$
+\end_inset
+
+, using the discretely c-ingle theory (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Discretely-C-ingle-Theory"
+
+\end_inset
+
+), for 
+\begin_inset Formula $c<0.5$
+\end_inset
+
+.
+ However, 
+\begin_inset Formula $m_{1}(\hat{C})=1$
+\end_inset
+
+, from which one can deduce that 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ was 
+\begin_inset Formula $+1$
+\end_inset
+
+, while 
+\begin_inset Formula $B_{2}$
+\end_inset
+
+ was 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ This property itself, one may be tempted call contextuality, viz.
+ the value of 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ depends on whether it is measured alone or with the remaining 
+\begin_inset Formula $\{B_{i}\}$
+\end_inset
+
+.
+ However, it must be noted that 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ has a well defined value, and so does 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+, thus by our accepted definition, there's no contextuality.
+ It is just that 
+\begin_inset Formula $m_{1}(\hat{C})\neq m_{1}(f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots))$
+\end_inset
+
+, viz.
+ the theory is non-multiplicative.
+ Note that after measuring 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+ however, 
+\begin_inset Formula $m_{2}(\hat{B}_{1})=+1$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}(\hat{B}_{2})=-1$
+\end_inset
+
+ (for any value of 
+\begin_inset Formula $c$
+\end_inset
+
+) consistent with those deduced by measuring 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Denouement
+\end_layout
+
+\begin_layout Standard
+We have already learnt that the proof of `contextuality', infact requires
+ three assumptions, (1) multiplicativity, (2) non-contextuality and (3)
+ non-invasiveness.
+ Here we were able to construct an explicit non-contextual theory (for spins)
+ which is non-multiplactive, but invasive and completely consistent with
+ QM, viz.
+ satisfies (2) but neither (3) nor (1), serving as a counter-example to
+ the claim that non-contextual hidden variable theories can't be consistent
+ with QM.
+ This is of interest because one must restrict the measurement scheme in
+ BM, to be able to call it non-contextual.
 \end_layout
 
 \begin_layout Standard

@@ -83,18 +83,25 @@ The Copenhagen Interpretation of Quantum Mechanics (QM) asserts that the
  in the literature.
  There was however, one question, whose answer has become the subject of
  the thesis; that of the paradoxical co-existence of contextuality and BM.
- Contextuality arguments show that the value an operator takes, must depend,
- in addition to the state of the system (including any hidden variables),
- on the complete set of compatible operators, to be consistent with QM.
+ In a theory that can predict the value of operators, the value an operator
+ takes, must depend on the state of the system (including hidden variables).
+ Contextuality arguments show that the value an operator takes, must also
+ depend on the complete set of compatible operators, to be consistent with
+ QM.
  BM being deterministic, is at complete odds with this notion.
  
 \end_layout
 
 \begin_layout abstract
-We were able to show, after various attempts, that the notion of contextuality
- is infact not necessary, by identifying another `classical property' and
- constructing a non-contextual toy-model, serving as a counter-example to
- the impossibility proof.
+After various attempts we were able to show, that the notion of contextuality
+ is infact not necessary.
+ This was achieved by identifying another `classical property' and constructing
+ a non-contextual toy-model, serving as a counter-example to the impossibility
+ proof.
+ The toy model has been generalized to a discrete but arbitrarily sized
+ Hilbert space, consistent with all predictions of QM.
+ Implications of violation of this `classical property' have been discussed,
+ in particular, to the notion of non-locality.
 \end_layout
 
 \begin_layout abstract

@@ -210,7 +210,14 @@ To analyse any situation using BM, one is required to know the experimental
 \end_inset
 
 .
- It has been shown [??] that the time evolution of 
+ It has been shown 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BohmGHZetc"
+
+\end_inset
+
+ that the time evolution of 
 \begin_inset Formula $\left|\psi_{\pm\pm\pm}\right\rangle $
 \end_inset
 
@@ -283,7 +290,14 @@ As a remark, it maybe stated, that the details of evaluating the trajectory,
  become complicated rather quickly and that it is unlikely to obtain analytic
  solutions for the phase-space scenario trivially.
  Consequently, numerical simulations are a necessity beyond this stage.
- [TODO: add details of the calculations?]
+ (See 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BohmGHZetc"
+
+\end_inset
+
+ for a flavour of the complexity)
 \end_layout
 
 \begin_layout Standard
@@ -412,8 +426,14 @@ Known Extension
 \end_layout
 
 \begin_layout Standard
-One possible construction[??], involves the use appropriate displacement
- operators.
+One possible construction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZcontinuous"
+
+\end_inset
+
+, involves the use appropriate displacement operators.
  
 \begin_inset Formula $\hat{X}\equiv e^{i\sqrt{\pi}\hat{q}/L}$
 \end_inset
@@ -560,7 +580,14 @@ It is obvious that for obtaining the value of
 \end_layout
 
 \begin_layout Subsubsection
-Optimized Extension
+Optimized Extension 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Optimized-Extension"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -580,8 +607,107 @@ This result was obtained after considerable effort.
 \begin_inset Formula $N=8$
 \end_inset
 
-, as those considered in my first paper (TODO: define these properly).
- Recall that for 
+, as those considered in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellMacroscopic"
+
+\end_inset
+
+, given by 
+\begin_inset Formula 
+\[
+\left|\psi_{0}\right\rangle \equiv\frac{1}{\sqrt{M}}\sum_{n=-\lfloor\frac{M}{2}\rfloor}^{\lfloor\frac{M-1}{2}\rfloor}\left|\varphi_{2n+1}\right\rangle ,\,\left|\psi_{1}\right\rangle \equiv\frac{1}{\sqrt{M}}\sum_{n=-\lfloor\frac{M}{2}\rfloor}^{\lfloor\frac{M-1}{2}\rfloor}\left|\varphi_{2n}\right\rangle ,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\varphi(q)=\left\langle q|\varphi\right\rangle $
+\end_inset
+
+ is a localized state, symmetric about 
+\begin_inset Formula $q=L/2$
+\end_inset
+
+, where 
+\begin_inset Formula $L$
+\end_inset
+
+ is some length scale and 
+\begin_inset Formula $\varphi_{n}(q)\equiv\varphi(q-nL)$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ characterizes the `size' of the state (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Illustration-of-multicomponent"
+
+\end_inset
+
+).
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Vector/ghzOpt.pdf
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Illustration of multicomponent superposition states 
+\begin_inset Formula $\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\psi_{1}\right\rangle $
+\end_inset
+
+ for N = 8 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellMacroscopic"
+
+\end_inset
+
+, used in the optimization of the GHZ test.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Illustration-of-multicomponent"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Recall that for 
 \begin_inset Formula $\hat{Z}$
 \end_inset
 
@@ -782,7 +908,14 @@ The wavefunction now satisfies both the conditions required.
 \end_layout
 
 \begin_layout Section
-BM Simulator
+BM Simulator 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:BM-Simulator"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1182,7 +1315,14 @@ where
 \begin_inset Formula $10^{-4}$
 \end_inset
 
- or so for RK4, as was also pointed out by [??].
+ or so for RK4, as was also pointed out by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schrNum"
+
+\end_inset
+
+.
  The aforesaid was observed to successfully simulate the Schr
 \begin_inset ERT
 status open
@@ -1338,8 +1478,15 @@ Three known physical situations were tested.
 \begin_inset Formula $V=\frac{1}{2}\omega^{2}q^{2}$
 \end_inset
 
-; It is known that a displaced Gaussian, oscillates under a harmonic potential,
- and so does it's spread (unless a coherent state is chosen).
+; It is known that a displaced Gaussian, oscillates under a harmonic potential
+ (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Simulated-Bohmian-Trajectories"
+
+\end_inset
+
+), and so does it's spread (unless a coherent state is chosen).
  (c) Double slit; By using a time varying potential, s.t.
  
 \begin_inset Formula 
@@ -1369,8 +1516,127 @@ In all cases, the results were qualitatively found to match.
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figs/Raster/harmonic1.jpeg
+	lyxscale 50
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figs/Raster/harmonic2.jpeg
+	lyxscale 50
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figs/Raster/harmonic.jpeg
+	lyxscale 50
+	width 30col%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulated Bohmian Trajectories for a Harmonic Oscillator
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Simulated-Bohmian-Trajectories"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Conclusion
+Simulation Results
 \end_layout
 
 \begin_layout Standard
@@ -1456,8 +1722,14 @@ Observable with discrete spectrum | Hamiltonain Approach
 \end_layout
 
 \begin_layout Standard
-Bohm [??] has discussed in his second paper, how any arbitrary observable
- maybe measured, in BM.
+Bohm has discussed in his second paper 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm2"
+
+\end_inset
+
+, how any arbitrary observable maybe measured, in BM.
  To describe a measurement, we use a measuring particle (mass 
 \begin_inset Formula $m_{L}$
 \end_inset
@@ -1509,13 +1781,13 @@ tely, and then measure the final position of the particle, to learn about
  (we have assumed non-degenercy for simplicity, but its removal doesn't
  cause any significant difficulty).
  
-\begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =U(t)\left|\psi\right\rangle \otimes\left|\varphi\right\rangle $
+\begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =\hat{U}(t)\left|\psi\right\rangle \otimes\left|\varphi\right\rangle $
 \end_inset
 
 , where 
 \begin_inset Formula 
 \[
-U(t)=e^{-\frac{i}{\hbar}\left[-\hbar^{2}\frac{\nabla_{1}^{2}}{2m}-\hbar^{2}\frac{\nabla_{2}^{2}}{2m_{L}}+\hat{H}_{\text{int}}\right]t}
+\hat{U}(t)=e^{-\frac{i}{\hbar}\left[-\hbar^{2}\frac{\nabla_{1}^{2}}{2m}-\hbar^{2}\frac{\nabla_{2}^{2}}{2m_{L}}+\hat{H}_{\text{int}}\right]t}
 \]
 
 \end_inset
@@ -1592,17 +1864,106 @@ where
 \end_layout
 
 \begin_layout Subsubsection
-Generalization to observables with continuum spectrum
+Generalization to observables with continuum spectrum 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BM-measurement-to-continuous"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Since we are interested in observing phase space variables, the aforesaid
- must be generalized carefully to the continuous spectra regime.
- (TODO: write this from the notes)
+ must be generalized to the continuous spectra regime.
+ We proceed with the aforesaid notation, and promote the discrete operator
+ 
+\begin_inset Formula $\hat{L}$
+\end_inset
+
+ to have a continuous spectrum.
+ Thus 
+\begin_inset Formula $\left|\psi\right\rangle =\int dl\left\langle l|\psi\right\rangle \left|l\right\rangle $
+\end_inset
+
+, and recall 
+\begin_inset Formula $\left|\varphi\right\rangle =\int dq\varphi(q)\left|q\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $\varphi(q)$
+\end_inset
+
+ has 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ quantifying the deviation from the origin.
+ Now 
+\begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =\hat{U}(t)\left|\psi\right\rangle \otimes\left|\varphi\right\rangle =\int\int dldq\varphi(q)\left\langle l|\psi\right\rangle \left|l\right\rangle \otimes\left|q+l\lambda\right\rangle $
+\end_inset
+
+, where 
+\begin_inset Formula $\lambda=at$
+\end_inset
+
+ as before.
+ Say 
+\begin_inset Formula $q$
+\end_inset
+
+ is measured at this stage and 
+\begin_inset Formula $q'$
+\end_inset
+
+ is the value obtained.
+ The resultant state would then be 
+\begin_inset Formula $\left|q'\right\rangle \left\langle q'\right|\left|\Psi_{S}\right\rangle =\int\int dldq\varphi(q-l\lambda)\left\langle l|\psi\right\rangle \left|l\right\rangle \delta(q-q')=\int dl\varphi(q'-l\lambda)\left\langle l|\psi\right\rangle \left|l\right\rangle $
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $\varphi(q)\approx0$
+\end_inset
+
+ when 
+\begin_inset Formula $q\notin(-\delta q,\delta q)$
+\end_inset
+
+, where 
+\begin_inset Formula $\delta q=\mathcal{O}(\sigma)$
+\end_inset
+
+ can be chosen, depending on the accuracy desired.
+ This implies 
+\begin_inset Formula $-\delta q<q'-l\lambda<\delta q$
+\end_inset
+
+, which entails that 
+\begin_inset Formula $l=\frac{q'}{\lambda}\pm\frac{\delta q}{\lambda}$
+\end_inset
+
+.
+ We thus have a relation between the observed position of the measuring
+ particle, and the value of the operator 
+\begin_inset Formula $\hat{L}$
+\end_inset
+
+.
+ The error is controlled by the sharpness of the initial state of the measuring
+ particle.
 \end_layout
 
 \begin_layout Subsubsection
-Consistency check; measurement of position
+Consistency check; measurement of position 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:BM-Consistency-check-measurement"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1643,22 +2004,166 @@ The position of a particle, as is claimed by BM, remains the same upon observing
 \end_inset
 
 , where 
-\begin_inset Formula $q_{1}$
+\begin_inset Formula $\left|q_{1}\right\rangle $
 \end_inset
 
  is (the position eigenket) for the system and 
-\begin_inset Formula $q_{2}$
+\begin_inset Formula $\left|q_{2}\right\rangle $
 \end_inset
 
  for the measuring particle.
- Before the interaction [see Fig.
- ??], say the measuring particle was at 
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/posMesBefore.png
+	lyxscale 40
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Before interaction
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PosMes-Before-interaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/posMesAfter.png
+	lyxscale 40
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+After interaction
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PosMes-After-interaction"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indicative contour plot of 
+\begin_inset Formula $\left|\left\langle q_{1},q_{2}|\Psi_{S}\right\rangle \right|^{2}$
+\end_inset
+
+, illustrating consistency of position measurements.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Before the interaction (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:PosMes-Before-interaction"
+
+\end_inset
+
+), say the measuring particle was at 
 \begin_inset Formula $q_{2}\in(-\sigma,\sigma)$
 \end_inset
 
 .
- After the interaction [see Fig.
- ??], the measuring particle will move to 
+ After the interaction (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:PosMes-After-interaction"
+
+\end_inset
+
+), the measuring particle will move to 
 \begin_inset Formula $q_{2}\in(\lambda q_{0}-\sigma,\lambda q_{0}+\sigma)$
 \end_inset
 
@@ -1679,8 +2184,14 @@ The position of a particle, as is claimed by BM, remains the same upon observing
 \begin_inset Formula $q_{1}=-q_{0}$
 \end_inset
 
- and in this case, from Fig.
- ?? it would follow that after the interaction, 
+ and in this case, from 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:PosMes-After-interaction"
+
+\end_inset
+
+, it would follow that after the interaction, 
 \begin_inset Formula $q_{2}\approx-\lambda q_{0}$
 \end_inset
 
@@ -1761,7 +2272,7 @@ where
 , which is consistent with QM.
  To obtain this result more carefully from Bohmian trajectories, one must
  plot 
-\begin_inset Formula $\left|\Psi_{S}(q_{1},q_{2})\right|^{2}$
+\begin_inset Formula $\left|\left\langle q_{1},q_{2}|\Psi_{S}\right\rangle \right|^{2}$
 \end_inset
 
  as was done in the previous section, but we will satisfy ourselves here,
@@ -1913,7 +2424,7 @@ One can see that with
 \end_layout
 
 \begin_layout Subsection
-Conclusion
+Measurement Exploration Summarized
 \end_layout
 
 \begin_layout Standard
@@ -1952,8 +2463,15 @@ Roy Singh Theory
 \end_layout
 
 \begin_layout Standard
-Roy Singh proposed a theory that was a causal completion of QM, that treated
- position and momentum symmetrically, viz.
+Roy Singh proposed a theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "roySingh"
+
+\end_inset
+
+ that was a causal completion of QM, that treated position and momentum
+ symmetrically, viz.
  their joint probability distribution was such that when the momentum is
  integrated out, the result agrees with quantum mechanical predictions for
  position 
@@ -1975,11 +2493,11 @@ and
  While a promising framework and interesting in its own right, in the light
  of the optimized GHZ test, it wasn't particularly helpful and not pursued
  beyond a preliminary reading stage.
- (TODO: Add formalism if possible)
+ 
 \end_layout
 
 \begin_layout Section
-Concluding Remarks
+Remarks
 \end_layout
 
 \begin_layout Standard
