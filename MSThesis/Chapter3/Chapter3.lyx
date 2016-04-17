@@ -79,15 +79,25 @@ Rationale
 \end_layout
 
 \begin_layout Standard
-We saw in the last chapter that BM is able to explain the GHZ test, essentially
- because the paradox arises if we try to multiply values assigned to operators
- that don't commute, to obtain the value assigned to a product of such operators.
+We saw in the last chapter that BM is able to explain the GHZ test.
+ The paradox arises if we try to multiply values assigned to operators that
+ don't commute, to obtain the value assigned to a product of such operators.
  In BM, since the operator must be provided to obtain it's value, no contradicti
-on arises, even though the results are deterministic, given all initial
- conditions.
- Effectively then, the flaw in our GHZ reasoning, was that we were commuting
- operators that didn't commute, by assuming they were numbers.
- Thus, we were only able to rule out theories that treated operators like
+on arises, even though the results are deterministic (given all initial
+ conditions).
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Effectively then, at the risk of repetition, the flaw in our GHZ reasoning,
+ was that we were commuting operators that didn't commute, by assuming they
+ were numbers.
+\end_layout
+
+\end_inset
+
+Thus, we were only able to rule out theories that treated operators like
  numbers and we find that BM is not one of them.
  However, as we have seen in the Peres Mermin (PM) test, the operators whose
  values are multiplied, do infact commute, implying that the PM test is
@@ -105,8 +115,8 @@ on arises, even though the results are deterministic, given all initial
 
 \begin_layout Standard
 We also found in the previous chapter, that in BM, there's no fundamental
- difference that arises between the phase space variables and spins, for
- as we saw, the value of momentum observed, depends on the systematics of
+ difference that arises between the phase space variables and spins.
+ As we saw, the value of momentum observed, depends on the systematics of
  the measurement process, just as the outcome of a spin measurement using
  an SG setup (as was discussed in the first chapter).
  Therefore in what follows, attempts will be made at tackling the problem
@@ -142,9 +152,7 @@ name "sub:GHZ-to-contextuality"
 \end_layout
 
 \begin_layout Standard
-Here, we present a successful attempt at converting the GHZ test, into a
- full fledged test of contextuality.
- Recall from the first chapter, 
+Recall from the first chapter, 
 \begin_inset Formula $\hat{A}\equiv\sigma_{x}\otimes\sigma_{y}\otimes\sigma_{y}$
 \end_inset
 
@@ -332,8 +340,9 @@ however, we have no freedom left and are forced to assign
 
 ).
  In this scenario, the non-commuting observables argument, deduced in the
- previous chapter fails, for values of only commuting observables were multiplie
-d, even though, effectively it is still the same GHZ test.
+ previous chapter fails.
+ Here, values of only commuting observables were multiplied, even though
+ effectively it is still the same GHZ test.
 \end_layout
 
 \begin_layout Subsection
@@ -349,9 +358,10 @@ name "sub:Peres-Mermin-phaseSpace"
 
 \begin_layout Standard
 The Peres Mermin situation can be, quite simply, extended to continuous
- variables, which maybe of practical interest, since performing SG type
- setup in the simulation requires implementation of spins and appropriate
- magnetic field effects, and that can be surpassed with this construction.
+ variables, which maybe of practical interest.
+ Performing SG type setup in the simulation requires implementation of spins
+ and appropriate magnetic field effects, and that can be surpassed with
+ this construction.
  To this end, the following extension was worked out (but this result was
  already known 
 \begin_inset CommandInset citation
@@ -466,10 +476,18 @@ Since we have already discussed how to analyse a Stern Gerlach based measurement
 \end_inset
 
 , where for instance 
-\begin_inset Formula $\left|++\right\rangle =\left|+\right\rangle _{1}\otimes\left|+\right\rangle _{2}$
+\begin_inset Formula $\left|++\right\rangle =\left|+\right\rangle _{A}\otimes\left|+\right\rangle _{B}$
 \end_inset
 
- (1 and 2 label the particle), and 
+ (
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ label the particle), and 
 \begin_inset Formula $\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}$
 \end_inset
 
@@ -490,7 +508,7 @@ reference "sec:Bohm's-Theory,-Bohmian"
 \end_inset
 
 , where 
-\begin_inset Formula $\left|\psi_{at},\psi_{at}\right\rangle =\left|\psi_{at}\right\rangle _{1}\otimes\left|\psi_{at}\right\rangle _{2}$
+\begin_inset Formula $\left|\psi_{at},\psi_{at}\right\rangle =\left|\psi_{at}\right\rangle _{A}\otimes\left|\psi_{at}\right\rangle _{B}$
 \end_inset
 
  for example.
@@ -884,13 +902,12 @@ reference "sec:Bohm's-Theory,-Bohmian"
  of the particle of interest itself determined whether the measurement would
  yield spin up or spin down.
  Here, position of the particle of interest, plays no role in the measurement
- scheme, infact, the position of the measuring particle (which in some sense
- represents the apparatus) determines the outcome.
+ scheme.
+ Infact, the position of the measuring particle (which in some sense represents
+ the apparatus) determines the outcome.
  Thus, even though in both cases, the result can be predicted, it is possible
  to have initial conditions such that the results of these two different
  measurement schemes, don't match.
- In the following, we will see how this scheme, relatively simplifies the
- measurement process.
 \end_layout
 
 \begin_layout Subsubsection
@@ -917,11 +934,11 @@ Let the spin state of the particles be
 \begin_inset Formula $\hat{\sigma}_{z}\otimes\hat{\sigma}_{z}$
 \end_inset
 
-, which must yield 
+, (which must yield 
 \begin_inset Formula $+1$
 \end_inset
 
-, we must use 
+), we use 
 \begin_inset Formula $\hat{H}=a(\hat{\sigma}_{z}\otimes\hat{\sigma}_{z})\otimes\hat{p}$
 \end_inset
 
@@ -930,8 +947,8 @@ Let the spin state of the particles be
 \begin_inset Formula $\left|\Psi_{S}(t)\right\rangle =\left|\psi_{at}\right\rangle \otimes\left|\chi\right\rangle $
 \end_inset
 
-, which from the aforesaid arguments, should be clear, entails that for
- all initial positions of the measuring particle, we would get 
+, which from the aforesaid arguments, entails that for all initial positions
+ of the measuring particle, we would get 
 \begin_inset Formula $+1$
 \end_inset
 
@@ -940,8 +957,8 @@ Let the spin state of the particles be
 \begin_inset Formula $+1$
 \end_inset
 
-, we conclude further that the spins must be correlated, much more quickly
- than we could using the SG setup.
+, we obtain a result corresponding to correlated spins in the SG setup,
+ with less effort.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1032,8 +1049,8 @@ With the tools for measurement sharpened, we are now in position to explicitly
  assign values to the Peres Mermin situation and find out precisely how
  contextuality can be reconciled with BM.
  However, before proceeding with that, we first try to carefully list the
- restrictions made on the hidden variable theory, which are sufficient to
- arrive at a contradiction with QM.
+ restrictions made on the hidden variable theory.
+ These are sufficient to arrive at a contradiction with QM.
 \end_layout
 
 \begin_layout Subsection
@@ -1045,7 +1062,8 @@ According to QM, if one has a set of compatible operators, say
 \begin_inset Formula $\hat{A},\hat{B},\hat{C}$
 \end_inset
 
- (some arbitrary operators), then one can construct eigenkets
+ (some arbitrary operators), then one can construct simultaneous eigenkets
+ 
 \begin_inset Formula $\left|a,b,c\right\rangle $
 \end_inset
 
@@ -1214,8 +1232,8 @@ It is obvious that this assignment, if we assume (2), will fail to be consistent
 \begin_inset Formula $\left|\chi\right\rangle $
 \end_inset
 
- as an eigenket (infact all possible states are eigenkets), according to
- BM, the value assigned will be 
+ as an eigenket (infact all possible states are eigenkets).
+ According to BM, the value assigned will be 
 \begin_inset Formula $+1$
 \end_inset
 
@@ -1250,14 +1268,17 @@ It was realized that the GHZ determinism test is not satisfactorily explained
  situation were sharpened and from the assignment, it was found that a non-conte
 xtual theory doesn't contradict QM, viz.
  contextuality is not necessary feature of QM.
- Although it was later found that this is known in the literature 
+ It was found with ambivalence, that contextuality has been questioned in
+ the literature 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NoContextuality"
 
 \end_inset
 
-, the construction vastly differs.
+.
+ However, the arguments used and the construction of the counterexample,
+ vastly differs from those presented here.
  Our construction is considerably simpler.
 \end_layout
 

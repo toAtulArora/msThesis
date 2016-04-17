@@ -622,23 +622,23 @@ Imagine there are two particles, one with person A, and the other with person
 \end_inset
 
  and gets the value 
-\begin_inset Formula $x_{A}$
+\begin_inset Formula $q_{A}$
 \end_inset
 
 .
  She knows what position her particle should've been at, if B didn't do
  anything, call this position 
-\begin_inset Formula $x_{A}^{(0)}$
+\begin_inset Formula $q_{A}^{(0)}$
 \end_inset
 
 .
  If now 
-\begin_inset Formula $x_{A}\neq x_{A}^{(0)}$
+\begin_inset Formula $q_{A}\neq q_{A}^{(0)}$
 \end_inset
 
 , then she knows B sent a signal.
  If 
-\begin_inset Formula $x_{A}=x_{A}^{(0)}$
+\begin_inset Formula $q_{A}=q_{A}^{(0)}$
 \end_inset
 
 , then she knows nothing was sent.
@@ -657,11 +657,11 @@ Ofcourse, one can fill in the details, which is what I almost started doing,
  Thus, in this light, chaos restores locality.
  This is actually not too hard to see.
  Imagine you have an uncertainty 
-\begin_inset Formula $\delta x$
+\begin_inset Formula $\delta q$
 \end_inset
 
 , when you measured the position and got the value 
-\begin_inset Formula $x$
+\begin_inset Formula $q$
 \end_inset
 
 .
@@ -677,14 +677,14 @@ Ofcourse, one can fill in the details, which is what I almost started doing,
 \end_inset
 
  evolves, 
-\begin_inset Formula $\delta x$
+\begin_inset Formula $\delta q$
 \end_inset
 
  will increase (in case of free evolution), effectively destroying 'position
  information'.
  The idea can only be harnessed, if one can somehow decouple the uncertainty
  in 
-\begin_inset Formula $x$
+\begin_inset Formula $q$
 \end_inset
 
  from the wavefunction.
@@ -780,8 +780,8 @@ key "symmetrizationIdentical"
 \end_inset
 
 , in the context of particle physics.
- However when considered in the Bohmian formalism, it might yield an interesting
- alternative to the problem of identical particles.
+ However when considered in view of the Bohmian formalism, it might yield
+ an interesting alternative to the problem of identical particles.
 \end_layout
 
 \begin_layout Standard
