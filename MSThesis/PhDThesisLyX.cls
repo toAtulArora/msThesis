@@ -456,6 +456,34 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 % These macros are used to declare arguments needed for the
 % construction of the title page and other preamble.
 
+
+\newcommand{\@certificatetext}{}
+\newcommand{\certificatetext}[1]{\renewcommand{\@certificatetext}{#1}}
+
+
+\newcommand{\@regno}{}
+\newcommand{\regno}[1]{\renewcommand{\@regno}{#1}}
+
+
+\newcommand{\@authorprefix}{}
+\newcommand{\authorprefix}[1]{\renewcommand{\@authorprefix}{#1}}
+
+
+\newcommand{\@panelb}{}
+\newcommand{\panelb}[1]{\renewcommand{\@panelb}{#1}}
+
+
+\newcommand{\@panela}{}
+\newcommand{\panela}[1]{\renewcommand{\@panela}{#1}}
+
+
+\newcommand{\@guidedeclare}{}
+\newcommand{\guidedeclare}[1]{\renewcommand{\@guidedeclare}{#1}}
+
+% 
+\newcommand{\@guide}{}
+\newcommand{\guide}[1]{\renewcommand{\@guide}{#1}}
+
 % The year and term the degree will be officially conferred
 \newcommand{\@degreedate}{}
 \newcommand{\degreedate}[1]{\renewcommand{\@degreedate}{#1}}
@@ -584,11 +612,55 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \setsinglecolumn
 \chapter*{\centering \Large Declaration}
 \thispagestyle{empty}
-}{
+}
+{
+
+{
 \flushright
-\@author{}\\
-\@degreedate{}
 \vfill
+\@author{}\\
+(candidate)\\
+%\bigskip
+%\@degreedate{}
+\vfill
+}
+{
+\@guidedeclare{}
+\vfill
+}
+{
+\flushright
+\@guide{}\\
+(supervisor)\\
+\bigskip
+Dated: \@degreedate{}
+\vfill
+}
+
+}
+
+% ******************************* Certificate  **********************************
+
+\newenvironment{certificate}{
+\cleardoublepage
+\setsinglecolumn
+\chapter*{\centering \Large Certificate of Examination}
+\thispagestyle{empty}
+\@certificatetext{}
+%This is to certify that the dissertation titled \textbf{\@title{}}, submitted by \textbf{\@authorprefix{} \@author{}} (Registration Number: \@regno{}) for the partial fulfilment of the BS-MS dual degree programme of \@university{}, has been examined by the thesis committee duly appointed by the institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.
+}
+{
+
+{
+\flushright
+\vfill
+\@panela{} \hfill \@panelb{} \hfill \@guide{}\\
+\hfill (supervisor)\\
+\bigskip
+Dated: \@degreedate{}
+\vfill
+}
+
 }
 
 

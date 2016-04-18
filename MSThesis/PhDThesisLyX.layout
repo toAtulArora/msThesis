@@ -67,6 +67,33 @@ Style declaration
 	EndFont
 End
 
+Style certificate
+	Margin                	Static
+	LatexType             	Environment
+	LatexName             	certificate
+	Category              	FrontMatter
+	NextNoIndent          	1
+	LeftMargin            	MMM
+	RightMargin          	MMM
+	ParIndent             	MM
+	ItemSep               	0
+	TopSep               	0.7
+	BottomSep            	0.7
+	ParSep                	0
+	Align                 	Block
+	LabelType             	Centered_Top_Environment
+	LabelString           	"Certificate"
+	LabelBottomSep        	0.5
+	Font
+	  Size                	Small
+	EndFont
+	LabelFont
+	  Series	        Bold
+	  Size                	Large
+	EndFont
+End
+
+
 Style abstract
 	Margin                	Static
 	LatexType             	Environment

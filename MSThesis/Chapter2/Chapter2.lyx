@@ -1678,16 +1678,23 @@ BM was successfully simulated for a particle, with a single degree of freedom,
  Generalization to multiple particles and inclusion of spins, was among
  the immediate next steps, however due to later theoretical developments,
  were not carried out.
- The code is available on 
+ The code is available at 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gitHubThesisSim"
+
+\end_inset
+
+ 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 href{https://github.com/toAtulArora/msThesis/tree/master/numerics}{github.com/toAt
-ulArora/msThesis}
+ulArora/msThesis/tree/master/numerics}
 \end_layout
 
 \end_inset
@@ -2513,7 +2520,7 @@ Roy Singh Theory
 \end_layout
 
 \begin_layout Standard
-Roy Singh proposed 
+Roy Singh (RS) proposed 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "roySingh"

@@ -228,7 +228,8 @@ reference "sec:Peres-Mermin-Revisited"
 One can infact try to show how a consistent (with QM) non-multiplicative
  theory, must be non-local.
  Formally it is clear, since a violation of Bell's inequality implies non-locali
-ty, any consistent completion of QM, will be non-local.
+ty.
+ Consequently, any consistent completion of QM, will be non-local.
  More insight can be gained, although some care is needed.
  The notion of compatible observables is that commuting observables don't
  disturb each other and can be simultaneously known.
@@ -304,14 +305,14 @@ ty, any consistent completion of QM, will be non-local.
 \begin_inset Formula $m_{1}(\hat{B}_{1})\neq m_{2}(\hat{B}_{1})$
 \end_inset
 
- for example), is if the theory is also non-local.
+ for example), is if the theory is non-local.
  Locality will entail that 
 \begin_inset Formula $m_{1}(\hat{B}_{1})=m_{2}(\hat{B}_{1})$
 \end_inset
 
  for instance, since the information about which observable was measured
  first, can't be propagated instantaneously.
- We see therefore that non-locality quite naturally arises in consistent
+ We see therefore that non-locality arises quite naturally in consistent
  non-multiplicative theories.
 \end_layout
 
@@ -680,7 +681,7 @@ Ofcourse, one can fill in the details, which is what I almost started doing,
 \begin_inset Formula $\delta q$
 \end_inset
 
- will increase (in case of free evolution), effectively destroying 'position
+ will increase (in case of free evolution), effectively destroying `position
  information'.
  The idea can only be harnessed, if one can somehow decouple the uncertainty
  in 
@@ -691,7 +692,7 @@ Ofcourse, one can fill in the details, which is what I almost started doing,
 \end_layout
 
 \begin_layout Subsection
-Identical Particles, alternative approach
+Identical Particles, an alternate approach
 \end_layout
 
 \begin_layout Standard

@@ -5,6 +5,9 @@
 \textclass PhDThesisLyX
 \options a4paper,titlepage,12pt,numbered
 \use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -90,21 +93,23 @@ In principle, we have achieved what we set out to; we were able to understand
  how BM explains PM, a test of contextuality.
  Having clarified various concepts through the heavy machinery of BM, here
  we attempt to further our understanding, without using BM.
- We will start with refining the assumptions of the PM test and see how,
- when one of the assumptions is refined, one version holds for QM, while
- the other is not even experimentally testable.
+ We will start with refining the assumptions of the PM test.
+ We will see how, when one of the assumptions is refined, one version holds
+ for QM.
+ The other is not even experimentally testable.
  Thereafter, we construct simple toy models, one of which is unambiguously
  non-contextual (unlike BM, where one must restrict the measurement process
- to make the same claim) and demonstrate the distinction between multiplicativit
-y and its versions.
+ to make the same claim).
+ This is used to demonstrate the distinction between the two versions of
+ multiplicativity.
  We then generalize this toy model to produce statistics consistent with
  QM, for an arbitrary, but discrete Hilbert space.
  Finally, we generalize this to continuous variables (without spins) and
- obtain a consistent completion of QM, and discuss it's relation with other
- known completions (BM & RS).
- This model facilitates easy value assignments in case of the phase space
- versions of determinism and contextuality tests, which are hard to compute
- from BM and RS.
+ obtain a consistent one dimensional completion of QM.
+ Its relation with other known completions (BM & RS) are also discussed.
+ This model aims to facilitate easy value assignments in case of the phase
+ space versions of determinism and contextuality tests.
+ These are hard to compute from BM and RS.
 \end_layout
 
 \begin_layout Section
@@ -135,26 +140,60 @@ reference "sec:Peres-Mermin-Revisited"
 \begin_inset Formula $m_{i}(\hat{*})$
 \end_inset
 
- represent the value assigned to an operator, where 
+ represent the value assigned to an operator.
+ When 
+\begin_inset Formula $m$
+\end_inset
+
+ occurs multiple times in a given expression, then 
 \begin_inset Formula $i$
 \end_inset
 
  encodes the sequence of measurements.
  If we assume non invasiveness, then multiplicativity has a clear meaning;
- for some arbitrary function 
-\begin_inset Formula $f$
+ 
+\end_layout
+
+\begin_layout Definition*
+In a Hilbert space 
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
-, it is the statement that the following holds 
+, a map 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ from 
+\begin_inset Formula $\mathcal{H}\otimes\mathcal{H}^{\dagger}$
+\end_inset
+
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, is 
+\emph on
+multiplicative
+\emph default
+ iff 
 \begin_inset Formula 
 \begin{equation}
-m_{1}(f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{n}))=f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots m_{1}(\hat{B}_{n})),\label{eq:multiplicativity}
+m_{1}(f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{n}))=f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots m_{1}(\hat{B}_{n})).\label{eq:multiplicativity}
 \end{equation}
 
 \end_inset
 
-where we have generalized the notion from simply a product to any arbitrary
- function and have used 
+
+\end_layout
+
+\begin_layout Standard
+Here we have generalized the notion from simply a product to any arbitrary
+ function.
+ We have used 
 \begin_inset Formula $1$
 \end_inset
 
@@ -164,7 +203,35 @@ where we have generalized the notion from simply a product to any arbitrary
 
 , since in this case, the sequence of a measurement is irrelevant.
  If one relaxes the no-disturbance assumption, then the following also becomes
- a possibility
+ a possibility.
+\end_layout
+
+\begin_layout Definition*
+In a Hilbert space 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, a map 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ from 
+\begin_inset Formula $\mathcal{H}\otimes\mathcal{H}^{\dagger}$
+\end_inset
+
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, is 
+\emph on
+sequentially-multiplicative
+\emph default
+ iff 
 \begin_inset Formula 
 \begin{equation}
 m_{1}(f(\hat{B}_{1},\hat{B}_{2},\dots,\hat{B}_{n}))=f(m_{k_{1}}(\hat{B}_{1}),m_{k_{2}}(\hat{B}_{2}),\dots m_{k_{n}}(\hat{B}_{n})),\label{eq:seqMultiplicativity}
@@ -181,8 +248,6 @@ where
 \end_inset
 
 .
- We call this sequential multiplicativity.
- 
 \end_layout
 
 \begin_layout Standard
@@ -227,15 +292,27 @@ We take a moment to understand the meaning of these statements more carefully,
 \end_inset
 
 .
- Since QM doesn't predict the values, only yields probabilities, and since
- a measurement in QM leads to disturbance, it can't contradict 
+ QM can't explicitly contradict 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:multiplicativity"
 
 \end_inset
 
+, since it only yields probabilities.
+ Further, a measurement in QM leads to disturbance, unless ofcourse we consider
+ simultaneous eigenstates.
+ Therefore, after making a measurement, say 
+\begin_inset Formula $m_{1}(\hat{B}_{1})$
+\end_inset
+
+, one can't obtain 
+\begin_inset Formula $m_{1}(\hat{B}_{2})$
+\end_inset
+
 .
+ Even if we agree to start the measurement with the same state, we can't
+ make the hidden variables identical.
  However, 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -277,8 +354,8 @@ reference "eq:seqMultiplicativity"
 \end_inset
 
  which has a precise value in this case.
- One may claim that experimentally, there maybe some hidden variables which
- can't be made identical and thus after measuring the 
+ One may again claim that experimentally, there maybe some hidden variables
+ which can't be made identical and thus after measuring the 
 \begin_inset Formula $B$
 \end_inset
 
@@ -326,23 +403,23 @@ QM doesn't enforce multiplicativity
 We worked out two proofs of weak sequential multiplicativity in QM.
  The first was a restricted, brute force proof.
  The second we showed holds in general, which we will discuss here.
- 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-Statement: If the system is prepared in a state, s.t.
+\begin_layout Proposition*
+Let the system be in a state, s.t.
  measurement of 
 \begin_inset Formula $\hat{C}$
 \end_inset
 
- yields repeatable results (same result each time), then 
+ yields repeatable results (same result each time).
+ Then according to QM, sequential multiplicativity (see 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "eq:seqMultiplicativity"
 
 \end_inset
 
- holds, where 
+) holds, where 
 \begin_inset Formula $\hat{C}\equiv f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{n})$
 \end_inset
 
@@ -352,10 +429,10 @@ reference "eq:seqMultiplicativity"
 
  are as defined.
  
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-Proof: Assume without loss of generality that 
+\begin_layout Proof
+Assume without loss of generality that 
 \begin_inset Formula $\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{n}$
 \end_inset
 
@@ -521,8 +598,8 @@ name "sub:Contextual,-Memory-Model"
 \end_layout
 
 \begin_layout Standard
-The Memory Model presented here, is perhaps the simplest model, that is
- contextual, non-multiplicative and invasive, viz.
+The Memory Model presented here, is perhaps the simplest contextual model.
+ It is also non-multiplicative and invasive, viz.
  it doesn't satisfy any of (1), (2) and (3), as listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -536,8 +613,8 @@ reference "sec:Peres-Mermin-Revisited"
 status collapsed
 
 \begin_layout Plain Layout
-this model is assumed strictly sequentially multiplicative, unlike QM which
- only weakly enforces sequential multiplicativity.
+infact according to QM, for row and column measurements, sequential multiplicati
+vity is a requirement
 \end_layout
 
 \end_inset
@@ -654,8 +731,9 @@ name "sub:Non-Contextual-Toy-Model"
 \end_layout
 
 \begin_layout Standard
-We now discuss another simple model, which is non-contextual, non-multiplicative
- but invasive, viz.
+We now discuss another simple model, which is non-contextual and still consisten
+t with QM.
+ It is also non-multiplicative and invasive, viz.
  assumption (1) holds, but (2) and (3) don't, as listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -681,6 +759,10 @@ for convenience.
 \begin_inset Newline newline
 \end_inset
 
+
+\begin_inset space \quad{}
+\end_inset
+
 1.
  Initial State: Choose an appropriate initial state 
 \begin_inset Formula $\left|\psi\right\rangle $
@@ -694,6 +776,10 @@ for convenience.
 \begin_inset Newline newline
 \end_inset
 
+
+\begin_inset space \quad{}
+\end_inset
+
 2.
  Hidden Variable (HV): Toss a coin and assign 
 \begin_inset Formula $c=+1$
@@ -705,6 +791,10 @@ for convenience.
 
 .
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space \quad{}
 \end_inset
 
 3.
@@ -758,6 +848,10 @@ So far the model has only predicted the outcomes of measurements.
  The following final step fills precisely this gap.
  
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space \quad{}
 \end_inset
 
 4.
@@ -870,6 +964,10 @@ non
 
 .
  
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -879,46 +977,8 @@ status open
 \backslash
 center {
 \backslash
-footnotesize
+footnotesize asb
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\begin{array}{c|ccc}
-\text{Iteration} & i=1 & i=2 & i=3\\
-\left|\psi_{\text{init}}\right\rangle  & \left|00\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
-\text{HV/Toss} & c=-1 & c=-1 & c=+1\\
-\\
-\text{Predictions} & m_{1}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
--1 & -1 & -1\\
--1 & -1 & -1\\
--1 & -1 & +1
-\end{array}\right] & m_{2}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
--1 & -1 & -1\\
--1 & -1 & -1\\
--1 & -1 & +1
-\end{array}\right] & m_{3}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
-+1 & +1 & +1\\
-+1 & +1 & -1\\
-+1 & +1 & +1
-\end{array}\right]\\
-\text{(Assignments)}\\
- & m_{1}(\hat{R}_{i}),m_{1}(\hat{C}_{j})=+1\,(j\neq3) & m_{2}(\hat{R}_{i}),m_{2}(\hat{C}_{j})=+1\,(j\neq3) & m_{3}(\hat{R}_{i}),m_{3}(\hat{C}_{j})=+1\,(j\neq3)\\
- & m_{1}(\hat{C}_{3})=-1 & m_{2}(\hat{C}_{3})=-1 & m_{3}(\hat{C}_{3})=-1\\
-\text{Operator}\\
-\text{Measured} & \hat{A}_{13}=\hat{\sigma}_{z}\otimes\hat{\sigma}_{z};m_{1}(\hat{A}_{13})=+1 & \quad\quad\hat{A}_{23}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y};m_{2}(\hat{A}_{23})=-1\quad\quad & \hat{A}_{33}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x};m_{3}(\hat{A}_{33})=+1\\
-\\
-\left|\psi_{\text{final}}\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}} & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
-\\
-\\
-\end{array}\label{eq:toyModel}
-\end{equation}
 
 \end_inset
 
@@ -929,6 +989,11 @@ status open
 \begin_layout Plain Layout
 
 }}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -996,7 +1061,75 @@ where
 
 , which becomes the final state.
  
-\begin_inset Newline newline
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{landscape}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c|ccc}
+\text{Iteration} & i=1 & i=2 & i=3\\
+\left|\psi_{\text{init}}\right\rangle  & \left|00\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
+\text{HV/Toss} & c=-1 & c=-1 & c=+1\\
+\\
+\text{Predictions} & m_{1}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{2}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{3}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
++1 & +1 & +1\\
++1 & +1 & -1\\
++1 & +1 & +1
+\end{array}\right]\\
+\text{(Assignments)}\\
+ & m_{1}(\hat{R}_{i}),m_{1}(\hat{C}_{j})=+1\,(j\neq3) & m_{2}(\hat{R}_{i}),m_{2}(\hat{C}_{j})=+1\,(j\neq3) & m_{3}(\hat{R}_{i}),m_{3}(\hat{C}_{j})=+1\,(j\neq3)\\
+ & m_{1}(\hat{C}_{3})=-1 & m_{2}(\hat{C}_{3})=-1 & m_{3}(\hat{C}_{3})=-1\\
+\text{Operator}\\
+\text{Measured} & \hat{A}_{13}=\hat{\sigma}_{z}\otimes\hat{\sigma}_{z};m_{1}(\hat{A}_{13})=+1 & \quad\quad\hat{A}_{23}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y};m_{2}(\hat{A}_{23})=-1\quad\quad & \hat{A}_{33}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x};m_{3}(\hat{A}_{33})=+1\\
+\\
+\left|\psi_{\text{final}}\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}} & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
+\\
+\\
+\end{array}\label{eq:toyModel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{landscape}
+\end_layout
+
 \end_inset
 
 For the final iteration, 
@@ -1051,6 +1184,7 @@ For the final iteration,
 
  doesn't affect the result one would obtain by measuring operators compatible
  to it (granted they have been measured once before).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1075,6 +1209,17 @@ s) should depend on
 \end_inset
 
  according to QM.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This was pointed out by Prof.
+ Arvind.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1082,7 +1227,7 @@ Generic Models
 \end_layout
 
 \begin_layout Standard
-In this section, we present two arguably, simplest HV theories, one of which
+In this section, we present arguably, the simplest HV theories, one of which
  is for spin like systems (discrete Hilbert space) while the other is for
  phase space (continuous Hilbert Space) for spin-less particles.
  These models are essentially non-contextual completions of QM, which facilitate
@@ -1214,9 +1359,10 @@ We can clearly see that the assignment is non-contextual, since given an
  operator and a state (+ the hidden variable), the value is uniquely assigned.
  The assignment is non-multiplicative, because this scheme when applied
  to the PM situation, becomes effectively the same as the toy model (barring
- the statistics), which we already showed was non-multiplicative.
- The theory is ofcourse invasive, for the state is updated after a measurement
- is made.
+ the statistics).
+ We have already seen explicitly that the toy-model non-multiplicative.
+ The theory is ofcourse invasive, for the state is updated after each measuremen
+t.
 \end_layout
 
 \begin_layout Subsection
@@ -1343,30 +1489,49 @@ name "fig:Illustration-of-cingle"
 
 \end_inset
 
-and the initial state is given by a gaussian.
+and the initial state is given by a Gaussian.
  Now the cumulative of this can be quickly constructed, and where the 
 \begin_inset Formula $c$
 \end_inset
 
  line intersects the graph, that will yield the position of the particle.
- At some later time, if the gaussian shifts (assume it had some momentum),
+ At some later time if the Gaussian shifts (assume it had some momentum),
  then for the same value of 
 \begin_inset Formula $c$
 \end_inset
 
-, the particle's location would've moved with the gaussian as expected.
+, the particle's location would've moved with the Gaussian as expected.
  Infact this is a general feature and can be done for all observables, including
  
 \begin_inset Formula $p$
 \end_inset
 
 .
- Reasoning similar to the previous subsection entails that this theory is
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Reasoning similar to the previous subsection entails that this theory is
  also non-multiplicative and non-contextual.
+\end_layout
+
+\end_inset
+
+The theory is explicitly non-contextual, since values are uniquely assigned
+ to operators, given 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+.
  However, one needs more analysis to extend this to multiple particles.
  Once that is accomplished, one must show that measuring the observables
- using the Hamiltonian approach, would yield consistent results, with that
- obtained by the postulates of the theory.
+ using the Hamiltonian approach, would yield results consistent with those
+ obtained from the postulates of the theory.
  To show then that the theory is non-contextual, one would be required to
  show that all concievable measurement schemes would produce the same result,
  else, like BM, this theory wouldn't be able to predict the values of operators
@@ -1413,11 +1578,12 @@ Once extended appropriately, this theory would effectively overcome all
 
 \begin_layout Standard
 We had this hunch however, that the trajectory so obtained, must be identical
- to that of Bohmian trajectories.
+ to Bohmian trajectories.
  This infact turns out to be so.
  Let us take a moment to prove this, for using the same method, one can
- evalute a trajectory for the momentum also, which is different from that
- given in BM, since in this case, a measurement of 
+ evalute a trajectory for the momentum also.
+ This would be distinct from the momentum in BM.
+ In this case, a measurement of 
 \begin_inset Formula $\hat{p}$
 \end_inset
 
@@ -1426,18 +1592,18 @@ We had this hunch however, that the trajectory so obtained, must be identical
 \end_inset
 
  (the assigned value), unlike in BM.
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-Statement: 
+\begin_layout Proposition*
 \begin_inset Formula $\dot{q}=\nabla S/m$
 \end_inset
 
- for the said theory
-\begin_inset Newline newline
-\end_inset
+ in a continuously c-ingle theory, for a single particle, with one degree
+ of freedom.
+\end_layout
 
-Proof: Let 
+\begin_layout Proof
+Let 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1573,9 +1739,9 @@ An equation similarly for
 
  can be obtained and an appropriate dynamics can perhaps then be constructed.
  It maybe mentioned as a remark that, quite independent of it's motivation,
- this scheme can be used to compute Bohmian trajectories, in a much more
- efficient way, as is apparent by comparing the resources required between
- computing an integral and the steps listed in 
+ this scheme can be used to compute Bohmian trajectories.
+ It is much more efficient, as is apparent from a comparison of the resources
+ required between computing an integral and the steps listed in 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "sec:Bohm's-Theory,-Bohmian"
@@ -1602,7 +1768,7 @@ t with QM.
 \begin_layout Standard
 The approach is to take some compatible observables, and to construct a
  `super-operator', a measurement of which can yield the values of all of
- these compatible observables in a single measurement.
+ these compatible observables in a single shot.
  We would see then, that the in-principle measurement outcome of observing
  these compatible operators, would not be consistent.
  Now this one might treat as contextuality, but according to the definition
@@ -1651,12 +1817,16 @@ reference "sec:Multiplicativity"
 while we define 
 \begin_inset Formula 
 \[
-\hat{C}=f(\{\hat{B}_{i}\})=0.\left|00\right\rangle \left\langle 00\right|+1.\left|01\right\rangle \left\langle 01\right|+2.\left|10\right\rangle \left\langle 10\right|+3.\left|11\right\rangle \left\langle 11\right|
+\hat{C}=f(\{\hat{B}_{i}\})=0.\left|00\right\rangle \left\langle 00\right|+1.\left|01\right\rangle \left\langle 01\right|+2.\left|10\right\rangle \left\langle 10\right|+3.\left|11\right\rangle \left\langle 11\right|.
 \]
 
 \end_inset
 
-which maybe viewed as a function of 
+
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+ maybe viewed as a function of 
 \begin_inset Formula $\hat{B}_{1}$
 \end_inset
 
@@ -1682,7 +1852,8 @@ which maybe viewed as a function of
 \begin_inset Formula $B_{2}$
 \end_inset
 
-, which means that from the observed value of 
+.
+ Consequently, from the observed value of 
 \begin_inset Formula $\hat{C}$
 \end_inset
 
@@ -1714,7 +1885,7 @@ reference "sub:Discretely-C-ingle-Theory"
 
 \end_inset
 
-), for 
+), with 
 \begin_inset Formula $c<0.5$
 \end_inset
 
@@ -1758,9 +1929,10 @@ reference "sub:Discretely-C-ingle-Theory"
 \begin_inset Formula $\hat{C}$
 \end_inset
 
-, thus by our accepted definition, there's no contextuality.
+.
+ Thus by our accepted definition, there's no contextuality.
  It is just that 
-\begin_inset Formula $m_{1}(\hat{C})\neq m_{1}(f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots))$
+\begin_inset Formula $m_{1}(\hat{C})\neq f(m_{1}(\hat{B}_{1}),m_{1}(\hat{B}_{2}),\dots)$
 \end_inset
 
 , viz.
@@ -1798,12 +1970,15 @@ We have already learnt that the proof of `contextuality', infact requires
  non-invasiveness.
  Here we were able to construct an explicit non-contextual theory (for spins)
  which is non-multiplactive, but invasive and completely consistent with
- QM, viz.
- satisfies (2) but neither (3) nor (1), serving as a counter-example to
- the claim that non-contextual hidden variable theories can't be consistent
- with QM.
- This is of interest because one must restrict the measurement scheme in
- BM, to be able to call it non-contextual.
+ QM.
+ Succinctly stated, it satisfies (2) but neither (3) nor (1), serving as
+ a counter-example to the claim that non-contextual hidden variable theories
+ can't be consistent with QM.
+ We also showed how the theory might be misconstrued to be contextual and
+ provided a clarification.
+ This is of interest because the contextuality arising in BM from the measuremen
+t schemes, has been a source of confusion about the said notion, arising
+ in the PM situation.
 \end_layout
 
 \begin_layout Standard

@@ -17,18 +17,29 @@
 %% License: MIT License (c) 2014 Krishna Kumar                                %%
 %% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{hyperref}
+%\usepackage{hyperref}
+\usepackage{url}
 \title{Contextuality in a Deterministic Quantum Theory}
+\authorprefix{Mr.}
 \author{Atul Singh Arora}
+\regno{MS11003}
 \dept{Department of Physical Sciences}
 \university{Indian Institute of Science Education and Research, Mohali}
 \crest{\includegraphics[width=0.25\textwidth]{Figs/IISER_Mohali_Logo_2014}}
 \degree{Master of Science}
-\college{}
-\degreedate{2016}
+\college{IISER Mohali}
+\degreedate{April 22, 2016}
+\guide{Prof. Arvind}
+\guidedeclare{In my capacity as the supervisor of the candidate's project work, I certify that the aforesaid statements by the candidate are true to the best of my knowledge.}
+\panela{Dr. Abhishek Choudhuri}
+\panelb{Dr. Kamal P. Singh}
+\certificatetext{This is to certify that the dissertation titled \textbf{\@title{}}, submitted by \textbf{\@authorprefix{} \@author{}} (Registration Number: \@regno{}) for the partial fulfilment of the BS-MS dual degree programme of the \@university{}, has been examined by the thesis committee duly appointed by the institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.}
 \end_preamble
-\options a4paper,12pt,numbered,times
+\options a4paper,12pt,numbered,times,online
 \use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -50,10 +61,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
+\spacing onehalf
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 0
 \use_package amssymb 0
 \use_package cancel 1
@@ -77,6 +88,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.25in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -96,7 +111,7 @@
 
 \begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -432,6 +447,16 @@ filename "Declaration/Declaration.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "Certificate/Certificate.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "Acknowledgements/Acknowledgements.lyx"
 
 \end_inset
@@ -621,7 +646,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "References/references"
-options "revcompchem"
+options "amsalpha"
 
 \end_inset
 

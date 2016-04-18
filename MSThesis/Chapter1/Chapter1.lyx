@@ -1409,6 +1409,38 @@ ion relation,
  assignments must be even.
  We have arrived at a contradiction and therefore we conclude that our assumptio
 n that operators have predefined values, must be wrong.
+ One can infact construct the following inequality 
+\begin_inset Formula 
+\[
+\left\langle \hat{\chi}_{\text{PM}}\right\rangle =\left\langle \hat{R}_{1}\right\rangle +\left\langle \hat{R}_{2}\right\rangle +\left\langle \hat{R}_{3}\right\rangle +\left\langle \hat{C}_{1}\right\rangle +\left\langle \hat{C}_{2}\right\rangle -\left\langle \hat{C}_{3}\right\rangle \le4,
+\]
+
+\end_inset
+
+if it is assumed that operators have predefined values.
+ This can be seen from an application of the aforesaid logic, which forbids
+ an assignment that yields only one column (row) as 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ The next best assignment, viz.
+ one that has two columns (or rows) set to 
+\begin_inset Formula $-1$
+\end_inset
+
+, yields 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{PM}}\right\rangle =4$
+\end_inset
+
+ at best.
+ Ofcourse, according to QM 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{PM}}\right\rangle =6\nleq4$
+\end_inset
+
+, which is easier to verify experimentally.
+ Thus a violation of the Peres Mermin inequality, again entails that our
+ assumption is wrong.
  Note that unlike the GHZ test, the Peres Mermin test is (a) state independent
  (no specific 
 \begin_inset Formula $\left|\chi\right\rangle $
