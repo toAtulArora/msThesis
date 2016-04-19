@@ -44,6 +44,16 @@
 %Source 2:http://texblog.org/2012/02/08/adding-line-numbers-to-documents/
 %%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%This is to make the figures not say "Figure 2 on page 5" when I use formatted reference
+\usepackage{prettyref}
+\newrefformat{tab}{Table\,\ref{#1}}
+\newrefformat{fig}{Figure\,\ref{#1}}
+\newrefformat{sec}{Section\,\ref{#1}}
+\newrefformat{sub}{Subsection\,\ref{#1}}
+\newrefformat{eq}{Equation\,\textup{(\ref{#1})}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{url}
 \title{Contextuality in a Deterministic Quantum Theory}
 \authorprefix{Mr.}
