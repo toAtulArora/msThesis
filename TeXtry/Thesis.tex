@@ -1,0 +1,228 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[british,english,a4paper,12pt,numbered,times,online]{PhDThesisLyX}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1in}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{verbatim}
+\usepackage{prettyref}
+\usepackage{amstext}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{makeidx}
+\makeindex
+\usepackage{graphicx}
+\usepackage{setspace}
+\onehalfspacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\let\pr@chap=\pr@cha
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ \theoremstyle{definition}
+ \newtheorem*{defn*}{\protect\definitionname}
+  \theoremstyle{plain}
+  \newtheorem*{prop*}{\protect\propositionname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                            %%
+%% Class ``PhD Thesis LyX''                                                   %%
+%%                                                                            %%
+%% A PhD thesis LyX template for Cambridge University Engineering Department  %%
+%%                                                                            %%
+%% Version: v1.0                                                              %%
+%% Authors: Krishna Kumar                                                     %%
+%% Date: 10/01/2014 (inception)                                               %%
+%% License: MIT License (c) 2014 Krishna Kumar                                %%
+%% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{hyperref}
+\usepackage{url}
+\title{Contextuality in a Deterministic Quantum Theory}
+\authorprefix{Mr.}
+\author{Atul Singh Arora}
+\regno{MS11003}
+\dept{Department of Physical Sciences}
+\university{Indian Institute of Science Education and Research, Mohali}
+\crest{\includegraphics[width=0.25\textwidth]{Figs/IISER_Mohali_Logo_2014}}
+\degree{Master of Science}
+\college{IISER Mohali}
+\degreedate{April 22, 2016}
+\guide{Prof. Arvind}
+\guidedeclare{In my capacity as the supervisor of the candidate's project work, I certify that the aforesaid statements by the candidate are true to the best of my knowledge.}
+\panela{Dr. Abhishek Choudhuri}
+\panelb{Dr. Kamal P. Singh}
+\certificatetext{This is to certify that the dissertation titled \textbf{\@title{}}, submitted by \textbf{\@authorprefix{} \@author{}} (Registration Number: \@regno{}) for the partial fulfilment of the BS-MS dual degree programme of the \@university{}, has been examined by the thesis committee duly appointed by the institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\usepackage{babel}
+  \addto\captionsbritish{\renewcommand{\definitionname}{Definition}}
+  \addto\captionsbritish{\renewcommand{\propositionname}{Proposition}}
+  \addto\captionsenglish{\renewcommand{\definitionname}{Definition}}
+  \addto\captionsenglish{\renewcommand{\propositionname}{Proposition}}
+  \providecommand{\definitionname}{Definition}
+  \providecommand{\propositionname}{Proposition}
+
+\begin{document}
+\begin{comment}
+\textbf{Cambridge University Engineering Department Thesis Template
+ported to \LyX{}2.0 }
+
+Author: Krishna Kumar
+
+Distributed under MIT License.
+
+Website: https://github.com/kks32/PhDThesis\LyX{}
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+\textbf{Thesis Information}
+
+Go to \textsf{Document > Settings > \LaTeX{} preamble} to modify the
+\textsf{title, author, year, department} fields.
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+\textbf{Custom Options}
+
+To set custom options supported by the class file go to Document >
+Settings > Document class and enter \textbf{``a4paper,12pt,numbered,oneside,print}''
+without quotes in the custom field.
+
+\textbf{Paper Size}: a4paper / a5paper
+
+`a4paper'(The University of Cambridge PhD thesis guidelines recommends
+a4 page size - default option) or `a5paper': A5 Paper size is also
+allowed as per the Cambridge University Engineering Deparment guidelines
+for PhD thesis 
+
+\textbf{FontSize: }10pt / 11pt / 12pt
+
+`11pt' or `12pt'(default): Font Size 10pt is NOT recommended by the
+University guidelines 
+
+\textbf{Layout: }`\textbf{oneside}' or `\textbf{twoside}'(default):
+Printing double side (twoside) or single side.
+
+\textbf{Mode (print / online)}: Use `print' for print version with
+appropriate margins and page layout. Leaving the options field blank
+will activate Online version. 
+
+\textbf{draft}: For draft mode without loading any images (same as
+draft in book) 
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+\textbf{Bibliography style: }
+
+To define document class options like bibliography style (\textbf{numbered}
+/ \textbf{authoryear}) go to Document > Settings > Document classs
+and enter ``numbered'' or ``authoryear'' without quotes in the
+custom field.
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+\textbf{Page Style}
+
+`\textbf{default (leave empty)}': For Page Numbers in Header (Left
+Even, Right Odd) and Chapter Name in Header (Right Even) and Section
+Name (Left Odd). Blank Footer. 
+
+\textbf{`PageStyleI'}: Chapter Name next \& Page Number on Even Side
+(Left Even). Section Name \& Page Number in Header on Odd Side (Right
+Odd). Footer is empty. 
+
+\textbf{`PageStyleII'}: Chapter Name on Even Side (Left Even) in Header.
+Section Number \% and Section Name in Header on Odd Side (Right Odd).
+Page numbering in footer 
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+\textbf{Font}
+
+`\textbf{times}`: (The University of Cambridge guidelines recommend
+using Times). Specifying times option in the document class will use
+`mathptpx` or `Times` font with Math Support. 
+
+`\textbf{fourier}`: fourier font with math support
+
+`\textbf{default (empty)}`: When no font is specified, `Latin Modern`
+is used as the default font with Math Support. 
+
+Go to Document > Settings > Document class and include `times` or
+`fourier` in the custom field.
+\end{comment}
+
+
+% Title Page
+\begin{romanpages}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+% FrontMatter
+
+\include{Dedication/Dedication}
+
+\include{Declaration/Declaration}
+
+\include{Certificate/Certificate}
+
+\include{Acknowledgements/Acknowledgements}
+
+\include{Abstract/Abstract}
+
+% List of Contents, Figures and Tables
+
+\tableofcontents{}
+
+\listoffigures
+
+
+\begin{comment}
+\listoftables
+\end{comment}
+
+
+% To print nomenclature
+% \printnomenclature[space] %space can be set as 2.5cm between symbol and description
+% \printnomencl
+\end{romanpages}
+% Main matter
+\setcounter{page}{1}
+
+\include{Chapter1/Chapter1}
+
+\include{Chapter2/Chapter2}
+
+\include{Chapter3/Chapter3}
+
+\include{Chapter4/Chapter4}
+
+\include{Chapter5/Chapter5}
+
+% Back matter
+
+\global\long\def\bibname{References}
+
+
+\bibliographystyle{amsalpha}
+\bibliography{References/references}
+
+
+\appendix
+
+
+\printindex{}
+\end{document}
