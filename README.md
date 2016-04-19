@@ -63,5 +63,6 @@ GIT Submodule Help
 --
 * To add for the first time ```git submodule add https://github.com/submodule```
 * To clone the full thing ```git clone --recursive https://github.com/full```
-* To commit ```cd submodule``` then ```git commit -am "whatever usual business"```
-* To push; once do this ```git config push.recurseSubmodules on-demand``` and thereafter, the usual ```git push``` should suffice.
+* To commit ```cd submodule``` then ```git commit -am "whatever usual business"``` OR you can use ```git submodule foreach git commit -am "whatever"```
+* To push; once do this ```git config push.recurseSubmodules on-demand``` and thereafter, the usual ```git push``` should suffice. 
+* If push doesn't work like that, use ```git push --recurse-submodules=on-demand``` OR you can push from the right directory
