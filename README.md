@@ -59,9 +59,9 @@ Week 1 (Aug 3-9, 2015)
 * Sunday (target: 16h) :
 
 
-GIT Help
+GIT Submodule Help
 --
-git submodule add https://github.com/chaconinc/DbConnector
-git submodule init
-git submodule update
-git clone --recursive https://github.com/c
+* To add for the first time ```git submodule add https://github.com/submodule```
+* To clone the full thing ```git clone --recursive https://github.com/full```
+* To commit ```cd submodule``` then ```git commit -am "whatever usual business"```
+* To push; once do this ```git config push.recurseSubmodules on-demand``` and thereafter, the usual ```git push``` should suffice.
