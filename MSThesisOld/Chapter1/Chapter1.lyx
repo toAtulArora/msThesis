@@ -1,0 +1,1512 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass PhDThesisLyX
+\options a4paper,titlepage,12pt,numbered
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Prologue
+\end_layout
+
+\begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Standard
+A course in Quantum Mechanics (QM) typically leaves the reader with a fuzzy
+ view of the world.
+ The founders of the subject, were able to abstract out the mathematics
+ from it's implications and interpretation.
+ The view that the wavefunction is the most complete description of a system,
+ known as the `Orthodox Copenhagen Interpretation', is among the most popular.
+ Einstein and Bohm, both played an important role in challenging this belief.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Einstein showed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EinsteinEPR"
+
+\end_inset
+
+ that if one makes reasonable assumptions about nature (in the spirit of
+ his relativity theories), then QM must be incomplete.
+ By incompleteness, he meant that the results of certain experiments should
+ be predictable precisely, but QM fails at doing this.
+ Thus he concluded that, QM must be treated as an intermediate theory and
+ that a more complete description of nature should be sought.
+ We will come back to this discussion.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Bohm challenged this view by realizing that one can't experimentally refute
+ the interpretation.
+ His argument was that if for instance, the predictions of QM fail to match
+ with experiments, then one can always add appropriate terms in the Hamiltonian
+ until the difficulty is resolved.
+ He was already anticipating the modern form of particle physics.
+ To accurately account for interactions between particles, one can postulate
+ new force mediating particles, which was also done in the history of the
+ subject.
+ However, one can't refute the interpretation on grounds of inaccuracy in
+ predictions.
+ He therefore, aimed at, and succeeded at constructing a complete quantum
+ theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm1"
+
+\end_inset
+
+, now known as Bohmian Mechanics (BM)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Historically, Louis de Broglie had proposed a similar construction, but
+ abandoned the idea soon after.
+ Bohm established it to be a consistent theory.
+\end_layout
+
+\end_inset
+
+.
+ Its existence showed that we are not justified at believing the interpretation,
+ simply because there exists at least one alternative.
+\end_layout
+
+\begin_layout Standard
+Returning to Einstein, 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+as will be described in more detail
+\end_layout
+
+\end_inset
+
+Bell was able to construct a physical situation, that would test the very
+ requirements Einstein imposed on a complete quantum theory; he was able
+ to show that according to predictions of QM, 
+\emph on
+such
+\emph default
+ a complete description is impossible.
+ This was verified experimentally 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellExp72,BellExpAspect81"
+
+\end_inset
+
+ (and was confirmed to be true, without any possible loop-holes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellExpHensen2015"
+
+\end_inset
+
+, only in 2015).
+\begin_inset Newline newline
+\end_inset
+
+It might appear that Bell's test shows that QM is inconsistent with BM.
+ Upon looking at the details however, one can be convinced, that this is
+ not the case.
+ Infact, Bell was among the first few to popularize BM 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellSpeakable"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The discussion so far, is well known in the literature.
+ However, certain developments which followed the said work of Bohm, again
+ lead to apparent inconsistencies between BM and QM.
+ These had not been satisfactorily addressed in the literature and have
+ become the subject of this thesis.
+ 
+\begin_inset Newline newline
+\end_inset
+
+For the sake of completeness, we merely name these.
+ One must look at the details, to be able to appreciate them.
+ Greenberger, Horne and Zeilinger (GHZ), constructed a test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZ"
+
+\end_inset
+
+ that apparently showed determinism can't exist, i.e.
+ the notion that observables have pre-defined values is inconsistent with
+ QM.
+ Developments due to Gleason 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gleason"
+
+\end_inset
+
+, Bell himself 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BellOnHiddenVariables"
+
+\end_inset
+
+, Kochen, Specker 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KochenSpecker"
+
+\end_inset
+
+, Peres and Mermin 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peres,Mermin"
+
+\end_inset
+
+, showed that the value an operator takes, must depend on the context in
+ which it is measured; context here refers to the complete set of compatible
+ operators.
+\begin_inset Newline newline
+\end_inset
+
+The apparent contradiction must now be clear; BM is deterministic and it
+ is at odds with the notion of contextuality as well.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "E"
+description "Energy"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$m_0$"
+description "intrinsic rest mass"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "c"
+description "speed of light"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "p"
+description "momentum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The EPR argument
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{multicols}{3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The EPR argument requires an entangled state, over two particles, which
+ was originally written as 
+\begin_inset Formula 
+\[
+\psi(q_{1},q_{2})=\int e^{-i(q_{1}-q_{2}+q_{0})p/\hbar}dp=\delta(q_{1}-q_{2}+q_{0}).
+\]
+
+\end_inset
+
+In the modern notation, one can write this as 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\psi\right\rangle  & = & \int\delta(q_{1}-q_{2}+q_{0})dq_{1}dq_{2}\left|q_{1}\right\rangle _{A}\left|q_{2}\right\rangle _{B}\\
+ & = & \int\left|q\right\rangle _{A}\left|q+q_{0}\right\rangle _{B}dq.
+\end{eqnarray*}
+
+\end_inset
+
+Similarly, one can write the same state as 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\psi\right\rangle  & = & \int e^{-i(q_{1}-q_{2})p/\hbar}dpdq_{1}dq_{2}\left|q_{1}\right\rangle _{A}\left|q_{2}\right\rangle _{B}\\
+ & = & \int e^{-iq_{1}p/\hbar}\left|q_{1}\right\rangle _{A}dq_{1}e^{iq_{2}p/\hbar}\left|q_{2}\right\rangle _{B}dq_{2}dp\\
+ & = & \int\left|p\right\rangle _{A}\left|-p\right\rangle _{B}dp.
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ label the particles.
+ An attempt to reproduce the precise argument, will not be made.
+ Instead, we satisfy ourselves with the following simplified argument.
+ We assume the principle of locality holds, which is to say that if two
+ particles are sufficiently far away, then any change made to one particle,
+ should not influence the other instantaneously.
+ Given this assumption, consider two particles, which are sufficiently far
+ away and that their state is given by 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+.
+ Now if the momentum of particle 
+\begin_inset Formula $B$
+\end_inset
+
+ is measured by observer 
+\begin_inset Formula $B$
+\end_inset
+
+, then observer 
+\begin_inset Formula $B$
+\end_inset
+
+, according to QM, will be able to predict the momentum of particle 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Similarly, if the position of particle 
+\begin_inset Formula $B$
+\end_inset
+
+ is measured, then observer 
+\begin_inset Formula $B$
+\end_inset
+
+ can predict the position of particle 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Further, note that the choice made by observer 
+\begin_inset Formula $B$
+\end_inset
+
+, can't influence particle 
+\begin_inset Formula $A$
+\end_inset
+
+, by the assumption of locality.
+ It therefore follows that particle 
+\begin_inset Formula $A$
+\end_inset
+
+ had both it's position and momentum well defined, without being measured.
+ QM fails to yield the answer with precision, whereas as we have shown,
+ the answer was precise.
+ Thus, we are forced to conclude that QM is not a complete description of
+ nature.
+\end_layout
+
+\begin_layout Standard
+Einstein ended his paper with this remark: ``While we have thus shown that
+ the wave function does not provide a complete description of the physical
+ reality, we left open the question of whether or not such a description
+ exists.
+ We believe, however, that such a theory is possible.'' 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EinsteinEPR"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bell's Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Bell's-Theorem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bell's work addresses and satisfactorily answers Einstein's open question,
+ of whether a 
+\emph on
+such
+\emph default
+ a description exists.
+ Consider the following scenario.
+ There are two observers, A and B, each has a particle.
+ Each observer, can measure two properties, call them 
+\begin_inset Formula $\hat{a}_{1},\hat{a}_{2}$
+\end_inset
+
+ for observer A and 
+\begin_inset Formula $\hat{b}_{1},\hat{b}_{2}$
+\end_inset
+
+ for observer B, which yield a 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ outcome.
+ Let 
+\begin_inset Formula $\left\langle \hat{a}_{i}\hat{b}_{j}\right\rangle $
+\end_inset
+
+ represent the average value obtained by measuring the property 
+\begin_inset Formula $\hat{a}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{b}_{j}$
+\end_inset
+
+ on the first and second particle respectively.
+ Consider the average given by 
+\begin_inset Formula $\left\langle \hat{B}\right\rangle =\left\langle \hat{a}_{1}\hat{b}_{1}\right\rangle +\left\langle \hat{a}_{1}\hat{b}_{2}\right\rangle +\left\langle \hat{a}_{2}\hat{b}_{1}\right\rangle -\left\langle \hat{a}_{2}\hat{b}_{2}\right\rangle $
+\end_inset
+
+.
+ If one assumes local realism
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Infact, an argument similar to EPR can be used to show that locality entails
+ realism.
+\end_layout
+
+\end_inset
+
+, that is that the values 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ takes are unaffected by those taken by 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ and that 
+\begin_inset Formula $\hat{a}_{i},\hat{b}_{j}$
+\end_inset
+
+ have pre-defined values (respectively), then 
+\begin_inset Formula $\left\langle \hat{B}\right\rangle \le2$
+\end_inset
+
+.
+ One can check this quickly by a brute force substitution of 
+\begin_inset Formula $\pm1$
+\end_inset
+
+ values, in place of 
+\begin_inset Formula $a_{i},b_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Consider now, the state 
+\begin_inset Formula $\left|\psi\right\rangle =\left(\left|+-\right\rangle -\left|-+\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{\sigma}_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $
+\end_inset
+
+, and 
+\begin_inset Formula $\hat{\sigma}_{x,y,z}$
+\end_inset
+
+ are the Pauli matrices, given in the z-basis as 
+\begin_inset Formula 
+\[
+\hat{\sigma}_{x}\doteq\left[\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right],\,\hat{\sigma}_{y}\doteq\left[\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right],\,\hat{\sigma}_{z}\doteq\left[\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right].
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\hat{a}_{1}=\hat{\sigma}_{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{a}_{2}=\hat{\sigma}_{x}$
+\end_inset
+
+, while 
+\begin_inset Formula $\hat{b}_{1}=-\frac{\hat{\sigma}_{z}+\hat{\sigma}_{x}}{\sqrt{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{b}_{2}=\frac{\hat{\sigma}_{z}-\hat{\sigma}_{x}}{\sqrt{2}}$
+\end_inset
+
+.
+ Upon evaluating 
+\begin_inset Formula $\left\langle \hat{B}\right\rangle $
+\end_inset
+
+ using the rules of QM, one obtains 
+\begin_inset Formula $\left\langle \hat{B}\right\rangle =2\sqrt{2}\nleq2$
+\end_inset
+
+.
+ This entails that our assumption, that of local realism, must be incorrect,
+ which settles the question: A 
+\emph on
+local
+\emph default
+ hidden variable description can not exist.
+ The word hidden is used to represent information about the state of the
+ system, that is not contained in the wavefunction.
+ It is instructive to emphasize that a non-local description, may still
+ be possible.
+ It is also important to note that, despite this non-locality, one can't
+ use QM to send signals instantaneously (superluminal communication is not
+ possible).
+ This is known as the no-signalling theorem and can be proven by showing
+ that marginals in QM, don't depend on the system which is traced out 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NielsenChuang"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Bohm's Theory, Bohmian Mechanics (condensed introduction)
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Bohm's-Theory,-Bohmian"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bohm gave a precise 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm1"
+
+\end_inset
+
+, but non-local description of quantum phenomena.
+ Let us start with non-interacting particles.
+ A particle is associated with (1) a position, 
+\begin_inset Formula $q$
+\end_inset
+
+ & momentum, 
+\begin_inset Formula $p$
+\end_inset
+
+, precisely defined and (2) a wavefunction 
+\begin_inset Formula $\psi=Re^{iS/\hbar}$
+\end_inset
+
+.
+ The postulates of the theory are: (a) Evolution of the wavefunction, is
+ governed by Schrodinger's equation: 
+\begin_inset Formula $i\hbar\partial\psi/\partial t=-(\hbar^{2}/2m)\nabla^{2}\psi+V\psi$
+\end_inset
+
+.
+ (b) The particle is guided by the wavefunction: 
+\begin_inset Formula $\dot{q}=p/m$
+\end_inset
+
+ where 
+\begin_inset Formula $p=\nabla S=\hbar\text{Im}(\nabla\psi/\psi)$
+\end_inset
+
+.
+ (c) The initial distribution of the particles is given by 
+\begin_inset Formula $\rho(x)=\left|\psi\right|^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The astute reader would've noticed that 
+\begin_inset Formula $\nabla S$
+\end_inset
+
+ is just the probability current, which entails that if the initial distribution
+ satisfies 
+\begin_inset Formula $\left|\psi(t_{0})\right|^{2}$
+\end_inset
+
+, then it will do so at all times 
+\begin_inset Formula $t$
+\end_inset
+
+, thereafter.
+ Before generalizing this to multiple particles, let us first see a quick
+ consequence of this formulation.
+ In the Orthodox Copenhagen interpretation, the double slit experiment is
+ a source of mystery and the which slit question, that of confusion.
+ In BM, since trajectories are well defined, one observes (see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Experimentally-observed-average"
+
+\end_inset
+
+) that the particle goes through precisely one slit and then later, forms
+ the interference pattern.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Raster/singlePhotonTrajectory.jpg
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimentally observed average single-photon trajectories.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In the case of single-particle quantum mechanics, the trajectories measured
+ in this fashion reproduce those predicted in the Bohm–de Broglie interpretation
+ of quantum mechanics
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kocsis1170"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Experimentally-observed-average"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+The wavefunction goes through both slits, and interferes to create the pattern.
+ If one of the slits is blocked, then since the wavefunction can't interfere,
+ the pattern is lost as expected.
+ We haven't spoken about measuring the particle yet, but if one notes that
+ to measure the particle, the potential at one of the slits must be changed,
+ then it is immediate that the interference pattern will be effected, since
+ the wavefunction is affected by the potential at both slits, even if the
+ particle passes through only one.
+ One finds that by using the following multi-particle generalization, and
+ an appropriate measuring scheme, one can show more precisely how the process
+ of measuring effectively destroys the pattern, replacing the mystery with
+ clarity.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $N$
+\end_inset
+
+ interacting particles, we have 
+\begin_inset Formula $p_{i}=\nabla_{i}S(q_{1},q_{2},\dots,q_{N})$
+\end_inset
+
+ where note that the momentum of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ particle, depends on the instantaneous positions of all the particles.
+ Consequently, BM is an explicitly non-local, but complete description.
+ 
+\end_layout
+
+\begin_layout Standard
+As a final remark, it must be added that spins can also be included in BM,
+ however, a particle is not associated with a specific spin, only it's wavefunct
+ion is.
+ For a spinor, say 
+\begin_inset Formula $\psi\equiv(\psi_{+},\psi_{-})^{T}$
+\end_inset
+
+, the generalization is that 
+\begin_inset Formula $p=\hbar\text{Im}((\psi,\nabla\psi)/(\psi,\psi))$
+\end_inset
+
+ where 
+\begin_inset Formula $(.,.)$
+\end_inset
+
+ represents inner product in the spin space 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+.
+ A quick illustration is in order.
+ Consider the following Stern-Gerlach setup; Quantum effects are considered
+ only along the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ A particle moves along the 
+\begin_inset Formula $z$
+\end_inset
+
+-axis, with speed 
+\begin_inset Formula $v_{z}$
+\end_inset
+
+, and it's initial wavefunction, given by a Gaussian centred at the origin,
+ say 
+\begin_inset Formula $\psi(q_{x})=(1/\sqrt{2\pi}\sigma)e^{-q_{x}^{2}/2\sigma^{2}}$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula $\left|\psi\right\rangle =\int dq\psi(q)\left|q\right\rangle $
+\end_inset
+
+.
+ It's spin state is given by 
+\begin_inset Formula $\left|\chi\right\rangle =\left(\left|+\right\rangle +\left|-\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $\left|+\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left|-\right\rangle $
+\end_inset
+
+ are s.t.
+ 
+\begin_inset Formula $\sigma_{x}\left|\pm\right\rangle =\pm\left|\pm\right\rangle $
+\end_inset
+
+.
+ Along the 
+\begin_inset Formula $z$
+\end_inset
+
+-axis, a strong heterogeneous magnetic field is present, whose action maybe
+ captured by 
+\begin_inset Formula $H_{\text{int}}=a\hat{p}_{x}\otimes\hat{\sigma}_{x}$
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant that quantifies the strength of the field.
+ Why this particular form works, will become clear momentarily.
+ Assuming that 
+\begin_inset Formula $a$
+\end_inset
+
+ is large enough to neglect effects of free-evolution, we have 
+\begin_inset Formula $\hat{U}(t)=e^{-ia\hat{p}_{x}\otimes\hat{\sigma}_{x}t/\hbar}$
+\end_inset
+
+.
+ Thus, if the initial state is 
+\begin_inset Formula $\left|\Psi\right\rangle =\left|\psi\right\rangle \otimes\left|\chi\right\rangle $
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\Psi(t)\right\rangle  & = & \hat{U}(t)\left|\Psi\right\rangle \\
+ & = & \frac{e^{-ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|+\right\rangle +e^{ia\hat{p}_{x}t/\hbar}\left|\psi\right\rangle \otimes\left|-\right\rangle }{\sqrt{2}}\\
+ & = & \frac{\left|\psi_{at}\right\rangle \otimes\left|+\right\rangle +\left|\psi_{-at}\right\rangle \otimes\left|-\right\rangle }{\sqrt{2}}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\left|\psi_{q_{x0}}\right\rangle \equiv\int dq\psi(q_{x}-q_{x0})\left|q_{x}\right\rangle $
+\end_inset
+
+, viz.
+ a Gaussian wavepacket centered at 
+\begin_inset Formula $q_{x0}$
+\end_inset
+
+.
+ One can plot 
+\begin_inset Formula $\left|\Psi\right|^{2}$
+\end_inset
+
+, as a function of 
+\begin_inset Formula $q_{z}$
+\end_inset
+
+, using 
+\begin_inset Formula $q_{z}=v_{z}t$
+\end_inset
+
+, schematically as shown in the figure 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figs/Vectors/sg.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contour plot of 
+\begin_inset Formula $\left|\Psi(q_{x},t)\right|^{2}$
+\end_inset
+
+ plotted for various 
+\begin_inset Formula $t=q_{z}/v_{z}$
+\end_inset
+
+, illustrating a Stern-Gerlach measurement.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contour-plot-of-Psi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+(see 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contour-plot-of-Psi"
+
+\end_inset
+
+), where regions enclosing, say 
+\begin_inset Formula $70\%$
+\end_inset
+
+ of 
+\begin_inset Formula $\left|\Psi(q_{x})\right|^{2}$
+\end_inset
+
+ have been outlined
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that 
+\begin_inset Formula $\left|\Psi\right|^{2}=\left\langle \Psi|q_{x}\right\rangle \left\langle q_{x}|\Psi\right\rangle $
+\end_inset
+
+, where the spins are essentially traced over by the said expression
+\end_layout
+
+\end_inset
+
+.
+ So far, according to QM, if we measure the position of the particle, then
+ (given 
+\begin_inset Formula $\sigma\ll at$
+\end_inset
+
+), obtaining the particle near 
+\begin_inset Formula $q_{x}=at$
+\end_inset
+
+, is as probable as finding it near 
+\begin_inset Formula $q_{x}=-at$
+\end_inset
+
+.
+ QM doesn't make a deterministic prediction at this stage.
+ According to BM, if in addition to the wavefunction, we assume that the
+ particle was initially at some 
+\begin_inset Formula $q_{x}>0$
+\end_inset
+
+, then we can predict precisely where the particle will turn up.
+ Infact, one can accomplish this with essentially no calculation.
+ Since 
+\begin_inset Formula $\dot{q}_{x}=\nabla S/m$
+\end_inset
+
+, a single valued function, it follows that trajectories of particles won't
+ intersect, where recall that 
+\begin_inset Formula $S$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\psi=Re^{iS/\hbar}$
+\end_inset
+
+.
+ Consequently, a particle that starts with 
+\begin_inset Formula $q_{x}>0$
+\end_inset
+
+, must follow the `up' trajectory, else by symmetry, the trajectories will
+ have to intersect.
+ We conclude therefore, that if 
+\begin_inset Formula $q_{x}>0$
+\end_inset
+
+ initially, the particle has spin 
+\begin_inset Formula $\left|+\right\rangle $
+\end_inset
+
+ and if 
+\begin_inset Formula $q_{x}<0,$
+\end_inset
+
+ the spin must be 
+\begin_inset Formula $\left|-\right\rangle $
+\end_inset
+
+.
+ This appears very clear and intuitive.
+ A non-intuitive aspect of this, is that we can't associate spins with particles
+, even though we can predict precisely, the outcome of the experiment.
+ This is manifested by the observation that if 
+\begin_inset Formula $H_{\text{int}}\to-H_{\text{int}}$
+\end_inset
+
+, which practically amounts to reversing the heterogeneity of the magnet,
+ then 
+\begin_inset Formula $\sqrt{2}\left|\Psi(t)\right\rangle =\left|\psi_{-at}\right\rangle \otimes\left|+\right\rangle +\left|\psi_{at}\right\rangle \otimes\left|-\right\rangle $
+\end_inset
+
+.
+ Again, if 
+\begin_inset Formula $q_{x}>0$
+\end_inset
+
+ initially for a particle, it will follow the `up' trajectory.
+ However, now this corresponds to spin 
+\begin_inset Formula $\left|-\right\rangle $
+\end_inset
+
+, as opposed spin 
+\begin_inset Formula $\left|+\right\rangle $
+\end_inset
+
+.
+ We have thus demonstrated that we can't associate spin uniquely to a particle,
+ and that it must only be associated with the wavefunction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Detlef"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+As an aside, it may be added that BM is known for removing the fundamental
+ role of an observer from the description of QM.
+ This is accomplished, roughly speaking, by introducing the positions of
+ particles as well defined, and then explaining the `collapse' of wavefunction,
+ by means of the particle's interaction with those in the environment, which
+ entails that the `collapsed wavefunction' serves as an effective wavefunction,
+ which can be used to describe the motion of the particle henceforth 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm2,Detlef"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Determinism: The GHZ test
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Determinism-The-GHZ"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One drawback of Bell's test, was that it's statistical in nature.
+ The GHZ test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZ"
+
+\end_inset
+
+, takes this a step further and shows that one can't even conceive of having
+ pre-defined values.
+ The construction requires three observers with one particles each.
+ Each observer can measure two properties, 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+, with outcomes 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ We start with the state 
+\begin_inset Formula $\sqrt{2}\left|\chi_{G}\right\rangle =\left|000\right\rangle -\left|111\right\rangle $
+\end_inset
+
+ and note that for 
+\begin_inset Formula $\hat{A}:=\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{A}\left|\chi_{G}\right\rangle =\left|\chi_{G}\right\rangle $
+\end_inset
+
+, where the property 
+\begin_inset Formula $X$
+\end_inset
+
+ is the projection of spin of the particle along the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis and 
+\begin_inset Formula $Y$
+\end_inset
+
+ is that along the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis.
+ Thus a measurement of 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ (the first observer measures 
+\begin_inset Formula $X$
+\end_inset
+
+ and the other measure 
+\begin_inset Formula $Y$
+\end_inset
+
+), will yield 
+\begin_inset Formula $+1$
+\end_inset
+
+ with certainty.
+ Next, we define 
+\begin_inset Formula $\hat{B}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{z}$
+\end_inset
+
+, which by symmetry, must also yield 
+\begin_inset Formula $+1$
+\end_inset
+
+ for the said state.
+ If these observables, 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ had predefined values, then a measurement of 
+\begin_inset Formula $\hat{A}\hat{B}\hat{C}$
+\end_inset
+
+ would be equivalent to measuring 
+\begin_inset Formula $\hat{D}:=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}$
+\end_inset
+
+, since 
+\begin_inset Formula $Y$
+\end_inset
+
+s appear twice for each particle, and 
+\begin_inset Formula $Y^{2}=1$
+\end_inset
+
+.
+ Since a measurement of each 
+\begin_inset Formula $\hat{A},$
+\end_inset
+
+ 
+\begin_inset Formula $\hat{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+ yields a 
+\begin_inset Formula $+1$
+\end_inset
+
+, it follows that a measurement of 
+\begin_inset Formula $\hat{D}$
+\end_inset
+
+ therefore, must also yield 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ However, 
+\begin_inset Formula $\hat{D}\left|\chi_{G}\right\rangle =-\left|\chi_{G}\right\rangle $
+\end_inset
+
+, which entails that a measurement of 
+\begin_inset Formula $\hat{D}$
+\end_inset
+
+ must yield a 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Thus, we arrive at a contradiction and conclude that the assumption that
+ the properties 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ had predefined values, must be incorrect.
+ One could object that 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are complementary properties (correspond to non-commuting operators) and
+ therefore it doesn't make sense to assign values to these operators and
+ treat them like numbers.
+ This objection is addressed by the contextuality tests.
+\end_layout
+
+\begin_layout Section
+Contextuality: The Peres Mermin test
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Contextuality:-The-Peres"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There've been various developments, of which the simplest, with effectively
+ the same consequence, is discussed: the Peres Mermin test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peres,Mermin"
+
+\end_inset
+
+.
+ In this test also, we will show that pre-defined values can't exist, but
+ in addition, also define the notion of contextuality.
+ Consider the following set of operators 
+\begin_inset Formula 
+\[
+\hat{A}_{ij}\doteq\left[\begin{array}{ccc}
+\hat{\mathbb{I}}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\mathbb{I}} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\\
+\hat{\sigma}_{y}\otimes\hat{\mathbb{I}} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\\
+\hat{\sigma}_{y}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{z}\otimes\hat{\sigma}_{z}
+\end{array}\right]
+\]
+
+\end_inset
+
+which have the peculiar property that all operators along a row (and along
+ a column) commute.
+ It is trivial to see that this holds for the first two rows and the first
+ two columns.
+ To see that this holds also for the last row and column, note the anti-commutat
+ion relation, 
+\begin_inset Formula $\{\hat{\sigma}_{x},\hat{\sigma}_{y}\}=0$
+\end_inset
+
+ and that 
+\begin_inset Formula $\sigma_{z}=i\sigma_{y}\sigma_{x}$
+\end_inset
+
+, which one may check explicitly.
+ Another interesting property is that the product of rows (columns) yield
+ 
+\begin_inset Formula $\hat{R}_{i}=\mathbb{I}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}_{j}=\mathbb{I}\,(j\neq3)$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{C}_{3}=-\mathbb{I}$
+\end_inset
+
+, (
+\begin_inset Formula $\forall\,i,j$
+\end_inset
+
+) where 
+\begin_inset Formula $\hat{R}_{i}\equiv\prod_{j}\hat{A}_{ij}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{C}_{j}\equiv\prod_{i}\hat{A}_{ij}$
+\end_inset
+
+.
+ This can be verified easily by using the aforesaid relations and the fact
+ that 
+\begin_inset Formula $\sigma^{2}=1$
+\end_inset
+
+, for every Pauli matrix.
+ Using this property of 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+, it is easy to show that no pre-defined values for operators can exist.
+ Let us assume that pre-defined values do exist.
+ Note that to get 
+\begin_inset Formula $C_{3}=-1$
+\end_inset
+
+, we must have an odd number of 
+\begin_inset Formula $-1$
+\end_inset
+
+ assignments in the third column.
+ In the remaining columns, the number of 
+\begin_inset Formula $-1$
+\end_inset
+
+ assignments must be even for each column.
+ Thus, in the entire square, the number of 
+\begin_inset Formula $-1$
+\end_inset
+
+ assignments must be odd.
+ Let us use the same reasoning, but along the rows.
+ Since each 
+\begin_inset Formula $R_{i}=1$
+\end_inset
+
+, we must have even number of 
+\begin_inset Formula $-1$
+\end_inset
+
+ assignments along each row.
+ Thus, in the entire square, the number of 
+\begin_inset Formula $-1$
+\end_inset
+
+ assignments must be even.
+ We have arrived at a contradiction and therefore we conclude that our assumptio
+n that operators have predefined values, must be wrong.
+ One can infact construct the following inequality 
+\begin_inset Formula 
+\[
+\left\langle \hat{\chi}_{\text{PM}}\right\rangle =\left\langle \hat{R}_{1}\right\rangle +\left\langle \hat{R}_{2}\right\rangle +\left\langle \hat{R}_{3}\right\rangle +\left\langle \hat{C}_{1}\right\rangle +\left\langle \hat{C}_{2}\right\rangle -\left\langle \hat{C}_{3}\right\rangle \le4,
+\]
+
+\end_inset
+
+if it is assumed that operators have predefined values.
+ This can be seen from an application of the aforesaid logic, which forbids
+ an assignment that yields only one column (row) as 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ The next best assignment, viz.
+ one that has two columns (or rows) set to 
+\begin_inset Formula $-1$
+\end_inset
+
+, yields 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{PM}}\right\rangle =4$
+\end_inset
+
+ at best.
+ Ofcourse, according to QM 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{PM}}\right\rangle =6\nleq4$
+\end_inset
+
+, which is easier to verify experimentally.
+ Thus a violation of the Peres Mermin inequality, again entails that our
+ assumption is wrong.
+ Note that unlike the GHZ test, the Peres Mermin test is (a) state independent
+ (no specific 
+\begin_inset Formula $\left|\chi\right\rangle $
+\end_inset
+
+ is needed for a violation) and (b) here, values of only commuting observables
+ are multiplied.
+\end_layout
+
+\begin_layout Standard
+We are now in a position to discuss the notion of contextuality.
+ We begin with defining a non-contextual assignment to be one, where the
+ assignment depends only on the state (
+\begin_inset Formula $\left|\chi\right\rangle $
+\end_inset
+
+ + hidden variables, if any) and the operator to which the assignment is
+ being made.
+ It follows that we had tacitly assumed a non-contextual assignment, that
+ resulted in a contradiction.
+ If we allow for the value of an operator, to depend on the context in which
+ it is measured, where the context is meant to refer to a set of compatible
+ observables, then the contradiction won't arise.
+ For instance, if we imagine that all observables yield a 
+\begin_inset Formula $+1$
+\end_inset
+
+, except 
+\begin_inset Formula $\hat{A}_{33}$
+\end_inset
+
+ which yields a 
+\begin_inset Formula $-1$
+\end_inset
+
+ if measured with 
+\begin_inset Formula $\hat{A}_{32},\,\hat{A}_{31}$
+\end_inset
+
+ and yields a 
+\begin_inset Formula $+1$
+\end_inset
+
+ if measured with 
+\begin_inset Formula $\hat{A}_{23},\,\hat{A}_{13}$
+\end_inset
+
+.
+ If this doesn't appear entirely unsatisfactory, then you're on the right
+ track and are encouraged to read the more detailed description given in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "chap:An-Alternative-to-Contextuality"
+
+\end_inset
+
+ (more specifically, 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:Contextual,-Memory-Model"
+
+\end_inset
+
+).
+\end_layout
+
+\end_body
+\end_document

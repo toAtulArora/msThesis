@@ -1,0 +1,748 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass PhDThesisLyX
+\begin_preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                            %%
+%% Class ``PhD Thesis LyX''                                                   %%
+%%                                                                            %%
+%% A PhD thesis LyX template for Cambridge University Engineering Department  %%
+%%                                                                            %%
+%% Version: v1.0                                                              %%
+%% Authors: Krishna Kumar                                                     %%
+%% Date: 10/01/2014 (inception)                                               %%
+%% License: MIT License (c) 2014 Krishna Kumar                                %%
+%% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{hyperref}
+
+%TO HELP PROOF READING | DISABLE FOR FINAL VERSION
+\usepackage[pagewise]{lineno}
+\linenumbers
+
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+  \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+  \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+  \renewenvironment{#1}%
+     {\linenomath\csname old#1\endcsname}%
+     {\csname oldend#1\endcsname\endlinenomath}}% 
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+  \patchAmsMathEnvironmentForLineno{#1}%
+  \patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+%Source 1:http://tex.stackexchange.com/questions/43648/why-doesnt-lineno-number-a-paragraph-when-it-is-followed-by-an-align-equation
+%Source 2:http://texblog.org/2012/02/08/adding-line-numbers-to-documents/
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%This is to make the figures not say "Figure 2 on page 5" when I use formatted reference
+\usepackage{prettyref}
+\newrefformat{tab}{Table\,\ref{#1}}
+\newrefformat{fig}{Figure\,\ref{#1}}
+\newrefformat{sec}{Section\,\ref{#1}}
+\newrefformat{sub}{Subsection\,\ref{#1}}
+\newrefformat{eq}{Equation\,\textup{(\ref{#1})}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{url}
+\title{Contextuality in a Deterministic Quantum Theory}
+\authorprefix{Mr.}
+\author{Atul Singh Arora}
+\regno{MS11003}
+\dept{Department of Physical Sciences}
+\university{Indian Institute of Science Education and Research, Mohali}
+\crest{\includegraphics[width=0.25\textwidth]{Figs/IISER_Mohali_Logo_2014}}
+\degree{Master of Science}
+\college{IISER Mohali}
+\degreedate{April 22, 2016}
+\guide{Prof. Arvind}
+\guidedeclare{In my capacity as the supervisor of the candidate's project work, I certify that the aforesaid statements by the candidate are true to the best of my knowledge.}
+\panela{Dr. Abhishek Choudhuri}
+\panelb{Dr. Kamal P. Singh}
+\certificatetext{This is to certify that the dissertation titled \textbf{\@title{}}, submitted by \textbf{\@authorprefix{} \@author{}} (Registration Number: \@regno{}) for the partial fulfilment of the BS-MS dual degree programme of the \@university{}, has been examined by the thesis committee duly appointed by the institute. The committee finds the work done by the candidate satisfactory and recommends that the report be accepted.}
+\end_preamble
+\options a4paper,12pt,numbered,times,online
+\use_default_options false
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+IISER Mohali Thesis Template, ported to LyX 
+\series default
+| built on top of Cambridge University Engineering Department Thesis Template
+ ported to LyX2.0 
+\end_layout
+
+\begin_layout Plain Layout
+Tailored by: Atul Singh Arora
+\end_layout
+
+\begin_layout Plain Layout
+Original Author: Krishna Kumar
+\end_layout
+
+\begin_layout Plain Layout
+Distributed under MIT License.
+\end_layout
+
+\begin_layout Plain Layout
+Website: 
+\end_layout
+
+\begin_layout Plain Layout
+https://github.com/toAtulArora/msThesis/MSThesis
+\end_layout
+
+\begin_layout Plain Layout
+https://github.com/kks32/PhDThesisLyX
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Thesis Information
+\end_layout
+
+\begin_layout Plain Layout
+Go to 
+\family sans
+Document > Settings > LaTeX preamble
+\family default
+ to modify the 
+\family sans
+title, author, year, department
+\family default
+ fields (and various other things)
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Custom Options
+\end_layout
+
+\begin_layout Plain Layout
+To set custom options supported by the class file go to Document > Settings
+ > Document class and enter 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+a4paper,12pt,numbered,oneside,print
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ without quotes in the custom field.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Paper Size
+\series default
+: a4paper / a5paper
+\end_layout
+
+\begin_layout Plain Layout
+`a4paper'(The University of Cambridge PhD thesis guidelines recommends a4
+ page size - default option) or `a5paper': A5 Paper size is also allowed
+ as per the Cambridge University Engineering Deparment guidelines for PhD
+ thesis 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+FontSize: 
+\series default
+10pt / 11pt / 12pt
+\end_layout
+
+\begin_layout Plain Layout
+`11pt' or `12pt'(default): Font Size 10pt is NOT recommended by the University
+ guidelines 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Layout: 
+\series default
+`
+\series bold
+oneside
+\series default
+' or `
+\series bold
+twoside
+\series default
+'(default): Printing double side (twoside) or single side.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Mode (print / online)
+\series default
+: Use `print' for print version with appropriate margins and page layout.
+ Leaving the options field blank will activate Online version.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+draft
+\series default
+: For draft mode without loading any images (same as draft in book) 
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Bibliography style: 
+\end_layout
+
+\begin_layout Plain Layout
+To define document class options like bibliography style (
+\series bold
+numbered
+\series default
+ / 
+\series bold
+authoryear
+\series default
+) go to Document > Settings > Document classs and enter 
+\begin_inset Quotes eld
+\end_inset
+
+numbered
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+authoryear
+\begin_inset Quotes erd
+\end_inset
+
+ without quotes in the custom field.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Page Style
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (leave empty)
+\series default
+': For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in
+ Header (Right Even) and Section Name (Left Odd).
+ Blank Footer.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleI'
+\series default
+: Chapter Name next & Page Number on Even Side (Left Even).
+ Section Name & Page Number in Header on Odd Side (Right Odd).
+ Footer is empty.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleII'
+\series default
+: Chapter Name on Even Side (Left Even) in Header.
+ Section Number % and Section Name in Header on Odd Side (Right Odd).
+ Page numbering in footer 
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Font
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+times
+\series default
+`: (The University of Cambridge guidelines recommend using Times).
+ Specifying times option in the document class will use `mathptpx` or `Times`
+ font with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+fourier
+\series default
+`: fourier font with math support
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (empty)
+\series default
+`: When no font is specified, `Latin Modern` is used as the default font
+ with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Go to Document > Settings > Document class and include `times` or `fourier`
+ in the custom field.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Title Page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+% FrontMatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Dedication/Dedication.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Declaration/Declaration.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Certificate/Certificate.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Acknowledgements/Acknowledgements.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Abstract/Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% List of Contents, Figures and Tables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% To print nomenclature
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+printnomenclature[space] %space can be set as 2.5cm between symbol and descriptio
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+printnomencl
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Main matter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter1/Chapter1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter2/Chapter2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter3/Chapter3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter4/Chapter4.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter5/Chapter5.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Back matter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bibname}{References}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "References/references"
+options "amsalpha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix1/Appendix1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix2/Appendix2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

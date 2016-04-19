@@ -57,3 +57,11 @@ Week 1 (Aug 3-9, 2015)
   * (Thesis): Making a respository and marking progress etc.
 
 * Sunday (target: 16h) :
+
+
+GIT Help
+--
+git submodule add https://github.com/chaconinc/DbConnector
+git submodule init
+git submodule update
+git clone --recursive https://github.com/c
