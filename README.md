@@ -14,7 +14,7 @@ Abstract After various attempts we were able to show, that the notion of context
 Links
 --
 * For a summary of work done, [see this](summary.pdf)
-* The MS Thesis [sits here](MSThesis/Thesis.pdf)
+* The MS Thesis [sits here](msThesisLyX/Thesis.pdf)
 
 Acknowledgements
 --
