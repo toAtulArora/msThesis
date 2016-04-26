@@ -1,0 +1,163 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,british]{beamer}
+\usepackage{ccfonts}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ % (ERT) argument for the TOC
+ \AtBeginDocument{%
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+\theoremstyle{plain}
+\newtheorem{thm}{\protect\theoremname}
+  \theoremstyle{definition}
+  \newtheorem{defn}[thm]{\protect\definitionname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\bibliographystyle{apsrev4-1}
+
+\makeatother
+
+\usepackage{babel}
+  \addto\captionsbritish{\renewcommand{\definitionname}{Definition}}
+  \addto\captionsbritish{\renewcommand{\theoremname}{Theorem}}
+  \addto\captionsenglish{\renewcommand{\definitionname}{Definition}}
+  \addto\captionsenglish{\renewcommand{\theoremname}{Theorem}}
+  \providecommand{\definitionname}{Definition}
+\providecommand{\theoremname}{Theorem}
+
+\begin{document}
+
+\title{Contextuality in a Deterministic Theory}
+
+
+\date{January 15, 2016}
+\makebeamertitle
+\begin{frame}{Motivation}
+
+\begin{itemize}
+\item Two theories: Quantum Mechanics (QM) \& Bohmian Mechanics (BM).
+\end{itemize}
+
+\pause{}
+\begin{itemize}
+\item Fundamental difference: BM is deterministic, viz. positions ($q$)
+and momenta ($p$) are well defined.
+\end{itemize}
+
+\pause{}
+\begin{itemize}
+\item Initial Aim: Construct a theoretical situation that defies determinism
+using QM and analyse using BM.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Notation}
+
+\begin{defn}
+Notation: 
+
+(a) $\psi\in\mathcal{H}$ would typically represent the quantum mechanical
+state of the system (assumed pure),
+
+(b) $\hat{\mathcal{H}}$ is defined to mean $\mathcal{H}\otimes\mathcal{H}^{\dagger}$,
+
+(c) $[\mathcal{H}]$ is defined to mean $(\mathcal{H},\,\mathbb{R}^{\otimes})$,
+which represents the state of the system including hidden variables, 
+
+(d) $[\psi]\in[\mathcal{H}]$ will represent the state of the system,
+including hidden variables, 
+
+(e) a prediction map is $m:\hat{\mathcal{H}},[\mathcal{H}]\to\mathbb{R}$, 
+
+(f) a sequence map is $s:\hat{\mathcal{H}},[\mathcal{H}],\mathbb{R}\to[\mathcal{H}]$, 
+
+(g) the set of all experimental setups is denoted by $\mathcal{E}$, 
+
+(h) a setup map is $e:\hat{\mathcal{H}}\to\mathcal{E}$.
+\end{defn}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Determinism Tests}
+
+\begin{thm}
+Let a map $m:\hat{\mathcal{H}}\to\mathbb{R}$, be s.t. (a) $m(\hat{\mathbb{I}})=1$,
+(b) $m(f(\hat{A}_{1},\hat{A}_{2},\dots))=f(m(\hat{A}_{1}),m(\hat{A}_{2}),\dots)$,
+for any arbitrary function $f$, where $\hat{A}_{i}$ are arbitrary
+Hermitian operators. If $m$ is assumed to describe the outcomes of
+measurements, then no $m$ exists which is consistent with all predictions
+of Quantum Mechanics.
+
+
+\end{thm}
+
+Proof (GHZ \cite{GHZ}):
+\begin{itemize}
+\item 3 observers with one particle each. 
+\item Two properties, $X$ and $Y$, with outcomes $\pm1$. 
+\item State $\sqrt{2}\left|\chi_{G}\right\rangle =\left|000\right\rangle -\left|111\right\rangle $ 
+\item $\hat{A}:=\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}$,
+$\hat{A}\left|\chi_{G}\right\rangle =\left|\chi_{G}\right\rangle $,
+$\hat{B}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}$
+and $\hat{C}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{z}$;
+$\implies m(\hat{A})=m(\hat{B})=m(\hat{C})=+1.$
+\end{itemize}
+
+\begin{eqnarray*}
+m(\hat{A})m(\hat{B})m(\hat{C}) & = & 1\\
+\implies1=m(\hat{A}\hat{B}\hat{C}) & = & m(\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}\hat{\sigma}_{x}\hat{\sigma}_{y}\otimes\hat{\sigma}_{x})\\
+ & = & m(\hat{\sigma}_{x}^{(1)})m(\hat{\sigma}_{y}^{(2)}\hat{\sigma}_{x}^{(2)}\hat{\sigma}_{y}^{(2)})m(\hat{\sigma}_{x}^{(3)})\\
+ & = & m(\hat{\sigma}_{x}^{(1)})m(\hat{\sigma}_{x}^{(2)})m(\hat{\sigma}_{x}^{(3)})\\
+ & = & m(\hat{D}\equiv\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}),
+\end{eqnarray*}
+
+\begin{itemize}
+\item where $\hat{\sigma}_{x}^{(1)}\equiv\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}\otimes\hat{\mathbb{I}}$
+and so on.
+\item However, $\hat{D}\left|\chi_{G}\right\rangle =-\left|\chi_{G}\right\rangle $,
+$\implies m(\hat{D})=-1$.
+\item Contradiction!
+\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Contextuality Tests}
+
+\begin{thm}
+Let a map $m:\hat{\mathcal{H}}\to\mathbb{R}$, be s.t. (a) $m(\hat{\mathbb{I}})=1$,
+(b) $m(f(\hat{B}_{1},\hat{B}_{2},\dots))=f(m(\hat{B}_{1}),m(\hat{B}_{2}),\dots)$,
+for any arbitrary function $f$, where $\hat{B}_{i}$ are mutually
+commuting Hermitian operators. If $m$ is assumed to describe the
+outcomes of measurements, then no $m$ exists which is consistent
+with all predictions of Quantum Mechanics.
+\end{thm}
+
+
+
+
+Proof (new): GHZ generalized
+
+
+Proof (Mermin's \cite{Mermin}): 
+
+\end{frame}
+
+\begin{frame}{Bibliography}
+
+\end{frame}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

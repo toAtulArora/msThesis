@@ -93,18 +93,16 @@ Indian Institute of Science Education and Research (IISER), Mohali
 \end_layout
 
 \begin_layout Author Email
-
 ms11003@iisermohali.ac.in
 \end_layout
 
 \begin_layout Abstract
-
 We reconsider the no-go theorems on hidden variables and conclude that the
  notion of contextuality is not a necessary feature of quantum mechanics.
  We provide an alternative view, motivated by consistency requirements between
  Bohmian Mechanics and the said theorems.
- This is acomplished by identifying a new classical property, we call `multiplic
-ativity'.
+ This is accomplished by identifying a new classical property, we call `multipli
+cativity'.
  We propose a non-contextual hidden variable model, consistent with all
  predictions of QM (for discrete spaces).
  Some implications of non-multiplicativity, to non-locality and contextuality
@@ -511,7 +509,7 @@ One could in principle assume
 
 , s.t.
  if 
-\begin_inset Formula $m$
+\begin_inset Formula $m_{B}$
 \end_inset
 
  & 

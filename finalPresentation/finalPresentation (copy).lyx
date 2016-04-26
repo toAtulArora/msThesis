@@ -1,0 +1,1890 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\bibliographystyle{apsrev4-1}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Contextuality in a Deterministic Theory
+\end_layout
+
+\begin_layout Date
+January 15, 2016
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thesis Problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Two theories: Quantum Mechanics (QM) & Bohmian Mechanics (BM)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Fundamental difference: BM is deterministic, viz.
+ positions (
+\begin_inset Formula $q$
+\end_inset
+
+) and momenta (
+\begin_inset Formula $p$
+\end_inset
+
+) are well defined
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Aim: Construct a theoretical situation that defies determinism using QM
+ and analyze using BM
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Overview of the talk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bohmian Mechanics (BM)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Determinism: The GHZ test & Contextuality
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Its analysis using BM
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+[recent] Determinism in phase space (
+\begin_inset Formula $q$
+\end_inset
+
+,
+\begin_inset Formula $p$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+[in progress] Its analysis using BM
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{Bohmian Mechanics (BM)}} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Determinism 
+\backslash
+& Contextuality 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Its analysis using BM 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(recent) Determinism in phase space $(q,p)$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(in progress) Its analysis using BM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bohmian Mechanics (BM)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+QM: `Copenhagen interpretation'; how to verify?
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+D.
+ Bohm: `hidden variable' theory
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+in principle known, in practice averaged
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Lessons:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Clarity: (a) description (b) deriving classical mechanics
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Accuracy of deductions: (a) Bell test (b) GHZ/Determinism test
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Immediate questions: (a) Uncertainty principle (b) Double slit, which is
+ chosen? (c) Trajectories; observable? (d) Identical particles
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM | Formalism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A particle is associated with (1) 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+, which are precisely and continuously defined & (2) a wave 
+\begin_inset Formula $(\psi)$
+\end_inset
+
+.
+ If the following are assumed, all results of QM are reproduced:
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\psi$
+\end_inset
+
+ satisfies the Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"o
+\end_layout
+
+\end_inset
+
+dinger equation
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $mv=p=\nabla S=\hbar\text{Im}(\nabla\psi/\psi)$
+\end_inset
+
+, where 
+\begin_inset Formula $\psi=Re^{iS/\hbar}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+in practice, we have a statistical ensemble with probability densities 
+\begin_inset Formula $\rho(q)=\left|\psi(q)\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM | Formalism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Comments:
+\end_layout
+
+\begin_layout Itemize
+Observers not fundamental; 
+\begin_inset Formula $\hbar=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Ready generalization to 
+\begin_inset Formula $N$
+\end_inset
+
+ particles.
+ Non-locality becomes explicit; 
+\begin_inset Formula $p_{i}=\nabla_{i}S(q_{1},q_{2},\dots,q_{N})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Extension to spins: Particle has 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+.
+ The wavefunction has the spinor, say 
+\begin_inset Formula $\Psi\equiv(\psi_{+},\psi_{-})^{T}$
+\end_inset
+
+; the generalization is 
+\begin_inset Formula 
+\[
+p=mv=\hbar\text{Im}\frac{(\Psi,\nabla\Psi)}{(\Psi,\Psi)}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $(.,.)$
+\end_inset
+
+ is the inner product in the spin space 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM | Pictures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename images/doubleSlit.png
+	lyxscale 80
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM | Pictures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename images/expDoubleSlit.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+``Observing the Average Trajectories of Single Photons in a Two-Slit Interferome
+ter''
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Bohmian Mechanics (BM) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge {Determinism 
+\backslash
+& Contextuality}} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Analysis using BM 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(recent) Determinism in phase space $(q,p)$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(in progress) Its analysis using BM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Defn: Determinism: Observables have values regardless of whether they are
+ measured, viz.
+ values are predefined.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism: The GHZ Test (1/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Objective: To show that the notion of determinism is incompatible with QM.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Assume: 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Three particles; interact initially; given to three observers (one each)
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Two properties, 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ & 
+\begin_inset Formula $\hat{Y}$
+\end_inset
+
+, outcome is 
+\begin_inset Formula $\pm1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+General Construction: 
+\begin_inset Formula $\hat{A}\equiv\hat{X}\otimes\hat{Y}\otimes\hat{Y}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}\equiv\hat{Y}\otimes\hat{X}\otimes\hat{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}\equiv\hat{Y}\otimes\hat{Y}\otimes\hat{X}$
+\end_inset
+
+; outcome is 
+\begin_inset Formula $+1$
+\end_inset
+
+ for each.
+ 
+\begin_inset Formula $\hat{D}\equiv\hat{X}\otimes\hat{X}\otimes\hat{X}$
+\end_inset
+
+ yields 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Explicit construction: 
+\begin_inset Formula $\left|\psi\right\rangle =(\left|000\right\rangle -\left|111\right\rangle )/\sqrt{2}$
+\end_inset
+
+ (
+\begin_inset Formula $\sigma_{z}\left|0/1\right\rangle =\pm\left|0/1\right\rangle $
+\end_inset
+
+; 
+\begin_inset Formula $\hat{X},\hat{Y},\hat{Z}$
+\end_inset
+
+ are Pauli spin operators
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism: The GHZ Test (2/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hypothesis: Assume that the world is deterministic.
+ 
+\begin_inset Formula $\hat{A}\hat{B}\hat{C}$
+\end_inset
+
+ must yield
+\begin_inset Formula $=1$
+\end_inset
+
+.
+ Also, 
+\begin_inset Formula $\hat{A}\hat{B}\hat{C}=\hat{D}$
+\end_inset
+
+ (because 
+\begin_inset Formula $Y^{2}=1$
+\end_inset
+
+).
+ But 
+\begin_inset Formula $\hat{D}$
+\end_inset
+
+ yields 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Thus we get 
+\begin_inset Formula $+1=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Conclusion: The hypothesis is wrong.
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+can't have non-contextual determinism, where ``non-contextual'' is a subtle
+ but necessary qualification.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contextuality (1/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consider: 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are mutually compatible observables (commute).
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Defn: ``Non-contextual'' and deterministic (NC): A theory that assigns pre-defin
+ed values to 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, irrespective of which is measured.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Thm: Kochen-Specker proved that NC theories are inconsistent with QM.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+`Proof' (Mermin's): 
+\begin_inset Formula 
+\begin{align*}
+A_{11}=\sigma_{z}\otimes I &  & A_{12}=I\otimes\sigma_{z} &  & A_{13}=\sigma_{z}\otimes\sigma_{z}\\
+A_{12}=I\otimes\sigma_{x} &  & A_{22}=\sigma_{x}\otimes I &  & A_{23}=\sigma_{x}\otimes\sigma_{x}\\
+A_{31}=\sigma_{z}\otimes\sigma_{x} &  & A_{32}=\sigma_{x}\otimes\sigma_{z} &  & A_{33}=\sigma_{y}\otimes\sigma_{y}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+NB: (1) Along a row, compatible; also along a column, (2) product along
+ a row 
+\begin_inset Formula $R_{k}$
+\end_inset
+
+ or column 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+, except for 
+\begin_inset Formula $C_{3}=-1$
+\end_inset
+
+.
+ (Hint: 
+\begin_inset Formula $\sigma_{z}=-i\sigma_{x}\sigma_{y}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contextuality (2/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Thus, QM predicts: 
+\begin_inset Formula $\prod_{k=1,2,3}R_{k}C_{k}=-1$
+\end_inset
+
+; NC theories would yield 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Claim: NC theories yield 
+\begin_inset Formula $\left\langle \chi_{ks}\right\rangle =\left\langle R_{1}\right\rangle +\left\langle R_{2}\right\rangle +\left\langle R_{3}\right\rangle +\left\langle C_{1}\right\rangle +\left\langle C_{2}\right\rangle -\left\langle C_{3}\right\rangle \le4$
+\end_inset
+
+ while QM yields 
+\begin_inset Formula $\left\langle \chi_{ks}\right\rangle =6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Remarks: (1) Mermin's test is state independent (2) More suited for testing
+ non-contextuality, as locality is not required.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Bohmian Mechanics (BM) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Determinism: The GHZ test 
+\backslash
+& Contextuality 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge {Analysis using BM }} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(recent) Determinism in phase space $(q,p)$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(in progress) Its analysis using BM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM Analysis of the GHZ test (1/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+BM can explains this easily; Not surprising; BM never assigned spins.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Assmptn: (1) Stern Gerlach like measurements to measure spins; (2) 
+\begin_inset Formula $\left|\Psi(r_{1},r_{2},r_{3},t=0)\right\rangle =(\mbox{\psi}_{+++}\left|000\right\rangle -\psi_{---}\left|111\right\rangle )/\sqrt{2}$
+\end_inset
+
+, where 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ is the position vector in the frame of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ observer.
+ (3) Assume a Gaussian particle distribution initially, propagating along
+ the axes of their respective SG apparatus.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Claim: Time evolution of 
+\begin_inset Formula $\psi_{\pm\pm\pm}$
+\end_inset
+
+ can be written as a product of 3 single particle solutions of the SG setup.
+ (Bohm explicitly did the latter)
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM Analysis of the GHZ test (2/2)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Claim: (1) If SG are setup to measure say 
+\begin_inset Formula $XYY$
+\end_inset
+
+, then four attractor basins form: 
+\begin_inset Formula $(+++),\,(+--),\,(--+)$
+\end_inset
+
+ and 
+\begin_inset Formula $(-+-)$
+\end_inset
+
+.
+ (2) If SG are setup to measure 
+\begin_inset Formula $XXX$
+\end_inset
+
+, then the basins becomes 
+\begin_inset Formula $(---),\,(-++),\,(+-+)$
+\end_inset
+
+ and 
+\begin_inset Formula $(++-)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Conclusion: Consistent with QM
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Remarks: Non locality causes attractor basins to depend on settings of 
+\emph on
+all
+\emph default
+ SG apparatus.
+ Contextuality from this perspective is essentially the statement that the
+ results of an experiment, depend on the experiment being performed.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Bohmian Mechanics (BM) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Determinism: The GHZ test 
+\backslash
+& Contextuality 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Analysis using BM  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge {(recent) Determinism in phase space $(q,p)$}} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(in progress) Its analysis using BM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism in phase space (0/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename images/waveFunctions.pdf
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism in phase space (1/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Was able to make good progress today.
+ So here's what I did.
+ First of all, consider the same states 
+\begin_inset Formula $\left|\psi_{0}\right\rangle ,\left|\psi_{1}\right\rangle $
+\end_inset
+
+ for 
+\begin_inset Formula $N=8$
+\end_inset
+
+, as those considered in my first paper.
+ Recall that for 
+\begin_inset Formula $\hat{Z}$
+\end_inset
+
+ as defined there, viz.
+ 
+\begin_inset Formula $\hat{Z}=Z(\hat{q}_{\mod2L})$
+\end_inset
+
+, or more precisely as 
+\begin_inset Formula $\hat{Z}=Z(\hat{q})=\text{sgn}(\sin(\hat{q}\pi/L))$
+\end_inset
+
+, we had 
+\begin_inset Formula $\hat{Z}\left|\psi_{0}\right\rangle =\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{Z}\left|\psi_{1}\right\rangle =-\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ In addition to this, I define 
+\begin_inset Formula $\hat{X}=e^{-i\hat{p}L/\hbar}$
+\end_inset
+
+ (as opposed to defining it to be hermitian).
+ Now, we know that
+\begin_inset Formula $\left|\psi_{\pm}\right\rangle \equiv\frac{\left|\psi_{0}\right\rangle +\left|\psi_{1}\right\rangle }{\sqrt{2}}$
+\end_inset
+
+ is not an eigenstate of 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+.
+ So we optimize the observable 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+ to 
+\begin_inset Formula $\hat{X}'\equiv\hat{X}\hat{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{T}\equiv e^{i\hat{p}NLa(\hat{q})/2}$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+a(q)=\begin{cases}
+1 & 2L<q<4L\\
+0 & \text{else}
+\end{cases}.
+\]
+
+\end_inset
+
+The idea is that you shift certain peaks to the right place, before applying
+ the displacement operator 
+\begin_inset Formula $\hat{X}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism in phase space (2/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+To illustrate this, consider explicitly 
+\begin_inset Formula $\left|\psi_{0}\right\rangle =\left(\left|\varphi_{-4}\right\rangle +\left|\varphi_{-2}\right\rangle +\left|\varphi_{-1}\right\rangle +\left|\varphi_{-3}\right\rangle \right)/\sqrt{4}$
+\end_inset
+
+.
+ The operation of 
+\begin_inset Formula $\hat{T}$
+\end_inset
+
+ is 
+\begin_inset Formula $\hat{T}\left|\varphi_{4}\right\rangle =\left|\varphi_{-5}\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\hat{T}\left|\varphi_{3}\right\rangle =\left|\varphi_{-6}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{T}\left|\varphi_{n}\right\rangle =\left|\varphi_{n}\right\rangle $
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\{-4,-3,-2,-1,1,2\}$
+\end_inset
+
+.
+ It is now evident that 
+\begin_inset Formula $\hat{X}'=\hat{X}\hat{T}\left|\psi_{0}\right\rangle =\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Note also that 
+\begin_inset Formula $\hat{X}'^{\dagger}\left|\psi_{0}\right\rangle =\left|\psi_{1}\right\rangle $
+\end_inset
+
+.
+ Similarly 
+\begin_inset Formula $\hat{X}'\left|\psi_{1}\right\rangle =\left|\psi_{0}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{X}'^{\dagger}$
+\end_inset
+
+ does the same.
+ So finally, now consider 
+\begin_inset Formula $\left|G\right\rangle \equiv\left(\left|\psi_{0}\psi_{0}\psi_{0}\right\rangle -\left|\psi_{1}\psi_{1}\psi_{1}\right\rangle \right)/\sqrt{2}$
+\end_inset
+
+.
+ With 
+\begin_inset Formula $\hat{A}\equiv\hat{X}'\otimes\hat{Y}'\otimes\hat{Y}'^{\dagger}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{Y}'\equiv i\hat{Z}\hat{X}'$
+\end_inset
+
+, calculations yield 
+\begin_inset Formula $\hat{A}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+.
+ With 
+\begin_inset Formula $\hat{B}\equiv\hat{Y}'^{\dagger}\otimes\hat{X}'\otimes\hat{Y}'$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}\equiv\hat{Y}'\otimes\hat{Y}'^{\dagger}\otimes\hat{X}'$
+\end_inset
+
+ also, by symmetry we get 
+\begin_inset Formula $\hat{B}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $\hat{D}\equiv\hat{A}\hat{B}\hat{C}=\hat{X}'\otimes\hat{Y}'\hat{X}\hat{Y}'^{\dagger}\otimes\hat{X}'$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{E}\equiv\hat{X}'\otimes\hat{X}'\otimes\hat{X}'$
+\end_inset
+
+ yield the paradox.
+ If values were predefined, the value of 
+\begin_inset Formula $\hat{D}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{E}$
+\end_inset
+
+ would return the same answer.
+ However, a simple calculation yields 
+\begin_inset Formula $\hat{D}\left|G\right\rangle =\left|G\right\rangle $
+\end_inset
+
+ (this can be seen directly by applying 
+\begin_inset Formula $\hat{A},\,\hat{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}$
+\end_inset
+
+ sequentially on 
+\begin_inset Formula $\left|G\right\rangle $
+\end_inset
+
+ [was figured the next day]), while 
+\begin_inset Formula $\hat{E}\left|G\right\rangle =-\left|G\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism in phase space (3/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The GHZ argument entails then, that no theory can have 
+\begin_inset Formula $q,p$
+\end_inset
+
+ NC deterministic.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Counterexample: BM, a theory which is NC deterministic, in 
+\begin_inset Formula $q,p$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Bohmian Mechanics (BM) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Determinism: The GHZ test 
+\backslash
+& Contextuality 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Analysis using BM  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(recent) Determinism in phase space $(q,p)$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge {(in progress) Its analysis using BM}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+BM analysis of GHZ 2.0
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Measuring 
+\begin_inset Formula $\hat{X}'$
+\end_inset
+
+ is not trivial.
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Wigner function
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Functions of 
+\begin_inset Formula $q,p$
+\end_inset
+
+ directly from the particles 
+\begin_inset Formula $q,p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Formal measurement
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Formally, any Hermitian operator can be measured using the interaction Hamiltoni
+an,
+\begin_inset Formula $\hat{H}=-a\hat{Q}\hat{p}_{y}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+ is the operator, and 
+\begin_inset Formula $y$
+\end_inset
+
+ is the coordinate of the pointer.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+New insight into relation between contextuality and non locality
+\end_layout
+
+\begin_layout Itemize
+Fundamental difference between spins and 
+\begin_inset Formula $(q,p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Meaning of measurement
+\end_layout
+
+\begin_layout Itemize
+Pointed out and (almost) solved a paradox
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge{Questions}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliography{summary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://thisquantumworld.com/wp/wp-content/uploads/2015/01/surreal-1024x586-1024x5
+86.png
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
