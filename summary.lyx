@@ -8134,13 +8134,266 @@ Friday | April 8
 \end_inset
 
  variable theory's trajectory, is the same as that of Bohm's! [todo: add
- picture]
+ picture] + Proof read the poster
 \end_layout
 
 \begin_layout Itemize
 [misc.] Posted the warranty, went for GPS's marksheet, Deepika ma'am told
  the guy she had given it to him in a flash drive, the guy said come back
  at 5, and it should be done.
+\end_layout
+
+\begin_layout Subsection
+Saturday & Sunday | April 9 & 10
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Almost completed chapter 4 + had the poster presentation
+\end_layout
+
+\begin_layout Itemize
+[teach/thermo] did some questions for teaching (had some interesting questions
+ about the maximum attainable temperature and the temperature attained by
+ just bringing two bodies in contact)
+\end_layout
+
+\begin_layout Section
+Audacious pillory | April 11 - 17
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Figured the relation between Bell's inequality and Multiplicativit
+y! Added graphs and references to the thesis including writing the last
+ chapter.
+ Figured the continuous variables part properly and re-read the older chapters
+ to remove mistakes.
+\end_layout
+
+\begin_layout Section
+Fortuitous Co-existence or Besmirching Semblance | April 18 - 24
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Added the theorem module (that is very simple to add in LyX.
+ Just goto the settings/preferences and there's a section on modules.
+ Just add theorems from there) in chapter 4.
+ Worked on updating the template to match IISER requirements.
+ Started working on a precise draft of the same and also on the presentation.
+\end_layout
+
+\begin_layout Itemize
+[teach/thermo] Prepared for the lecture (but it didn't happen)
+\end_layout
+
+\begin_layout Section
+April 25 - 30
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Thesis submitted! Presentation completed and given.
+ Also figured how one might implement an 
+\begin_inset Formula $n$
+\end_inset
+
+-core digital computer using 
+\begin_inset Formula $\log_{2}n$
+\end_inset
+
+ qubits extra on a quantum computer.
+\end_layout
+
+\begin_layout Itemize
+[teach/thermo] TA questions (last year's question paper) prepared.
+ Held the help session.
+\end_layout
+
+\begin_layout Itemize
+[course/cosmology] Studied for it (full blown revision etc.) and took the
+ exam.
+\end_layout
+
+\begin_layout Part
+Epilogue
+\end_layout
+
+\begin_layout Section
+Resilience 
+\end_layout
+
+\begin_layout Subsection
+Wednesday | May 18
+\end_layout
+
+\begin_layout Itemize
+[protocols/friendship] Figuring how to make a game | talked with Cation
+\end_layout
+
+\begin_layout Itemize
+[PhD] Max-planck lookup + Oxford
+\end_layout
+
+\begin_layout Subsection
+Thursday | May 19
+\end_layout
+
+\begin_layout Itemize
+[revision] Electrodynamics (the theorems on curl, divergence etc.)
+\end_layout
+
+\begin_layout Itemize
+[research/read] Cirac's work (simulating high energy physics using quantum
+ computers)
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Thinking about how BM can be shown to have some un demonstrated
+ funny things (like positions of two particles don't multiply).
+\end_layout
+
+\begin_layout Itemize
+[protocols/
+\begin_inset Formula $\phi@I$
+\end_inset
+
+ Radiation] Held a session.
+ Today was good.
+\end_layout
+
+\begin_layout Subsection
+Friday | May 20
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Good day for research.
+ Had a discussion with Arvind sir about how to structure the paper.
+ Started writing the paper.
+ Then had a discussion with Ali about the work.
+ Don't know if he was impressed.
+ Two points that can be added.
+ (1) an inequality can be added in the GHZ like test and (2) that multiplicativi
+ty is defined only for non-contextual maps.
+ Therefore, instead of saying non-contextual maps can't exist, we say that
+ there are two types of non-contextual maps, one of which can't exist.
+ Also, updated the thesis log.
+\end_layout
+
+\begin_layout Itemize
+[protocols/friendship] Made good progress with the game logic.
+ Jelly started making the game characters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/arjitBaby.png
+	width 2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arjit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/vivek_snake.png
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sagar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cartoons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Saturday | May 21
+\end_layout
+
+\begin_layout Itemize
+[research/ms] Writing the draft.
+\end_layout
+
+\begin_layout Itemize
+[protocols/friendship] gitHub setup for jiggle jelly also.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Part
